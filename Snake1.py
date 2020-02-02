@@ -12,28 +12,36 @@ with open('ca1_step1_input_data.txt', mode='r') as file:
 
     print(rad1)
     print(rad2)
-
+    counter = 0
     data = []
-    partikel=[]
-
+    tidssteg=[]
+    raden = file.readline()
     for i in range(1000):
         raden = file.readline()
-        partikel.clear()
+        tidssteg.clear()
+        if '# time_step' in raden:
+            counter += 1
         while not '# time_step' in raden:
+
             raden = raden.replace('\n', '')
             raden = raden.replace('\t', '')
             raden = raden.replace(';', ',')
             raden = raden.replace(' ', '')
+
             if hasNumbers(raden):
 
                 floatskapare=[]
                 raden = raden.split(',')
-
                 for i in range(len(raden)):
                     floatskapare.append(float(raden[i]))
-                partikel.append(floatskapare)
+                tidssteg.append(floatskapare)
+
             raden = file.readline()
-            data.append(partikel)
+
+
+
+        if len(tidssteg) != 0:
+            data.append(tidssteg[:])
 
 
 print(len(data), len(data[0]), len(data[0][0]), type(data[0][0][0]))
@@ -54,25 +62,24 @@ testdata = testdata.split(',')
 datafloat = []
 for i in range(0, len(testdata)):
     datafloat.append(float(testdata[i]))
-#print(datafloat)
+print(datafloat)
 
 time_steps, time_step, radius, v_variance, N_particles = datafloat
 
-#print(time_steps, time_step, radius, v_variance, N_particles)
+print(time_steps, time_step, radius, v_variance, N_particles)
 
 data = np.array(data)
-#print(type(data))
-#print(data.dtype)
-#print(data.shape)
-
+print(type(data))
+print(data.dtype)
+print(data.shape)
+print(data[0,0,0])
 R = data[:,:,0:2]
 V = data[:,:,2:4]
 R = np.moveaxis(R,1,2)
 V = np.moveaxis(V,1,2)
 print(R.shape, V.shape)
 
-
-#plt.scatter(R[0,0,:],R[0,1,:])
-#plt.xlim(-1,1)
-#plt.ylim(-1,1)
-#plt.show()
+plt.scatter(R[0,0,:],R[0,1,:])
+plt.xlim(-1,1)
+plt.ylim(-1,1)
+plt.show()
