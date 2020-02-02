@@ -13,14 +13,15 @@ with open('ca1_step1_input_data.txt', mode='r') as file:
     print(rad1)
     print(rad2)
     counter = 0
+    signal = 2
     data = []
     tidssteg=[]
     raden = file.readline()
-    for i in range(1000):
+    for i in range(1001):
         raden = file.readline()
         tidssteg.clear()
-        if '# time_step' in raden:
-            counter += 1
+
+
         while not '# time_step' in raden:
 
             raden = raden.replace('\n', '')
@@ -35,13 +36,28 @@ with open('ca1_step1_input_data.txt', mode='r') as file:
                 for i in range(len(raden)):
                     floatskapare.append(float(raden[i]))
                 tidssteg.append(floatskapare)
+            if not hasNumbers(raden) and signal == 1:
+                counter += 1
+
+
+
 
             raden = file.readline()
 
+            if counter >= 401:
+                break
 
+        if '# time_step 999' in raden:
+            signal = 1
 
         if len(tidssteg) != 0:
             data.append(tidssteg[:])
+
+        if counter >= 401:
+            break
+
+
+
 
 
 print(len(data), len(data[0]), len(data[0][0]), type(data[0][0][0]))
@@ -67,7 +83,6 @@ print(datafloat)
 time_steps, time_step, radius, v_variance, N_particles = datafloat
 
 print(time_steps, time_step, radius, v_variance, N_particles)
-
 data = np.array(data)
 print(type(data))
 print(data.dtype)
@@ -83,3 +98,4 @@ plt.scatter(R[0,0,:],R[0,1,:])
 plt.xlim(-1,1)
 plt.ylim(-1,1)
 plt.show()
+
