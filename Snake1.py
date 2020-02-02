@@ -1,3 +1,5 @@
+
+import h5py
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -90,6 +92,8 @@ print(data.shape)
 print(data[0,0,0])
 R = data[:,:,0:2]
 V = data[:,:,2:4]
+print(R.shape)
+print(V.shape)
 R = np.moveaxis(R,1,2)
 V = np.moveaxis(V,1,2)
 print(R.shape, V.shape)
@@ -99,3 +103,12 @@ plt.xlim(-1,1)
 plt.ylim(-1,1)
 plt.show()
 
+with h5py.File("ca1_step1_output_data.h5", "w") as fil:
+    dset = fil.create_dataset("Rdataset", (1000, 400, 2), data = R )
+    dset = fil.create_dataset("Vdataset", (1000, 400, 2), data = V )
+    dset.attrs['time_steps'] = time_steps
+    dset.attrs['time_step'] = time_step
+    dset.attrs['radius'] = radius
+    dset.attrs['v_variance'] = v_variance
+    dset.attrs['N_particles'] = N_particles
+print(dset)
