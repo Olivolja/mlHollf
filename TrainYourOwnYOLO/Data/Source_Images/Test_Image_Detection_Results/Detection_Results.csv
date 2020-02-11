@@ -1,0 +1,6 @@
+image,image_path,xmin,ymin,xmax,ymax,label,confidence,x_size,y_size
+20200205_182148.jpg,C:\Users\benja\OneDrive\Desktop\Kand\TrainYourOwnYOLO\Data\Source_Images\Test_Images\20200205_182148.jpg,168,438,1998,1313,0,0.633381187915802,2204,1790
+20200205_182207.jpg,C:\Users\benja\OneDrive\Desktop\Kand\TrainYourOwnYOLO\Data\Source_Images\Test_Images\20200205_182207.jpg,0,0,4032,3024,0,0.2522781193256378,4032,3024
+20200205_202421.jpg,C:\Users\benja\OneDrive\Desktop\Kand\TrainYourOwnYOLO\Data\Source_Images\Test_Images\20200205_202421.jpg,428,21,3017,3024,0,0.6752769947052002,3024,3024
+20200205_202543.jpg,C:\Users\benja\OneDrive\Desktop\Kand\TrainYourOwnYOLO\Data\Source_Images\Test_Images\20200205_202543.jpg,273,0,2777,3024,0,0.5250867605209351,3024,3024
+20200205_202549.jpg,C:\Users\benja\OneDrive\Desktop\Kand\TrainYourOwnYOLO\Data\Source_Images\Test_Images\20200205_202549.jpg,0,0,3024,3024,0,0.4562387466430664,3024,3024

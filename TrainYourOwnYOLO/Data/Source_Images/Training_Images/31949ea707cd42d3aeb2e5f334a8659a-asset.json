@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "31949ea707cd42d3aeb2e5f334a8659a",
+        "name": "20200205_182015.jpg",
+        "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200205_182015.jpg",
+        "size": {
+            "width": 2635,
+            "height": 2950
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "Ov1yXq0c7",
+            "type": "RECTANGLE",
+            "tags": [
+                "pilMedurs"
+            ],
+            "boundingBox": {
+                "height": 1409.2569885253906,
+                "width": 1385.0641025641028,
+                "left": 498.28525641025647,
+                "top": 1034.607142857143
+            },
+            "points": [
+                {
+                    "x": 498.28525641025647,
+                    "y": 1034.607142857143
+                },
+                {
+                    "x": 1883.3493589743591,
+                    "y": 1034.607142857143
+                },
+                {
+                    "x": 1883.3493589743591,
+                    "y": 2443.8641313825337
+                },
+                {
+                    "x": 498.28525641025647,
+                    "y": 2443.8641313825337
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}
