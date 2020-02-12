@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "d458a5bd7e93e7e873fc4caf4b5e565a",
+        "name": "20200205_200501.jpg",
+        "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200205_200501.jpg",
+        "size": {
+            "width": 3020,
+            "height": 2954
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "XcB2sC2Ko",
+            "type": "RECTANGLE",
+            "tags": [
+                "ground"
+            ],
+            "boundingBox": {
+                "height": 1395.2227007332494,
+                "width": 533.9226519337017,
+                "left": 1175.516356578848,
+                "top": 700.9491525423729
+            },
+            "points": [
+                {
+                    "x": 1175.516356578848,
+                    "y": 700.9491525423729
+                },
+                {
+                    "x": 1709.4390085125497,
+                    "y": 700.9491525423729
+                },
+                {
+                    "x": 1709.4390085125497,
+                    "y": 2096.171853275622
+                },
+                {
+                    "x": 1175.516356578848,
+                    "y": 2096.171853275622
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}
