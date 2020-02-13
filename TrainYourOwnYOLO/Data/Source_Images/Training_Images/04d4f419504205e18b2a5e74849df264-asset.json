@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "04d4f419504205e18b2a5e74849df264",
+        "name": "rotated-20200205_202556.jpg",
+        "path": "file:/home/oliv/Documents/mlHollf/Data/Source_Images/Training_Images/rotated-20200205_202556.jpg",
+        "size": {
+            "width": 3024,
+            "height": 3024
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "KWft27E-Z",
+            "type": "RECTANGLE",
+            "tags": [
+                "node"
+            ],
+            "boundingBox": {
+                "height": 720,
+                "width": 678.8571428571428,
+                "left": 1297.7142857142856,
+                "top": 1206.857142857143
+            },
+            "points": [
+                {
+                    "x": 1297.7142857142856,
+                    "y": 1206.857142857143
+                },
+                {
+                    "x": 1976.5714285714284,
+                    "y": 1206.857142857143
+                },
+                {
+                    "x": 1976.5714285714284,
+                    "y": 1926.8571428571427
+                },
+                {
+                    "x": 1297.7142857142856,
+                    "y": 1926.8571428571427
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}
