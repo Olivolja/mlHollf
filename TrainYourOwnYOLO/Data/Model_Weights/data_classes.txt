@@ -1,13 +1,1 @@
-support_rolling
-arrow_down
-arrow_up
-arrow_clockwise
-arrow_counter_clockwise
-beam
-beam_45
-beam_315
-ground
-support
-load_up
-node
-load_down
+roller

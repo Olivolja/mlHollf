@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "png",
+        "id": "c8fc2285f4eaf71560ad591b23b942fd",
+        "name": "resized007.png",
+        "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized007.png",
+        "size": {
+            "width": 100,
+            "height": 133
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "LUqB2dcak",
+            "type": "RECTANGLE",
+            "tags": [
+                "roller"
+            ],
+            "boundingBox": {
+                "height": 27.651973961436813,
+                "width": 20.751884288357612,
+                "left": 21.74341875807683,
+                "top": 50.19435257561462
+            },
+            "points": [
+                {
+                    "x": 21.74341875807683,
+                    "y": 50.19435257561462
+                },
+                {
+                    "x": 42.495303046434444,
+                    "y": 50.19435257561462
+                },
+                {
+                    "x": 42.495303046434444,
+                    "y": 77.84632653705144
+                },
+                {
+                    "x": 21.74341875807683,
+                    "y": 77.84632653705144
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

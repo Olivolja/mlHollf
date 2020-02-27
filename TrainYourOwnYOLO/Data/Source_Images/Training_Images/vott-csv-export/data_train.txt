@@ -1,0 +1,11 @@
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized008.png 36,42,55,73,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized006.png 28,45,60,75,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized009.png 42,42,62,69,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized007.png 22,50,42,78,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized010.png 28,41,55,82,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized012.png 22,68,54,106,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized015.png 23,48,58,90,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized013.png 48,38,69,64,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized014.png 36,41,61,71,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized016.png 13,41,66,117,0
+C:\Users\benja\OneDrive\Desktop\Kand\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\resized017.png 21,32,68,86,0
