@@ -1,0 +1,37 @@
+{
+    "name": "sdfg",
+    "securityToken": "sdfg Token",
+    "sourceConnection": {
+        "name": "hej",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiODM5NmQ4NjM1NDA1ZTY0NDc4ZDNhZmNkZDJjMzM1NDRjNmUzZDJhMDU3ZjZiN2JmODlkYzExMGQ5ZThiNTJkZmZjZjBiZjlhODBmYzRmODdhOWU5ZjkxMzgyMjQxODYyMzY3NjJiYjRmOTUzN2EyMGM5NGQ3M2E1ZDIzMmI3MzJiMmQxMWMzZTZlMzFjYjBlZjEwNjljMjY1MTJlYWUyYWZjNDJkMjhmMWFkZTlmODc1NTYyZmM5YzExYTNmMmRkYjk5YWQwYjljYjEyMzRhMTVmZDkzN2E5NzMyNzBhMTAiLCJpdiI6IjJlZTE3MGIwYjkyZjM3ODI1MWI5MDIwMDVkMmU4NmMzOTU0OTU4MjY1N2M4M2NkNyJ9"
+        },
+        "id": "fmIGLCqv0"
+    },
+    "targetConnection": {
+        "name": "hej",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiN2VhYzkzYTQ1OWEwYjcwMTBkZTk5NzU3MTQ5NDg5MmNhNzQyMTE2YTQxYTE2ZmFhZDE4MGZjZmQxYjYzOWI2YTE1N2MyMTkzNzM1ZDhlMWI4YjRkMzAyZTRlZmU3OThlNzc1ZTY0OWQ4Yzk0MTZjNDFhOTllZGRjMTU4YWUwNzNkOTFkMzIzYWUwMzhiZjU1ODQwOTYyNTkzNTZjOWQ3OTc3MzgyOTU1YjIyYTVhMGIzZmRmMjljYzViOThjMjUzNGU5Y2NhN2ZiN2M2M2ZlOTZlZDZjMTk4NTVjZDBkODYiLCJpdiI6ImM2NjczMGNhYWY0YzQ0YjBkMDY4YzhlOGE5MDZkMWZmMzcyMTNiYTliZTk5YWFiMSJ9"
+        },
+        "id": "fmIGLCqv0"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [],
+    "id": "poOQWq5EU",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMmE4MzExYWIwMmM0YzUzMzU4NjhjMWQ4ODdlMTRiYTljNzQwMGYzNzU5Nzk3ZmE4ZWY0OTRkMjk5MmM1MGNiMDk3NzUyMDFkOTg2NzM1N2I1Nzk2ZWVjZTc4OGI5ZGFhIiwiaXYiOiIzZjQ1NmYwYjkzNzUxYzA4NmNiZjI3Y2Y0YjAxN2M0N2IwZDMyZGM3NjUxZTU0MDMifQ=="
+        }
+    },
+    "version": "2.1.0"
+}
