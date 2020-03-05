@@ -1,5 +1,6 @@
 import numpy as np
 import core as cfc
+import matplotlib.pyplot as plt
 
 
 # Class used for calculating basic properties for a beam.
@@ -11,13 +12,19 @@ class Beam:
         self.last = last
         self.bc = bc
         self.bcVal = bcVal
-        nel = 4
-        # Element degrees of freedom, based on the coordinates from the yolo-file.
-        Edof = np.array([[1, 2, 3, 4, 5, 6],
-                         [4, 5, 6, 7, 8, 9],
-                         [7, 8, 9, 10, 11, 12],
-                         [10,11,12,13,14,15]])
 
+
+        nel = 3
+        Edof = []
+        for i in range(nel):
+            Edof.append([3*i+1,3*i+2,3*i+3,3*i+4,3*i+5,3*i+6])
+        Edof = np.asarray(Edof)
+        print(Edof)
+
+        self.coord = []
+        for i in range(nel+1):
+            self.coord.append(i/nel)
+        print(self.coord)
         # Stiffnes matrix and load vector based on the total degrees of freedom
         K = np.mat(np.zeros((Edof[-1][-1], Edof[-1][-1])))
         f = np.mat(np.zeros((Edof[-1][-1], 1)))
@@ -44,26 +51,59 @@ class Beam:
 
         # Solution of the equation for each element.
         Ed = cfc.extractEldisp(Edof, a);
+        Es = np.empty((nel,2,3))
+        Edi = np.empty((nel,2,2))
+        Eci = np.empty((nel, 2, 1))
+        for i in range(nel):
+            es,edi,eci = cfc.beam2s(ex,ey,ep,Ed[i,:])
+            Es[i] = es
+            Edi[i] = edi
+            Eci[i] = eci
+        self.Es = Es
+        self.Edi = Edi
+        self.Eci = Eci
 
-        es1, ed1, ec1 = cfc.beam2s(ex,ey,ep,Ed[1,:])
+
 
     # Method used to plot the torque along the beam
     def TorqueDiagram(self):
-        pass
+        Val = []
+        for i in range(len(self.Es)):
+            Val.append(self.Es[i][0][2])
+
+        Val.append(self.Es[-1][1][2])
+        print(Val)
+        plt.plot(self.coord,Val)
+        plt.show()
 
     # Method used to plot the shear forces along the beam
     def ShearDiagram(self):
-        pass
+        Val = []
+        for i in range(len(self.Es)):
+            Val.append(self.Es[i][0][1])
+        Val.append(self.Es[-1][1][1])
+
+
+        plt.plot(self.coord,Val)
+        plt.show()
 
     #Method used to plot the normal force along the beam
     def NormalForce(self):
-        pass
+        Val = []
+        for i in range(len(self.Es)):
+            Val.append(self.Es[i][0][0])
+        Val.append(self.Es[-1][0][0])
+        plt.plot(self.coord,Val)
+        plt.show()
 
     # Method used to plot the deformation of the beam
-    def DeformationFigure:
+    def DeformationFigure(self):
         pass
+
 
 class truss:
     pass
 
-balk1 = Beam(0,1,np.array([[7],[-1000]]),np.array([1,2,14]),np.array([0,0,0]))
+balk1 = Beam(0,1,np.array([[7],[-1000]]),np.array([1,2,11]),np.array([0,0,0]))
+balk1.ShearDiagram()
+balk1.TorqueDiagram()
