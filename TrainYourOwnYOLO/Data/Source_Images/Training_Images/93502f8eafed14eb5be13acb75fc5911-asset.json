@@ -1,0 +1,79 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "93502f8eafed14eb5be13acb75fc5911",
+        "name": "rotated-20200205_184610.jpg",
+        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/rotated-20200205_184610.jpg",
+        "size": {
+            "width": 4032,
+            "height": 3024
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "GQOoP4UkH",
+            "type": "RECTANGLE",
+            "tags": [
+                "beam_45"
+            ],
+            "boundingBox": {
+                "height": 2777.142857142857,
+                "width": 2921.142857142857,
+                "left": 594.8571428571428,
+                "top": 96
+            },
+            "points": [
+                {
+                    "x": 594.8571428571428,
+                    "y": 96
+                },
+                {
+                    "x": 3516,
+                    "y": 96
+                },
+                {
+                    "x": 3516,
+                    "y": 2873.142857142857
+                },
+                {
+                    "x": 594.8571428571428,
+                    "y": 2873.142857142857
+                }
+            ]
+        },
+        {
+            "id": "mceDwEXqC",
+            "type": "RECTANGLE",
+            "tags": [
+                "beam_45"
+            ],
+            "boundingBox": {
+                "height": 1210.2857142857142,
+                "width": 1224,
+                "left": 2799.428571428571,
+                "top": 1813.7142857142856
+            },
+            "points": [
+                {
+                    "x": 2799.428571428571,
+                    "y": 1813.7142857142856
+                },
+                {
+                    "x": 4023.428571428571,
+                    "y": 1813.7142857142856
+                },
+                {
+                    "x": 4023.428571428571,
+                    "y": 3024
+                },
+                {
+                    "x": 2799.428571428571,
+                    "y": 3024
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

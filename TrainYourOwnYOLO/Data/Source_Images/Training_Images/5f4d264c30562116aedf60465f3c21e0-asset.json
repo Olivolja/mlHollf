@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "5f4d264c30562116aedf60465f3c21e0",
+        "name": "rotated-20200205_181853.jpg",
+        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/rotated-20200205_181853.jpg",
+        "size": {
+            "width": 3024,
+            "height": 4032
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "YmPuqFYFF",
+            "type": "RECTANGLE",
+            "tags": [
+                "arrow_up"
+            ],
+            "boundingBox": {
+                "height": 1860.5714285714284,
+                "width": 698.9003021148036,
+                "left": 987.8247734138973,
+                "top": 1088
+            },
+            "points": [
+                {
+                    "x": 987.8247734138973,
+                    "y": 1088
+                },
+                {
+                    "x": 1686.725075528701,
+                    "y": 1088
+                },
+                {
+                    "x": 1686.725075528701,
+                    "y": 2948.5714285714284
+                },
+                {
+                    "x": 987.8247734138973,
+                    "y": 2948.5714285714284
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}
