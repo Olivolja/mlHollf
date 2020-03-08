@@ -1,1 +1,11 @@
-roller
+roller_support
+node
+arrow_down
+arrow_up
+arrow_clockwise
+arrow_counter_clockwise
+beam
+beam_45
+beam_135
+ground
+support
