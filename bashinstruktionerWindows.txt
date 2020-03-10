@@ -1,0 +1,72 @@
+Instruktioner till att connecta till hebbe-mstud, föra över ett script och köra det.
+
+För felsökning se längst ner i dokumentet.
+
+1. Ladda ned PuTTY
+	PuTTY används för att "ssh:a" in på hebbe-mstud
+	
+	Installera och kör PuTTY
+	Under 
+		"Host Name" skriv in hebbe-mstud.c3se.chalmers.se
+		"Connection type" välj SSH
+	Klicka Open
+
+	Nu skall ett terminalfönster öppnas där du kan logga in med ditt SWAMID (cid)
+
+	När du loggat in ska en "bild av texttecken" där det står Hebbe visas
+
+2. Ladda ned WinSCP
+	WinSCP används för att överföra filer mellan ditt system och nodens filsystem
+	
+	Installera och kör WinSCP
+	Under 
+		"Värdnamn" skriv in hebbe-mstud.c3se.chalmers.se
+		"Användarnamn" ditt cid (SWAMID)
+		"Lösenord" lösenordet till ditt cid (SWAMID)
+	Klicka "Logga in"
+
+	Nu ska ett tvådelat fönster öppnas där den vänstra vyn visar ditt filsystem
+	och den högra vyn visar nodens filsystem
+
+	För att kopiera över en fil till det andra filsystemet kan man dra den till andra vyn
+
+	Du kan kontrollera att filen faktiskt kopierats till nodens filsystem genom 
+	att skriva in kommandot dir i terminalfönstret från PuTTY. 
+	"dir" visar vilka filer som finns i DIRectoriet, om du ser filen du flyttade över i 
+	WinSCP så har kopieringen fungerat.
+
+3. Att köra scriptet
+	För att köra bash-script skriver man "bash filnamn.sh"
+	
+	Första gången man gör detta bör man få ett error som säger "Permission denied".
+	För att fixa detta kör man kommandot "chmod u+x program_name", vilket ger användaren (u för user)
+	tillåtelse att exekvera scriptet.
+	
+	Sedan kan man exekvera skriptet som vanligt med "bash filnamn.sh"
+
+	
+Felsökning:
+
+	1. sleep eller liknande kommando ger "Invalid argument: \r"
+		Förklaring:
+			Beror på att bash-skriptet du skrev gjordes i Windows och att Windows
+			och Linux processerar radbrytningar på olika sätt. I Windows hanteras 
+			radbrytningar som "\r\n", medan Linux hanterar dem som "\n". Så när 
+			skriptet ska köras i en Linux-miljö så känner miljön enbart till
+			beteckningen "\n" vilket gör att "\r" hamnar i plaintext och därmed i
+			argumentet i kommandot till t.ex sleep.
+
+		Lösning:
+			Öppna skriptet i Notepad++
+			Tryck Ctrl + F för att få upp sökmenyn
+			Tryck på fliken "Replace" längst upp
+			I fältet "Find what" skriv "\r\n"
+			I fältet "Replace with" skriv "\n"
+			I rutan "Search Mode" längst ner, välj alternativet "Extended (\n, \r..."
+			Tryck "Replace All"
+			
+			Spara sedan skriptet, ta bort det gamla skriptet i nodens filsystem
+			och för över den nya versionen till nodens filsystem.
+		
+		
+	

@@ -21,4 +21,4 @@ python .\Detector.py
 
 "
 
-sleep 3
+sleep 60
