@@ -12,6 +12,8 @@ m_cnv.pack()
 beam_list = []
 node_list = []
 truss_beams = []
+labels = ["RollerSupport", "PinSupport", "Beam", "Node", "ArrowDown", "ArrowUp", "ArrowCounterClockwise",
+                  "ArrowClockwise", "Beam45", "Beam135", "Ground", "LoadUp", "LoadRight", "LoadDown"]
 
 def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
     shortest_distance = m.inf
@@ -87,39 +89,54 @@ class Force:
         (closest_x2, closest_y2), beam2 = find_closest_point((x_mid, y_max))
         dist1 = compute_distance((closest_x1, closest_y1), (x_mid, y_min))
         dist2 = compute_distance((closest_x2, closest_y2), (x_mid, y_max))
-        if direction == "Up":
+        if direction == "Up" or direction == "Down":
+            (closest_x1, closest_y1), beam1 = find_closest_point((x_mid, y_min), ["Bottom", "Top"])
+            (closest_x2, closest_y2), beam2 = find_closest_point((x_mid, y_max), ["Bottom", "Top"])
+            dist1 = compute_distance((closest_x1, closest_y1), (x_mid, y_min))
+            dist2 = compute_distance((closest_x2, closest_y2), (x_mid, y_max))
             if dist1 > dist2:
                 self.x_mid = closest_x2
                 self.y_max = closest_y2
                 self.beam = beam2
                 self.y_min = self.y_max - self.beam.length * 0.2
+                self.closest_point = (closest_x2, closest_y2)
             else:
                 self.x_mid = closest_x1
                 self.y_min = closest_y1
                 self.beam = beam1
                 self.y_max = self.y_min + self.beam.length * 0.2
-        elif direction == "Down":
+                self.closest_point = (closest_x1, closest_y1)
+        elif direction == "Left" or direction == "Right":
+            (closest_x1, closest_y1), beam1 = find_closest_point((x_min, y_mid), ["Left", "Right"])
+            (closest_x2, closest_y2), beam2 = find_closest_point((x_max, y_mid), ["Left", "Right"])
+            dist1 = compute_distance((closest_x1, closest_y1), (x_min, y_mid))
+            dist2 = compute_distance((closest_x2, closest_y2), (x_max, y_mid)) 
             if dist1 > dist2:
-                self.x_mid = closest_x2
-                self.y_max = closest_y2
+                self.x_max = closest_x2
+                self.y_mid = closest_y2
                 self.beam = beam2
-                self.y_min = self.y_max - self.beam.length * 0.2
+                self.x_min = self.x_max - self.beam.length * 0.2
+                self.closest_point = (closest_x2, closest_y2)
             else:
-                self.x_mid = closest_x1
-                self.y_min = closest_y1
+                self.x_min = closest_x1
+                self.y_mid = closest_y1
                 self.beam = beam1
-                self.y_max = self.y_min + self.beam.length * 0.2
-                print("y_min " + str(self.y_min))
-                print("y_max " + str(self.y_max))
-                print(self.beam.points["Bottom"])
-
+                self.x_max = self.x_min + self.beam.length * 0.2
+                self.closest_point = (closest_x1, closest_y1)
+        
     def draw(self):
         if self.direction == "Up":
             m_cnv.create_line(self.x_mid, self.y_min, self.x_mid, self.y_max, arrow="first")
-            self.beam.objects["Forces"].append(((self.x_mid, self.y_min), "Up"))
+            self.beam.objects["Forces"].append((self.closest_point, "Up"))
         elif self.direction == "Down":
             m_cnv.create_line(self.x_mid, self.y_min, self.x_mid, self.y_max, arrow="last")
-            self.beam.objects["Forces"].append(((self.x_mid, self.y_min), "Down"))
+            self.beam.objects["Forces"].append((self.closest_point, "Down"))
+        elif self.direction == "Left":
+            m_cnv.create_line(self.x_min, self.y_mid, self.x_max, self.y_mid, arrow="first")
+            self.beam.objects["Forces"].append((self.closest_point, "Left"))
+        elif self.direction == "Right":
+            m_cnv.create_line(self.x_min, self.y_mid, self.x_max, self.y_mid, arrow="last")
+            self.beam.objects["Forces"].append((self.closest_point, "Right"))
 
 
 class PinSupport:
@@ -359,7 +376,7 @@ def find_closest_node(coord):
 
     return shortest_distance_coordinates, closest_node
 
-
+""" 
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
@@ -451,16 +468,41 @@ class Truss:
                 layers[1] = beam.nodes[1]
             elif beam.orientation == 135:
                 layers[-1] = beam.nodes[1]
+ """
 def get_objects():
-    df = pd.read_csv(r'C:\Users\admin\Documents\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
+    try:
+        df = pd.read_csv(r'C:\Users\admin\Documents\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
+    except:
+        df = pd.read_csv(r'C:\Users\tobia\Desktop\Detection_Results_test.csv')
+        #df = pd.read_csv(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
     df1 = df[["xmin", "ymin", "xmax", "ymax", "label"]]
-    list_of_objects = []
+    list_of_objects = [] # behövs ej va?
+    df1 = delete_overlapping_objects(df1)
     return (df1)
 
-
+def delete_overlapping_objects(objects):
+    for index1, obj1 in objects.iterrows():
+        for index2, obj2 in objects.iterrows():
+            if index1 == index2:
+                continue
+            type1 = labels[obj1[4]]
+            type2 = labels[obj2[4]]
+            x_min1, y_min1, x_max1, y_max1 = obj1[0], obj1[1], obj1[2], obj1[3],
+            x_min2, y_min2, x_max2, y_max2 = obj2[0], obj2[1], obj2[2], obj2[3],
+            x_mid1 = (x_max1 + x_min1)/2
+            y_mid1 = (y_max1 + y_min1)/2
+            # x_mid2 = (x_max2 + x_min2)/2
+            # y_mid2 = (y_max2 + y_min2)/2
+            # print(str(index1), str(index2), str(x_min2), str(y_min2), str(x_max2), str(y_max2), str(x_mid1), str(y_mid1))
+            if x_min2 < x_mid1 < x_max2 and y_min2 < y_mid1 < y_max2:
+                if type1 == type2:
+                    objects = objects.drop(index1, axis=0)
+                elif type1 == "BeamLine":
+                    objects = objects.drop(index1, axis=0)
+                elif type1 in ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"] and type2 in ["LoadUp", "LoadDown"]:
+                    objects = objects.drop(index1, axis=0)
+    return objects
 def draw_all_objects():
-    labels = ["RollerSupport", "PinSupport", "Beam", "Node", "ArrowDown", "ArrowUp", "ArrowCounterClockwise",
-                  "ArrowClockwise", "Beam45", "Beam135", "Ground", "LoadUp", "LoadRight", "LoadDown"]
     objects = get_objects()
     m_x = interp1d([0, 4000], [0, 1000])
     m_y = interp1d([0, 4000], [1000, 0])
@@ -502,9 +544,13 @@ def draw_all_objects():
         #elif type == "ArrowClockwise":
         #   moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", )
 
+
+
+draw_all_objects()
+
 # beam1 = Beam(100, 550, 600, 650)
 # beam1.draw()
-# arrow1 = Force(150, 100, 175, 150, "Up")
+# arrow1 = Force(150, 100, 175, 150, "Left")
 # arrow1.draw()
 # pin1 = PinSupport(300, 700, 356, 750, 0.15)
 # pin1.draw()
@@ -518,6 +564,7 @@ def draw_all_objects():
 # load = Load(100, 450, 400, 550, "Up")
 # load.draw()
 
+m_cnv.update()
+m_cnv.postscript(file="bild.jpg", colormode='color')
 
-draw_all_objects()
 mainloop()
