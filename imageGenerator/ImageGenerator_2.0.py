@@ -349,8 +349,6 @@ class Load:
         self.beam.objects["Loads"].append((self.leftmost_point, self.rightmost_point, self.direction))
 
 
-
-
 def find_closest_node(coord):
     shortest_distance = m.inf
     shortest_distance_coordinates = (m.inf, m.inf)
@@ -369,17 +367,17 @@ class TrussBeam:
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
         length = (x_min + x_max)/2
         height = (y_min + y_max)/2
-        if orientation == "45":
+        self.center = ((x_min + x_max)/2, (y_min + y_max)/2)
+        if orientation == 45:
             self.leftmost_point = (x_min, y_max)
             self.rightmost_point = (x_max, y_min)
-        elif orientation == "135":
+        elif orientation == 135:
             self.leftmost_point = (x_min, y_min)
             self.rightmost_point = (x_max, y_max)
-        elif orientation == "0":
-            if length > height:
-                self.leftmost_point = (x_min + length/2, y_min)
-                self.rightmost_point = (x_min + length/2, y_max)
-            else:
+        elif orientation == 90:  # 0 refers to a straight beam.
+            self.leftmost_point = (x_min + length/2, y_min)
+            self.rightmost_point = (x_min + length/2, y_max)
+        elif orientation == 0:
                 self.leftmost_point = (x_min, y_min + height/2)
                 self.rightmost_point = (x_max, y_min + height/2)
 
@@ -390,6 +388,17 @@ class TrussBeam:
 
         self.nodes = connected_nodes()
 
+        for node in self.nodes:
+            node.beams.append(self)
+        truss_beams.append(self)
+
+    def draw(self):
+        if self.orientation == 45:
+            m_cnv.create_line(self.x_min, self.y_max, self.x_max, self.y_min)
+        elif self.orientation == 135:
+            m_cnv.create_line(self.x_min, self.y_min, self.x_max, self.y_max)
+        elif self.orientation == 0:
+            m_cnv.create_line(self.x_min, self.y_max, self.x_max, self.y_max)  # A bit ugly might fix later
 
 
 
@@ -397,22 +406,54 @@ class Node:
     def __init__(self, x_min, y_min, x_max, y_max):
         self.x_min, self.y_min, self.x_max, self.y_max = x_min, y_min, x_max, y_max
         self.center = ((x_max + x_min)/2, (y_max + y_min)/2)
+        self.number = 0
+        node_list.append(self)
 
-    def relax_nodes(self):
-        for node in node_list:
-            print("Mamma")
+        def get_beams():
+            beams = []
+            for beam in truss_beams:
+                d_max = find_closest_node(self.center)
+                d = compute_distance(self.center, beam.center)
+                if d < d_max:
+                    self.beams.append(beam)
+            return beams
 
-
+        self.beams = get_beams()
+        for beam in self.beams:
+            if beam.orientation == 0 and beam.center[1] not in range(self.center[1] * 0.8, self.center[1] * 1.2):
+                self.beams.remove(beam)
+                
     def draw(self):
         m_cnv.create_oval(self.x_min, self.y_min, self.x_max, self.y_max, fill="")
 
 
 class Truss:
-    def __init__(self, nodes, connecters):
+    def __init__(self, nodes, truss_beams):
         self.nodes = nodes
-        self.connectors = connecters
+        self.beams = truss_beams
+
+        def find_start_node():
+            x_min, y_max = m.inf, m.inf
+            for node in nodes:
+                if node.x_min <= x_min and node.y_max <= y_max:
+                    x_min = node.x_min
+                    y_max = node.y_max
+                    start_node = node
+            return start_node
+
+        layers = {}
+        start_node = find_start_node()
+        layers[0] = [start_node]
+        temp = self.nodes
 
 
+        for beam in start_node.beams:
+            if beam.orientation == 0:
+                layers[0].append(beam.nodes[1])
+            elif beam.orientation == 45:
+                layers[1] = beam.nodes[1]
+            elif beam.orientation == 135:
+                layers[-1] = beam.nodes[1]
 def get_objects():
     df = pd.read_csv(r'C:\Users\admin\Documents\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
     df1 = df[["xmin", "ymin", "xmax", "ymax", "label"]]
