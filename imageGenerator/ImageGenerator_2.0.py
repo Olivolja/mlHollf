@@ -1,0 +1,485 @@
+from tkinter import *
+import math as m
+import numpy as np
+import random as r
+import pandas as pd
+from scipy.interpolate import interp1d
+import time
+root = Tk()
+m_cnv = Canvas(root, width=1000, height=1000)
+m_cnv.pack()
+
+beam_list = []
+node_list = []
+truss_beams = []
+
+def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
+    shortest_distance = m.inf
+    shortest_distance_coordinates = (m.inf, m.inf)
+    for beam in beam_list:
+        for side in sides:
+            for point in beam.points[side]:
+                distance = compute_distance(coord, point)
+                if distance < shortest_distance:
+                    shortest_distance = distance
+                    shortest_distance_coordinates = point
+                    correct_beam = beam
+
+    return shortest_distance_coordinates, correct_beam
+
+
+# compute distance between two points
+def compute_distance(point1, point2):
+    x1, y1 = point1
+    x2, y2 = point2
+    return m.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+
+class Beam:
+    def __init__(self, x_min, y_min, x_max, y_max):
+        y_mid = (y_max + y_min)/2
+        x_mid = (x_max + x_min)/2
+        self.points = {"Bottom": [], "Top": [], "Left": [], "Right": []}
+        self.objects = {"Forces": [], "Loads": [], "Pins": [], "Rollers": [], "Moments": [], "Fixed": []}
+        if x_max - x_min > y_max - y_min:
+            self.length = x_max - x_min
+            self.height = 10
+            self.y_max = y_mid + 5
+            self.y_min = y_mid - 5
+            self.x_max = x_max
+            self.x_min = x_min
+            self.y_mid = (self.y_max + self.y_min)/2
+            point_distance = self.length/11
+            for i in range(12):
+                self.points["Bottom"].append((self.x_min + i * point_distance, self.y_max))
+                self.points["Top"].append((self.x_min + i * point_distance, self.y_min))
+            self.points["Left"].append((self.x_min, self.y_mid))
+            self.points["Right"].append((self.x_max, self.y_mid))
+
+        else:
+            self.length = y_max - y_min
+            self.height = 10
+            self.x_max = x_mid + 5
+            self.x_min = x_mid - 5
+            self.y_min = y_min
+            self.y_max = y_max
+            self.x_mid = (self.x_max + self.x_min)/2
+            point_distance = self.length/11
+            for i in range(12):
+                self.points["Left"].append((self.x_min, self.y_min + i * point_distance))
+                self.points["Right"].append((self.x_max, self.y_min + i * point_distance))
+            self.points["Bottom"].append((self.x_mid, self.y_max))
+            self.points["Top"].append((self.x_mid, self.y_min))
+
+    def draw(self):
+        m_cnv.create_rectangle(self.x_min, self.y_min, self.x_max, self.y_max, fill="")
+        beam_list.append(self)
+
+
+class Force:
+    def __init__(self, x_min, y_min, x_max, y_max, direction):
+        print("y_min " + str(y_min))
+        print("y_max " + str(y_max))
+        self.direction = direction
+        x_mid = (x_max + x_min)/2
+        y_mid = (y_max + y_min)/2
+        (closest_x1, closest_y1), beam1 = find_closest_point((x_mid, y_min))
+        (closest_x2, closest_y2), beam2 = find_closest_point((x_mid, y_max))
+        dist1 = compute_distance((closest_x1, closest_y1), (x_mid, y_min))
+        dist2 = compute_distance((closest_x2, closest_y2), (x_mid, y_max))
+        if direction == "Up":
+            if dist1 > dist2:
+                self.x_mid = closest_x2
+                self.y_max = closest_y2
+                self.beam = beam2
+                self.y_min = self.y_max - self.beam.length * 0.2
+            else:
+                self.x_mid = closest_x1
+                self.y_min = closest_y1
+                self.beam = beam1
+                self.y_max = self.y_min + self.beam.length * 0.2
+        elif direction == "Down":
+            if dist1 > dist2:
+                self.x_mid = closest_x2
+                self.y_max = closest_y2
+                self.beam = beam2
+                self.y_min = self.y_max - self.beam.length * 0.2
+            else:
+                self.x_mid = closest_x1
+                self.y_min = closest_y1
+                self.beam = beam1
+                self.y_max = self.y_min + self.beam.length * 0.2
+                print("y_min " + str(self.y_min))
+                print("y_max " + str(self.y_max))
+                print(self.beam.points["Bottom"])
+
+    def draw(self):
+        if self.direction == "Up":
+            m_cnv.create_line(self.x_mid, self.y_min, self.x_mid, self.y_max, arrow="first")
+            self.beam.objects["Forces"].append(((self.x_mid, self.y_min), "Up"))
+        elif self.direction == "Down":
+            m_cnv.create_line(self.x_mid, self.y_min, self.x_mid, self.y_max, arrow="last")
+            self.beam.objects["Forces"].append(((self.x_mid, self.y_min), "Down"))
+
+
+class PinSupport:
+    def __init__(self, x_min, y_min, x_max, y_max, size=0.15):
+        x_mid = (x_max + x_min)/2
+        y_mid = (y_max + y_min)/2
+        self.closest_point, beam = find_closest_point((x_mid, y_mid))
+        self.beam = beam
+        if self.closest_point in beam.points["Bottom"]:
+            self.x_mid = self.closest_point[0]
+            self.x_min = self.x_mid - beam.length * size/2
+            self.x_max = self.x_mid + beam.length * size/2
+            self.y_min = self.closest_point[1]
+            self.y_max = self.y_min + beam.length * m.sin(m.pi/3) * size
+            self.orientation = "Bottom"
+            self.corner1 = (self.x_mid, self.y_min)
+            self.corner2 = (self.x_min, self.y_max)
+            self.corner3 = (self.x_max, self.y_max)
+        elif self.closest_point in beam.points["Top"]:
+            self.x_mid = self.closest_point[0]
+            self.x_min = self.x_mid - beam.length * size/2
+            self.x_max = self.x_mid + beam.length * size/2
+            self.y_max = self.closest_point[1]
+            self.y_min = self.y_max - beam.length * m.sin(m.pi/3) * size
+            self.orientation = "Top"
+            self.corner1 = (self.x_mid, self.y_max)
+            self.corner2 = (self.x_min, self.y_min)
+            self.corner3 = (self.x_max, self.y_min)
+        elif self.closest_point in beam.points["Left"]:
+            self.x_max = self.closest_point[0]
+            self.x_min = self.x_max - beam.length * m.sin(m.pi/3) * size
+            self.y_mid = self.closest_point[1]
+            self.y_max = self.y_mid + beam.length * size/2
+            self.y_min = self.y_mid - beam.length * size/2
+            self.orientation = "Left"
+            self.corner1 = (self.x_max, self.y_mid)
+            self.corner2 = (self.x_min, self.y_min)
+            self.corner3 = (self.x_min, self.y_max)
+        elif self.closest_point in beam.points["Right"]:
+            self.x_min = self.closest_point[0]
+            self.x_max = self.x_min + beam.length * m.sin(m.pi/3) * size
+            self.y_mid = self.closest_point[1]
+            self.y_max = self.y_mid + beam.length * size/2
+            self.y_min = self.y_mid - beam.length * size/2
+            self.orientation = "Right"
+            self.corner1 = (self.x_min, self.y_mid)
+            self.corner2 = (self.x_max, self.y_min)
+            self.corner3 = (self.x_max, self.y_max)
+
+    def draw(self):
+        m_cnv.create_polygon(self.corner1, self.corner2, self.corner3, fill="", outline="Black")
+        self.beam.objects["Pins"].append((self.corner1, self.orientation))
+
+
+class RollerSupport:
+    def __init__(self, x_min, y_min, x_max, y_max):
+        self.ps = PinSupport(x_min, y_min, x_max, y_max, 0.0951)
+        if self.ps.closest_point in self.ps.beam.points["Bottom"]:
+            self.circle_box1 = (self.ps.x_min, self.ps.y_max + self.ps.beam.length * 0.0951/2, (self.ps.x_max + self.ps.x_min)/2, self.ps.y_max)
+            self.circle_box2 = ((self.ps.x_max + self.ps.x_min)/2, self.ps.y_max + self.ps.beam.length * 0.0951/2, self.ps.x_max, self.ps.y_max)
+            self.orientation = "Bottom"
+        elif self.ps.closest_point in self.ps.beam.points["Top"]:
+            self.circle_box1 = (self.ps.x_min, self.ps.y_min - self.ps.beam.length * 0.0951/2,
+                                self.ps.x_mid, self.ps.y_min)
+            self.circle_box2 = (self.ps.x_mid, self.ps.y_min - self.ps.beam.length * 0.0951/2,
+                                self.ps.x_max, self.ps.y_min)
+            self.orientation = "Top"
+        elif self.ps.closest_point in self.ps.beam.points["Left"]:
+            self.circle_box1 = (self.ps.x_min - self.ps.beam.length * 0.0951/2, self.ps.y_min,
+                                self.ps.x_min, self.ps.y_mid)
+            self.circle_box2 = (self.ps.x_min - self.ps.beam.length * 0.0951/2, self.ps.y_mid,
+                                self.ps.x_min, self.ps.y_max)
+            self.orientation = "Left"
+        elif self.ps.closest_point in self.ps.beam.points["Right"]:
+            self.circle_box1 = (self.ps.x_max, self.ps.y_min,
+                                self.ps.x_max + self.ps.beam.length * 0.0951/2, self.ps.y_mid)
+            self.circle_box2 = (self.ps.x_max, self.ps.y_mid,
+                                self.ps.x_max + self.ps.beam.length * 0.0951/2, self.ps.y_max)
+            self.orientation = "Right"
+
+    def draw(self):
+        self.ps.draw()
+        self.ps.beam.objects["Pins"].pop() # Elegant way of removing the extra pin support added to the objects dictionary
+        m_cnv.create_oval(self.circle_box1)
+        m_cnv.create_oval(self.circle_box2)
+        self.ps.beam.objects["Forces"].append((self.ps.closest_point, self.orientation))
+
+
+
+
+class Moment:
+    def __init__(self, x_min, y_min, x_max, y_max, rotation, rel_pos):
+        self.x_min = x_min
+        self.y_min = y_min
+        self.x_max = x_max
+        self.y_max = y_max
+        x_mid, y_mid = (x_min + x_max)/2, (y_min + y_max)/2
+        self.rel_pos = rel_pos
+        self.rotation = rotation
+        self.closest_point, self.beam = find_closest_point((x_mid, y_mid), [self.rel_pos])
+        self.radius = self.beam.length * 0.075
+        if self.rel_pos == "Bottom":
+            self.x_mid = self.closest_point[0]
+            self.y_min = self.closest_point[1] + self.radius/2
+        elif self.rel_pos == "Top":
+            self.x_mid = self.closest_point[0]
+            self.y_max = self.closest_point[1] - self.radius/2
+        elif self.rel_pos == "Left":
+            self.x_max = self.closest_point[0] - self.radius/2
+            self.y_mid = self.closest_point[1]
+        elif self.rel_pos == "Right":
+            self.x_min = self.closest_point[0] + self.radius/2
+            self.y_mid = self.closest_point[1]
+            print("Got to first elif loop")
+
+    def draw(self):
+        if self.rel_pos == "Bottom":
+            p1x = self.x_mid + self.radius * m.cos(m.radians(-15))
+            p1y = self.y_min - self.radius * m.sin(m.radians(-15))
+            p2y = self.y_min
+            if self.rotation == "Counterwise":
+                p2x = p1x + (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
+                m_cnv.create_line(p1x, p1y, p2x, p2y, arrow="last", width=2, arrowshape="16 20 6")
+
+            for t in range(1, 1509):
+                theta = -15 - t / 10
+                p2x = self.x_mid + self.radius * m.cos(m.radians(theta))
+                p2y = self.y_min - self.radius * m.sin(m.radians(theta))
+                m_cnv.create_line(p1x, p1y, p2x, p2y, width=2)
+                p1x = p2x
+                p1y = p2y
+
+            if self.rotation == "Clockwise":
+                p2x = p1x - (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
+                m_cnv.create_line(p1x, p1y, p2x, self.y_min, arrow="last", width=2, arrowshape="16 20 6")
+
+        elif self.rel_pos == "Top":
+            p1x = self.x_mid + self.radius * m.cos(m.radians(15))
+            p1y = self.y_max - self.radius * m.sin(m.radians(15))
+            p2y = self.y_max
+            if self.rotation == "Clockwise":
+                p2x = p1x + (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
+                m_cnv.create_line(p1x, p1y, p2x, p2y, arrow="last", width=2, arrowshape="16 20 6")
+            for t in range(1, 1509):
+                theta = -15 - t / 10
+                p2x = self.x_mid + self.radius * m.cos(m.radians(theta))
+                p2y = self.y_max - self.radius * m.sin(m.radians(theta))
+                m_cnv.create_line(p1x, p1y, p2x, p2y, width=2)
+                p1x = p2x
+                p1y = p2y
+            if self.rotation == "Counterwise":
+                p2x = p1x - (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
+                m_cnv.create_line(p1x, p1y, p2x, self.y_max, arrow="last", width=2, arrowshape="16 20 6")
+
+        elif self.rel_pos == "Left":
+            p1x = self.x_max + self.radius * m.cos(m.radians(255))
+            p1y = self.y_mid - self.radius * m.sin(m.radians(255))
+            p2x = self.x_max
+            if self.rotation == "Counterwise":
+                p2y = p1y + (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
+                m_cnv.create_line(p1x, p1y, p2x, p2y, arrow="last", width=2, arrowshape="16 20 6")
+            for t in range(1, 1509):
+                theta = 255 - t / 10
+                p2x = self.x_max + self.radius * m.cos(m.radians(theta))
+                p2y = self.y_mid - self.radius * m.sin(m.radians(theta))
+                m_cnv.create_line(p1x, p1y, p2x, p2y, width=2)
+                p1x = p2x
+                p1y = p2y
+            if self.rotation == "Clockwise":
+                p2y = p1y - (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
+                m_cnv.create_line(p1x, p1y, self.x_max, p2y, arrow="last", width=2, arrowshape="16 20 6")
+
+        elif self.rel_pos == "Right":
+            p1x = self.x_min + self.radius * m.cos(m.radians(-75))
+            p1y = self.y_mid - self.radius * m.sin(m.radians(-75))
+            p2x = self.x_min
+            # Draw the arrow part of the moment
+            if self.rotation == "Clockwise":
+                p2y = p1y + (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
+                m_cnv.create_line(p1x, p1y, p2x, p2y, arrow="last", width=2, arrowshape="16 20 6")
+
+            # Draws the rest of the moment
+            for t in range(1, 1509):
+                theta = -75 + t / 10
+                p2x = self.x_min + self.radius * m.cos(m.radians(theta))
+                p2y = self.y_mid - self.radius * m.sin(m.radians(theta))
+                m_cnv.create_line(p1x, p1y, p2x, p2y, width=2)
+                p1x = p2x
+                p1y = p2y
+            if self.rotation == "Counterwise":
+                p2y = p1y - (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
+                m_cnv.create_line(p1x, p1y, self.x_min, p2y, arrow="last", width=2, arrowshape="16 20 6")
+
+        self.beam.objects["Moments"].append((self.closest_point, self.rotation))
+
+
+class Load:
+    def __init__(self, x_min, y_min, x_max, y_max, direction):
+        self.x_min = x_min
+        self.y_min = y_min
+        self.y_mid = (y_min + y_max)/2
+        self.x_max = x_max
+        self.y_max = y_max
+        self.direction = direction
+        self.leftmost_point, self.beam = find_closest_point((x_min, self.y_mid), ["Bottom", "Top"])
+        self.rightmost_point, self.beam = find_closest_point((x_max, self.y_mid), ["Bottom", "Top"])
+        self.length = self.rightmost_point[0] - self.leftmost_point[0]
+        self.height = self.beam.length/6
+        self.no_arrows = int(self.length/50)
+        self.sep = self.length / self.no_arrows
+
+    def draw(self):
+        py1 = self.leftmost_point[1]
+        py2 = py1 - self.height
+        if self.direction == "Down":
+            for i in range(self.no_arrows + 1):
+                px = self.leftmost_point[0] + i * self.sep
+                m_cnv.create_line(px, py1, px, py2, arrow="first")
+        elif self.direction == "Up":
+            for i in range(self.no_arrows + 1):
+                px = self.leftmost_point[0] + i * self.sep
+                m_cnv.create_line(px, py1, px, py2, arrow="last")
+
+        m_cnv.create_line(self.leftmost_point[0], self.leftmost_point[1], self.rightmost_point[0],
+                          self.rightmost_point[1])
+        m_cnv.create_line(self.leftmost_point[0], py2, self.rightmost_point[0], py2)
+        self.beam.objects["Loads"].append((self.leftmost_point, self.rightmost_point, self.direction))
+
+
+
+
+def find_closest_node(coord):
+    shortest_distance = m.inf
+    shortest_distance_coordinates = (m.inf, m.inf)
+    for node in node_list:
+        distance = compute_distance(coord, node.center)
+        if distance < shortest_distance:
+            shortest_distance = distance
+            shortest_distance_coordinates = node.center
+            closest_node = node
+
+    return shortest_distance_coordinates, closest_node
+
+
+class TrussBeam:
+    def __init__(self, x_min, y_min, x_max, y_max, orientation):
+        self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
+        length = (x_min + x_max)/2
+        height = (y_min + y_max)/2
+        if orientation == "45":
+            self.leftmost_point = (x_min, y_max)
+            self.rightmost_point = (x_max, y_min)
+        elif orientation == "135":
+            self.leftmost_point = (x_min, y_min)
+            self.rightmost_point = (x_max, y_max)
+        elif orientation == "0":
+            if length > height:
+                self.leftmost_point = (x_min + length/2, y_min)
+                self.rightmost_point = (x_min + length/2, y_max)
+            else:
+                self.leftmost_point = (x_min, y_min + height/2)
+                self.rightmost_point = (x_max, y_min + height/2)
+
+        def connected_nodes():
+            node1 = find_closest_node(self.leftmost_point)
+            node2 = find_closest_node(self.rightmost_point)
+            return [node1, node2]
+
+        self.nodes = connected_nodes()
+
+
+
+
+class Node:
+    def __init__(self, x_min, y_min, x_max, y_max):
+        self.x_min, self.y_min, self.x_max, self.y_max = x_min, y_min, x_max, y_max
+        self.center = ((x_max + x_min)/2, (y_max + y_min)/2)
+
+    def relax_nodes(self):
+        for node in node_list:
+            print("Mamma")
+
+
+    def draw(self):
+        m_cnv.create_oval(self.x_min, self.y_min, self.x_max, self.y_max, fill="")
+
+
+class Truss:
+    def __init__(self, nodes, connecters):
+        self.nodes = nodes
+        self.connectors = connecters
+
+
+def get_objects():
+    df = pd.read_csv(r'C:\Users\admin\Documents\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
+    df1 = df[["xmin", "ymin", "xmax", "ymax", "label"]]
+    list_of_objects = []
+    return (df1)
+
+
+def draw_all_objects():
+    labels = ["RollerSupport", "PinSupport", "Beam", "Node", "ArrowDown", "ArrowUp", "ArrowCounterClockwise",
+                  "ArrowClockwise", "Beam45", "Beam135", "Ground", "LoadUp", "LoadRight", "LoadDown"]
+    objects = get_objects()
+    m_x = interp1d([0, 4000], [0, 1000])
+    m_y = interp1d([0, 4000], [1000, 0])
+    for index, row in objects.iterrows():
+        type = labels[row[4]]
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_x(row[1])), float(m_x(row[2])), float(m_x(row[3]))
+        if type == "Beam":
+            beam = Beam(x_min, y_min, x_max, y_max)
+            beam.draw()
+
+    for index, row in objects.iterrows():
+        print(index)
+        type = labels[row[4]]
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_x(row[1])), float(m_x(row[2])), float(m_x(row[3]))
+        if type == "ArrowDown":
+            force = Force(x_min, y_min, x_max, y_max, "Down")
+            force.draw()
+
+        elif type == "ArrowUp":
+            force = Force(x_min, y_min, x_max, y_max, "Up")
+            force.draw()
+
+        elif type == "PinSupport":
+            pin = PinSupport(x_min, y_min, x_max, y_max)
+            pin.draw()
+
+        elif type == "RollerSupport":
+            roller = RollerSupport(x_min, y_min, x_max, y_max)
+            roller.draw()
+
+        elif type == "LoadUp":
+            load = Load(x_min, y_min, x_max, y_max, "Up")
+            load.draw()
+
+        elif type == "LoadDown":
+            load = Load(x_min, y_min, x_max, y_max, "Down")
+            load.draw()
+
+        #elif type == "ArrowClockwise":
+        #   moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", )
+
+# beam1 = Beam(100, 550, 600, 650)
+# beam1.draw()
+# arrow1 = Force(150, 100, 175, 150, "Up")
+# arrow1.draw()
+# pin1 = PinSupport(300, 700, 356, 750, 0.15)
+# pin1.draw()
+# roll = RollerSupport(300, 500, 350, 650)
+# roll.draw()
+# rolll = RollerSupport(10, 550, 100, 650)
+# rolll.draw()
+# moment = Moment(750, 550, 800, 650, "Clockwise", "Bottom")
+# moment.draw()
+# m_cnv.create_line(400, 550, 400, 650, fill="red")
+# load = Load(100, 450, 400, 550, "Up")
+# load.draw()
+
+
+draw_all_objects()
+mainloop()
