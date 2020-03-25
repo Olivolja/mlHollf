@@ -45,9 +45,6 @@ class Beam:
         self.objects = {"Forces": [], "Loads": [], "Pins": [], "Rollers": [], "Moments": [], "Fixed": []}
         if x_max - x_min > y_max - y_min:
             self.length = x_max - x_min
-            self.height = 10
-            self.y_max = y_mid + 5
-            self.y_min = y_mid - 5
             self.x_max = x_max
             self.x_min = x_min
             self.y_mid = (self.y_max + self.y_min)/2
@@ -60,9 +57,6 @@ class Beam:
 
         else:
             self.length = y_max - y_min
-            self.height = 10
-            self.x_max = x_mid + 5
-            self.x_min = x_mid - 5
             self.y_min = y_min
             self.y_max = y_max
             self.x_mid = (self.x_max + self.x_min)/2
@@ -376,7 +370,6 @@ def find_closest_node(coord):
 
     return shortest_distance_coordinates, closest_node
 
-""" 
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
@@ -422,20 +415,6 @@ class Node:
         self.center = ((x_max + x_min)/2, (y_max + y_min)/2)
         self.number = 0
         node_list.append(self)
-
-        def get_beams():
-            beams = []
-            for beam in truss_beams:
-                d_max = find_closest_node(self.center)
-                d = compute_distance(self.center, beam.center)
-                if d < d_max:
-                    self.beams.append(beam)
-            return beams
-
-        self.beams = get_beams()
-        for beam in self.beams:
-            if beam.orientation == 0 and beam.center[1] not in range(self.center[1] * 0.8, self.center[1] * 1.2):
-                self.beams.remove(beam)
                 
     def draw(self):
         m_cnv.create_oval(self.x_min, self.y_min, self.x_max, self.y_max, fill="")
@@ -446,29 +425,60 @@ class Truss:
         self.nodes = nodes
         self.beams = truss_beams
 
-        def find_start_node():
-            x_min, y_max = m.inf, m.inf
-            for node in nodes:
-                if node.x_min <= x_min and node.y_max <= y_max:
-                    x_min = node.x_min
-                    y_max = node.y_max
-                    start_node = node
-            return start_node
+        # Find the start node
+        x_min = m.inf
+        for node in self.nodes:
+            if node.x_min <= x_min:
+                x_min = node.x_min
+                start_node = node
 
-        layers = {}
-        start_node = find_start_node()
-        layers[0] = [start_node]
-        temp = self.nodes
+        # Moves the start node to the first element in the list
+        index_sn = self.nodes.index(start_node)
+        self.nodes.pop(index_sn)
+        self.nodes.insert(0, start_node)
+
+        # Connect nodes
+        for beam in self.beams:
+            for node in self.nodes:
+                if node in beam.nodes:
+                    node.beams.append[beam]
+                    i = beam.nodes.index(node)
+                    if i == 0:
+                        node.connected_nodes.append(beam.nodes[1])
+                    elif i == 1:
+                        node.connected_nodes.append(beam.nodes[0])
+
+        def get_beam (node_1, node_2):
+            beams = node_1.beams
+            for beam in beams:
+                if node_1 and node_2 in beam.nodes:
+                    return beam
+                else:
 
 
-        for beam in start_node.beams:
-            if beam.orientation == 0:
-                layers[0].append(beam.nodes[1])
-            elif beam.orientation == 45:
-                layers[1] = beam.nodes[1]
-            elif beam.orientation == 135:
-                layers[-1] = beam.nodes[1]
- """
+
+
+        # Aligns the nodes horizontally
+        layers = {0: {start_node}}
+        start_node.layer = 0
+        temp = [start_node]
+        finished = []
+        while finished != self.nodes:
+            for node in temp:
+                temp.append(node.connected_nodes)
+                temp.remove(node)
+                finished.append(node)
+                for node_2 in temp:
+                    beam = get_beam(node_1, node_2)
+                    angle = beam.orientation
+                    if angle == 0:
+                        node_2.layer = node.layer
+                        layers[node.layer].add(node_2)
+                    elif angle == 45:
+
+            
+
+
 def get_objects():
     try:
         df = pd.read_csv(r'C:\Users\admin\Documents\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
@@ -479,6 +489,7 @@ def get_objects():
     list_of_objects = [] # behövs ej va?
     df1 = delete_overlapping_objects(df1)
     return (df1)
+
 
 def delete_overlapping_objects(objects):
     for index1, obj1 in objects.iterrows():
@@ -502,6 +513,8 @@ def delete_overlapping_objects(objects):
                 elif type1 in ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"] and type2 in ["LoadUp", "LoadDown"]:
                     objects = objects.drop(index1, axis=0)
     return objects
+
+
 def draw_all_objects():
     objects = get_objects()
     m_x = interp1d([0, 4000], [0, 1000])
