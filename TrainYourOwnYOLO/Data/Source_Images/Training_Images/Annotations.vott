@@ -1,0 +1,625 @@
+{
+    "name": "Annotations",
+    "securityToken": "Annotations Token",
+    "sourceConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZjI5YmJiODljOTA1ZDI5OGNlNmQyZDNkZGZmMWRkNTdkYzExNDVhMGMzZjZhMDdjNzA0ZDQ2MWY1NDI2ODc0NDAxYWJmNDFlZTg0NGE0OTU2NDBjMDIyMzVjNjYyNGYyODk1Zjc4Y2Q1NWJlOGE0MzI4MTBkNTExNjFlZGRlMzg1YmE0ODg5Y2MyNTIzZTA3ZTQyMjY2MGY4ZjkxYmZjY2E3MTFjN2E4NjE0MTk4ZDUwZWNmMjdlM2I5MTk1MzkwMWRhMTE2OTM2ZWY2YzI3NDMyMTJlM2EwNjMzZGU4N2IiLCJpdiI6IjY5OTdkZTlmYWNlYTUxMWJjNTBhYmEzYzQzMzIwM2ZlNGMzMzVjODJhYjhkZDljNCJ9"
+        },
+        "id": "hYfZEWaK1"
+    },
+    "targetConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDdlY2JjOTM1ZjE4MjE5NTYzNTZlYTJiNTZkYjQ0YTIzNGQ0YmJmY2E5NDA1M2Y3YmM1MmQ1MWExNTIzMjkzOTk3ZmExZjY0MmRkNGI2YWY0MTMwZTI4YTM1NTk5ZmY1YmYxMmU5OTQ4NWFhOGMyZTgzNWMzYzI5Njc1MGI5Y2U4ZGVmMmJkNzRiODMzMjcxM2JjNmQ1YTg0NDM5YzdhNTk3MWZmODM2NjI3YzcwYjZhMzhhNzA3MDhiZTBiMjg2MTc0OWE2ZjA3OTg1ZjFmYmUwNGIwZWFjN2M1ZDU3MWQiLCJpdiI6ImJjMWY2MTQ1NThhYjEyYjk2NGQwNjc0ZjlhZjE1ZjlkY2ZmMjk1ODlhZGFlNjIxMSJ9"
+        },
+        "id": "hYfZEWaK1"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "support",
+            "color": "#5db300"
+        },
+        {
+            "name": "roller_support",
+            "color": "#e81123"
+        },
+        {
+            "name": "arrow_up",
+            "color": "#6917aa"
+        },
+        {
+            "name": "arrow_down",
+            "color": "#015cda"
+        },
+        {
+            "name": "arrow_left",
+            "color": "#4894fe"
+        },
+        {
+            "name": "arrow_right",
+            "color": "#6b849c"
+        },
+        {
+            "name": "ground",
+            "color": "#70c400"
+        },
+        {
+            "name": "clockwise_right",
+            "color": "#f7929a"
+        },
+        {
+            "name": "clockwise_top",
+            "color": "#257ffe"
+        },
+        {
+            "name": "clockwise_left",
+            "color": "#ddabe9"
+        },
+        {
+            "name": "clockwise_bottom",
+            "color": "#ff8c00"
+        },
+        {
+            "name": "counterclockwise_right",
+            "color": "#386300"
+        },
+        {
+            "name": "counterclockwise_top",
+            "color": "#b40e1b"
+        },
+        {
+            "name": "counterclockwise_left",
+            "color": "#68217a"
+        },
+        {
+            "name": "counterclockwise_bottom",
+            "color": "#33cccc"
+        },
+        {
+            "name": "load_down",
+            "color": "#016afe"
+        },
+        {
+            "name": "beam_line",
+            "color": "#808080"
+        },
+        {
+            "name": "beam_thicc",
+            "color": "#990066"
+        },
+        {
+            "name": "beam__line_45",
+            "color": "#00bcf2"
+        },
+        {
+            "name": "beam_thicc_45",
+            "color": "#5db300"
+        },
+        {
+            "name": "beam_line_90",
+            "color": "#e81123"
+        },
+        {
+            "name": "beam_thicc_90",
+            "color": "#6917aa"
+        },
+        {
+            "name": "beam_line_135",
+            "color": "#015cda"
+        },
+        {
+            "name": "beam_thicc_135",
+            "color": "#4894fe"
+        },
+        {
+            "name": "load_up",
+            "color": "#6b849c"
+        },
+        {
+            "name": "node",
+            "color": "#70c400"
+        }
+    ],
+    "id": "lQowgh5FD",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "csv",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiN2Y2MWU2OTI1N2Y5NzNmNjY1NTA2YWIzYmVmMmI3ZjkxNTBhYWU4NjVmZDE4ZDg4ZmFhZTE1YzVmNjVlZTU2OGVjOWNjYzlkMzlmYzlhZTMyYjZhODZmYWU1ZWE3YzgyIiwiaXYiOiIzMGIzOWI4NTZiMTYyMWFmYTczNjNmNmQ5YjA1ZWU5ZGFjOGZlY2UwOTU5Mjk4NzAifQ=="
+        }
+    },
+    "version": "2.1.0",
+    "lastVisitedAssetId": "5da07fd20b20fad35670c829e30efa61",
+    "assets": {
+        "1876c778cb952c2fa66b83ee74db3cbc": {
+            "format": "jpg",
+            "id": "1876c778cb952c2fa66b83ee74db3cbc",
+            "name": "20200322_221403.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221403.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cc744d7a2c127a46680386ead2466f0e": {
+            "format": "jpg",
+            "id": "cc744d7a2c127a46680386ead2466f0e",
+            "name": "20200322_221428.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221428.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5b62cee401ed629d9a6d3750a1b41aff": {
+            "format": "jpg",
+            "id": "5b62cee401ed629d9a6d3750a1b41aff",
+            "name": "20200322_221422.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221422.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c2c96b23a65362451fa4eee3d539317c": {
+            "format": "jpg",
+            "id": "c2c96b23a65362451fa4eee3d539317c",
+            "name": "20200322_221439.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221439.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "17596d7384acf16d7816c78629d448de": {
+            "format": "jpg",
+            "id": "17596d7384acf16d7816c78629d448de",
+            "name": "20200322_221408.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221408.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d679ce7b789eeddc18eeb440116e30fb": {
+            "format": "jpg",
+            "id": "d679ce7b789eeddc18eeb440116e30fb",
+            "name": "20200322_221446.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221446.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a8a7e7a07ca12b601aac5a1f58a10504": {
+            "format": "jpg",
+            "id": "a8a7e7a07ca12b601aac5a1f58a10504",
+            "name": "20200322_221454.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221454.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "80615ce48ad389e7ecba42260687d5fc": {
+            "format": "jpg",
+            "id": "80615ce48ad389e7ecba42260687d5fc",
+            "name": "20200322_221503.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221503.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "55e09e5af08da044900ec747464bef34": {
+            "format": "jpg",
+            "id": "55e09e5af08da044900ec747464bef34",
+            "name": "20200322_221507.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221507.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "41aaa328bf884c20cfd5de3ed1972d88": {
+            "format": "jpg",
+            "id": "41aaa328bf884c20cfd5de3ed1972d88",
+            "name": "20200322_221522.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221522.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a3537081ee93ea2ea1929f2f51c85d86": {
+            "format": "jpg",
+            "id": "a3537081ee93ea2ea1929f2f51c85d86",
+            "name": "20200322_221542.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221542.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9de30fa383a2a13db6262687e4289513": {
+            "format": "jpg",
+            "id": "9de30fa383a2a13db6262687e4289513",
+            "name": "20200322_221552.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221552.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f5493f253885c5ceba4e8365f0886975": {
+            "format": "jpg",
+            "id": "f5493f253885c5ceba4e8365f0886975",
+            "name": "20200322_221558.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221558.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cef89e8fc7cca083cdb4ab111f42988f": {
+            "format": "jpg",
+            "id": "cef89e8fc7cca083cdb4ab111f42988f",
+            "name": "20200322_221603.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221603.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e9ab12da8b66f16139febf2272c78fff": {
+            "format": "jpg",
+            "id": "e9ab12da8b66f16139febf2272c78fff",
+            "name": "20200322_221611.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221611.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "68466b9000268ac1b720c33c5f0f4679": {
+            "format": "jpg",
+            "id": "68466b9000268ac1b720c33c5f0f4679",
+            "name": "20200322_221617.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221617.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "09e5fa3f285695b7d943a01a28188fd1": {
+            "format": "jpg",
+            "id": "09e5fa3f285695b7d943a01a28188fd1",
+            "name": "20200322_221622.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221622.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 1,
+            "type": 1
+        },
+        "9728c51539476f54a9ba1d84167bd73b": {
+            "format": "jpg",
+            "id": "9728c51539476f54a9ba1d84167bd73b",
+            "name": "20200322_221702.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221702.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9e2e9cbf7e0f1be15a6edb53b31595a8": {
+            "format": "jpg",
+            "id": "9e2e9cbf7e0f1be15a6edb53b31595a8",
+            "name": "20200322_221722.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221722.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6c56afd6db10971b0734bf0272319292": {
+            "format": "jpg",
+            "id": "6c56afd6db10971b0734bf0272319292",
+            "name": "20200322_221727.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221727.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bf176b4b65352713ecddb7a05a554105": {
+            "format": "jpg",
+            "id": "bf176b4b65352713ecddb7a05a554105",
+            "name": "20200322_221733.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221733.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "265848e0849df8d43be8513c935e4fe7": {
+            "format": "jpg",
+            "id": "265848e0849df8d43be8513c935e4fe7",
+            "name": "20200322_221741.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221741.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bd7e1fed1aa09b03fb8f28da2ce7b1bf": {
+            "format": "jpg",
+            "id": "bd7e1fed1aa09b03fb8f28da2ce7b1bf",
+            "name": "20200322_221751.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221751.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "837a0ec3f63ff9ba8c6cbaa3a78e6174": {
+            "format": "jpg",
+            "id": "837a0ec3f63ff9ba8c6cbaa3a78e6174",
+            "name": "20200322_221758.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221758.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1f51768f57b8fa4dc97ecf2d9bd53163": {
+            "format": "jpg",
+            "id": "1f51768f57b8fa4dc97ecf2d9bd53163",
+            "name": "20200322_221802.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221802.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e5071b021b1c2b0ebaffafb3c9f4549d": {
+            "format": "jpg",
+            "id": "e5071b021b1c2b0ebaffafb3c9f4549d",
+            "name": "20200322_221804.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221804.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "24e5de42a4f27cc41699b6a8cea66163": {
+            "format": "jpg",
+            "id": "24e5de42a4f27cc41699b6a8cea66163",
+            "name": "20200322_221806.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221806.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2d86665f4ac782c63e6eee0318922081": {
+            "format": "jpg",
+            "id": "2d86665f4ac782c63e6eee0318922081",
+            "name": "20200322_221812.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221812.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7c4eb699fdff4737bfe53c65b03757da": {
+            "format": "jpg",
+            "id": "7c4eb699fdff4737bfe53c65b03757da",
+            "name": "20200322_221814.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221814.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d6a553d2aeeec1d671650a9f666901ee": {
+            "format": "jpg",
+            "id": "d6a553d2aeeec1d671650a9f666901ee",
+            "name": "20200322_221817.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221817.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fee0bd785e16f04910643a25373dd639": {
+            "format": "jpg",
+            "id": "fee0bd785e16f04910643a25373dd639",
+            "name": "20200322_221820.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221820.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 1,
+            "type": 1
+        },
+        "8cb40f3f6515483b339fd23330416802": {
+            "format": "jpg",
+            "id": "8cb40f3f6515483b339fd23330416802",
+            "name": "20200322_221827.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221827.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a5beebaae05423425d14fc6556aa5d67": {
+            "format": "jpg",
+            "id": "a5beebaae05423425d14fc6556aa5d67",
+            "name": "20200322_221835.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221835.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "914818406bb4f17070f72f9ff2a09715": {
+            "format": "jpg",
+            "id": "914818406bb4f17070f72f9ff2a09715",
+            "name": "20200322_221839.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221839.jpg",
+            "size": {
+                "width": 1306,
+                "height": 2322
+            },
+            "state": 1,
+            "type": 1
+        },
+        "0871c2ee4781c31b108e942f5a99c670": {
+            "format": "jpg",
+            "id": "0871c2ee4781c31b108e942f5a99c670",
+            "name": "20200322_221842.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221842.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "708eb8d483545e3e476a140a2724547f": {
+            "format": "jpg",
+            "id": "708eb8d483545e3e476a140a2724547f",
+            "name": "20200322_221844.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221844.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "713cfe4f65268df4ebb019f98805c652": {
+            "format": "jpg",
+            "id": "713cfe4f65268df4ebb019f98805c652",
+            "name": "20200322_221850.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221850.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 1,
+            "type": 1
+        },
+        "5da07fd20b20fad35670c829e30efa61": {
+            "format": "jpg",
+            "id": "5da07fd20b20fad35670c829e30efa61",
+            "name": "20200322_221853.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221853.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 1,
+            "type": 1
+        },
+        "bd1ff9a3b9316f5f890aa432392fd775": {
+            "format": "jpg",
+            "id": "bd1ff9a3b9316f5f890aa432392fd775",
+            "name": "20200322_221905.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221905.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 1,
+            "type": 1
+        },
+        "7c6480d739e3c62888fc4e58621a845b": {
+            "format": "jpg",
+            "id": "7c6480d739e3c62888fc4e58621a845b",
+            "name": "20200322_221908.jpg",
+            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221908.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 1,
+            "type": 1
+        }
+    }
+}
