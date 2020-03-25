@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "a3ad919e2b09a18992a29d234637ca97",
         "name": "a0200322_222247.jpg",
-        "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/training2/a0200322_222247.jpg",
+        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/training2/a0200322_222247.jpg",
         "size": {
             "width": 4032,
             "height": 3024
@@ -261,6 +261,37 @@
                 {
                     "x": 1132.291681839248,
                     "y": 2128.7594263109113
+                }
+            ]
+        },
+        {
+            "id": "-6DEpSc5o",
+            "type": "RECTANGLE",
+            "tags": [
+                "ground"
+            ],
+            "boundingBox": {
+                "height": 246.02036505230404,
+                "width": 710.7255280058263,
+                "left": 2929.6068839380296,
+                "top": 0
+            },
+            "points": [
+                {
+                    "x": 2929.6068839380296,
+                    "y": 0
+                },
+                {
+                    "x": 3640.332411943856,
+                    "y": 0
+                },
+                {
+                    "x": 3640.332411943856,
+                    "y": 246.02036505230404
+                },
+                {
+                    "x": 2929.6068839380296,
+                    "y": 246.02036505230404
                 }
             ]
         }

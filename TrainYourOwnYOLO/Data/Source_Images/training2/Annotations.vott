@@ -2,18 +2,18 @@
     "name": "Annotations",
     "securityToken": "Annotations Token",
     "sourceConnection": {
-        "name": "training2",
+        "name": "TrainingImagezz",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZTIwNzYyMjk1ZGVkMWJkNDFlOTFkZGEzZTZiZDA1NDdmZTJjMzNiMDJlMjZmZjk2NjkwYTQ3ZTM3ZjdlNWJjM2RjZDQzYzg2YzBiNjFjZDdjNDc5MTVmMDE0MjY3NTk0ODg1NTMxNjFiODg2YWZkMzJiNmY1ZDNmNzZjZGFkYjZiNTY2NDk3MDE4NmM1Mzc4MmE3Mjg0YTIyN2I3YTAyODI5OWY2YjhmOWM5NGUwYjVjZGRjOGJjZGQwZmZjMWNjMGRkNDYwMGVkZDY5YzkyMGEzODE0MDc5ZjJmZDAxN2UzYjU0NDdiZDc3Y2YzN2Y4ZGE2MzM3ZGFhODViZGY2NSIsIml2IjoiNWVjOGZkMjYzZTZiN2IxN2M0MjE4ZTdlNGJhNDVhYzQzMGM4YTU1NzM2YWJlNzk2In0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZWIzYWE2ZGJhN2I3OWEyNDZmZWViZGYwZjZjOTNkODM1MWE1ZDE2NDBkYzZlZDVmNTc0NzhmOTlkMjdkYzFlMzVlOWMzOGY1MjAxY2YwZjRlZWViNGIzNWFkYThjZGNmYTAwNjllZDRkMGRlNGE2NjhlNmU0N2JjNGE5MGFjOWY0Y2FiOTNiNzFmNmI3ODNmOTA3YjA4NzUyN2E2OTEwN2Y0ZjMzZThmYzNkY2MwNzM0MTQ5NTY1YTU0Zjk3Y2UwMDMyZTUwY2RhMTkwNTllYzdhODkwMGRhOTliMWZkM2MyMTJmZmFlNjRkOTk3MmZkZGJkZTgwYzI3ZTQ2ZGU2ZSIsIml2IjoiMzhhY2IzNjA0NjQ3NmIyZWE3NDBlYzhjNGI2MjEwMzA1Yjg0NTdkZmFhOWY4OGM0In0="
         },
-        "id": "PqvaTOwHm"
+        "id": "8IRDseHM4"
     },
     "targetConnection": {
         "name": "training2",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMzE0M2M2OWEzMzY3MmMyYjMwNmRmZjRkZDA3NjE5ZGMwZThjY2Q3NWY0ZDMzZWM3MWQwNWQzMzY4Y2VjMTFmN2ZhMDg2ZjRkZjU2OTRiMzc5NmFmOGUyZjY5Y2Q1NDAyOTM5YTgwMzc1Yzc2MTQ0N2ZjOWFmZjcyM2EyZWVmYjU1ZmE3ODJmZjM1OTRlOTBlYzkwYWMxM2I1YjFmMzNmNGY2YjFmYTRjNjY2Nzg2YzZkYjBlODc0NDJmOGFmZmQ5NDMwM2E5NTI4NmQ1ZDQ4N2VjOTI4NDJmZTFkMGVlZjJiZWUyZmQ5MWU3ZTI5Y2E5ODA3MjU5OGYwNDJiNDQzMiIsIml2IjoiOWNiMGI2ZmRkMzYwNjUxYzY3NmJiZWEzMzFkMDQzNTY1MTk4ZmZkOWM5Y2I0MTlhIn0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMTIxMDFkNGMwMzcyODEzOGI1NThiZWVjYzI1ZjU5N2I2Y2U2ZmQ0ZDA1YmNmMDA3NzVhMmVkZjVhNTlhNGE3ZGM4MDU0ODgyMzczNzc5N2RjZmZjZDQwODg3NGI3NGMyYmZlZDJhYTU2ODg2OTg1YjJhNDY4ZDk3NzE3MWZiYTNiNjVmZGZkMWMwNTk3YzBkNGQ1MGMyZGZlNTM0MzE2NjNkZGFiNjMxMTYwNzZhYjY5YzE5NTljNGZlNmUxNzJlNDJhMjliMDBjYjAwM2RkM2IyNjliZDNlNGRjNWVmYjRjNDNhODY1OGFmZDhmMzFjM2YwNzA5YTljZWE4MDU4MiIsIml2IjoiYWI3NTJmY2M5MjAwMmQ4NjZkY2Y3NDU1NjJhNTcxZTI5ZDEzNTU1ODQ5NTUwNjZkIn0="
         },
         "id": "PqvaTOwHm"
     },
@@ -135,11 +135,11 @@
     "exportFormat": {
         "providerType": "csv",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMTM5Nzk2YWZkYTQ5NjlkYjRmZDljZmIzNzljMzA4YWJhZTdhMmM5YWJlMTZmMWFiY2VmYWE3MmJlNjZkNDlhMmZhNTc3MGNhYTYwOTI2ODkxN2E0OWQ5YWM3MDg1NTJjIiwiaXYiOiI5YWUwM2M1YTM0NzZkNGFmY2E2ODFhNmY2ZWNhODdkOWE5MDJkZTI4YWJmMjk3NTkifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNzExMmVhNWUxZmFiNDhhMTJjZWZiNWQ4MmJhOWRmYzNlOTliNzJlMDIyYWFiNDk1MDEzZGE1Y2UyZWY0YmI1ODk3MDM4NmY5Mzg2YmVmMWM5MzAyZDY5MDFlZDlmNWE4IiwiaXYiOiJhOTFiZTNmZjlmYmI5YWI2NGM0NTc0ZTU5NTUyMzM1MDM4YzgyYjZmNTQ5YTNkNjMifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "a66228a9c10f46a5e0f3b959c5597e83",
+    "lastVisitedAssetId": "2fe72d92f93eea77b170d2e8bc81d8fa",
     "assets": {
         "a9175bec6ae5b865c9f06753961fe904": {
             "format": "jpg",
@@ -1759,6 +1759,30 @@
                 "height": 3024
             },
             "state": 2,
+            "type": 1
+        },
+        "96e63d3a1d0daf048dbc0888780cba1e": {
+            "format": "jpg",
+            "id": "96e63d3a1d0daf048dbc0888780cba1e",
+            "name": "20200322_221403.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221403.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 1,
+            "type": 1
+        },
+        "59c8f1c1306024696c748d55f78812a3": {
+            "format": "jpg",
+            "id": "59c8f1c1306024696c748d55f78812a3",
+            "name": "20200322_221408.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221408.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 1,
             "type": 1
         }
     }

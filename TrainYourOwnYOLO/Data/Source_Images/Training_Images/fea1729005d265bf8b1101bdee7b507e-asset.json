@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "fea1729005d265bf8b1101bdee7b507e",
         "name": "20200324_112246.jpg",
-        "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/training2/20200324_112246.jpg",
+        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/training2/20200324_112246.jpg",
         "size": {
             "width": 3024,
             "height": 3024
