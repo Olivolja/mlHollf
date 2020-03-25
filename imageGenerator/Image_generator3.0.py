@@ -45,6 +45,9 @@ class Beam:
         self.objects = {"Forces": [], "Loads": [], "Pins": [], "Rollers": [], "Moments": [], "Fixed": []}
         if x_max - x_min > y_max - y_min:
             self.length = x_max - x_min
+            self.height = 4
+            self.y_max = y_mid + 2
+            self.y_min = y_mid - 2
             self.x_max = x_max
             self.x_min = x_min
             self.y_mid = (self.y_max + self.y_min)/2
@@ -57,6 +60,9 @@ class Beam:
 
         else:
             self.length = y_max - y_min
+            self.height = 4
+            self.x_max = x_mid + 2
+            self.x_min = x_mid - 2
             self.y_min = y_min
             self.y_max = y_max
             self.x_mid = (self.x_max + self.x_min)/2
@@ -369,6 +375,7 @@ def find_closest_node(coord):
             closest_node = node
 
     return shortest_distance_coordinates, closest_node
+
 
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
