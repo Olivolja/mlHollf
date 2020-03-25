@@ -2,25 +2,49 @@
     "name": "Annotations",
     "securityToken": "Annotations Token",
     "sourceConnection": {
-        "name": "Images",
+        "name": "TrainingImagezz",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOGY5ZDgwOGM0MTMzNWZiZTBiMzhhNmJhNTk5YzcwZTRlZWY0ZmRmNTIwNjNiYTUyM2NhZDQzOTJiMmUzMjk4NzIwN2M4YjBkOTJjZjdlY2U4MTFlYzVmOWU4ZmYyZDFiYTQyYzllZWVjZTFmYjc2YTZkYjFkMjIwMjZkM2UzNTY5OGMxYjZmMjQ0MTM3ZGY4ZDM4MjNjMWEzYThmMDZiOWJkMDhlNmQxN2ExMGE3ZWY3YzdkYjQxNjY5NmFiMDM1NDNiMmQ3MjMzYWRjMThhNDUxNWExM2NkZTkyM2E2NDUiLCJpdiI6IjQzNjYzOTdhNmJjZjBmNmM1NzZiOTQ4ODcwYTUyMDQ3ZDE4MzcwYjU0NTYxNjA1NyJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNmI2M2VhZjU1N2UwNTgzOTY4NWVjNWE5ZGNiOGZhZjcwZWFhYjQ4ODU0NzZlOWNhYzg0NWUwMzdlMzBiOWFmNjI3YWYwNWMwMzAxODM2ZjEwNGQxNjk1Y2Q4YjUyZDk5MGJhNzFlNDJlMzZmZDM3NjVkMjg0M2FhZDUzMDdlM2IxMGQ5YjE4ZWU2ZDFjYTAxODI3YjY1MDk2ZGI1MzFhYTc5NzVlZjk2NjNhYzE1N2Y5ZGM3ZTk0MTNlYzlmM2M0MjU3NDY2ZGQ3NTNmNmViNzljNGFmZDgxYWY4NDM5YjgxMTBkM2IwZWNlOGFjNzNhZDYxNjA4NjZhM2RhYzNlMyIsIml2IjoiYTJmZjEzMThjNmY2YjRmNDU0YmI2MTRlYzZlOTZjZjU1ZGNhYjc1ZDM3N2Q3MmNlIn0="
         },
-        "id": "hYfZEWaK1"
+        "id": "8IRDseHM4"
     },
     "targetConnection": {
-        "name": "Images",
+        "name": "TrainingImagezz",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNWU4YmY3ZjVkMmFiZGY0NTk0NjQ1Yjc3MDlhZTMwM2I0NDYyM2E1YmQyY2YwNGM2NWU0MzYzMWRhYTlhYjM5MmRkMGQ5NzM3Zjc3MTQ5M2NlMjQxMmQwY2U1NWEyOTFlYmEzYmUyODAzMGMyYzMwZjkyMTYzMmQ1ZTcwZmE3YWQwNDFjMzlmMzA4YTMzMTE2ZmJiNjcxMjM5ZjQ2ZGUyMTMyNzFkZTkzZDYxMjVjYjMxNjg1ODdmOWFkYWEyOTQ5YTc2MTQ2ZDMzMzk2ZmM2NzI1NTUyNzFlZDgyNTI2YzAiLCJpdiI6ImNkMDBmOTIxY2Q3MjlkOTFiMTEzNjkwM2NkZTk0OGIwYzdiOWZmZTM2YWVhNzkwNSJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYjliOWYyNWE0M2IyYzEzYzRhMmEzOGRlNTY5ZTYyZDMyY2MxYWVlMWE5ZmU0NDQ0ODExODFlYjI0ZTkxMTQyOGQxODhiMWU1OTRlOGQyYzlkMGVkYzIyYzRmMjY3YjBjYzUwMGI5ZDg3NDA2MjlmNmUyNDk3ZmQyYjQ5Yzk2ODgwNDUyZmE4YTBhZWUwZmM0OGVlZWM2ODJkYTk4NTZmMTc3OGI2YTAzMDFmZjMzYTY1NDQ0MWRmMjE2MDQ4ZDczZmU5ZmJlZDU3MjU3MmVjN2Y3YjA3NTA5NTcwNzU1MmRhYTk3YTc0ZjViZjE4ODFhNzg2MGMyM2M5ZDU2OTNkYiIsIml2IjoiY2Q3MDdmNzI2NmNjYzlkM2E3Nzg0ZWY0OWEzZDI1Mjg2ZWNjNTA5YTY4NzllNmYyIn0="
         },
-        "id": "hYfZEWaK1"
+        "id": "8IRDseHM4"
     },
     "videoSettings": {
         "frameExtractionRate": 15
     },
     "tags": [
+        {
+            "name": "beam_line",
+            "color": "#808080"
+        },
+        {
+            "name": "beam_line_45",
+            "color": "#00bcf2"
+        },
+        {
+            "name": "beam_line_90",
+            "color": "#e81123"
+        },
+        {
+            "name": "beam_line_135",
+            "color": "#6b849c"
+        },
+        {
+            "name": "node",
+            "color": "#595959"
+        },
+        {
+            "name": "ground",
+            "color": "#70c400"
+        },
         {
             "name": "support",
             "color": "#5db300"
@@ -44,10 +68,6 @@
         {
             "name": "arrow_right",
             "color": "#6b849c"
-        },
-        {
-            "name": "ground",
-            "color": "#70c400"
         },
         {
             "name": "clockwise_right",
@@ -82,47 +102,27 @@
             "color": "#33cccc"
         },
         {
-            "name": "load_down",
-            "color": "#016afe"
-        },
-        {
-            "name": "beam_line",
-            "color": "#808080"
-        },
-        {
             "name": "beam_thicc",
             "color": "#990066"
-        },
-        {
-            "name": "beam__line_45",
-            "color": "#00bcf2"
         },
         {
             "name": "beam_thicc_45",
             "color": "#5db300"
         },
         {
-            "name": "beam_line_90",
-            "color": "#e81123"
-        },
-        {
             "name": "beam_thicc_90",
             "color": "#6917aa"
-        },
-        {
-            "name": "beam_line_135",
-            "color": "#015cda"
         },
         {
             "name": "beam_thicc_135",
             "color": "#4894fe"
         },
         {
-            "name": "load_up",
+            "name": "load_down",
             "color": "#6b849c"
         },
         {
-            "name": "node",
+            "name": "load_up",
             "color": "#70c400"
         }
     ],
@@ -135,17 +135,17 @@
     "exportFormat": {
         "providerType": "csv",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZGQ3NTI1YTE0MmYyYmU1YjY1ZmM3MTA1NjI4MGEwMGJkOTk0ZWUzNDBiOTE1YmU2OWMzZWQ2NzhiNmE2Nzg4OTEyM2I2ZTBhYzAzYTU0MjZkNjkzZmNiNmE1OWExNTRhIiwiaXYiOiI2Y2QzNDNmOTRhOTIyZTZhOWRkODM4ZDU5MjIxZGMyNWQzNmY4NDI0NmEyMjU3ODQifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYzY2NTY2Zjg3Yjk4Nzk0OGExYjc3Mzg3MjhhMzhjOWIzMWRmMWFhNzRhMWQ2MTZhM2FjNTdmZTcxOTlhZDY2NjRmMTQ3YzE5ZTViZWJiNGQxOTcyY2RmNzk1MDAzNzM3IiwiaXYiOiI2MzY2MjA1NGMxZjMzOThhYThhOTcxMWY2YWQ1MTRlMmMzZjc5OTA2NDBhOGYyZWIifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "ac2db39a800a3f85b82a392934287a7d",
+    "lastVisitedAssetId": "e9ab12da8b66f16139febf2272c78fff",
     "assets": {
         "1876c778cb952c2fa66b83ee74db3cbc": {
             "format": "jpg",
             "id": "1876c778cb952c2fa66b83ee74db3cbc",
             "name": "20200322_221403.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221403.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221403.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -157,7 +157,7 @@
             "format": "jpg",
             "id": "cc744d7a2c127a46680386ead2466f0e",
             "name": "20200322_221428.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221428.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221428.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -169,7 +169,7 @@
             "format": "jpg",
             "id": "5b62cee401ed629d9a6d3750a1b41aff",
             "name": "20200322_221422.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221422.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221422.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -181,7 +181,7 @@
             "format": "jpg",
             "id": "c2c96b23a65362451fa4eee3d539317c",
             "name": "20200322_221439.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221439.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221439.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -193,7 +193,7 @@
             "format": "jpg",
             "id": "17596d7384acf16d7816c78629d448de",
             "name": "20200322_221408.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221408.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221408.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -205,7 +205,7 @@
             "format": "jpg",
             "id": "d679ce7b789eeddc18eeb440116e30fb",
             "name": "20200322_221446.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221446.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221446.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -217,7 +217,7 @@
             "format": "jpg",
             "id": "a8a7e7a07ca12b601aac5a1f58a10504",
             "name": "20200322_221454.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221454.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221454.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -229,7 +229,7 @@
             "format": "jpg",
             "id": "80615ce48ad389e7ecba42260687d5fc",
             "name": "20200322_221503.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221503.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221503.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -241,7 +241,7 @@
             "format": "jpg",
             "id": "55e09e5af08da044900ec747464bef34",
             "name": "20200322_221507.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221507.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221507.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -253,7 +253,7 @@
             "format": "jpg",
             "id": "41aaa328bf884c20cfd5de3ed1972d88",
             "name": "20200322_221522.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221522.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221522.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -265,7 +265,7 @@
             "format": "jpg",
             "id": "a3537081ee93ea2ea1929f2f51c85d86",
             "name": "20200322_221542.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221542.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221542.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -277,7 +277,7 @@
             "format": "jpg",
             "id": "9de30fa383a2a13db6262687e4289513",
             "name": "20200322_221552.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221552.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221552.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -289,7 +289,7 @@
             "format": "jpg",
             "id": "f5493f253885c5ceba4e8365f0886975",
             "name": "20200322_221558.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221558.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221558.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -301,7 +301,7 @@
             "format": "jpg",
             "id": "cef89e8fc7cca083cdb4ab111f42988f",
             "name": "20200322_221603.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221603.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221603.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -313,7 +313,7 @@
             "format": "jpg",
             "id": "e9ab12da8b66f16139febf2272c78fff",
             "name": "20200322_221611.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221611.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221611.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -325,7 +325,7 @@
             "format": "jpg",
             "id": "68466b9000268ac1b720c33c5f0f4679",
             "name": "20200322_221617.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221617.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221617.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -337,7 +337,7 @@
             "format": "jpg",
             "id": "09e5fa3f285695b7d943a01a28188fd1",
             "name": "20200322_221622.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221622.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221622.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -349,7 +349,7 @@
             "format": "jpg",
             "id": "9728c51539476f54a9ba1d84167bd73b",
             "name": "20200322_221702.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221702.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221702.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -361,7 +361,7 @@
             "format": "jpg",
             "id": "9e2e9cbf7e0f1be15a6edb53b31595a8",
             "name": "20200322_221722.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221722.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221722.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -373,7 +373,7 @@
             "format": "jpg",
             "id": "6c56afd6db10971b0734bf0272319292",
             "name": "20200322_221727.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221727.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221727.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -385,7 +385,7 @@
             "format": "jpg",
             "id": "bf176b4b65352713ecddb7a05a554105",
             "name": "20200322_221733.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221733.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221733.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -397,7 +397,7 @@
             "format": "jpg",
             "id": "265848e0849df8d43be8513c935e4fe7",
             "name": "20200322_221741.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221741.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221741.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -409,7 +409,7 @@
             "format": "jpg",
             "id": "bd7e1fed1aa09b03fb8f28da2ce7b1bf",
             "name": "20200322_221751.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221751.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221751.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -421,7 +421,7 @@
             "format": "jpg",
             "id": "837a0ec3f63ff9ba8c6cbaa3a78e6174",
             "name": "20200322_221758.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221758.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221758.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -433,7 +433,7 @@
             "format": "jpg",
             "id": "1f51768f57b8fa4dc97ecf2d9bd53163",
             "name": "20200322_221802.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221802.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221802.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -445,7 +445,7 @@
             "format": "jpg",
             "id": "e5071b021b1c2b0ebaffafb3c9f4549d",
             "name": "20200322_221804.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221804.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221804.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -457,7 +457,7 @@
             "format": "jpg",
             "id": "24e5de42a4f27cc41699b6a8cea66163",
             "name": "20200322_221806.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221806.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221806.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -469,7 +469,7 @@
             "format": "jpg",
             "id": "2d86665f4ac782c63e6eee0318922081",
             "name": "20200322_221812.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221812.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221812.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -481,7 +481,7 @@
             "format": "jpg",
             "id": "7c4eb699fdff4737bfe53c65b03757da",
             "name": "20200322_221814.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221814.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221814.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -493,7 +493,7 @@
             "format": "jpg",
             "id": "d6a553d2aeeec1d671650a9f666901ee",
             "name": "20200322_221817.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221817.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221817.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -505,7 +505,7 @@
             "format": "jpg",
             "id": "fee0bd785e16f04910643a25373dd639",
             "name": "20200322_221820.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221820.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221820.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -517,7 +517,7 @@
             "format": "jpg",
             "id": "8cb40f3f6515483b339fd23330416802",
             "name": "20200322_221827.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221827.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221827.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -529,7 +529,7 @@
             "format": "jpg",
             "id": "a5beebaae05423425d14fc6556aa5d67",
             "name": "20200322_221835.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221835.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221835.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -541,7 +541,7 @@
             "format": "jpg",
             "id": "914818406bb4f17070f72f9ff2a09715",
             "name": "20200322_221839.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221839.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221839.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -553,7 +553,7 @@
             "format": "jpg",
             "id": "0871c2ee4781c31b108e942f5a99c670",
             "name": "20200322_221842.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221842.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221842.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -565,7 +565,7 @@
             "format": "jpg",
             "id": "708eb8d483545e3e476a140a2724547f",
             "name": "20200322_221844.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221844.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221844.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -577,7 +577,7 @@
             "format": "jpg",
             "id": "713cfe4f65268df4ebb019f98805c652",
             "name": "20200322_221850.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221850.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221850.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -589,7 +589,7 @@
             "format": "jpg",
             "id": "5da07fd20b20fad35670c829e30efa61",
             "name": "20200322_221853.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221853.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221853.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -601,7 +601,7 @@
             "format": "jpg",
             "id": "bd1ff9a3b9316f5f890aa432392fd775",
             "name": "20200322_221905.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221905.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221905.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -613,7 +613,7 @@
             "format": "jpg",
             "id": "7c6480d739e3c62888fc4e58621a845b",
             "name": "20200322_221908.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221908.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221908.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -625,7 +625,7 @@
             "format": "jpg",
             "id": "2b5b865b5055b2f1fe7995496118a497",
             "name": "20200322_221911.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221911.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221911.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -637,7 +637,7 @@
             "format": "jpg",
             "id": "91e8705695904bc9af872e994ce0da81",
             "name": "20200322_221913.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221913.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221913.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -649,7 +649,7 @@
             "format": "jpg",
             "id": "59a08235ad149abf8e3a2d5aa5c4542b",
             "name": "20200322_221916.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221916.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221916.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -661,7 +661,7 @@
             "format": "jpg",
             "id": "73d463a988efdbec5ef35d4d18474da8",
             "name": "20200322_221919.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221919.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221919.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -673,7 +673,7 @@
             "format": "jpg",
             "id": "d5ecee7d87392bf88cc3fe51f4fb58db",
             "name": "20200322_221922.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221922.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221922.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -685,7 +685,7 @@
             "format": "jpg",
             "id": "a4deead478baaa912594edc45001b0eb",
             "name": "20200322_221929.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221929.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221929.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -697,7 +697,7 @@
             "format": "jpg",
             "id": "048821c33af3bdce4e0a7bfe7e920902",
             "name": "20200322_221931.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221931.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221931.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -709,7 +709,7 @@
             "format": "jpg",
             "id": "4007957ad162597f9cd18e4c39a8d288",
             "name": "20200322_221935.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221935.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221935.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -721,7 +721,7 @@
             "format": "jpg",
             "id": "2b24f00bff0fa25603605d4896fcd07a",
             "name": "20200322_221940.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221940.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221940.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -733,7 +733,7 @@
             "format": "jpg",
             "id": "286320967be460f7cc0d1ebb0b3d92c2",
             "name": "20200322_221944.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221944.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221944.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -745,7 +745,7 @@
             "format": "jpg",
             "id": "d39b641c4e92310b196c1cc15ae84cb9",
             "name": "20200322_221946.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221946.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221946.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -757,7 +757,7 @@
             "format": "jpg",
             "id": "ca8d6c3b18cbf613484fb291f2f8f8ba",
             "name": "20200322_221951.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221951.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221951.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -769,7 +769,7 @@
             "format": "jpg",
             "id": "4e57ea94d55446afed5501868844dc5e",
             "name": "20200322_221958.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221958.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_221958.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -781,7 +781,7 @@
             "format": "jpg",
             "id": "16190b887dc802c75c64b163788b3bb6",
             "name": "20200322_222001.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222001.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222001.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -793,7 +793,7 @@
             "format": "jpg",
             "id": "1e86bb29ffa954cce1451def089898a5",
             "name": "20200322_222006.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222006.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222006.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -805,7 +805,7 @@
             "format": "jpg",
             "id": "27f1bdeb6019a642d8849f175243f726",
             "name": "20200322_222010.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222010.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222010.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -817,7 +817,7 @@
             "format": "jpg",
             "id": "926ea7204c6689c48ec288fe6c7e766b",
             "name": "20200322_222013.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222013.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222013.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -829,7 +829,7 @@
             "format": "jpg",
             "id": "27af5e5af2ce813be4464fe5c05a1ab9",
             "name": "20200322_222017.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222017.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222017.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -841,7 +841,7 @@
             "format": "jpg",
             "id": "f16af5e96fb580cdd7798f0e59916d9d",
             "name": "20200322_222020.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222020.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222020.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -853,7 +853,7 @@
             "format": "jpg",
             "id": "a2f3a3de7db6c5e7bc220d406eb67b93",
             "name": "20200322_222034.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222034.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222034.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -865,7 +865,7 @@
             "format": "jpg",
             "id": "faafef8cc2ae196d26e6eede05883064",
             "name": "20200322_222037.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222037.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222037.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -877,7 +877,7 @@
             "format": "jpg",
             "id": "7601e03ba641bbf52f1075a837f87d2d",
             "name": "20200322_222040.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222040.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222040.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -889,7 +889,7 @@
             "format": "jpg",
             "id": "acd18a7bd82c9a9379afe4ce825733e5",
             "name": "20200322_222054.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222054.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222054.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -901,7 +901,7 @@
             "format": "jpg",
             "id": "c6942fc0969c73fd057ad08a3b5cf404",
             "name": "20200322_222105.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222105.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222105.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -913,7 +913,7 @@
             "format": "jpg",
             "id": "056c00cfa3ae3731ef2a56f47a5d0bdd",
             "name": "20200322_222115.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222115.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222115.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -925,7 +925,7 @@
             "format": "jpg",
             "id": "eb28d243a3e4f7c3889645e894159030",
             "name": "20200322_222119.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222119.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222119.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -937,7 +937,7 @@
             "format": "jpg",
             "id": "52324790584ffaad574df3356c2ec02f",
             "name": "20200322_222122.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222122.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222122.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -949,7 +949,7 @@
             "format": "jpg",
             "id": "57a18e1f22668f9b2fb587b032ecce23",
             "name": "20200322_222125.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222125.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222125.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -961,7 +961,7 @@
             "format": "jpg",
             "id": "2b3534dbcd68f7aaae75719927930736",
             "name": "20200322_222128.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222128.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222128.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -973,7 +973,7 @@
             "format": "jpg",
             "id": "5ac64dbda1aae490233837ac972f574f",
             "name": "20200322_222131.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222131.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222131.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -985,7 +985,7 @@
             "format": "jpg",
             "id": "6d5279799a60818ed9281ab812b0fb1a",
             "name": "20200322_222136.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222136.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222136.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -997,7 +997,7 @@
             "format": "jpg",
             "id": "79bd2255819f6471abd679ad70d297a6",
             "name": "20200322_222229.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222229.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222229.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1009,7 +1009,7 @@
             "format": "jpg",
             "id": "30f32bb888ca24dd833f55ebc531f84b",
             "name": "20200322_222237.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222237.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222237.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1021,7 +1021,7 @@
             "format": "jpg",
             "id": "fbf4ccdc3be41f34de67fc1f68c0a613",
             "name": "20200322_222248.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222248.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222248.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1033,7 +1033,7 @@
             "format": "jpg",
             "id": "0dd6a62ebc7cda1cb1b4aa434e5fb6ce",
             "name": "20200322_222254.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222254.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222254.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1045,7 +1045,7 @@
             "format": "jpg",
             "id": "8d16abd2cc1f97ef3dd3c53e61d5d93a",
             "name": "20200322_222257.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222257.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222257.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1057,7 +1057,7 @@
             "format": "jpg",
             "id": "7854e545acd24f05fac922ee50a8a3b9",
             "name": "20200322_222301.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222301.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222301.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1069,7 +1069,7 @@
             "format": "jpg",
             "id": "5544ce7d4924c7282248fc1ce2744ce5",
             "name": "20200322_222321.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222321.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222321.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1081,7 +1081,7 @@
             "format": "jpg",
             "id": "b1cc8db49adbbde9f6f4d94eb610e707",
             "name": "20200322_222328.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222328.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222328.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1093,7 +1093,7 @@
             "format": "jpg",
             "id": "9283ecaa10024bba68adba38fcc3773b",
             "name": "20200322_222337.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222337.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222337.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1105,7 +1105,7 @@
             "format": "jpg",
             "id": "cf64bf41cf8055bac14eb6dfc0202106",
             "name": "20200322_222340-0.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-0.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-0.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1117,7 +1117,7 @@
             "format": "jpg",
             "id": "9974644e4144e308d9fe6fc92161b192",
             "name": "20200322_222340-1.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-1.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-1.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1129,7 +1129,7 @@
             "format": "jpg",
             "id": "336a1aa3153024b13e712c1b2f92de77",
             "name": "20200322_222340-10.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-10.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-10.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1141,7 +1141,7 @@
             "format": "jpg",
             "id": "0e86aed77f2b929c71fbb9c05e8516f4",
             "name": "20200322_222340-11.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-11.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-11.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1153,7 +1153,7 @@
             "format": "jpg",
             "id": "5f0ea9e9c92c7da20748edf6fc649719",
             "name": "20200322_222340-12.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-12.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-12.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1165,7 +1165,7 @@
             "format": "jpg",
             "id": "e948b5d92b5db206a73433307a253d41",
             "name": "20200322_222340-13.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-13.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-13.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1177,7 +1177,7 @@
             "format": "jpg",
             "id": "bba12c9b84f2a2f8696d81a4dfb6e2c1",
             "name": "20200322_222340-14.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-14.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-14.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1189,7 +1189,7 @@
             "format": "jpg",
             "id": "0e782ff76045c4b1a81b487bc412149b",
             "name": "20200322_222340-15.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-15.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-15.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1201,7 +1201,7 @@
             "format": "jpg",
             "id": "133f7f346d3a1c823589ad944998d3a0",
             "name": "20200322_222340-16.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-16.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-16.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -1213,7 +1213,7 @@
             "format": "jpg",
             "id": "8a2b2a756b859df5b4789a6b555304d3",
             "name": "20200322_222340-17.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-17.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-17.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -1225,7 +1225,7 @@
             "format": "jpg",
             "id": "a759235f58961ca1a89829869ae79459",
             "name": "20200322_222340-18.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-18.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-18.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -1237,7 +1237,7 @@
             "format": "jpg",
             "id": "587543895a1e32cc8d4fc8d384616ea3",
             "name": "20200322_222340-19.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-19.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-19.jpg",
             "size": {
                 "width": 1306,
                 "height": 2322
@@ -1249,7 +1249,7 @@
             "format": "jpg",
             "id": "034a533a57fdcdd91bc57b3a58b25338",
             "name": "20200322_222340-2.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-2.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-2.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1261,7 +1261,7 @@
             "format": "jpg",
             "id": "18607e0a5beb16a48fd50a03fa236f97",
             "name": "20200322_222340-3.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-3.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-3.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1273,7 +1273,7 @@
             "format": "jpg",
             "id": "5e49fb45d1de85dec06d5fccb88d030e",
             "name": "20200322_222340-4.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-4.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-4.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1285,7 +1285,7 @@
             "format": "jpg",
             "id": "0168e26936b03a00e7f463132fb379c1",
             "name": "20200322_222340-5.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-5.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-5.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1297,7 +1297,7 @@
             "format": "jpg",
             "id": "ebf948fe489da1c70aa05976d12e63a1",
             "name": "20200322_222340-6.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-6.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-6.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1309,7 +1309,7 @@
             "format": "jpg",
             "id": "1ae38ce9adc48c7ade23ba84761b1a29",
             "name": "20200322_222340-7.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-7.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-7.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1321,7 +1321,7 @@
             "format": "jpg",
             "id": "f5e049648c0925c329ec2e1f7f251ecf",
             "name": "20200322_222340-8.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-8.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-8.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1333,7 +1333,7 @@
             "format": "jpg",
             "id": "f09acafbe1649921e48684ad29a7acd7",
             "name": "20200322_222340-9.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-9.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340-9.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1345,10 +1345,1630 @@
             "format": "jpg",
             "id": "ac2db39a800a3f85b82a392934287a7d",
             "name": "20200322_222340.jpg",
-            "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222340.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a9175bec6ae5b865c9f06753961fe904": {
+            "format": "jpg",
+            "id": "a9175bec6ae5b865c9f06753961fe904",
+            "name": "20200322_222346.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222346.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a1568649e3098be4d5a934994fe14974": {
+            "format": "jpg",
+            "id": "a1568649e3098be4d5a934994fe14974",
+            "name": "20200322_222348.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222348.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "20c55562f57c682559d10123800165ef": {
+            "format": "jpg",
+            "id": "20c55562f57c682559d10123800165ef",
+            "name": "20200322_222350.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222350.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7246eae724074091ce23407d4149894a": {
+            "format": "jpg",
+            "id": "7246eae724074091ce23407d4149894a",
+            "name": "20200322_222353.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222353.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8b81e966baca8eebac942ed6f2e85563": {
+            "format": "jpg",
+            "id": "8b81e966baca8eebac942ed6f2e85563",
+            "name": "20200322_222356.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222356.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e02548bca4e223bfd179f3c1ac42d846": {
+            "format": "jpg",
+            "id": "e02548bca4e223bfd179f3c1ac42d846",
+            "name": "20200322_222359.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222359.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "00c295a3871312888efe2fb746e32b44": {
+            "format": "jpg",
+            "id": "00c295a3871312888efe2fb746e32b44",
+            "name": "20200322_222403.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222403.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e3dedd3bc17c56e452106b15285eeed1": {
+            "format": "jpg",
+            "id": "e3dedd3bc17c56e452106b15285eeed1",
+            "name": "20200322_222407.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222407.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cab1df6b72bd6682d57e685eadcddeff": {
+            "format": "jpg",
+            "id": "cab1df6b72bd6682d57e685eadcddeff",
+            "name": "20200322_222414.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222414.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "63253928626ad5a071324ef04a978ff7": {
+            "format": "jpg",
+            "id": "63253928626ad5a071324ef04a978ff7",
+            "name": "20200322_222426.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222426.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "746f48a979d39ea8ab6522ba777c5ae5": {
+            "format": "jpg",
+            "id": "746f48a979d39ea8ab6522ba777c5ae5",
+            "name": "20200322_222428.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222428.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "42d2c2bd5733fe02426f281b6d708e65": {
+            "format": "jpg",
+            "id": "42d2c2bd5733fe02426f281b6d708e65",
+            "name": "20200322_222450.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222450.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b5fa2f80a3ac2a22a682dcd4869a5952": {
+            "format": "jpg",
+            "id": "b5fa2f80a3ac2a22a682dcd4869a5952",
+            "name": "20200322_222453.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222453.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "37c56393ca4da658385848cf63757ebc": {
+            "format": "jpg",
+            "id": "37c56393ca4da658385848cf63757ebc",
+            "name": "20200322_222456.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222456.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ef3c4a1607da593516a718a7ba02b0b0": {
+            "format": "jpg",
+            "id": "ef3c4a1607da593516a718a7ba02b0b0",
+            "name": "20200322_222459.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222459.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fb0c8ee30eb9656bae525960bf338c86": {
+            "format": "jpg",
+            "id": "fb0c8ee30eb9656bae525960bf338c86",
+            "name": "20200322_222503.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222503.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "46c0a9a4db1f03404a42218aa23ec427": {
+            "format": "jpg",
+            "id": "46c0a9a4db1f03404a42218aa23ec427",
+            "name": "20200322_222505.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222505.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "641f1f50296a33e5da2050345cc54d34": {
+            "format": "jpg",
+            "id": "641f1f50296a33e5da2050345cc54d34",
+            "name": "20200322_222508.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200322_222508.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3f3b345bdbfddea904f7718b492bdcfd": {
+            "format": "jpg",
+            "id": "3f3b345bdbfddea904f7718b492bdcfd",
+            "name": "20200324_112023.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112023.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7eeff44c64bf102067567985e7aec89e": {
+            "format": "jpg",
+            "id": "7eeff44c64bf102067567985e7aec89e",
+            "name": "20200324_112041.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112041.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c749081273f13abe786621e1fb027d68": {
+            "format": "jpg",
+            "id": "c749081273f13abe786621e1fb027d68",
+            "name": "a0200322_222336.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222336.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a542f07769af8b8d1d16d22c011c5021": {
+            "format": "jpg",
+            "id": "a542f07769af8b8d1d16d22c011c5021",
+            "name": "a0200322_222333.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222333.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4fd21ee1e170ba724b577d299d32afd1": {
+            "format": "jpg",
+            "id": "4fd21ee1e170ba724b577d299d32afd1",
+            "name": "a0200322_222329.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222329.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c3355ee0558d760bca3daa2621dd4fe0": {
+            "format": "jpg",
+            "id": "c3355ee0558d760bca3daa2621dd4fe0",
+            "name": "a0200322_222327.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222327.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "92b4877974286ecbed124f7fc01dda9c": {
+            "format": "jpg",
+            "id": "92b4877974286ecbed124f7fc01dda9c",
+            "name": "a0200322_222322.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222322.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4c4ec861e9514aca49bf2066dd3782f0": {
+            "format": "jpg",
+            "id": "4c4ec861e9514aca49bf2066dd3782f0",
+            "name": "a0200322_222320.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222320.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fbc14850f21a0dd546e0270fefac9fd1": {
+            "format": "jpg",
+            "id": "fbc14850f21a0dd546e0270fefac9fd1",
+            "name": "a0200322_222316.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222316.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9158dc4dab1c006e6972b30a4c79a84c": {
+            "format": "jpg",
+            "id": "9158dc4dab1c006e6972b30a4c79a84c",
+            "name": "a0200322_222307.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222307.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d873d40b52dc91ed3105b53459e1dc61": {
+            "format": "jpg",
+            "id": "d873d40b52dc91ed3105b53459e1dc61",
+            "name": "a0200322_222304.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222304.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "34e557096ddda6bf10b691dda7078296": {
+            "format": "jpg",
+            "id": "34e557096ddda6bf10b691dda7078296",
+            "name": "a0200322_222253.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222253.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a3ad919e2b09a18992a29d234637ca97": {
+            "format": "jpg",
+            "id": "a3ad919e2b09a18992a29d234637ca97",
+            "name": "a0200322_222247.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222247.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e536ea99916d6aea1a1f9abab9be9894": {
+            "format": "jpg",
+            "id": "e536ea99916d6aea1a1f9abab9be9894",
+            "name": "a0200322_222243.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222243.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "50fda9677d06a66d4ec7a2ec438830b1": {
+            "format": "jpg",
+            "id": "50fda9677d06a66d4ec7a2ec438830b1",
+            "name": "a0200322_222239.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222239.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "784aba247181d4195e308020d65c8846": {
+            "format": "jpg",
+            "id": "784aba247181d4195e308020d65c8846",
+            "name": "a0200322_222234.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222234.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c4a41a2bc96201070de91f3953144112": {
+            "format": "jpg",
+            "id": "c4a41a2bc96201070de91f3953144112",
+            "name": "a0200322_222231.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222231.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8b1e3f028e05515450191fbd80131be9": {
+            "format": "jpg",
+            "id": "8b1e3f028e05515450191fbd80131be9",
+            "name": "a0200322_222227.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222227.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "077df24536b8f08597bf4ff49f56a6ea": {
+            "format": "jpg",
+            "id": "077df24536b8f08597bf4ff49f56a6ea",
+            "name": "a0200322_222225.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222225.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e41ff6450f06500a67e72c29c33246a8": {
+            "format": "jpg",
+            "id": "e41ff6450f06500a67e72c29c33246a8",
+            "name": "a0200322_222221.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222221.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e1379e4445a59db985beb5aec38862a2": {
+            "format": "jpg",
+            "id": "e1379e4445a59db985beb5aec38862a2",
+            "name": "a0200322_222209.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222209.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3df1249ec24b5e5f3f7d3ee5ee7722f6": {
+            "format": "jpg",
+            "id": "3df1249ec24b5e5f3f7d3ee5ee7722f6",
+            "name": "a0200322_221549.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221549.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5b66769a6f206ba3b7b264f9227b9e01": {
+            "format": "jpg",
+            "id": "5b66769a6f206ba3b7b264f9227b9e01",
+            "name": "a0200322_221553.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221553.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "24fa8aa104dce45e3dc917e443008084": {
+            "format": "jpg",
+            "id": "24fa8aa104dce45e3dc917e443008084",
+            "name": "a0200322_221556.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221556.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c34ae02573b3720a50da09ba0076f99e": {
+            "format": "jpg",
+            "id": "c34ae02573b3720a50da09ba0076f99e",
+            "name": "a0200322_221600.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221600.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6efd736ad9299ec1a6982ffa59c4d28f": {
+            "format": "jpg",
+            "id": "6efd736ad9299ec1a6982ffa59c4d28f",
+            "name": "a0200322_221604.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221604.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "67a58dabcfbeb8801f87637fcd817778": {
+            "format": "jpg",
+            "id": "67a58dabcfbeb8801f87637fcd817778",
+            "name": "a0200322_221611.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221611.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6ebb48a72d9d53133a0e6aa77c6b5b53": {
+            "format": "jpg",
+            "id": "6ebb48a72d9d53133a0e6aa77c6b5b53",
+            "name": "a0200322_221615.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221615.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c40dcf29eacafecfbc5ccf8f4cfb3287": {
+            "format": "jpg",
+            "id": "c40dcf29eacafecfbc5ccf8f4cfb3287",
+            "name": "a0200322_221622.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221622.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c32c036f69f4678df9e0f08b1869674f": {
+            "format": "jpg",
+            "id": "c32c036f69f4678df9e0f08b1869674f",
+            "name": "a0200322_221625.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221625.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fba525765c08dead56cf7f2e5a1e6839": {
+            "format": "jpg",
+            "id": "fba525765c08dead56cf7f2e5a1e6839",
+            "name": "a0200322_221640.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221640.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "771c40a8b3edd6aeb3f6e627bd589f0e": {
+            "format": "jpg",
+            "id": "771c40a8b3edd6aeb3f6e627bd589f0e",
+            "name": "a0200322_221649.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221649.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0ab07846715e24f9f054844096743590": {
+            "format": "jpg",
+            "id": "0ab07846715e24f9f054844096743590",
+            "name": "a0200322_221651.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221651.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "efe45a32819ef1aa4260f02500fbbb92": {
+            "format": "jpg",
+            "id": "efe45a32819ef1aa4260f02500fbbb92",
+            "name": "a0200322_221655.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221655.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0bfc156bbe7b8878d0d73fff875697c9": {
+            "format": "jpg",
+            "id": "0bfc156bbe7b8878d0d73fff875697c9",
+            "name": "a0200322_221659.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221659.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ac843ef1c50c4c863d7c17d68b4f018c": {
+            "format": "jpg",
+            "id": "ac843ef1c50c4c863d7c17d68b4f018c",
+            "name": "20200324_112046.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112046.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9a002e14bbd3a51ef1d3c7f0b75a01e3": {
+            "format": "jpg",
+            "id": "9a002e14bbd3a51ef1d3c7f0b75a01e3",
+            "name": "20200324_112055.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112055.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4aec557d39f539fb2a9c158b43b38999": {
+            "format": "jpg",
+            "id": "4aec557d39f539fb2a9c158b43b38999",
+            "name": "20200324_112108.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112108.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ac53ccd8c01fc3fdaaba7db7f477cd10": {
+            "format": "jpg",
+            "id": "ac53ccd8c01fc3fdaaba7db7f477cd10",
+            "name": "20200324_112111.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112111.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "354981ece75e5ce2cc8d3eac70ffd9cd": {
+            "format": "jpg",
+            "id": "354981ece75e5ce2cc8d3eac70ffd9cd",
+            "name": "20200324_112115.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112115.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d3e8eb1d458b7d59e0169ba76e25cc53": {
+            "format": "jpg",
+            "id": "d3e8eb1d458b7d59e0169ba76e25cc53",
+            "name": "20200324_112120.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112120.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7a6e3326117df588f29ab4671cc99fbe": {
+            "format": "jpg",
+            "id": "7a6e3326117df588f29ab4671cc99fbe",
+            "name": "20200324_112123.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112123.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "17532e9eba675328bd2db6d27b296ae9": {
+            "format": "jpg",
+            "id": "17532e9eba675328bd2db6d27b296ae9",
+            "name": "20200324_112143.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112143.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2af929d730eb64df9bb7c592f7d8eaa6": {
+            "format": "jpg",
+            "id": "2af929d730eb64df9bb7c592f7d8eaa6",
+            "name": "20200324_112146.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112146.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8c225bed580daf854aaafde038b4c3a4": {
+            "format": "jpg",
+            "id": "8c225bed580daf854aaafde038b4c3a4",
+            "name": "20200324_112149.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112149.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "013e97411ed501e172d12ddc94105ccc": {
+            "format": "jpg",
+            "id": "013e97411ed501e172d12ddc94105ccc",
+            "name": "20200324_112153.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112153.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a3020ea737af26e5e1f7ea4728bbb529": {
+            "format": "jpg",
+            "id": "a3020ea737af26e5e1f7ea4728bbb529",
+            "name": "20200324_112156.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112156.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "95f674ea45324e550d49bc50ff8c7b49": {
+            "format": "jpg",
+            "id": "95f674ea45324e550d49bc50ff8c7b49",
+            "name": "20200324_112158.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112158.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "96956a3b87ddf0c783503b72c5f7c939": {
+            "format": "jpg",
+            "id": "96956a3b87ddf0c783503b72c5f7c939",
+            "name": "20200324_112201.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112201.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "312c810b9f4dc3726419fb8231e01a1d": {
+            "format": "jpg",
+            "id": "312c810b9f4dc3726419fb8231e01a1d",
+            "name": "20200324_112205.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112205.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "507d9df399420fdb959e3a65a4a8592b": {
+            "format": "jpg",
+            "id": "507d9df399420fdb959e3a65a4a8592b",
+            "name": "20200324_112207.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112207.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "57271bad29ee9454cd358672002a37ac": {
+            "format": "jpg",
+            "id": "57271bad29ee9454cd358672002a37ac",
+            "name": "20200324_112222.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112222.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a870a35bfd12e1d1845b1019bb09f6c6": {
+            "format": "jpg",
+            "id": "a870a35bfd12e1d1845b1019bb09f6c6",
+            "name": "20200324_112226.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112226.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3fc02324ed75d84dd0c0a75178731bd8": {
+            "format": "jpg",
+            "id": "3fc02324ed75d84dd0c0a75178731bd8",
+            "name": "20200324_112228.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112228.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9427619680cec9cf4426b35c15913f11": {
+            "format": "jpg",
+            "id": "9427619680cec9cf4426b35c15913f11",
+            "name": "20200324_112231.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112231.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ca7a5782d9a1d857032a2a11706ea427": {
+            "format": "jpg",
+            "id": "ca7a5782d9a1d857032a2a11706ea427",
+            "name": "20200324_112234.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112234.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a4f7a691984827e3b8948fd9730fedcf": {
+            "format": "jpg",
+            "id": "a4f7a691984827e3b8948fd9730fedcf",
+            "name": "20200324_112237.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112237.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1edbe01c3c300fe6b655369489421121": {
+            "format": "jpg",
+            "id": "1edbe01c3c300fe6b655369489421121",
+            "name": "20200324_112239.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112239.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "774c7dcb91f81514571f27852fad650f": {
+            "format": "jpg",
+            "id": "774c7dcb91f81514571f27852fad650f",
+            "name": "20200324_112243.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112243.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fea1729005d265bf8b1101bdee7b507e": {
+            "format": "jpg",
+            "id": "fea1729005d265bf8b1101bdee7b507e",
+            "name": "20200324_112246.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200324_112246.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5d0573c3ec2317a269c026400866179c": {
+            "format": "jpg",
+            "id": "5d0573c3ec2317a269c026400866179c",
+            "name": "a0200322_221712.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221712.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "38ea0d0263af23efd40dc2bb5374f386": {
+            "format": "jpg",
+            "id": "38ea0d0263af23efd40dc2bb5374f386",
+            "name": "a0200322_221717.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221717.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "95d487910cce7b03ed767d37cf9ab7f3": {
+            "format": "jpg",
+            "id": "95d487910cce7b03ed767d37cf9ab7f3",
+            "name": "a0200322_221721.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221721.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "68566d3e26eea57dde662a02679e4927": {
+            "format": "jpg",
+            "id": "68566d3e26eea57dde662a02679e4927",
+            "name": "a0200322_221723.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221723.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e8926bc0b398f6cd20062237e6d5b964": {
+            "format": "jpg",
+            "id": "e8926bc0b398f6cd20062237e6d5b964",
+            "name": "a0200322_221733.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221733.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2de792b0add5d1046255ee4ab0df41e8": {
+            "format": "jpg",
+            "id": "2de792b0add5d1046255ee4ab0df41e8",
+            "name": "a0200322_221749.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221749.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "567550278e4579435084359cab3ce904": {
+            "format": "jpg",
+            "id": "567550278e4579435084359cab3ce904",
+            "name": "a0200322_221752.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221752.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3b487414a29f976413c1bd44950293a1": {
+            "format": "jpg",
+            "id": "3b487414a29f976413c1bd44950293a1",
+            "name": "a0200322_221757.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221757.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4daa17e09983d73deaa6818d56c1aedb": {
+            "format": "jpg",
+            "id": "4daa17e09983d73deaa6818d56c1aedb",
+            "name": "a0200322_221800.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221800.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b19d00047743782e969a6e26a7600041": {
+            "format": "jpg",
+            "id": "b19d00047743782e969a6e26a7600041",
+            "name": "a0200322_221804.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221804.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6eb7d6d3ff6389c15726cd3c493cbf85": {
+            "format": "jpg",
+            "id": "6eb7d6d3ff6389c15726cd3c493cbf85",
+            "name": "a0200322_221833.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221833.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "864e797410069617eeceacc6ab064e49": {
+            "format": "jpg",
+            "id": "864e797410069617eeceacc6ab064e49",
+            "name": "a0200322_221835.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221835.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "78d2210b8d184726c869f7a2e66248ee": {
+            "format": "jpg",
+            "id": "78d2210b8d184726c869f7a2e66248ee",
+            "name": "a0200322_221839.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221839.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cf7548ee9f5e4544d582d363864dc3f9": {
+            "format": "jpg",
+            "id": "cf7548ee9f5e4544d582d363864dc3f9",
+            "name": "a0200322_221846.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221846.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "78075b8a19f014b35d218db0cb3fcf83": {
+            "format": "jpg",
+            "id": "78075b8a19f014b35d218db0cb3fcf83",
+            "name": "a0200322_221852.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221852.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7de0f78f0ef70cadd8bfd42c49d93bf2": {
+            "format": "jpg",
+            "id": "7de0f78f0ef70cadd8bfd42c49d93bf2",
+            "name": "a0200322_221854.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221854.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b869c31055263a1af157b7fe1fe84751": {
+            "format": "jpg",
+            "id": "b869c31055263a1af157b7fe1fe84751",
+            "name": "a0200322_221858.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221858.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8f6a51c58c742a35d9196ab96df2ea19": {
+            "format": "jpg",
+            "id": "8f6a51c58c742a35d9196ab96df2ea19",
+            "name": "a0200322_221900.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221900.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "45a833f1c64bd77cfacdbaf28e6d618b": {
+            "format": "jpg",
+            "id": "45a833f1c64bd77cfacdbaf28e6d618b",
+            "name": "a0200322_221906.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221906.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9ab43676229634aafa76e20273138c69": {
+            "format": "jpg",
+            "id": "9ab43676229634aafa76e20273138c69",
+            "name": "a0200322_221908.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221908.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "21f37b9c2419c65153ef25dff25c03f7": {
+            "format": "jpg",
+            "id": "21f37b9c2419c65153ef25dff25c03f7",
+            "name": "a0200322_221911.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221911.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "dbc8598a04638286017f1b971d682700": {
+            "format": "jpg",
+            "id": "dbc8598a04638286017f1b971d682700",
+            "name": "a0200322_221915.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221915.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "73c422fdf1c3f4ed489e58a4935b128a": {
+            "format": "jpg",
+            "id": "73c422fdf1c3f4ed489e58a4935b128a",
+            "name": "a0200322_221922.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221922.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bb4a346da6e3938f2b3b7b77c04d2215": {
+            "format": "jpg",
+            "id": "bb4a346da6e3938f2b3b7b77c04d2215",
+            "name": "a0200322_221925.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221925.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fb17d33e3c04acc737b33e9e3f36c3b3": {
+            "format": "jpg",
+            "id": "fb17d33e3c04acc737b33e9e3f36c3b3",
+            "name": "a0200322_221927.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221927.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cdce1b1432d905f59613317565441057": {
+            "format": "jpg",
+            "id": "cdce1b1432d905f59613317565441057",
+            "name": "a0200322_221930.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221930.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "06ce29b515b68f6b4cf95d404b16065f": {
+            "format": "jpg",
+            "id": "06ce29b515b68f6b4cf95d404b16065f",
+            "name": "a0200322_221937.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221937.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "df8797cdd867e88cd0eb3ae92a486fa7": {
+            "format": "jpg",
+            "id": "df8797cdd867e88cd0eb3ae92a486fa7",
+            "name": "a0200322_221940.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221940.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d8309c2aa8186ae4b5a03b9178b52b2f": {
+            "format": "jpg",
+            "id": "d8309c2aa8186ae4b5a03b9178b52b2f",
+            "name": "a0200322_221942.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221942.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "441f24b11efe71b83c4e5cb1c27569c0": {
+            "format": "jpg",
+            "id": "441f24b11efe71b83c4e5cb1c27569c0",
+            "name": "a0200322_221948.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221948.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ea567fa86a33fe60270703526ff7c571": {
+            "format": "jpg",
+            "id": "ea567fa86a33fe60270703526ff7c571",
+            "name": "a0200322_221951.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221951.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "38299b1a949c941cc060e2b0fecabe84": {
+            "format": "jpg",
+            "id": "38299b1a949c941cc060e2b0fecabe84",
+            "name": "a0200322_221958.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_221958.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fee8dfd14cc25a390d65a0591665ccc6": {
+            "format": "jpg",
+            "id": "fee8dfd14cc25a390d65a0591665ccc6",
+            "name": "a0200322_222001.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222001.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "117dfb9d64537f5633a96d777c71c0dd": {
+            "format": "jpg",
+            "id": "117dfb9d64537f5633a96d777c71c0dd",
+            "name": "a0200322_222005.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222005.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "57645db9a0ce1a6ce203c74ebac7b87c": {
+            "format": "jpg",
+            "id": "57645db9a0ce1a6ce203c74ebac7b87c",
+            "name": "a0200322_222015.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222015.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "52479e66276060818bcb5f957409e987": {
+            "format": "jpg",
+            "id": "52479e66276060818bcb5f957409e987",
+            "name": "a0200322_222024.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222024.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8976ff11c7d9951bcb5286af78286aea": {
+            "format": "jpg",
+            "id": "8976ff11c7d9951bcb5286af78286aea",
+            "name": "a0200322_222027.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222027.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "36d582a3f3c385587c27717fd37795b6": {
+            "format": "jpg",
+            "id": "36d582a3f3c385587c27717fd37795b6",
+            "name": "a0200322_222029.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222029.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "283def2a59b0bdb6be00d70f5be77be5": {
+            "format": "jpg",
+            "id": "283def2a59b0bdb6be00d70f5be77be5",
+            "name": "a0200322_222039.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222039.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "db81eb7e45c08386251d10ad31452952": {
+            "format": "jpg",
+            "id": "db81eb7e45c08386251d10ad31452952",
+            "name": "a0200322_222043.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222043.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7c8c05d90e3d90c1804b9d339f01c628": {
+            "format": "jpg",
+            "id": "7c8c05d90e3d90c1804b9d339f01c628",
+            "name": "a0200322_222051.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222051.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "149fb8b286e93dace0bc9454a6b88350": {
+            "format": "jpg",
+            "id": "149fb8b286e93dace0bc9454a6b88350",
+            "name": "a0200322_222105.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222105.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "dc7798c6ee7243f1f61fabdb89bcc726": {
+            "format": "jpg",
+            "id": "dc7798c6ee7243f1f61fabdb89bcc726",
+            "name": "a0200322_222108.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222108.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "069067f567dee9cbf6099dc284cae08b": {
+            "format": "jpg",
+            "id": "069067f567dee9cbf6099dc284cae08b",
+            "name": "a0200322_222111.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222111.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5657db573e54b4f1feca45f05c9aaf30": {
+            "format": "jpg",
+            "id": "5657db573e54b4f1feca45f05c9aaf30",
+            "name": "a0200322_222114.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222114.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2702a8aaedfec76d006f1f0b618d4365": {
+            "format": "jpg",
+            "id": "2702a8aaedfec76d006f1f0b618d4365",
+            "name": "a0200322_222118.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222118.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "61dfebd5f98196d723943bd51c79b887": {
+            "format": "jpg",
+            "id": "61dfebd5f98196d723943bd51c79b887",
+            "name": "a0200322_222121.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222121.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f41becde065765d520a0b70ffa36e614": {
+            "format": "jpg",
+            "id": "f41becde065765d520a0b70ffa36e614",
+            "name": "a0200322_222123.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222123.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "90629ffba015b809c9034d8f2bc70c7f": {
+            "format": "jpg",
+            "id": "90629ffba015b809c9034d8f2bc70c7f",
+            "name": "a0200322_222126.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222126.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7d01a1e78670b10e8d75697e86e46c0e": {
+            "format": "jpg",
+            "id": "7d01a1e78670b10e8d75697e86e46c0e",
+            "name": "a0200322_222143.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222143.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ba66d19f62a0b7395b01d3486568fe23": {
+            "format": "jpg",
+            "id": "ba66d19f62a0b7395b01d3486568fe23",
+            "name": "a0200322_222147.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222147.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e2af0ceb2c5b7d48665082fc97c03315": {
+            "format": "jpg",
+            "id": "e2af0ceb2c5b7d48665082fc97c03315",
+            "name": "a0200322_222150.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222150.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f0174c0592dd1604066cc7070064bff8": {
+            "format": "jpg",
+            "id": "f0174c0592dd1604066cc7070064bff8",
+            "name": "a0200322_222153.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222153.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9ceb8129807c99632e33e0eaa5010dfd": {
+            "format": "jpg",
+            "id": "9ceb8129807c99632e33e0eaa5010dfd",
+            "name": "a0200322_222155.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222155.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2fe72d92f93eea77b170d2e8bc81d8fa": {
+            "format": "jpg",
+            "id": "2fe72d92f93eea77b170d2e8bc81d8fa",
+            "name": "a0200322_222158.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222158.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5ae675482ac2152e046536a957bfd10e": {
+            "format": "jpg",
+            "id": "5ae675482ac2152e046536a957bfd10e",
+            "name": "a0200322_222204.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222204.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a66228a9c10f46a5e0f3b959c5597e83": {
+            "format": "jpg",
+            "id": "a66228a9c10f46a5e0f3b959c5597e83",
+            "name": "a0200322_222207.jpg",
+            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/a0200322_222207.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
             },
             "state": 2,
             "type": 1
