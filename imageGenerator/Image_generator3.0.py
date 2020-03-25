@@ -12,6 +12,9 @@ m_cnv.pack()
 beam_list = []
 node_list = []
 truss_beams = []
+surface_points = {"Bottom": [], "Top": [], "Left": [], "Right": []} # To find the closest item for a surface. Each list: 
+                                                                    # (the item, (starting coordinate), (ending coordinate)) 
+
 labels = ["RollerSupport", "PinSupport", "Beam", "Node", "ArrowDown", "ArrowUp", "ArrowCounterClockwise",
                   "ArrowClockwise", "Beam45", "Beam135", "Ground", "LoadUp", "LoadRight", "LoadDown"]
 
@@ -30,6 +33,18 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
     return shortest_distance_coordinates, correct_beam
 
 
+def find_closest_object((coord, sides=["Bottom", "Top", "Left", "Right"])):
+    shortest_distance = m.inf
+    shortest_distance_coordinates = (m.inf, m.inf)
+    for side in sides:
+        for item, point, corrected_point in surface_points[side]: # Point och changed_point rätt grejer?
+            distance = compute_distance(coord, point)
+            if distance < shortest_distance:
+                shortest_distance = distance
+                shortest_distance_coordinates = corrected_point
+
+    return shortest_distance_coordinates
+
 # compute distance between two points
 def compute_distance(point1, point2):
     x1, y1 = point1
@@ -45,9 +60,9 @@ class Beam:
         self.objects = {"Forces": [], "Loads": [], "Pins": [], "Rollers": [], "Moments": [], "Fixed": []}
         if x_max - x_min > y_max - y_min:
             self.length = x_max - x_min
-            self.height = 10
-            self.y_max = y_mid + 5
-            self.y_min = y_mid - 5
+            self.height = 4
+            self.y_max = y_mid + 2
+            self.y_min = y_mid - 2
             self.x_max = x_max
             self.x_min = x_min
             self.y_mid = (self.y_max + self.y_min)/2
@@ -57,12 +72,14 @@ class Beam:
                 self.points["Top"].append((self.x_min + i * point_distance, self.y_min))
             self.points["Left"].append((self.x_min, self.y_mid))
             self.points["Right"].append((self.x_max, self.y_mid))
+            surface_points["Left"].append((self, (self.x_min, self.y_mid), (self.x_min, self.y_mid))) # If the surface is connected to a beam the
+            surface_points["Right"].append((self, (self.x_max, self.y_mid), (self.x_max, self.y_mid)))    # middle point were they connect won´t be changed
 
         else:
             self.length = y_max - y_min
-            self.height = 10
-            self.x_max = x_mid + 5
-            self.x_min = x_mid - 5
+            self.height = 4
+            self.x_max = x_mid + 2
+            self.x_min = x_mid - 2
             self.y_min = y_min
             self.y_max = y_max
             self.x_mid = (self.x_max + self.x_min)/2
@@ -72,6 +89,8 @@ class Beam:
                 self.points["Right"].append((self.x_max, self.y_min + i * point_distance))
             self.points["Bottom"].append((self.x_mid, self.y_max))
             self.points["Top"].append((self.x_mid, self.y_min))
+            surface_points["Bottom"].append((self, (self.x_mid, self.y_max), (self.x_mid, self.y_max))) # If the surface is connected to a beam the
+            surface_points["Top"].append((self, (self.x_mid, self.y_min), (self.x_mid, self.y_min)))    # middle point were they connect won´t be changed
 
     def draw(self):
         m_cnv.create_rectangle(self.x_min, self.y_min, self.x_max, self.y_max, fill="")
@@ -80,8 +99,6 @@ class Beam:
 
 class Force:
     def __init__(self, x_min, y_min, x_max, y_max, direction):
-        print("y_min " + str(y_min))
-        print("y_max " + str(y_max))
         self.direction = direction
         x_mid = (x_max + x_min)/2
         y_mid = (y_max + y_min)/2
@@ -89,7 +106,7 @@ class Force:
         (closest_x2, closest_y2), beam2 = find_closest_point((x_mid, y_max))
         dist1 = compute_distance((closest_x1, closest_y1), (x_mid, y_min))
         dist2 = compute_distance((closest_x2, closest_y2), (x_mid, y_max))
-        if direction == "Up" or direction == "Down":
+        if direction == "Up" or direction == "Down": # direction i raden under
             (closest_x1, closest_y1), beam1 = find_closest_point((x_mid, y_min), ["Bottom", "Top"])
             (closest_x2, closest_y2), beam2 = find_closest_point((x_mid, y_max), ["Bottom", "Top"])
             dist1 = compute_distance((closest_x1, closest_y1), (x_mid, y_min))
@@ -143,6 +160,7 @@ class PinSupport:
     def __init__(self, x_min, y_min, x_max, y_max, size=0.15):
         x_mid = (x_max + x_min)/2
         y_mid = (y_max + y_min)/2
+        self.points = {"Bottom": [(x_mid, y_max)], "Top": [x_mid, y_min], "Left": [x_min, y_mid], "Right": [x_max, y_mid]}
         self.closest_point, beam = find_closest_point((x_mid, y_mid))
         self.beam = beam
         if self.closest_point in beam.points["Bottom"]:
@@ -155,6 +173,7 @@ class PinSupport:
             self.corner1 = (self.x_mid, self.y_min)
             self.corner2 = (self.x_min, self.y_max)
             self.corner3 = (self.x_max, self.y_max)
+            surface_points["Bottom"].append((self, (x_mid, y_max), (self.x_mid, self.y_max)))
         elif self.closest_point in beam.points["Top"]:
             self.x_mid = self.closest_point[0]
             self.x_min = self.x_mid - beam.length * size/2
@@ -165,6 +184,7 @@ class PinSupport:
             self.corner1 = (self.x_mid, self.y_max)
             self.corner2 = (self.x_min, self.y_min)
             self.corner3 = (self.x_max, self.y_min)
+            surface_points["Top"].append((self, (x_mid, y_min), (self.x_mid, self.y_min)))
         elif self.closest_point in beam.points["Left"]:
             self.x_max = self.closest_point[0]
             self.x_min = self.x_max - beam.length * m.sin(m.pi/3) * size
@@ -175,6 +195,7 @@ class PinSupport:
             self.corner1 = (self.x_max, self.y_mid)
             self.corner2 = (self.x_min, self.y_min)
             self.corner3 = (self.x_min, self.y_max)
+            surface_points["Left"].append((self, (x_min, y_mid), (self.x_min, self.y_mid)))
         elif self.closest_point in beam.points["Right"]:
             self.x_min = self.closest_point[0]
             self.x_max = self.x_min + beam.length * m.sin(m.pi/3) * size
@@ -185,6 +206,7 @@ class PinSupport:
             self.corner1 = (self.x_min, self.y_mid)
             self.corner2 = (self.x_max, self.y_min)
             self.corner3 = (self.x_max, self.y_max)
+            surface_points["Right"].append((self, (x_max, y_mid), (self.x_max, self.y_mid)))
 
     def draw(self):
         m_cnv.create_polygon(self.corner1, self.corner2, self.corner3, fill="", outline="Black")
@@ -193,29 +215,37 @@ class PinSupport:
 
 class RollerSupport:
     def __init__(self, x_min, y_min, x_max, y_max):
+        x_mid = (x_min + x_max)/2
+        y_mid = (y_min + y_max)/2
         self.ps = PinSupport(x_min, y_min, x_max, y_max, 0.0951)
-        if self.ps.closest_point in self.ps.beam.points["Bottom"]:
-            self.circle_box1 = (self.ps.x_min, self.ps.y_max + self.ps.beam.length * 0.0951/2, (self.ps.x_max + self.ps.x_min)/2, self.ps.y_max)
-            self.circle_box2 = ((self.ps.x_max + self.ps.x_min)/2, self.ps.y_max + self.ps.beam.length * 0.0951/2, self.ps.x_max, self.ps.y_max)
+        surface_points[self.ps.orientation].pop()
+        if self.ps.orientation == "Bottom":
+            self.circle_box1 = (self.ps.x_min, self.ps.y_max + self.ps.beam.length * 0.0951/2, self.ps.x_mid, self.ps.y_max)
+            self.circle_box2 = (self.ps.x_mid, self.ps.y_max + self.ps.beam.length * 0.0951/2, self.ps.x_max, self.ps.y_max)
             self.orientation = "Bottom"
-        elif self.ps.closest_point in self.ps.beam.points["Top"]:
+            surface_points["Bottom"].append((self, (x_mid, y_max), (self.x_mid, self.y_max)))
+
+        elif self.ps.orientation == "Top":
             self.circle_box1 = (self.ps.x_min, self.ps.y_min - self.ps.beam.length * 0.0951/2,
                                 self.ps.x_mid, self.ps.y_min)
             self.circle_box2 = (self.ps.x_mid, self.ps.y_min - self.ps.beam.length * 0.0951/2,
                                 self.ps.x_max, self.ps.y_min)
             self.orientation = "Top"
-        elif self.ps.closest_point in self.ps.beam.points["Left"]:
+            surface_points["Top"].append((self, (x_mid, y_min), (self.x_mid, self.y_min)))
+        elif self.ps.orientation == "Left":
             self.circle_box1 = (self.ps.x_min - self.ps.beam.length * 0.0951/2, self.ps.y_min,
                                 self.ps.x_min, self.ps.y_mid)
             self.circle_box2 = (self.ps.x_min - self.ps.beam.length * 0.0951/2, self.ps.y_mid,
                                 self.ps.x_min, self.ps.y_max)
             self.orientation = "Left"
-        elif self.ps.closest_point in self.ps.beam.points["Right"]:
+            surface_points["Left"].append((self, (x_min, y_mid), (self.x_min, self.y_mid)))
+        elif self.ps.orientation == "Right":
             self.circle_box1 = (self.ps.x_max, self.ps.y_min,
                                 self.ps.x_max + self.ps.beam.length * 0.0951/2, self.ps.y_mid)
             self.circle_box2 = (self.ps.x_max, self.ps.y_mid,
                                 self.ps.x_max + self.ps.beam.length * 0.0951/2, self.ps.y_max)
             self.orientation = "Right"
+            surface_points["Right"].append((self, (x_max, y_mid), (self.x_max, self.y_mid)))
 
     def draw(self):
         self.ps.draw()
@@ -363,6 +393,20 @@ class Load:
         m_cnv.create_line(self.leftmost_point[0], py2, self.rightmost_point[0], py2)
         self.beam.objects["Loads"].append((self.leftmost_point, self.rightmost_point, self.direction))
 
+class Surface:
+    def __init__(self, x_min, y_min, x_max, y_max):
+        self.x_min = x_min
+        self.y_min = y_min
+        self.x_mid = (x_min + x_max)/2
+        self.y_mid = (y_min + y_max)/2
+        self.x_max = x_max
+        self.y_max = y_max
+        self.height = y_max - y_min
+        self.width = x_max - x_min
+        # if self.width > self.height:
+            
+
+
 
 def find_closest_node(coord):
     shortest_distance = m.inf
@@ -469,6 +513,7 @@ class Truss:
             elif beam.orientation == 135:
                 layers[-1] = beam.nodes[1]
  """
+
 def get_objects():
     try:
         df = pd.read_csv(r'C:\Users\admin\Documents\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
@@ -476,7 +521,6 @@ def get_objects():
         df = pd.read_csv(r'C:\Users\tobia\Desktop\Detection_Results_test.csv')
         #df = pd.read_csv(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
     df1 = df[["xmin", "ymin", "xmax", "ymax", "label"]]
-    list_of_objects = [] # behövs ej va?
     df1 = delete_overlapping_objects(df1)
     return (df1)
 
@@ -502,13 +546,14 @@ def delete_overlapping_objects(objects):
                 elif type1 in ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"] and type2 in ["LoadUp", "LoadDown"]:
                     objects = objects.drop(index1, axis=0)
     return objects
+
 def draw_all_objects():
     objects = get_objects()
     m_x = interp1d([0, 4000], [0, 1000])
-    m_y = interp1d([0, 4000], [1000, 0])
+    m_y = interp1d([0, 4000], [800, 0])
     for index, row in objects.iterrows():
         type = labels[row[4]]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_x(row[1])), float(m_x(row[2])), float(m_x(row[3]))
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
         if type == "Beam":
             beam = Beam(x_min, y_min, x_max, y_max)
             beam.draw()
@@ -516,7 +561,7 @@ def draw_all_objects():
     for index, row in objects.iterrows():
         print(index)
         type = labels[row[4]]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_x(row[1])), float(m_x(row[2])), float(m_x(row[3]))
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
         if type == "ArrowDown":
             force = Force(x_min, y_min, x_max, y_max, "Down")
             force.draw()
@@ -565,6 +610,10 @@ draw_all_objects()
 # load.draw()
 
 m_cnv.update()
-m_cnv.postscript(file="bild.jpg", colormode='color')
+m_cnv.postscript(file="bild.png", colormode='color')
+from PIL import Image
+
+im1 = Image.open(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.png')
+im1.save(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.jpg')
 
 mainloop()
