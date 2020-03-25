@@ -414,6 +414,9 @@ class Node:
         self.x_min, self.y_min, self.x_max, self.y_max = x_min, y_min, x_max, y_max
         self.center = ((x_max + x_min)/2, (y_max + y_min)/2)
         self.number = 0
+        self.beams = []
+        self.connected_nodes = []
+        self.layer = 0
         node_list.append(self)
                 
     def draw(self):
