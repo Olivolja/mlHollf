@@ -2,20 +2,20 @@
     "name": "Annotations",
     "securityToken": "Annotations Token",
     "sourceConnection": {
-        "name": "TrainingImagezz",
+        "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYjFlZGQ0ZGMyYWUzZDliMTJhZmQwYmQ4OGIwZGE5ZmE3ZWVkY2NlNWRiZjJjMDUxOTMyODg5OWZjYzA4NDA5OGViYzliNjhkZDM1MTA3ZTYwNjI0OTdiZDU0MDJmYzRjZTIzZmQxZjQ0YTlkY2FhZTM5OTlkZjVkYjNjNGNmZjc4Y2EzMDkwYzI5ODQ2MWU4M2UxZTcwMGViOGIyYWVjNDUyNDc5MzZmYzJlYTM4YjRhYjBjODlkNjE1NzRhOGFiOWI0ZWJmNWY3ODIxNmVlMjBjZTNlY2M5YTk3Y2VhZmE2MDExYjc2NjRmODZmYmM1Y2Y2ZGNhYjk0MDYwNGIwYiIsIml2IjoiZDE5N2QzNjk1MWI3NjcxZDNkOTc2ZjE4YTcxNDRjMjQzYjhmNmEyZjZhMThlZWU2In0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYTI2NDQ0YjVkMTFlYjRhZjRjM2EzMzNlZTg3MTlmYzZkZjM5NjViYTY2M2RhZDk5ZWYyMjY5OGQ4NDJiNjg1ZDk5ZjNiMzlmYmM2NzEyNzIwMTNlYjMxM2UyOTQ1Yzk2M2RmYTQ5YThiMWMzNzBhZmJkZTNiMTA5ZjQ3NjY1ZWM3Njk3OTUzMzRhMzUxNGFhYmNhYmNiOGUxYzdkNmU3M2ZiM2ZhNDAyMGQwNDRhMTM0ZWRlMmE4NGY2ZTQyNzI2YTFjODZmYmQ1ZWVlMTk2NDlmMTU1NGIxYWI0ZDBiZTMiLCJpdiI6ImNhM2VkMWZiOGY0MTYxNGMzYTM4OTVlN2EwNWYxZTIyYmRhNWJmYjI5OTgzMTUzZSJ9"
         },
-        "id": "8IRDseHM4"
+        "id": "hYfZEWaK1"
     },
     "targetConnection": {
-        "name": "TrainingImagezz",
+        "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOTUyMWQyNmM3MjNhMjZkMDQyY2FlYTEwNDAxNDg1YjAwYjQ4NjFkMmE4NDA3ZWEzYjgwOTY1MDEwNDcyYzRjODFmM2JhYmVkMDRhYjU2MWQzYzVkNGE4Yzk3MmNiMzI2ZjQwYzE5NzNjZGUxNjBiZjU1ZDQ2MTM3YjU0MmYwMjU4YTFhMjJiNTE4MjE0NGEyYTAzN2M1M2QyYmU1OTNlMmVjZjQxNTMwODE5YzYyOTE3MmYwODJlZTU1MzZlMDlkMTc5YzBhNmEzYTE4NzFiYmE4NzdlYTkxNWI5MTE1M2ViOTdiNWE2NDZmZjJjOTY5NmUwZWE5OTZmM2QzNTA2ZSIsIml2IjoiYzYxNjQ3ODc0NTJhMmRiYWFhZjQ2NzBkYjNmNGYxZGE1OTE3NGMwYzRjYTM2MGJmIn0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMzU2NzNmY2FjNWQyYzg4ZTYwNzc3Yjg0ZmE2MmEyMzIzNmNkNTM1NjMxNmRlNmVlOGQ1YzY3MzYzODcwYTI4OWY0NmMwZWM2ZWI2MWUzM2IwMzk4N2FkMzI4ODQ1NThmZDEwYWZjNjRjMGM5ZjM3YTBiYjljYzg0OWFkNWQwMzc0OGUxZTg2NTcxZDlhN2YyOGQxMDY4YTM0M2UzNmVlYmU1NGI4ODJmMzc3MWQ5YTBkZGMyNWQ5YzY2ZDQyMTFhZDcwODZlOGRhNTI1MWYyYzc5ZDQ5YTdmZmExMmZhNTkiLCJpdiI6IjJiNmZiNTU1ZDM4NjFlMTg5MzBiMGIyZjNlNDQ1YWRhYTFkMmI5ZDk2NTA2ZmExMyJ9"
         },
-        "id": "8IRDseHM4"
+        "id": "hYfZEWaK1"
     },
     "videoSettings": {
         "frameExtractionRate": 15
@@ -135,11 +135,11 @@
     "exportFormat": {
         "providerType": "csv",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMDkwOWY0ZjJhMDczMWM2MjU4ODY4YzMyNWM2NzQ2OWI1NjgyYTMwNGUwNjM3ZDIzY2EzNWJhZDJlNGZlMTIyZGJiODA3Njk3MmI5ZTgxYjJjOTg2MTc1OTYxNzNmOTRjIiwiaXYiOiJhZDkzZDUwOTJmMDEwNWIyNDY2MDFjMmFhNjAxNTkzNWMxNzk0N2U0YjQzY2Y4N2IifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOGQwNjBmYjhiNGQwM2FjOWI3NThhMDk1ODk0ODhiM2IyY2UxMWRkNmYxOTFlMzM4ZWYwMDNlYmE4ODUwODY3ZTNjNjA0NWEwMzEzMzViMDJjYTZhMmQ5NDA1NTRkODk4IiwiaXYiOiI2ZTBiMTJhZTQ3NTQ2NTVkMmIxYzc2MjA5YmRjOTk5YTVkOTA3OGI4NWQwM2E2NzUifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "0ab07846715e24f9f054844096743590",
+    "lastVisitedAssetId": "9283ecaa10024bba68adba38fcc3773b",
     "assets": {
         "1876c778cb952c2fa66b83ee74db3cbc": {
             "format": "jpg",
