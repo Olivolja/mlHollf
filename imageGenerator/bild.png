@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0 EPSF-3.0
 %%Creator: Tk Canvas Widget
 %%Title: Window .!canvas
-%%CreationDate: Wed Mar 25 15:08:07 2020
+%%CreationDate: Fri Mar 27 13:21:15 2020
 %%BoundingBox: -70 133 683 660
 %%Pages: 1
 %%DocumentData: Clean7Bit
@@ -120,10 +120,10 @@ setmatrix
 stroke
 grestore
 gsave
-737.5 206.5 moveto
-702.7 146.224631896603 lineto
-772.3 146.224631896603 lineto
-737.5 206.5 lineto
+526.590909090909 206.5 moveto
+491.790909090909 146.224631896603 lineto
+561.390909090909 146.224631896603 lineto
+526.590909090909 206.5 lineto
 1 setlinejoin 1 setlinecap
 1 setlinewidth
 [] 0 setdash
@@ -245,6 +245,296 @@ grestore
 gsave
 357.863636363636 283.833333333333 moveto
 610.954545454545 283.833333333333 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+247.02416 146.222216622446 moveto
+299.97584 146.222216622446 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+247.02416 146.222216622446 moveto
+236.433824 136.222216622446 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+257.614496 146.222216622446 moveto
+247.02416 136.222216622446 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+268.204832 146.222216622446 moveto
+257.614496 136.222216622446 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+278.795168 146.222216622446 moveto
+268.204832 136.222216622446 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+289.385504 146.222216622446 moveto
+278.795168 136.222216622446 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+299.97584 146.222216622446 moveto
+289.385504 136.222216622446 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+484.830909090909 146.224631896603 moveto
+568.350909090909 146.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+484.830909090909 146.224631896603 moveto
+475.550909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+494.110909090909 146.224631896603 moveto
+484.830909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+503.390909090909 146.224631896603 moveto
+494.110909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+512.670909090909 146.224631896603 moveto
+503.390909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+521.950909090909 146.224631896603 moveto
+512.670909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+531.230909090909 146.224631896603 moveto
+521.950909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+540.510909090909 146.224631896603 moveto
+531.230909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+549.790909090909 146.224631896603 moveto
+540.510909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+559.070909090909 146.224631896603 moveto
+549.790909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+568.350909090909 146.224631896603 moveto
+559.070909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+484.830909090909 146.224631896603 moveto
+568.350909090909 146.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+484.830909090909 146.224631896603 moveto
+475.550909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+494.110909090909 146.224631896603 moveto
+484.830909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+503.390909090909 146.224631896603 moveto
+494.110909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+512.670909090909 146.224631896603 moveto
+503.390909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+521.950909090909 146.224631896603 moveto
+512.670909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+531.230909090909 146.224631896603 moveto
+521.950909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+540.510909090909 146.224631896603 moveto
+531.230909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+549.790909090909 146.224631896603 moveto
+540.510909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+559.070909090909 146.224631896603 moveto
+549.790909090909 136.224631896603 lineto
+0 setlinecap
+1 setlinejoin
+1 setlinewidth
+[] 0 setdash
+0.000 0.000 0.000 setrgbcolor AdjustColor
+stroke
+grestore
+gsave
+568.350909090909 146.224631896603 moveto
+559.070909090909 136.224631896603 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
