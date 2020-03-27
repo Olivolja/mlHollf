@@ -33,7 +33,7 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
     return shortest_distance_coordinates, correct_beam
 
 
-def find_closest_object((coord, sides=["Bottom", "Top", "Left", "Right"])):
+def find_closest_object(coord, sides=["Bottom", "Top", "Left", "Right"]):
     shortest_distance = m.inf
     shortest_distance_coordinates = (m.inf, m.inf)
     for side in sides:
@@ -102,10 +102,6 @@ class Force:
         self.direction = direction
         x_mid = (x_max + x_min)/2
         y_mid = (y_max + y_min)/2
-        (closest_x1, closest_y1), beam1 = find_closest_point((x_mid, y_min))
-        (closest_x2, closest_y2), beam2 = find_closest_point((x_mid, y_max))
-        dist1 = compute_distance((closest_x1, closest_y1), (x_mid, y_min))
-        dist2 = compute_distance((closest_x2, closest_y2), (x_mid, y_max))
         if direction == "Up" or direction == "Down": # direction i raden under
             (closest_x1, closest_y1), beam1 = find_closest_point((x_mid, y_min), ["Bottom", "Top"])
             (closest_x2, closest_y2), beam2 = find_closest_point((x_mid, y_max), ["Bottom", "Top"])
@@ -479,7 +475,6 @@ class Truss:
         self.nodes = nodes
         self.beams = truss_beams
 
-<<<<<<< HEAD
         # Find the start node
         x_min = m.inf
         for node in self.nodes:
@@ -531,33 +526,6 @@ class Truss:
                         layers[node.layer].add(node_2)
                     elif angle == 45:
 
-            
-
-=======
-        def find_start_node():
-            x_min, y_max = m.inf, m.inf
-            for node in nodes:
-                if node.x_min <= x_min and node.y_max <= y_max:
-                    x_min = node.x_min
-                    y_max = node.y_max
-                    start_node = node
-            return start_node
-
-        layers = {}
-        start_node = find_start_node()
-        layers[0] = [start_node]
-        temp = self.nodes
-
-
-        for beam in start_node.beams:
-            if beam.orientation == 0:
-                layers[0].append(beam.nodes[1])
-            elif beam.orientation == 45:
-                layers[1] = beam.nodes[1]
-            elif beam.orientation == 135:
-                layers[-1] = beam.nodes[1]
- """
->>>>>>> 32b3aea5b3ef99ac7479263abbe40457c0241b6c
 
 def get_objects():
     try:
@@ -593,10 +561,7 @@ def delete_overlapping_objects(objects):
                     objects = objects.drop(index1, axis=0)
     return objects
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 32b3aea5b3ef99ac7479263abbe40457c0241b6c
 def draw_all_objects():
     objects = get_objects()
     m_x = interp1d([0, 4000], [0, 1000])
