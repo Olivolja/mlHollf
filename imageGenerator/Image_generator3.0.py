@@ -500,7 +500,7 @@ def find_closest_node(coord):
 
     return shortest_distance_coordinates, closest_node
 
-""" 
+
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
@@ -547,7 +547,7 @@ class Node:
         self.number = 0
         self.beams = []
         self.connected_nodes = []
-        self.layer = 0
+        self.layer = (0, 0)
         node_list.append(self)
                 
     def draw(self):
@@ -587,35 +587,74 @@ class Truss:
             for beam in beams:
                 if node_1 and node_2 in beam.nodes:
                     return beam
-                else:
 
+        def x_sort(node):
+            return node.center[0]
 
+        def y_sort(node):
+            return node.center[1]
 
+        x_list = sorted(self.nodes, key = x_sort)
+        y_list = sorted(self.nodes, key = y_sort)
 
+        width = x_list[-1] - x_list[0]
+        height = y_list[-1] - y_list[0]
+
+        steps = 10
+        x_step, y_step = width/steps, height/steps
+
+        while len(y_list) > 0:
+            node_0 = y_list[0]
+            node_1 = y_list[1]
+            y_0 = node_0.center[1]
+            y_1 = node_1.center[1]
+            y_bar = y_node + y_step
+            if y_0 <= y_1 <= y_bar:
+                node_1.layer[1] = node_0.layer[1]
+                del y_list[1]
+            else:
+                node_1.layer[1] = node_0.layer[1] + 1
+                del y_list[0]
+
+        while len(x_list) > 0:
+            node_0 = x_list[0]
+            node_1 = x_list[1]
+            x_0 = node_0.center[0]
+            x_1 = node_1.center[0]
+            x_bar = x_node + x_step
+            if x_0 <= x_1 <= x_bar:
+                node_1.layer[0] = node_0.layer[0]
+                del y_list[1]
+            else:
+                node_1.layer[0] = node_0.layer[0] + 1
+                del y_list[0]
+
+        """
         # Aligns the nodes horizontally
         layers = {0: {start_node}}
         start_node.layer = 0
         temp = [start_node]
         finished = []
-        while finished != self.nodes:
+        while len(temp) > 0:
             for node in temp:
                 temp.append(node.connected_nodes)
                 temp.remove(node)
                 finished.append(node)
                 for node_2 in temp:
-                    beam = get_beam(node_1, node_2)
+                    beam = get_beam(node, node_2)
                     angle = beam.orientation
                     if angle == 0:
                         node_2.layer = node.layer
                         layers[node.layer].add(node_2)
-                    elif angle == 45:
-<<<<<<< HEAD
-
-
-=======
- """
-            
->>>>>>> 00e580b6ce2fd6f3fe94a101edfa8ebd523440c7
+                    elif angle == 45 or angle == 135: 
+                        if node.center[1] < node_2.center[1]:
+                            node_2.layer = node.layer - 1
+                            layers[node.layer].add(node_2)
+                        else:
+                            node_2.layer = node.layer + 1
+                            layers[node.layer].add(node_2)
+                    elif angle == 90:
+           """
 def get_objects():
     try:
         df = pd.read_csv(r'C:\Users\admin\Documents\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
