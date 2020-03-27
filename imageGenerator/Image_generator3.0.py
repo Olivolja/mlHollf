@@ -768,4 +768,5 @@ m_cnv.postscript(file="bild.png", colormode='color')
 im1 = Image.open(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.png')
 im1.save(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.jpg')
 
+
 mainloop()
