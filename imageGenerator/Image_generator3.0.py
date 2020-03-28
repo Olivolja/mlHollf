@@ -37,22 +37,14 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
 def find_closest_object(coord, sides=["Bottom", "Top", "Left", "Right"]):
     shortest_distance = m.inf
     shortest_distance_coordinates = (m.inf, m.inf)
-    print(surface_points)
     for side in sides:
-        print(side)
         for item, point, corrected_point in surface_points[side]: # Point och changed_point rätt grejer?
-            print(item)
-            print(point)
-            print(corrected_point)
             distance = compute_distance(coord, point)
             if distance < shortest_distance:
                 shortest_distance = distance
                 shortest_distance_coordinates = corrected_point
                 closest_item = item
                 closest_side = side
-    print(closest_item)
-    print(closest_side)
-    print(shortest_distance_coordinates)
     return closest_item, closest_side, shortest_distance_coordinates # Returning wrong stuff?
 
 # compute distance between two points
@@ -84,7 +76,7 @@ class Beam:
             self.points["Right"].append((self.x_max, self.y_mid))
             surface_points["Left"].append((self, (self.x_min, self.y_mid), (self.x_min, self.y_mid)))   # If the surface is connected to a beam the
             surface_points["Right"].append((self, (self.x_max, self.y_mid), (self.x_max, self.y_mid)))  # middle point were they connect won´t be changed
-            self.surface_height = self.height*4
+            self.surface_height = self.height*15
 
         else:
             self.length = y_max - y_min
@@ -291,7 +283,6 @@ class Moment:
         elif self.rel_pos == "Right":
             self.x_min = self.closest_point[0] + self.radius/2
             self.y_mid = self.closest_point[1]
-            print("Got to first elif loop")
 
     def draw(self):
         if self.rel_pos == "Bottom":
@@ -419,9 +410,6 @@ class Surface:
         self.width = x_max - x_min
         if self.width > self.height:
             self.closest_item, self.side, self.closest_point = find_closest_object((self.x_mid, self.y_mid), ["Bottom", "Top"])
-            print(self.closest_item)
-            print(self.side)
-            print(self.closest_point)
             self.x_mid = self.closest_point[0]
             self.width = self.closest_item.surface_width
             self.height = 10
@@ -462,20 +450,20 @@ class Surface:
                 p2y = self.y_min
                 m_cnv.create_line(p1x, p1y, p2x, p2y)
         elif self.side == "Left":
-            m_cnv.create_line(self.x_max, self.y_mid - self.width/2, self.x_max, self.y_mid + self.width/2)
+            m_cnv.create_line(self.x_max, self.y_mid - self.height/2, self.x_max, self.y_mid + self.height/2)
             for i in range(self.no_lines):
                 p1x = self.x_max
                 p2x = self.x_min
                 p1y = self.y_mid - self.height/2 + (i/(self.no_lines - 1))*self.height 
-                p2y = p2y - self.height/(self.no_lines - 1)
+                p2y = p1y - self.height/(self.no_lines - 1)
                 m_cnv.create_line(p1x, p1y, p2x, p2y)
         elif self.side == "Right":
-            m_cnv.create_line(self.x_min, self.y_mid - self.width/2, self.x_min, self.y_mid + self.width/2)
+            m_cnv.create_line(self.x_min, self.y_mid - self.height/2, self.x_min, self.y_mid + self.height/2)
             for i in range(self.no_lines):
                 p1x = self.x_min
                 p2x = self.x_max
                 p1y = self.y_mid - self.height/2 + (i/(self.no_lines - 1))*self.height 
-                p2y = p2y - self.height/(self.no_lines - 1)
+                p2y = p1y - self.height/(self.no_lines - 1)
                 m_cnv.create_line(p1x, p1y, p2x, p2y)
 
         if type(self.closest_item) == Beam: # Rätt?
@@ -500,7 +488,7 @@ def find_closest_node(coord):
 
     return shortest_distance_coordinates, closest_node
 
-
+""" 
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
@@ -547,7 +535,7 @@ class Node:
         self.number = 0
         self.beams = []
         self.connected_nodes = []
-        self.layer = (0, 0)
+        self.layer = 0
         node_list.append(self)
                 
     def draw(self):
@@ -587,74 +575,30 @@ class Truss:
             for beam in beams:
                 if node_1 and node_2 in beam.nodes:
                     return beam
+                else:
 
-        def x_sort(node):
-            return node.center[0]
 
-        def y_sort(node):
-            return node.center[1]
 
-        x_list = sorted(self.nodes, key = x_sort)
-        y_list = sorted(self.nodes, key = y_sort)
 
-        width = x_list[-1] - x_list[0]
-        height = y_list[-1] - y_list[0]
-
-        steps = 10
-        x_step, y_step = width/steps, height/steps
-
-        while len(y_list) > 0:
-            node_0 = y_list[0]
-            node_1 = y_list[1]
-            y_0 = node_0.center[1]
-            y_1 = node_1.center[1]
-            y_bar = y_node + y_step
-            if y_0 <= y_1 <= y_bar:
-                node_1.layer[1] = node_0.layer[1]
-                del y_list[1]
-            else:
-                node_1.layer[1] = node_0.layer[1] + 1
-                del y_list[0]
-
-        while len(x_list) > 0:
-            node_0 = x_list[0]
-            node_1 = x_list[1]
-            x_0 = node_0.center[0]
-            x_1 = node_1.center[0]
-            x_bar = x_node + x_step
-            if x_0 <= x_1 <= x_bar:
-                node_1.layer[0] = node_0.layer[0]
-                del y_list[1]
-            else:
-                node_1.layer[0] = node_0.layer[0] + 1
-                del y_list[0]
-
-        """
         # Aligns the nodes horizontally
         layers = {0: {start_node}}
         start_node.layer = 0
         temp = [start_node]
         finished = []
-        while len(temp) > 0:
+        while finished != self.nodes:
             for node in temp:
                 temp.append(node.connected_nodes)
                 temp.remove(node)
                 finished.append(node)
                 for node_2 in temp:
-                    beam = get_beam(node, node_2)
+                    beam = get_beam(node_1, node_2)
                     angle = beam.orientation
                     if angle == 0:
                         node_2.layer = node.layer
                         layers[node.layer].add(node_2)
-                    elif angle == 45 or angle == 135: 
-                        if node.center[1] < node_2.center[1]:
-                            node_2.layer = node.layer - 1
-                            layers[node.layer].add(node_2)
-                        else:
-                            node_2.layer = node.layer + 1
-                            layers[node.layer].add(node_2)
-                    elif angle == 90:
-           """
+                    elif angle == 45:
+"""
+
 def get_objects():
     try:
         df = pd.read_csv(r'C:\Users\admin\Documents\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
@@ -677,9 +621,6 @@ def delete_overlapping_objects(objects):
             x_min2, y_min2, x_max2, y_max2 = obj2[0], obj2[1], obj2[2], obj2[3],
             x_mid1 = (x_max1 + x_min1)/2
             y_mid1 = (y_max1 + y_min1)/2
-            # x_mid2 = (x_max2 + x_min2)/2
-            # y_mid2 = (y_max2 + y_min2)/2
-            # print(str(index1), str(index2), str(x_min2), str(y_min2), str(x_max2), str(y_max2), str(x_mid1), str(y_mid1))
             if x_min2 < x_mid1 < x_max2 and y_min2 < y_mid1 < y_max2:
                 if type1 == type2:
                     objects = objects.drop(index1, axis=0)
@@ -689,58 +630,82 @@ def delete_overlapping_objects(objects):
                     objects = objects.drop(index1, axis=0)
     return objects
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 00e580b6ce2fd6f3fe94a101edfa8ebd523440c7
 def draw_all_objects():
     objects = get_objects()
     m_x = interp1d([0, 4000], [0, 1000])
     m_y = interp1d([0, 4000], [800, 0])
     for index, row in objects.iterrows():
-        type = labels[row[4]]
+        obj_type = labels[row[4]]
         x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
-        if type == "Beam":
+        if obj_type == "Beam":
             beam = Beam(x_min, y_min, x_max, y_max)
             beam.draw()
 
     for index, row in objects.iterrows():
-        # print(index)
-        type = labels[row[4]]
+        obj_type = labels[row[4]]
         x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
-        if type == "ArrowDown":
+        if obj_type == "ArrowDown":
             force = Force(x_min, y_min, x_max, y_max, "Down")
             force.draw()
 
-        elif type == "ArrowUp":
+        elif obj_type == "ArrowUp":
             force = Force(x_min, y_min, x_max, y_max, "Up")
             force.draw()
 
-        elif type == "PinSupport":
+        elif obj_type == "PinSupport":
             pin = PinSupport(x_min, y_min, x_max, y_max)
             pin.draw()
 
-        elif type == "RollerSupport":
+        elif obj_type == "RollerSupport":
             roller = RollerSupport(x_min, y_min, x_max, y_max)
             roller.draw()
 
-        elif type == "LoadUp":
+        elif obj_type == "LoadUp":
             load = Load(x_min, y_min, x_max, y_max, "Up")
             load.draw()
 
-        elif type == "LoadDown":
+        elif obj_type == "LoadDown":
             load = Load(x_min, y_min, x_max, y_max, "Down")
             load.draw()
 
-        #elif type == "ArrowClockwise":
-        #   moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", )
+        elif obj_type == "BottomArrowClockwise":
+           moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Bottom")
+           moment.draw()
+        
+        elif obj_type == "TopArrowClockwise":
+           moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Top")
+           moment.draw()
+
+        elif obj_type == "LeftArrowClockwise":
+           moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Left")
+           moment.draw()
+
+        elif obj_type == "RightArrowClockwise":
+           moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Right")
+           moment.draw()
+
+        elif obj_type == "BottomArrowCounterwise":
+           moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Bottom")
+           moment.draw()
+
+        elif obj_type == "TopArrowCounterwise":
+           moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Top")
+           moment.draw()
+
+        elif obj_type == "LeftArrowCounterwise":
+           moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Left")
+           moment.draw()
+
+        elif obj_type == "RightArrowCounterwise":
+           moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Right")
+           moment.draw()
     for index, row in objects.iterrows():
-        type = labels[row[4]]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
-        if type == "Surface":
+        obj_type = labels[row[4]]
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_x(row[1])), float(m_x(row[2])), float(m_x(row[3]))
+        
+        if obj_type == "Surface":
             surface = Surface(x_min, y_min, x_max, y_max)
             surface.draw()
-
 
 
 draw_all_objects()

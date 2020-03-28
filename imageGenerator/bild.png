@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0 EPSF-3.0
 %%Creator: Tk Canvas Widget
 %%Title: Window .!canvas
-%%CreationDate: Fri Mar 27 13:21:15 2020
+%%CreationDate: Sat Mar 28 02:47:20 2020
 %%BoundingBox: -70 133 683 660
 %%Pages: 1
 %%DocumentData: Clean7Bit
@@ -433,8 +433,8 @@ gsave
 stroke
 grestore
 gsave
-484.830909090909 146.224631896603 moveto
-568.350909090909 146.224631896603 lineto
+737.5 238.5 moveto
+737.5 178.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -443,8 +443,8 @@ gsave
 stroke
 grestore
 gsave
-484.830909090909 146.224631896603 moveto
-475.550909090909 136.224631896603 lineto
+737.5 238.5 moveto
+747.5 248.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -453,8 +453,8 @@ gsave
 stroke
 grestore
 gsave
-494.110909090909 146.224631896603 moveto
-484.830909090909 136.224631896603 lineto
+737.5 228.5 moveto
+747.5 238.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -463,8 +463,8 @@ gsave
 stroke
 grestore
 gsave
-503.390909090909 146.224631896603 moveto
-494.110909090909 136.224631896603 lineto
+737.5 218.5 moveto
+747.5 228.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -473,8 +473,8 @@ gsave
 stroke
 grestore
 gsave
-512.670909090909 146.224631896603 moveto
-503.390909090909 136.224631896603 lineto
+737.5 208.5 moveto
+747.5 218.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -483,8 +483,8 @@ gsave
 stroke
 grestore
 gsave
-521.950909090909 146.224631896603 moveto
-512.670909090909 136.224631896603 lineto
+737.5 198.5 moveto
+747.5 208.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -493,8 +493,8 @@ gsave
 stroke
 grestore
 gsave
-531.230909090909 146.224631896603 moveto
-521.950909090909 136.224631896603 lineto
+737.5 188.5 moveto
+747.5 198.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -503,38 +503,8 @@ gsave
 stroke
 grestore
 gsave
-540.510909090909 146.224631896603 moveto
-531.230909090909 136.224631896603 lineto
-0 setlinecap
-1 setlinejoin
-1 setlinewidth
-[] 0 setdash
-0.000 0.000 0.000 setrgbcolor AdjustColor
-stroke
-grestore
-gsave
-549.790909090909 146.224631896603 moveto
-540.510909090909 136.224631896603 lineto
-0 setlinecap
-1 setlinejoin
-1 setlinewidth
-[] 0 setdash
-0.000 0.000 0.000 setrgbcolor AdjustColor
-stroke
-grestore
-gsave
-559.070909090909 146.224631896603 moveto
-549.790909090909 136.224631896603 lineto
-0 setlinecap
-1 setlinejoin
-1 setlinewidth
-[] 0 setdash
-0.000 0.000 0.000 setrgbcolor AdjustColor
-stroke
-grestore
-gsave
-568.350909090909 146.224631896603 moveto
-559.070909090909 136.224631896603 lineto
+737.5 178.5 moveto
+747.5 188.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
