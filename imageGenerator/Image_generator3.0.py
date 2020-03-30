@@ -16,8 +16,10 @@ truss_beams = []
 surface_points = {"Bottom": [], "Top": [], "Left": [], "Right": []} # To find the closest item for a surface. Each list: 
                                                                     # (the item, (starting coordinate), (ending coordinate)) 
 
-labels = ["RollerSupport", "PinSupport", "Beam", "Node", "ArrowDown", "ArrowUp", "ArrowCounterClockwise",
-                  "ArrowClockwise", "Beam45", "Beam135", "Surface", "LoadUp", "LoadRight", "LoadDown"]
+labels = ["PinSupport", "RollerSupport", "BeamLine0", "Surface", "Node", "ArrowUp", "ArrowDown", 
+          "ArrowLeft", "ArrowRight", "ClockwiseRight", "ClockwiseTop", "ClockwiseLeft", "ClockwiseBottom", 
+          "CounterclockwiseRight", "CounterclockwiseTop", "CounterclockwiseLeft", "CounterclockwiseBottom", 
+          "Beam0", "BeamLine45", "BeamLine90", "Beam90", "BeamLine135", "Beam135", "LoadDown", "LoadUp"]
 
 # Method for finding closest point on any beam returning that point and the corresponding beam
 def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
@@ -58,14 +60,15 @@ def compute_distance(point1, point2):
 
 # Defining a beam
 class Beam:
-    def __init__(self, x_min, y_min, x_max, y_max):
+    def __init__(self, x_min, y_min, x_max, y_max, orientation):
         y_mid = (y_max + y_min)/2
         x_mid = (x_max + x_min)/2
         self.height = 4
+        self.orientation = orientation
         self.points = {"Bottom": [], "Top": [], "Left": [], "Right": []}
         self.objects = {"Forces": [], "Loads": [], "Pins": [], "Rollers": [],
                         "Moments": [], "Surfaces": []}
-        if x_max - x_min > y_max - y_min:
+        if orientation == "0":
             self.length = x_max - x_min
             self.y_max = y_mid + self.height/2
             self.y_min = y_mid - self.height/2
@@ -84,7 +87,7 @@ class Beam:
             surface_points["Right"].append((self, (self.x_max, y_mid), (self.x_max, y_mid)))  # middle point were they connect won´t be changed
             self.surface_height = self.height*15
 
-        else:
+        elif orientation == "90":
             self.length = y_max - y_min
             self.x_max = x_mid + self.height/2
             self.x_min = x_mid - self.height/2
@@ -227,7 +230,7 @@ class PinSupport:
         self.beam.objects["Pins"].append((self.corner1, self.orientation))
 
 # Defining a roller support as a pin support with sidelength 9.51% of corresponding beams length
-# plus two extra circles at half that length as diameter
+# plus two extra circles with half that length as diameter
 class RollerSupport:
     def __init__(self, x_min, y_min, x_max, y_max):
         x_mid = (x_min + x_max)/2
@@ -386,7 +389,7 @@ class Load:
         if self.direction == "Down":
             for i in range(self.no_arrows + 1):
                 px = self.leftmost_point[0] + i * self.sep
-                m_cnv.create_line(px, py1, px, py2, arrow="first")
+                m_cnv.create_line(px, py1, px, py2, arrow="first") # Kan krympa med first/last som variabel
         elif self.direction == "Up":
             for i in range(self.no_arrows + 1):
                 px = self.leftmost_point[0] + i * self.sep
@@ -468,12 +471,6 @@ class Surface:
 
         if type(self.closest_item) == Beam: # Rätt?
             self.closest_item.objects["Surfaces"].append((self.closest_point)) 
-
-
-
-        
-            
-
 
 
 def find_closest_node(coord):
@@ -610,7 +607,7 @@ def get_objects():
     return (df1)
 
 
-def delete_overlapping_objects(objects):
+def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika håll -> välj den som har rätt typ av balkpunkt närmast, grej för att ändra position om krock efter ändringar
     for index1, obj1 in objects.iterrows():
         for index2, obj2 in objects.iterrows():
             if index1 == index2:
@@ -628,22 +625,27 @@ def delete_overlapping_objects(objects):
                     objects = objects.drop(index1, axis=0)
                 elif type1 in ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"] and type2 in ["LoadUp", "LoadDown"]:
                     objects = objects.drop(index1, axis=0)
+                elif type1 == "Node" and type2 == "RollerSupport":
+                    objects = objects.drop(index1, axis=0)
     return objects
 
 def draw_all_objects():
     objects = get_objects()
-    m_x = interp1d([0, 4000], [0, 1000])
+    m_x = interp1d([0, 4000], [0, 800])
     m_y = interp1d([0, 4000], [800, 0])
     for index, row in objects.iterrows():
         obj_type = labels[row[4]]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
-        if obj_type == "Beam":
-            beam = Beam(x_min, y_min, x_max, y_max)
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
+        if obj_type in ["Beam0", "BeamLine0"]:
+            beam = Beam(x_min, y_min, x_max, y_max, "0")
+            beam.draw()
+        elif obj_type in ["Beam90", "BeamLine90"]:
+            beam = Beam(x_min, y_min, x_max, y_max, "90")
             beam.draw()
 
     for index, row in objects.iterrows():
         obj_type = labels[row[4]]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
         if obj_type == "ArrowDown":
             force = Force(x_min, y_min, x_max, y_max, "Down")
             force.draw()
@@ -699,9 +701,9 @@ def draw_all_objects():
         elif obj_type == "RightArrowCounterwise":
            moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Right")
            moment.draw()
-    for index, row in objects.iterrows():
+    for index, row in objects.iterrows(): # m_x på alla löser
         obj_type = labels[row[4]]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_x(row[1])), float(m_x(row[2])), float(m_x(row[3]))
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
         
         if obj_type == "Surface":
             surface = Surface(x_min, y_min, x_max, y_max)
@@ -709,22 +711,6 @@ def draw_all_objects():
 
 
 draw_all_objects()
-
-# beam1 = Beam(100, 550, 600, 650)
-# beam1.draw()
-# arrow1 = Force(150, 100, 175, 150, "Left")
-# arrow1.draw()
-# pin1 = PinSupport(300, 700, 356, 750, 0.15)
-# pin1.draw()
-# roll = RollerSupport(300, 500, 350, 650)
-# roll.draw()
-# rolll = RollerSupport(10, 550, 100, 650)
-# rolll.draw()
-# moment = Moment(750, 550, 800, 650, "Clockwise", "Bottom")
-# moment.draw()
-# m_cnv.create_line(400, 550, 400, 650, fill="red")
-# load = Load(100, 450, 400, 550, "Up")
-# load.draw()
 
 m_cnv.update()
 m_cnv.postscript(file="bild.png", colormode='color')

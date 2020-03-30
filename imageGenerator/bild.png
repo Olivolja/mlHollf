@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0 EPSF-3.0
 %%Creator: Tk Canvas Widget
 %%Title: Window .!canvas
-%%CreationDate: Sun Mar 29 13:52:22 2020
+%%CreationDate: Mon Mar 30 16:24:25 2020
 %%BoundingBox: -70 133 683 660
 %%Pages: 1
 %%DocumentData: Clean7Bit
@@ -81,7 +81,7 @@ save
 -502 -350 translate
 0 701 moveto 1004 701 lineto 1004 0 lineto 0 0 lineto closepath clip newpath
 gsave
-273.5 210.5 moveto 464 0 rlineto 0 -4 rlineto -464 0 rlineto closepath
+218.8 210.5 moveto 371.2 0 rlineto 0 -4 rlineto -371.2 0 rlineto closepath
 0 setlinejoin 2 setlinecap
 1 setlinewidth
 [] 0 setdash
@@ -89,10 +89,10 @@ gsave
 stroke
 grestore
 gsave
-273.5 206.5 moveto
-251.4368 168.285416622446 lineto
-295.5632 168.285416622446 lineto
-273.5 206.5 lineto
+218.8 206.5 moveto
+201.14944 175.928333297957 lineto
+236.45056 175.928333297957 lineto
+218.8 206.5 lineto
 1 setlinejoin 1 setlinecap
 1 setlinewidth
 [] 0 setdash
@@ -101,7 +101,7 @@ stroke
 grestore
 gsave
 matrix currentmatrix
-262.4684 157.253816622446 translate 11.0316 11.0316 scale 1 0 moveto 0 0 1 0 360 arc
+209.97472 167.103053297957 translate 8.82527999999999 8.82528000000002 scale 1 0 moveto 0 0 1 0 360 arc
 setmatrix
 0 setlinejoin 2 setlinecap
 1 setlinewidth
@@ -111,7 +111,7 @@ stroke
 grestore
 gsave
 matrix currentmatrix
-284.5316 157.253816622446 translate 11.0316 11.0316 scale 1 0 moveto 0 0 1 0 360 arc
+227.62528 167.103053297957 translate 8.82527999999999 8.82528000000002 scale 1 0 moveto 0 0 1 0 360 arc
 setmatrix
 0 setlinejoin 2 setlinecap
 1 setlinewidth
@@ -120,10 +120,10 @@ setmatrix
 stroke
 grestore
 gsave
-526.590909090909 206.5 moveto
-491.790909090909 146.224631896603 lineto
-561.390909090909 146.224631896603 lineto
-526.590909090909 206.5 lineto
+421.272727272727 206.5 moveto
+393.432727272727 158.279705517282 lineto
+449.112727272727 158.279705517282 lineto
+421.272727272727 206.5 lineto
 1 setlinejoin 1 setlinecap
 1 setlinewidth
 [] 0 setdash
@@ -131,110 +131,93 @@ gsave
 stroke
 grestore
 gsave
-357.863636363636 211.357469437304 moveto
-357.863636363636 283.833333333333 lineto
+286.290909090909 215.357469437304 moveto
+286.290909090909 272.366666666667 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
 [] 0 setdash
 0.000 0.000 0.000 setrgbcolor AdjustColor
 stroke
-357.863636363636 206.5 moveto
-361.364636363636 216.501 lineto
-358.363636363636 214.786632676378 lineto
-357.363636363636 214.786632676378 lineto
-354.362636363636 216.501 lineto
-357.863636363636 206.5 lineto
+286.290909090909 210.5 moveto
+289.791909090909 220.501 lineto
+286.790909090909 218.786632676378 lineto
+285.790909090909 218.786632676378 lineto
+282.789909090909 220.501 lineto
+286.290909090909 210.5 lineto
 fill
 grestore
 gsave
-408.481818181818 211.357469437304 moveto
-408.481818181818 283.833333333333 lineto
+336.909090909091 215.357469437304 moveto
+336.909090909091 272.366666666667 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
 [] 0 setdash
 0.000 0.000 0.000 setrgbcolor AdjustColor
 stroke
-408.481818181818 206.5 moveto
-411.982818181818 216.501 lineto
-408.981818181818 214.786632676378 lineto
-407.981818181818 214.786632676378 lineto
-404.980818181818 216.501 lineto
-408.481818181818 206.5 lineto
+336.909090909091 210.5 moveto
+340.410090909091 220.501 lineto
+337.409090909091 218.786632676378 lineto
+336.409090909091 218.786632676378 lineto
+333.408090909091 220.501 lineto
+336.909090909091 210.5 lineto
 fill
 grestore
 gsave
-459.1 211.357469437304 moveto
-459.1 283.833333333333 lineto
+387.527272727273 215.357469437304 moveto
+387.527272727273 272.366666666667 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
 [] 0 setdash
 0.000 0.000 0.000 setrgbcolor AdjustColor
 stroke
-459.1 206.5 moveto
-462.601 216.501 lineto
-459.6 214.786632676378 lineto
-458.6 214.786632676378 lineto
-455.599 216.501 lineto
-459.1 206.5 lineto
+387.527272727273 210.5 moveto
+391.028272727273 220.501 lineto
+388.027272727273 218.786632676378 lineto
+387.027272727273 218.786632676378 lineto
+384.026272727273 220.501 lineto
+387.527272727273 210.5 lineto
 fill
 grestore
 gsave
-509.718181818182 211.357469437304 moveto
-509.718181818182 283.833333333333 lineto
+438.145454545455 215.357469437304 moveto
+438.145454545455 272.366666666667 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
 [] 0 setdash
 0.000 0.000 0.000 setrgbcolor AdjustColor
 stroke
-509.718181818182 206.5 moveto
-513.219181818182 216.501 lineto
-510.218181818182 214.786632676378 lineto
-509.218181818182 214.786632676378 lineto
-506.217181818182 216.501 lineto
-509.718181818182 206.5 lineto
+438.145454545455 210.5 moveto
+441.646454545455 220.501 lineto
+438.645454545455 218.786632676378 lineto
+437.645454545455 218.786632676378 lineto
+434.644454545454 220.501 lineto
+438.145454545455 210.5 lineto
 fill
 grestore
 gsave
-560.336363636364 211.357469437304 moveto
-560.336363636364 283.833333333333 lineto
+488.763636363636 215.357469437304 moveto
+488.763636363636 272.366666666667 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
 [] 0 setdash
 0.000 0.000 0.000 setrgbcolor AdjustColor
 stroke
-560.336363636364 206.5 moveto
-563.837363636364 216.501 lineto
-560.836363636364 214.786632676378 lineto
-559.836363636364 214.786632676378 lineto
-556.835363636364 216.501 lineto
-560.336363636364 206.5 lineto
+488.763636363636 210.5 moveto
+492.264636363636 220.501 lineto
+489.263636363636 218.786632676378 lineto
+488.263636363636 218.786632676378 lineto
+485.262636363636 220.501 lineto
+488.763636363636 210.5 lineto
 fill
 grestore
 gsave
-610.954545454545 211.357469437304 moveto
-610.954545454545 283.833333333333 lineto
-0 setlinecap
-1 setlinejoin
-1 setlinewidth
-[] 0 setdash
-0.000 0.000 0.000 setrgbcolor AdjustColor
-stroke
-610.954545454545 206.5 moveto
-614.455545454545 216.501 lineto
-611.454545454546 214.786632676378 lineto
-610.454545454546 214.786632676378 lineto
-607.453545454546 216.501 lineto
-610.954545454545 206.5 lineto
-fill
-grestore
-gsave
-357.863636363636 206.5 moveto
-610.954545454545 206.5 lineto
+286.290909090909 210.5 moveto
+488.763636363636 210.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -243,8 +226,8 @@ gsave
 stroke
 grestore
 gsave
-357.863636363636 283.833333333333 moveto
-610.954545454545 283.833333333333 lineto
+286.290909090909 272.366666666667 moveto
+488.763636363636 272.366666666667 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -253,8 +236,8 @@ gsave
 stroke
 grestore
 gsave
-247.02416 146.222216622446 moveto
-299.97584 146.222216622446 lineto
+197.619328 158.277773297957 moveto
+239.980672 158.277773297957 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -263,8 +246,8 @@ gsave
 stroke
 grestore
 gsave
-247.02416 146.222216622446 moveto
-236.433824 136.222216622446 lineto
+197.619328 158.277773297957 moveto
+187.028992 148.277773297957 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -273,8 +256,8 @@ gsave
 stroke
 grestore
 gsave
-257.614496 146.222216622446 moveto
-247.02416 136.222216622446 lineto
+208.209664 158.277773297957 moveto
+197.619328 148.277773297957 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -283,8 +266,8 @@ gsave
 stroke
 grestore
 gsave
-268.204832 146.222216622446 moveto
-257.614496 136.222216622446 lineto
+218.8 158.277773297957 moveto
+208.209664 148.277773297957 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -293,8 +276,8 @@ gsave
 stroke
 grestore
 gsave
-278.795168 146.222216622446 moveto
-268.204832 136.222216622446 lineto
+229.390336 158.277773297957 moveto
+218.8 148.277773297957 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -303,8 +286,8 @@ gsave
 stroke
 grestore
 gsave
-289.385504 146.222216622446 moveto
-278.795168 136.222216622446 lineto
+239.980672 158.277773297957 moveto
+229.390336 148.277773297957 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -313,8 +296,8 @@ gsave
 stroke
 grestore
 gsave
-299.97584 146.222216622446 moveto
-289.385504 136.222216622446 lineto
+387.864727272727 158.279705517282 moveto
+454.680727272727 158.279705517282 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -323,8 +306,8 @@ gsave
 stroke
 grestore
 gsave
-484.830909090909 146.224631896603 moveto
-568.350909090909 146.224631896603 lineto
+387.864727272727 158.279705517282 moveto
+378.319584415584 148.279705517282 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -333,8 +316,8 @@ gsave
 stroke
 grestore
 gsave
-484.830909090909 146.224631896603 moveto
-475.550909090909 136.224631896603 lineto
+397.40987012987 158.279705517282 moveto
+387.864727272727 148.279705517282 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -343,8 +326,8 @@ gsave
 stroke
 grestore
 gsave
-494.110909090909 146.224631896603 moveto
-484.830909090909 136.224631896603 lineto
+406.955012987013 158.279705517282 moveto
+397.40987012987 148.279705517282 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -353,8 +336,8 @@ gsave
 stroke
 grestore
 gsave
-503.390909090909 146.224631896603 moveto
-494.110909090909 136.224631896603 lineto
+416.500155844156 158.279705517282 moveto
+406.955012987013 148.279705517282 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -363,8 +346,8 @@ gsave
 stroke
 grestore
 gsave
-512.670909090909 146.224631896603 moveto
-503.390909090909 136.224631896603 lineto
+426.045298701299 158.279705517282 moveto
+416.500155844156 148.279705517282 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -373,8 +356,8 @@ gsave
 stroke
 grestore
 gsave
-521.950909090909 146.224631896603 moveto
-512.670909090909 136.224631896603 lineto
+435.590441558442 158.279705517282 moveto
+426.045298701299 148.279705517282 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -383,8 +366,8 @@ gsave
 stroke
 grestore
 gsave
-531.230909090909 146.224631896603 moveto
-521.950909090909 136.224631896603 lineto
+445.135584415584 158.279705517282 moveto
+435.590441558442 148.279705517282 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -393,8 +376,8 @@ gsave
 stroke
 grestore
 gsave
-540.510909090909 146.224631896603 moveto
-531.230909090909 136.224631896603 lineto
+454.680727272727 158.279705517282 moveto
+445.135584415584 148.279705517282 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -403,8 +386,8 @@ gsave
 stroke
 grestore
 gsave
-549.790909090909 146.224631896603 moveto
-540.510909090909 136.224631896603 lineto
+590 238.5 moveto
+590 178.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -413,8 +396,8 @@ gsave
 stroke
 grestore
 gsave
-559.070909090909 146.224631896603 moveto
-549.790909090909 136.224631896603 lineto
+590 238.5 moveto
+600 248.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -423,8 +406,8 @@ gsave
 stroke
 grestore
 gsave
-568.350909090909 146.224631896603 moveto
-559.070909090909 136.224631896603 lineto
+590 228.5 moveto
+600 238.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -433,8 +416,8 @@ gsave
 stroke
 grestore
 gsave
-737.5 238.5 moveto
-737.5 178.5 lineto
+590 218.5 moveto
+600 228.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -443,8 +426,8 @@ gsave
 stroke
 grestore
 gsave
-737.5 238.5 moveto
-747.5 248.5 lineto
+590 208.5 moveto
+600 218.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -453,8 +436,8 @@ gsave
 stroke
 grestore
 gsave
-737.5 228.5 moveto
-747.5 238.5 lineto
+590 198.5 moveto
+600 208.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -463,8 +446,8 @@ gsave
 stroke
 grestore
 gsave
-737.5 218.5 moveto
-747.5 228.5 lineto
+590 188.5 moveto
+600 198.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
@@ -473,38 +456,8 @@ gsave
 stroke
 grestore
 gsave
-737.5 208.5 moveto
-747.5 218.5 lineto
-0 setlinecap
-1 setlinejoin
-1 setlinewidth
-[] 0 setdash
-0.000 0.000 0.000 setrgbcolor AdjustColor
-stroke
-grestore
-gsave
-737.5 198.5 moveto
-747.5 208.5 lineto
-0 setlinecap
-1 setlinejoin
-1 setlinewidth
-[] 0 setdash
-0.000 0.000 0.000 setrgbcolor AdjustColor
-stroke
-grestore
-gsave
-737.5 188.5 moveto
-747.5 198.5 lineto
-0 setlinecap
-1 setlinejoin
-1 setlinewidth
-[] 0 setdash
-0.000 0.000 0.000 setrgbcolor AdjustColor
-stroke
-grestore
-gsave
-737.5 178.5 moveto
-747.5 188.5 lineto
+590 178.5 moveto
+600 188.5 lineto
 0 setlinecap
 1 setlinejoin
 1 setlinewidth
