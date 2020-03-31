@@ -1,0 +1,52 @@
+{
+    "name": "Annotations",
+    "securityToken": "Annotations Token",
+    "sourceConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNDQwMWM0NTlmOWNkZDgzODYyZjZmZmFmNTViNWMyNTNmNWQ4YmZiZDQ2NzJjOGMzYmFmYjFiMzUwNTZkZWIyOGE3NTcyZTYzYTI0M2FmMWM3NTVjYjUzZDI3YjgzYzlmYWNjZmViZGM0N2ViOWIyNjZlYzcwZTBiMjExYjNmYzcyYWY5ZjU0YTViM2MxN2ZiZmJjZmFkNWEwMDQ3YWM4NTg4MmQ4ZDhhMTA4ZWZhNzA0ZDlmM2I3ZTEzYjYzM2RhYzc5ZTg5M2ViNmEyNWYzMDllYWRhZDZmYTRlZDVjMTAyZWE0NjMxOGU5NDMwMzFiZmI0NGQ2Y2U2YzNkMGFlOSIsIml2IjoiYTAyY2Y5OWM5M2E3OGMyMDY1ZDJmYzU1YTc2OWNiY2FhNzYyZjM5Y2IyNzc3YTk0In0="
+        },
+        "id": "80ziSuWyC"
+    },
+    "targetConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDllMGU0MDcyNGM1NzZiMWEzMmQzMzc4ZjE2NTYxZjcwMmNiNGJmZjQ5ODk4OTk2ZjEwMzQzYWU4MDhjNzkxYjE1OGZlYTU4NzBjMGZhZjBkNGMzZWFjYjU1NDhjMTk4MzZhZDJlYjdjN2NiYTk3N2RjYWYzMzBkMGU0MDlhYWRhOWVhZjc3NzE1ZTE2MzFiYjIyMjI2YjcyYWIxNGRlZDY5NzcyNWNiMzYxZWJiNTNjZDhhNzUxZGRhNmQ2MmIzMjAxMTMyMjhiZDMwMWQwOWQ1ZTVhMmQzZWEwYTU5YWIxNDQ4YzRkMWY0NDcyMjBjNzU5ODUzMjBiNjEzOTlhNiIsIml2IjoiOTk2YzU2YWFhODA5MjA1MTkzZDNjMjg0NDJiOTg0NGUzNjJmZDg0ZmFiMjhjNzk3In0="
+        },
+        "id": "80ziSuWyC"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [],
+    "id": "wqgM30FGV",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiM2Y2NmQ4OGYwN2FmNDljOTZjYmRkMzg0NmQ5ZWI1NTdkZmZjN2Y5NGVkMGMwMWVmOTVmNTlmZTNkMWY1MjUxYWI1N2E3NjMzMWJmMzI3MTE2NDY0YmE0ZDEzNmRkZjhjIiwiaXYiOiI1OTk4ZjYzN2I4YTk3ZWNjNWYyNWUzNzY2M2VjMmNlYjNiMjM4YzBjOWJiYzk5MTgifQ=="
+        }
+    },
+    "version": "2.1.0",
+    "lastVisitedAssetId": "33edda9d113558e1e953b692b620ae4e",
+    "assets": {
+        "33edda9d113558e1e953b692b620ae4e": {
+            "format": "jpg",
+            "id": "33edda9d113558e1e953b692b620ae4e",
+            "name": "20200331_154303.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154303.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 1,
+            "type": 1
+        }
+    }
+}

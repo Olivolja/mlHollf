@@ -2,173 +2,181 @@
     "name": "Annotations",
     "securityToken": "Annotations Token",
     "sourceConnection": {
-        "name": "kandImages",
+        "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOGFiYmI2NGM5MDc0MWQyYzU2NTU5NGFhMTE2YTY0YjI3OGY2NDExYzkxNzI4OWI3ZTYzMzFmMDQ2YWM1NGQ3M2M0MTBkMTlhY2M3MjE2YjZlNDU2MzZkYmM0NGQ1MzgwNGMyOGVkMTg0MGY0ZDBkN2VkZDM1N2RlYTZjYmJhYThiNmExMzkxNGRmMGY1YWYyMDJmYzUxMmM0OTgyNDgxYzUyNTEzOGVmZDkwNzY0N2RkNDY4OTU3OGExYTRkNGFlYzE2NTAzYzg4OGIyODIxZDM2NDdhOThlYWQ0YTA2MTI4OTE1N2Q5ODQwZWUzZTg1ZTY5ODZhZjI0M2ZkMmJiMSIsIml2IjoiMzcxYTdiYTk1MGFmMzBhZjY0ZjUwOWNhMzZjMWM3MGI2NWE0N2YxZTRhYjNmYWY4In0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiODM3YjNlYjQxOWFjMTUxMWU0MGQwMDhlMjFhYzhjN2E4OGMzMjcxMjZmMDkwMGQ0MDU5ZGE5Zjc0ZTdjOWRjN2JiYzViOTRkNWIxZGE0YjY5ODcwNjY3ZTAyZGVhMWZmOWM5ODRhOTRhOTk4ZWQ4ZWMwMTBiMWNhNmM4N2UxMzQ3MzJkMmNlZjIzYzdmN2FkNzJiNjQxYTkzZTg4OGI3OTAwNWU5MGU1NDFmMzAyNDIwYzk5NjQ2YzE1YWEwNzJhZjg3YWMxM2M1NDM5MWVhY2JlOTdiMjU5NDQ2MGQ0ZjciLCJpdiI6IjRlODkwMDY4NTk2ZGM3NmM0N2Y4MDI3N2FkZTc0NDcyMzMzYmM1ZWVkMzdiMDBhMiJ9"
         },
-        "id": "WsYma08gn"
+        "id": "AWXW8cKZU"
     },
     "targetConnection": {
-        "name": "kandImages",
+        "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMzRlMDFjMDZmNzVjNWM4YWRjN2IxMmFiZmQxN2NmZjgyNDBiZGVjYjJjZjZiOTNkNmNkZTE4OWUzMWZkODY3Y2FmOTk4Y2QxN2E0YWRmMDFmZWJjMTNiOTBkZDhmZTc3OTliYWY2YTg3MmMxYjAwZmI1ZWM3MDNkN2RhYWRiMTlkZjZkOWYwNGRhNDE1ODU3MDMyNjkwOWJhMzZkMTNjZTQ2MTU1YmY1ZTRkYzYwZmMyMDUxYTI1ZTAwZjU2YTU1NmE0M2YwNjExNDcxM2EwNmQ3MTRiOTg4ODI0ZTIxYjkwMTEyMjVjMDFiNWI0YTUwMWMwOTY3NmVkYjY5MDRkNCIsIml2IjoiYzU1NmNmOTM0Zjc0MmEyY2IyZjQ3NTgzNDExNTgxNjNiZTYyODAwYTVhNmI3ODhkIn0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMTkxYmQyNDE1Nzg1MzczNWEzMTQ1NTkwNjE5M2FiM2M3MDUyNGVjOWJiYzk0MWI2YzBkZWE3NzdjZWFiYTEzNTAyYjcwNTE0MTI1NWQxYTk3OTYyOWM2YTM5ZWE0MGJiZmI3YTIwNWZlMWM1Y2YyMDU3NTY4ZmYzNWUwZjYwY2M1ZWY5ZjZlN2JhNTY5NWFjYWZlZjRlODlkZjIxMWQ2MzliMmU1MWU4YWIxYTI2N2FjNTFlYWE3ZWEzMTMyMzUxOGVjOGI1OTFmN2E1Mzg5NDhiNDRkNzg0OGViYWEzOGYiLCJpdiI6IjRlMWQ2ZGE1Mzk1ODE5ODVhYTI5ZWJlOWQ1MGNjNzc2YjY3YzEyZTRkNDg5NjBiMyJ9"
         },
-        "id": "WsYma08gn"
+        "id": "AWXW8cKZU"
     },
     "videoSettings": {
         "frameExtractionRate": 15
     },
     "tags": [
         {
-            "name": "roller",
+            "name": "beam",
+            "color": "#5db300"
+        },
+        {
+            "name": "beam_90",
+            "color": "#e81123"
+        },
+        {
+            "name": "support",
+            "color": "#6917aa"
+        },
+        {
+            "name": "roller_support",
+            "color": "#015cda"
+        },
+        {
+            "name": "ground",
+            "color": "#4894fe"
+        },
+        {
+            "name": "clockwise",
+            "color": "#6b849c"
+        },
+        {
+            "name": "counterclockwise",
+            "color": "#70c400"
+        },
+        {
+            "name": "arrow_up",
+            "color": "#f7929a"
+        },
+        {
+            "name": "arrow_down",
+            "color": "#257ffe"
+        },
+        {
+            "name": "arrow_left",
+            "color": "#ddabe9"
+        },
+        {
+            "name": "arrow_right",
+            "color": "#ff8c00"
+        },
+        {
+            "name": "load_up",
+            "color": "#386300"
+        },
+        {
+            "name": "load_down",
+            "color": "#b40e1b"
+        },
+        {
+            "name": "clockwise_top",
+            "color": "#68217a"
+        },
+        {
+            "name": "clockwise_bottom",
+            "color": "#33cccc"
+        },
+        {
+            "name": "clockwise_left",
+            "color": "#016afe"
+        },
+        {
+            "name": "clockwise_right",
+            "color": "#595959"
+        },
+        {
+            "name": "counterclockwise_top",
+            "color": "#808080"
+        },
+        {
+            "name": "counterclockwise_bottom",
+            "color": "#990066"
+        },
+        {
+            "name": "counterclockwise_left",
+            "color": "#00bcf2"
+        },
+        {
+            "name": "counterclockwise_right",
             "color": "#5db300"
         }
     ],
-    "id": "-PkIAr0kQ",
+    "id": "hjREEDVvO",
     "activeLearningSettings": {
         "autoDetect": false,
         "predictTag": true,
         "modelPathType": "coco"
     },
     "exportFormat": {
-        "providerType": "csv",
+        "providerType": "vottJson",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMjQ5MDk3MDc0M2U5MjA2NjMyNjNjOTNkMmRjYjdiMjNlNmViYzc0NTk4NGUzOWRlNDA3YmViNDNmZDUyZTMzYmM5ZDg4YTAyOWZiZjRjODA5ZjFmOWU1Y2Y1YzA2YjYyIiwiaXYiOiI1YmM5MGY0MjQ3ZTRjZWEyNGFmODE0NWE0ZmIxMmE2OWJlMzlkMDJkNDUyYTBmODMifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYmI4NTA4OGE4ZTdmNDgxOTEzOWExODMzZGQ2ZmUxMDgwOTdmYjlhOGJlNWY1NGI2ODZkYzYwMDMwMjNmY2UzZjVlMjYwOTI1NzNmYjdhNWU4MDIxM2E4NTNmZjlmNmQ5IiwiaXYiOiJiYjhlMTMyN2IyMTY5MDI3NDJlYjAxNzc2MDk2Y2JkY2EyZWJkOTRkYWYxZjZkOWYifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "20347cd4a57725a2e13850ea5e0f6694",
+    "lastVisitedAssetId": "455c00902f1aa8a76627f75672d57b98",
     "assets": {
-        "d61cd0184ac1a368eae8f26994b5e35c": {
+        "9ac727d45116fbe74a000432e3aad6d8": {
             "format": "png",
-            "id": "d61cd0184ac1a368eae8f26994b5e35c",
+            "id": "9ac727d45116fbe74a000432e3aad6d8",
             "name": "resized006.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized006.png",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized006.png",
             "size": {
                 "width": 100,
                 "height": 133
             },
-            "state": 2,
+            "state": 1,
             "type": 1
         },
-        "c8fc2285f4eaf71560ad591b23b942fd": {
-            "format": "png",
-            "id": "c8fc2285f4eaf71560ad591b23b942fd",
-            "name": "resized007.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized007.png",
+        "2e32519fe2c38f4dc9c918dd54f83ab0": {
+            "format": "jpg",
+            "id": "2e32519fe2c38f4dc9c918dd54f83ab0",
+            "name": "20200331_154303.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154303.jpg",
             "size": {
-                "width": 100,
-                "height": 133
+                "width": 4128,
+                "height": 2322
             },
             "state": 2,
             "type": 1
         },
-        "f8391aebcc591b53d6cf5def7f67425d": {
-            "format": "png",
-            "id": "f8391aebcc591b53d6cf5def7f67425d",
-            "name": "resized008.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized008.png",
+        "7352cc1c4426251678656550eb8ef36c": {
+            "format": "jpg",
+            "id": "7352cc1c4426251678656550eb8ef36c",
+            "name": "20200331_154306.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154306.jpg",
             "size": {
-                "width": 100,
-                "height": 133
+                "width": 4128,
+                "height": 2322
             },
             "state": 2,
             "type": 1
         },
-        "346ded6495ed0b22ea9bf4cb04bc2357": {
-            "format": "png",
-            "id": "346ded6495ed0b22ea9bf4cb04bc2357",
-            "name": "resized009.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized009.png",
+        "f2f852edbba6763ce51986d9e169b769": {
+            "format": "jpg",
+            "id": "f2f852edbba6763ce51986d9e169b769",
+            "name": "20200331_154311.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154311.jpg",
             "size": {
-                "width": 100,
-                "height": 133
+                "width": 4128,
+                "height": 2322
             },
             "state": 2,
             "type": 1
         },
-        "87b8ee3ac0224a085f6a68f8f79a2c82": {
-            "format": "png",
-            "id": "87b8ee3ac0224a085f6a68f8f79a2c82",
-            "name": "resized010.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized010.png",
+        "455c00902f1aa8a76627f75672d57b98": {
+            "format": "jpg",
+            "id": "455c00902f1aa8a76627f75672d57b98",
+            "name": "20200331_154317.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154317.jpg",
             "size": {
-                "width": 100,
-                "height": 133
-            },
-            "state": 2,
-            "type": 1
-        },
-        "83b07857644e0bb7c454b87496c3f3b9": {
-            "format": "png",
-            "id": "83b07857644e0bb7c454b87496c3f3b9",
-            "name": "resized012.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized012.png",
-            "size": {
-                "width": 100,
-                "height": 133
-            },
-            "state": 2,
-            "type": 1
-        },
-        "fc38298742e875a7499eda6b4a46db24": {
-            "format": "png",
-            "id": "fc38298742e875a7499eda6b4a46db24",
-            "name": "resized013.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized013.png",
-            "size": {
-                "width": 100,
-                "height": 133
-            },
-            "state": 2,
-            "type": 1
-        },
-        "3dd5b27e049caee600b08b9853865b89": {
-            "format": "png",
-            "id": "3dd5b27e049caee600b08b9853865b89",
-            "name": "resized014.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized014.png",
-            "size": {
-                "width": 100,
-                "height": 133
-            },
-            "state": 2,
-            "type": 1
-        },
-        "28fbd8f2f49304b142bb1a3f01e17294": {
-            "format": "png",
-            "id": "28fbd8f2f49304b142bb1a3f01e17294",
-            "name": "resized015.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized015.png",
-            "size": {
-                "width": 100,
-                "height": 133
-            },
-            "state": 2,
-            "type": 1
-        },
-        "f7df4983fd7ec156ed38cc3bbdabc3d4": {
-            "format": "png",
-            "id": "f7df4983fd7ec156ed38cc3bbdabc3d4",
-            "name": "resized016.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized016.png",
-            "size": {
-                "width": 100,
-                "height": 133
-            },
-            "state": 2,
-            "type": 1
-        },
-        "20347cd4a57725a2e13850ea5e0f6694": {
-            "format": "png",
-            "id": "20347cd4a57725a2e13850ea5e0f6694",
-            "name": "resized017.png",
-            "path": "file:C:/Users/benja/OneDrive/Desktop/Kand/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized017.png",
-            "size": {
-                "width": 100,
-                "height": 133
+                "width": 4128,
+                "height": 2322
             },
             "state": 2,
             "type": 1
