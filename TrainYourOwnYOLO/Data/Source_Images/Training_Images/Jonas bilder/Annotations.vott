@@ -5,7 +5,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNDQwMWM0NTlmOWNkZDgzODYyZjZmZmFmNTViNWMyNTNmNWQ4YmZiZDQ2NzJjOGMzYmFmYjFiMzUwNTZkZWIyOGE3NTcyZTYzYTI0M2FmMWM3NTVjYjUzZDI3YjgzYzlmYWNjZmViZGM0N2ViOWIyNjZlYzcwZTBiMjExYjNmYzcyYWY5ZjU0YTViM2MxN2ZiZmJjZmFkNWEwMDQ3YWM4NTg4MmQ4ZDhhMTA4ZWZhNzA0ZDlmM2I3ZTEzYjYzM2RhYzc5ZTg5M2ViNmEyNWYzMDllYWRhZDZmYTRlZDVjMTAyZWE0NjMxOGU5NDMwMzFiZmI0NGQ2Y2U2YzNkMGFlOSIsIml2IjoiYTAyY2Y5OWM5M2E3OGMyMDY1ZDJmYzU1YTc2OWNiY2FhNzYyZjM5Y2IyNzc3YTk0In0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYTY0ZGY0MzA4OWEwOWMwNzhjYzBkMWZkNTFkMGQ0NjEwNGY5MGFiYmU4ZjFkMDExMGYyN2MyMzI5ODVlYjI2M2RiYjMyYzhjZTMwZTM0ZDU5OTVkMTIxMDFmZDM3Y2ZjMjkxZmExY2I0ZDUxNGUzZDdkOWUzZGZjNzg3ZjQwYmE4OWZlNjMyZGYyZWM1OGQ3MmY3NWQ0MmJlNGY4MTFkMGMxMzRkMzc4MTNjZTI5Y2VhMWIwNDQyOGM2NDE1ZWRkZDcyM2RlOTg3OWRjOTNiZDM5ZWMzNGJjOGFlMTY1YTg4YjgyY2VlNWZiZDRjYzA1OWYyYzIyOTM1Mzk2N2I0NSIsIml2IjoiZDMwNTRmMTNiMjYwZmNlYjNhZTc1YTU5YTRhM2IwMmRiZDVjNTAyYjJjOGVlN2Q2In0="
         },
         "id": "80ziSuWyC"
     },
@@ -13,14 +13,99 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDllMGU0MDcyNGM1NzZiMWEzMmQzMzc4ZjE2NTYxZjcwMmNiNGJmZjQ5ODk4OTk2ZjEwMzQzYWU4MDhjNzkxYjE1OGZlYTU4NzBjMGZhZjBkNGMzZWFjYjU1NDhjMTk4MzZhZDJlYjdjN2NiYTk3N2RjYWYzMzBkMGU0MDlhYWRhOWVhZjc3NzE1ZTE2MzFiYjIyMjI2YjcyYWIxNGRlZDY5NzcyNWNiMzYxZWJiNTNjZDhhNzUxZGRhNmQ2MmIzMjAxMTMyMjhiZDMwMWQwOWQ1ZTVhMmQzZWEwYTU5YWIxNDQ4YzRkMWY0NDcyMjBjNzU5ODUzMjBiNjEzOTlhNiIsIml2IjoiOTk2YzU2YWFhODA5MjA1MTkzZDNjMjg0NDJiOTg0NGUzNjJmZDg0ZmFiMjhjNzk3In0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDYwZjU3MTI3ZjBlMDA1MGUzNTZkODAzYzkwNTU0OTE4OTY0NTM2N2I4OTY1ZDcyOGVhN2U3ZDU0MDI5NzEyOTBiMjkwMWZlMWU5MzNhMDg2OWEzNGIwMGU0YWMxNzk3NDU1YjkzMzI4ZTA3YWZlODE5MmYxYjM5NmZjM2ZkZjYzMjYxYzk5ZjhjZTZjM2Q2MDg3MzUxOThiODYxOGI1ZTcwZmQyNzhmZmUyODc0YjM4ODYxMDM3ZDc0YzA4NDFmMTcxYTY2ZGFkYTY2M2I0ZWQyMmM1ZGMyYTliMTAzYWVhZjljMmEwZTMxNGMwZmVhMjY1ZTIxZDNiOWU3ZThiZSIsIml2IjoiOTVjNzcxMTA2YTU5OGE0NDRiZWFmNzFmNDVjOTM1MzZhYjFhNjhkMjljOTExODczIn0="
         },
         "id": "80ziSuWyC"
     },
     "videoSettings": {
         "frameExtractionRate": 15
     },
-    "tags": [],
+    "tags": [
+        {
+            "name": "beam",
+            "color": "#5db300"
+        },
+        {
+            "name": "beam_90",
+            "color": "#e81123"
+        },
+        {
+            "name": "support",
+            "color": "#6917aa"
+        },
+        {
+            "name": "roller_support",
+            "color": "#015cda"
+        },
+        {
+            "name": "ground",
+            "color": "#4894fe"
+        },
+        {
+            "name": "clockwise",
+            "color": "#6b849c"
+        },
+        {
+            "name": "counterclockwise",
+            "color": "#70c400"
+        },
+        {
+            "name": "arrow_up",
+            "color": "#f7929a"
+        },
+        {
+            "name": "arrow_down",
+            "color": "#257ffe"
+        },
+        {
+            "name": "arrow_left",
+            "color": "#ddabe9"
+        },
+        {
+            "name": "arrow_right",
+            "color": "#ff8c00"
+        },
+        {
+            "name": "load_up",
+            "color": "#386300"
+        },
+        {
+            "name": "load_down",
+            "color": "#b40e1b"
+        },
+        {
+            "name": "clockwise_top",
+            "color": "#68217a"
+        },
+        {
+            "name": "clockwise_bottom",
+            "color": "#33cccc"
+        },
+        {
+            "name": "clockwise_left",
+            "color": "#016afe"
+        },
+        {
+            "name": "clockwise_right",
+            "color": "#595959"
+        },
+        {
+            "name": "counterclockwise_top",
+            "color": "#808080"
+        },
+        {
+            "name": "counterclockwise_bottom",
+            "color": "#990066"
+        },
+        {
+            "name": "counterclockwise_left",
+            "color": "#00bcf2"
+        },
+        {
+            "name": "counterclockwise_right",
+            "color": "#5db300"
+        }
+    ],
     "id": "wqgM30FGV",
     "activeLearningSettings": {
         "autoDetect": false,
@@ -30,11 +115,11 @@
     "exportFormat": {
         "providerType": "vottJson",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiM2Y2NmQ4OGYwN2FmNDljOTZjYmRkMzg0NmQ5ZWI1NTdkZmZjN2Y5NGVkMGMwMWVmOTVmNTlmZTNkMWY1MjUxYWI1N2E3NjMzMWJmMzI3MTE2NDY0YmE0ZDEzNmRkZjhjIiwiaXYiOiI1OTk4ZjYzN2I4YTk3ZWNjNWYyNWUzNzY2M2VjMmNlYjNiMjM4YzBjOWJiYzk5MTgifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYzVjZDBkNWY2ZDI2YWEyMGMyYzc4MDdhMjIyZmY2NjQ1NmFlM2YzNTZmYjRmNGZmMWM1MDRmYzVhNzUzOTY3MDA5MjY4NzA0NDAwMGQwYTdmZmViYjhiODg5NTgwNTQ2IiwiaXYiOiIzYjhlNzY1ODRmNGI5N2IyYmFhN2YxZTQ2M2NkNjRmYTkwNDkzNDkyOTdmYjg5NmIifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "33edda9d113558e1e953b692b620ae4e",
+    "lastVisitedAssetId": "eca51192249cf9c3a9645f04bec14098",
     "assets": {
         "33edda9d113558e1e953b692b620ae4e": {
             "format": "jpg",
@@ -45,7 +130,19 @@
                 "width": 4128,
                 "height": 2322
             },
-            "state": 1,
+            "state": 2,
+            "type": 1
+        },
+        "eca51192249cf9c3a9645f04bec14098": {
+            "format": "jpg",
+            "id": "eca51192249cf9c3a9645f04bec14098",
+            "name": "20200331_154306.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154306.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
             "type": 1
         }
     }
