@@ -36,6 +36,7 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
 
     return shortest_distance_coordinates, closest_beam
 
+
 # Method for finding the closest possible object for a surface to be put on 
 # (eg a beam or any kind of support). Returns the object, its coordinates 
 # as they were on the input and the coordinates where it will be drawn.
@@ -52,11 +53,13 @@ def find_closest_object(coord, sides=["Bottom", "Top", "Left", "Right"]):
                 closest_side = side
     return closest_item, closest_side, shortest_distance_coordinates 
 
+
 # Compute the distance between two points
 def compute_distance(point1, point2):
     x1, y1 = point1
     x2, y2 = point2
     return m.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
 
 # Defining a beam
 class Beam:
@@ -109,6 +112,7 @@ class Beam:
     def draw(self):
         m_cnv.create_rectangle(self.x_min, self.y_min, self.x_max, self.y_max, fill="")
         beam_list.append(self) 
+
 
 # Defining a force of arbitrary vertical or horizontal direction  
 class Force:
@@ -170,6 +174,7 @@ class Force:
             m_cnv.create_line(self.x_min, self.y_mid, self.x_max, self.y_mid, arrow="last")
             self.beam.objects["Forces"].append((self.closest_point, "Right"))
 
+
 # Defining a pin support as a triangle with sidelength 15% of corresponding beams length
 class PinSupport:
     def __init__(self, x_min, y_min, x_max, y_max, size=0.15):
@@ -228,6 +233,7 @@ class PinSupport:
     def draw(self):
         m_cnv.create_polygon(self.corner1, self.corner2, self.corner3, fill="", outline="Black")
         self.beam.objects["Pins"].append((self.corner1, self.orientation))
+
 
 # Defining a roller support as a pin support with sidelength 9.51% of corresponding beams length
 # plus two extra circles with half that length as diameter
@@ -434,7 +440,8 @@ class Surface:
             elif self.side == "Right":
                 self.x_min = self.closest_point[0]
                 self.x_max = self.x_min + self.width
-            self.no_lines = int(self.height/8) 
+            self.no_lines = int(self.height/8)
+
     def draw(self):
         if self.side == "Bottom":
             m_cnv.create_line(self.x_mid - self.width/2, self.y_min, self.x_mid + self.width/2, self.y_min)
@@ -485,7 +492,7 @@ def find_closest_node(coord):
 
     return shortest_distance_coordinates, closest_node
 
-""" 
+
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
@@ -545,6 +552,7 @@ class Truss:
         self.beams = truss_beams
 
         # Find the start node
+        start_node = self.nodes[0]
         x_min = m.inf
         for node in self.nodes:
             if node.x_min <= x_min:
@@ -560,7 +568,7 @@ class Truss:
         for beam in self.beams:
             for node in self.nodes:
                 if node in beam.nodes:
-                    node.beams.append[beam]
+                    node.beams.append(beam)
                     i = beam.nodes.index(node)
                     if i == 0:
                         node.connected_nodes.append(beam.nodes[1])
@@ -572,7 +580,6 @@ class Truss:
             for beam in beams:
                 if node_1 and node_2 in beam.nodes:
                     return beam
-                else:
 
 
 
@@ -594,7 +601,7 @@ class Truss:
                         node_2.layer = node.layer
                         layers[node.layer].add(node_2)
                     elif angle == 45:
-"""
+
 
 def get_objects():
     try:
