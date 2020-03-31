@@ -654,6 +654,14 @@ def draw_all_objects():
             force = Force(x_min, y_min, x_max, y_max, "Up")
             force.draw()
 
+        elif obj_type == "ArrowLeft":
+            force = Force(x_min, y_min, x_max, y_max, "Left")
+            force.draw()
+
+        elif obj_type == "ArrowRight":
+            force = Force(x_min, y_min, x_max, y_max, "Right")
+            force.draw()
+
         elif obj_type == "PinSupport":
             pin = PinSupport(x_min, y_min, x_max, y_max)
             pin.draw()
@@ -670,45 +678,48 @@ def draw_all_objects():
             load = Load(x_min, y_min, x_max, y_max, "Down")
             load.draw()
 
-        elif obj_type == "BottomArrowClockwise":
+        elif obj_type == "ClockwiseBottom":
            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Bottom")
            moment.draw()
         
-        elif obj_type == "TopArrowClockwise":
+        elif obj_type == "ClockwiseTop":
            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Top")
            moment.draw()
 
-        elif obj_type == "LeftArrowClockwise":
+        elif obj_type == "ClockwiseLeft":
            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Left")
            moment.draw()
 
-        elif obj_type == "RightArrowClockwise":
+        elif obj_type == "ClockwiseRight":
            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Right")
            moment.draw()
 
-        elif obj_type == "BottomArrowCounterwise":
+        elif obj_type == "CounterclockwiseBottom":
            moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Bottom")
            moment.draw()
 
-        elif obj_type == "TopArrowCounterwise":
+        elif obj_type == "CounterclockwiseTop":
            moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Top")
            moment.draw()
 
-        elif obj_type == "LeftArrowCounterwise":
+        elif obj_type == "CounterclockwiseLeft":
            moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Left")
            moment.draw()
 
-        elif obj_type == "RightArrowCounterwise":
+        elif obj_type == "CounterclockwiseRight":
            moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Right")
            moment.draw()
-    for index, row in objects.iterrows(): # m_x på alla löser
+    for index, row in objects.iterrows():
         obj_type = labels[row[4]]
         x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
         
         if obj_type == "Surface":
             surface = Surface(x_min, y_min, x_max, y_max)
             surface.draw()
-
+#["PinSupport", "RollerSupport", "BeamLine0", "Surface", "Node", "ArrowUp", "ArrowDown", 
+#          "ArrowLeft", "ArrowRight", "ClockwiseRight", "ClockwiseTop", "ClockwiseLeft", "ClockwiseBottom", 
+#          "CounterclockwiseRight", "CounterclockwiseTop", "CounterclockwiseLeft", "CounterclockwiseBottom", 
+#          "Beam0", "BeamLine45", "BeamLine90", "Beam90", "BeamLine135", "Beam135", "LoadDown", "LoadUp"]
 
 draw_all_objects()
 
