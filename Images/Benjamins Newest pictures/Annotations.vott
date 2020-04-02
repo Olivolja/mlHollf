@@ -5,7 +5,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDJkZjdkOGU0MzAyOGQ3MDYwMjFlMDU0ZDE3Mjk1MmE5MWIwNzUwYjBiMGEzOTU4MGE4MDc0NDNlYjk0ZGZhYjAzNzZjMzA2MTYxZmQ5YzMxOTkyZjEwNmMzYWJhNzI2MDEwMTJmMDI5OTgwOGYzMWVkNDhkNzNjYzQzZDE3Y2ZiOTVmNzkxN2ViZDNjYmJmYmY1NTcwNDQ1NzQ4ZDNjMzU0M2JiYzg4OGQ3YmE0ZjliMWExYjMyNWU5MDYwMjI4YWRhMTU5ZjM5NDRjNmQwOWJmYTZiODgyNTlmZGY2ZTAiLCJpdiI6IjRlODk5MWFmYTRmNDg4YzU3MTFkOGNiZDRkYWUwMzVhYmEyYTM4ZTQ5ZWQyZTU1OSJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiODZlY2MxNjA2NmU2YzlhZGJiMTJjMWExNDBjMDQ0YzhjMTU4ZWM4NGJlYmU3YTFhMTkxYzIwM2MzODJjZTRiOTM3NWMyNjQ1MzNiZWJkODBlNjY1NGZkODI2Yjk1ZThjOTNmZTQxNmY2M2Y4YTkyMjg5MDc5NzQ0NDU3NjhlY2FmOThjYjcxNDU2NGJjNTQ1ZGI4MDZjMmI2ZmI0Yzg4ZjYxYWU0ZjY3YWQ0YzJkN2ExNjUzOTU0ZWJkNWU0ZmYyOTk2NTg4ZTMwMTA1ZjNkNmRhN2NhOTJlM2ExZGRhN2IiLCJpdiI6ImMzZDdmMDRkOWZlYWY1OTQ0NmVmNmI1Y2JkMmQ0NjBkOTYzNTczNWJiYWM4ODc0MiJ9"
         },
         "id": "JW8j23Scx"
     },
@@ -13,7 +13,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMmQxY2RhYWE3YzhlMTNhNThhNGYyZWQ4OTlkZTUwNTMyMzhkZWU4MTkyMjhlMzkzYmFmYzFjYjdlYzlhZGFjNmNiMDk3YTZhYzkxY2QyMDYzMjBlZGU2Yjc1NzljZWFhMDkyYTE4OTM0OGZiNDNmMzJmMDBhNjM0NzE0MTgzMmNkYjBlZjE4MTQxOTNmMDFkOWY2ZTMxMGRjODcwM2ZlNzA2MTNiODEwMWU3ZTBmNDhlZjczMzM0OWYyNzI3YjVjODEwMDgyZTU2NTc4YzRmYjJiY2UxMjdlNTc0ZmYxMmUiLCJpdiI6IjJmNTIzNTUxM2NhZGFkYTkyZjI0OTMwYmEzYjNmYjdlYzJjZWYzOGFhNzU0ZGZkMSJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOTIxYmY0YjA1ZjNjMDA5ZjFjNWM2ZDhmYzA4NDAzNWY0ZjZkMWVmZDExOTE0ZGRjNzFiNDI1OTY4NTU5Yjg0MjIxMDk5NDBlZmVkZjU1OTAwYjJkMjczZTdmYjQzNWVkNjYzNjU4Y2RhYTE5NDg5MWM2MmRjNjYxY2EwYmE0ZjA4YzljYmQyYmQwNTAwMjBlYTg4MDc1ZjRjMjgwMGRmMjMwMTdhZDQ0NWZjMjk0NDk4Y2ZjYjgzNTFmZDU4ZDhhYTc3MDgxY2RhYTdiZTdkNzE3MjE4ZTgxYmYwNDljMzIiLCJpdiI6IjMyMGExNjc1M2UxMjVhNjg0NTExMmRjN2IyZDk1MjA4MmJkOWE5ZjZhNjM4YzdiMyJ9"
         },
         "id": "JW8j23Scx"
     },
@@ -127,11 +127,11 @@
     "exportFormat": {
         "providerType": "csv",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDM2YTFlMTVhOGI3YzdmODZhN2MwNjI5OTA0YmZiYTJiMWExMGNlN2QyMzFhNmU2YmQ2YWExZGUzMzE0Nzg0NjJkZmE5ZDk3MjAxZTY3MjQ2NDYzMGI0ZWY1Y2RmYzVjIiwiaXYiOiJiMzllNDg5YTY2MmRhZWQ2ZDRkZmJhMDRhYmQ4OGM0YzM1ZWZhNmIwYTZlZTNlMDQifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZjNkMTMwZjRkMzFjOGFiZTA4M2Q0MTJkYzc0OTJkYzQ4NzVjN2M5NjBmMzdiZjdiY2Q5Zjg3Y2VjMzJiOWY2YmI1NjQyYWRlNzNhOWQ2NThhOGMzZWFkNGRlNmQ0Y2E3IiwiaXYiOiI5NTY2ZjFiMTU0ZWFhMzJjY2RiZTVjOTNjMmM3YzU0MTYyZTgxNGExNWI5ZWQxNTYifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "738d87673e49f527c99fb72db111698b",
+    "lastVisitedAssetId": "d4f3fbdf46ecbf7d3d2b300db83ec843",
     "assets": {
         "d4f3fbdf46ecbf7d3d2b300db83ec843": {
             "format": "jpg",
@@ -1346,18 +1346,6 @@
             "state": 2,
             "type": 1
         },
-        "7bb71b90b54de052bd4b3fc8db5e0b06": {
-            "format": "jpg",
-            "id": "7bb71b90b54de052bd4b3fc8db5e0b06",
-            "name": "20200331_144556.jpg",
-            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200331_144556.jpg",
-            "size": {
-                "width": 3024,
-                "height": 3024
-            },
-            "state": 1,
-            "type": 1
-        },
         "c17553126d084426ab2c3fc310a9a110": {
             "format": "jpg",
             "id": "c17553126d084426ab2c3fc310a9a110",
@@ -1574,30 +1562,6 @@
             "state": 2,
             "type": 1
         },
-        "104095310607e79bacc0b5239ff17125": {
-            "format": "jpg",
-            "id": "104095310607e79bacc0b5239ff17125",
-            "name": "20200331_144734.jpg",
-            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200331_144734.jpg",
-            "size": {
-                "width": 3024,
-                "height": 3024
-            },
-            "state": 1,
-            "type": 1
-        },
-        "095f5239c3ca18fd63e2f8385bca4c16": {
-            "format": "jpg",
-            "id": "095f5239c3ca18fd63e2f8385bca4c16",
-            "name": "20200331_144737.jpg",
-            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200331_144737.jpg",
-            "size": {
-                "width": 3024,
-                "height": 3024
-            },
-            "state": 1,
-            "type": 1
-        },
         "ad20b1d9e5ca11575091d16d98ae75a3": {
             "format": "jpg",
             "id": "ad20b1d9e5ca11575091d16d98ae75a3",
@@ -1608,18 +1572,6 @@
                 "height": 3024
             },
             "state": 2,
-            "type": 1
-        },
-        "68139e8fbae7d877e2d309b89349abbc": {
-            "format": "jpg",
-            "id": "68139e8fbae7d877e2d309b89349abbc",
-            "name": "20200331_144742.jpg",
-            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200331_144742.jpg",
-            "size": {
-                "width": 3024,
-                "height": 3024
-            },
-            "state": 1,
             "type": 1
         },
         "6ab68c3b85e50aebe2c294eef0a71991": {
