@@ -5,7 +5,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiODZlY2MxNjA2NmU2YzlhZGJiMTJjMWExNDBjMDQ0YzhjMTU4ZWM4NGJlYmU3YTFhMTkxYzIwM2MzODJjZTRiOTM3NWMyNjQ1MzNiZWJkODBlNjY1NGZkODI2Yjk1ZThjOTNmZTQxNmY2M2Y4YTkyMjg5MDc5NzQ0NDU3NjhlY2FmOThjYjcxNDU2NGJjNTQ1ZGI4MDZjMmI2ZmI0Yzg4ZjYxYWU0ZjY3YWQ0YzJkN2ExNjUzOTU0ZWJkNWU0ZmYyOTk2NTg4ZTMwMTA1ZjNkNmRhN2NhOTJlM2ExZGRhN2IiLCJpdiI6ImMzZDdmMDRkOWZlYWY1OTQ0NmVmNmI1Y2JkMmQ0NjBkOTYzNTczNWJiYWM4ODc0MiJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOTYyNGI2YmY3ZWMzODkwOWZlMWYzMTQ1Nzk4NWYzMTYzOTdkN2NkODZjY2I2Zjc1M2NjNThiYmYwYzc5ZTM5MjBhOTRkNDU0ZmMzYTg4NjUyOGFiYTdmZTIzZDE4MTNmOWIxMTAxNzk2NTE3OTRlNTU4ZDViMjhlYjY3ODY1ZDUxMTcyOGIxN2I2MTdjNDgzN2FiMjJlNTQ2MDdmOWRiN2JhYjc4M2JmMzk0ZmQyZTEzYjE5YzBmOTA3NzViZjRlNTIxMTNiMTAzNjZkNzk0MzQzNGY1NmU5MzU5ZDJiOGYiLCJpdiI6IjJkZGE2ODJjNGE4NjkyNTYzMzYwNGZiMDk3ZTUyNDdhNTcxOWZkNTM3MGJlMzExZSJ9"
         },
         "id": "JW8j23Scx"
     },
@@ -13,7 +13,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOTIxYmY0YjA1ZjNjMDA5ZjFjNWM2ZDhmYzA4NDAzNWY0ZjZkMWVmZDExOTE0ZGRjNzFiNDI1OTY4NTU5Yjg0MjIxMDk5NDBlZmVkZjU1OTAwYjJkMjczZTdmYjQzNWVkNjYzNjU4Y2RhYTE5NDg5MWM2MmRjNjYxY2EwYmE0ZjA4YzljYmQyYmQwNTAwMjBlYTg4MDc1ZjRjMjgwMGRmMjMwMTdhZDQ0NWZjMjk0NDk4Y2ZjYjgzNTFmZDU4ZDhhYTc3MDgxY2RhYTdiZTdkNzE3MjE4ZTgxYmYwNDljMzIiLCJpdiI6IjMyMGExNjc1M2UxMjVhNjg0NTExMmRjN2IyZDk1MjA4MmJkOWE5ZjZhNjM4YzdiMyJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMjMwMzE1NmI2NTQ0NDQ4MDVlNzMxN2Q5NWNjMjk1NDhkNDg2YzllMDI0MTA3OTZhOGVjMzljOGY0OGQ0YzlmMmIwZGZhMmYxMzk3ODAzOGMxMjgyY2Y4N2Q0NGUwNGMyYTc2YjBkYmEwYjdlYjcyMzFmZWRhODMzMzA1NjgxMWZlMDhlNDVmZmRkYTc2MzZmYjliOTI1MzIwNTRkMjBiNzI5MzQ3MWFlN2YxZTdmNzEzZTljNTY2NTcyNzQzZjc3MDNiMDYwYjgxYTVmNTVmNzZmMjMwMDJkZTU2NmVmMzkiLCJpdiI6IjYzZmNlNDAzNTBjMjFiMmY2ZjJiNTRlMmFiYTAyNGIxNGFiNGZjZTAzMzI5NDAzYiJ9"
         },
         "id": "JW8j23Scx"
     },
@@ -66,20 +66,12 @@
             "color": "#ff8c00"
         },
         {
-            "name": "   ",
-            "color": "#e81123"
-        },
-        {
             "name": "load_up",
             "color": "#386300"
         },
         {
             "name": "load_down",
             "color": "#b40e1b"
-        },
-        {
-            "name": "  ",
-            "color": "#6917aa"
         },
         {
             "name": "clockwise_top",
@@ -96,10 +88,6 @@
         {
             "name": "clockwise_right",
             "color": "#595959"
-        },
-        {
-            "name": " ",
-            "color": "#e81123"
         },
         {
             "name": "counterclockwise_top",
@@ -127,7 +115,7 @@
     "exportFormat": {
         "providerType": "csv",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZjNkMTMwZjRkMzFjOGFiZTA4M2Q0MTJkYzc0OTJkYzQ4NzVjN2M5NjBmMzdiZjdiY2Q5Zjg3Y2VjMzJiOWY2YmI1NjQyYWRlNzNhOWQ2NThhOGMzZWFkNGRlNmQ0Y2E3IiwiaXYiOiI5NTY2ZjFiMTU0ZWFhMzJjY2RiZTVjOTNjMmM3YzU0MTYyZTgxNGExNWI5ZWQxNTYifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYTYyOTVmZjhlYzZiNDAzMDliOTMyMzA5ODFiOWVjOTIxOGFmMTMxYmY3MmU2OTE5ZDAyMWZmZjY5MzRjODJlNGY1MzAzMGUzNjlhYjI3Y2RmY2I1MWRkYzk4MWJlYTgzIiwiaXYiOiJjNjJkOWQ3MzkyNGNlNTNjOTMzZDZkMjI5ZTJiNjViNjQ1NmI5N2EzYWU0YTYwOGIifQ=="
         }
     },
     "version": "2.1.0",
