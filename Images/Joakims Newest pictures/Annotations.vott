@@ -1,0 +1,821 @@
+{
+    "name": "Annotations",
+    "securityToken": "Annotations Token",
+    "sourceConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZWE2MThjMDUwODE0YWM0ODU1NWNjMjUzZDk4NGVkODYxNGFjYTM2YjJiY2MzZDg3YmI3Mzc4YTQ0MDY1NWMyNWU0YjU5NDMwNDJlOGQwNjJiYWZjZDZkNTdhMGU0YjkzMmY0MTI2NDc3NzQ5YjhkNDRkN2UzOGVhZWQ2MGUwZmNhZmU2NDljYWE3NjdmODQzZjAxMDFjYTJlOTVjZTY3ODljMzdkOTQyZWMwZjBmZTcwZmQzMzliZWUzNjUyN2Q2IiwiaXYiOiJiZmY2OGJlMmE2NDgyNDg4MzJiMDQ1MzhjN2U0YmYxOGMxMTMxZTFjNmE2NmRlNTgifQ=="
+        },
+        "id": "pV9BGfBqs"
+    },
+    "targetConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNzdiYWQ0YWFlMTk5YmIwYjE1Yzg1YjQ0MzUzOGQzNDQ0MmZhMjY0MDMwNDVkMTZlYTBiYzhkNGFhYzhmYmU4ZGU0Mzk1N2I4OTZkZGE3YjYyMjE1Njg3ODc4NmQxNmQxMmM5MTQ5MGVjYWZlNzU2YmRmYjYxODUyOTBiNTU2YTgxM2U2MDIyNjQ4YTc5NzE4M2UxOWIxNTVlMWZlYTY3MjJjN2JmNDQxZDg5YTc5YzI1YjM2MGQ4OGQ1OTlkZDA4IiwiaXYiOiI0YzRlZTc0NGFiYTEwZGUwNDg0OWU4YzZjYjI1MDNmOWNkYmJiMDg5YWRlMWRmNzYifQ=="
+        },
+        "id": "pV9BGfBqs"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "beam",
+            "color": "#5db300"
+        },
+        {
+            "name": "beam_90",
+            "color": "#e81123"
+        },
+        {
+            "name": "support",
+            "color": "#6917aa"
+        },
+        {
+            "name": "roller_support",
+            "color": "#015cda"
+        },
+        {
+            "name": "ground",
+            "color": "#4894fe"
+        },
+        {
+            "name": "clockwise",
+            "color": "#6b849c"
+        },
+        {
+            "name": "counterclockwise",
+            "color": "#70c400"
+        },
+        {
+            "name": "arrow_up",
+            "color": "#f7929a"
+        },
+        {
+            "name": "arrow_down",
+            "color": "#257ffe"
+        },
+        {
+            "name": "arrow_left",
+            "color": "#ddabe9"
+        },
+        {
+            "name": "arrow_right",
+            "color": "#ff8c00"
+        },
+        {
+            "name": "load_up",
+            "color": "#386300"
+        },
+        {
+            "name": "load_down",
+            "color": "#b40e1b"
+        },
+        {
+            "name": "clockwise_top",
+            "color": "#68217a"
+        },
+        {
+            "name": "clockwise_bottom",
+            "color": "#33cccc"
+        },
+        {
+            "name": "clockwise_left",
+            "color": "#016afe"
+        },
+        {
+            "name": "clockwise_right",
+            "color": "#595959"
+        },
+        {
+            "name": "counterclockwise_top",
+            "color": "#808080"
+        },
+        {
+            "name": "counterclockwise_bottom",
+            "color": "#990066"
+        },
+        {
+            "name": "counterclockwise_left",
+            "color": "#00bcf2"
+        },
+        {
+            "name": "counterclockwise_right",
+            "color": "#5db300"
+        }
+    ],
+    "id": "x7kxdSUk0",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYjMxMDhkZTJhYmVmOGQyMjMxZmE3NjI1MzIxNjIxZTk0NDc0YjBjZGE0M2IwNjQwYTNiOTQ2OTA1NWYwNmI1YTJlNjVhZjU2NWM1MTE0NjI2MDA0YWViNTEyYmU4ZGEzIiwiaXYiOiI0Yzg0OGUwMTYwNTI3OTVhY2RkZjBiZTZjYTEyNzFiOWE3MTBjOGEyNmYzOThiMDEifQ=="
+        }
+    },
+    "version": "2.1.0",
+    "lastVisitedAssetId": "37ec632ed98b55b9122c8904dfb26282",
+    "assets": {
+        "5f3d2257359ccb5b4aba64bc8babdfdc": {
+            "format": "jpg",
+            "id": "5f3d2257359ccb5b4aba64bc8babdfdc",
+            "name": "IMG_20200401_130031.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130031.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c2d071bc5569a5b876a70f56d22ec7f2": {
+            "format": "jpg",
+            "id": "c2d071bc5569a5b876a70f56d22ec7f2",
+            "name": "IMG_20200401_130036.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130036.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "abb432e6fa557cac90f1dfc880bd6ed4": {
+            "format": "jpg",
+            "id": "abb432e6fa557cac90f1dfc880bd6ed4",
+            "name": "IMG_20200401_130040.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130040.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "af73e36bf207bdcd83888b3a1e0163df": {
+            "format": "jpg",
+            "id": "af73e36bf207bdcd83888b3a1e0163df",
+            "name": "IMG_20200401_130051.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130051.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "02d6bd9dc50a3d402b5dbdf82be5dc35": {
+            "format": "jpg",
+            "id": "02d6bd9dc50a3d402b5dbdf82be5dc35",
+            "name": "IMG_20200401_130059.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130059.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9304ffe8d06c3df2bf522923de070c4d": {
+            "format": "jpg",
+            "id": "9304ffe8d06c3df2bf522923de070c4d",
+            "name": "IMG_20200401_130102.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130102.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ff7334b26268bba965de06621363d9a8": {
+            "format": "jpg",
+            "id": "ff7334b26268bba965de06621363d9a8",
+            "name": "IMG_20200401_130109.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130109.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2f65955ed0fb2f88b25c8b967a4d3b8b": {
+            "format": "jpg",
+            "id": "2f65955ed0fb2f88b25c8b967a4d3b8b",
+            "name": "IMG_20200401_130112.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130112.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bf11a5ccef8ab97df02bcf5f076a7031": {
+            "format": "jpg",
+            "id": "bf11a5ccef8ab97df02bcf5f076a7031",
+            "name": "IMG_20200401_130117.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130117.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "23895c636dc878e778baaa94edabf411": {
+            "format": "jpg",
+            "id": "23895c636dc878e778baaa94edabf411",
+            "name": "IMG_20200401_130121.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130121.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "470ca7b29578bf869498b2e714a20980": {
+            "format": "jpg",
+            "id": "470ca7b29578bf869498b2e714a20980",
+            "name": "IMG_20200401_130132.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130132.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1875dbe7354be861bd95447aed1ecf07": {
+            "format": "jpg",
+            "id": "1875dbe7354be861bd95447aed1ecf07",
+            "name": "IMG_20200401_130139.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130139.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "944b4f0f0f593c6ec9290e692c2413ae": {
+            "format": "jpg",
+            "id": "944b4f0f0f593c6ec9290e692c2413ae",
+            "name": "IMG_20200401_130146.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130146.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8cf1f2a80789d2efa9cdc7f432e61ab8": {
+            "format": "jpg",
+            "id": "8cf1f2a80789d2efa9cdc7f432e61ab8",
+            "name": "IMG_20200401_130204.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130204.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c5724d77074c16be4f9f4a14cf85ae3d": {
+            "format": "jpg",
+            "id": "c5724d77074c16be4f9f4a14cf85ae3d",
+            "name": "IMG_20200401_130217.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130217.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fa4aa6862df79daceec00623c193b109": {
+            "format": "jpg",
+            "id": "fa4aa6862df79daceec00623c193b109",
+            "name": "IMG_20200401_130232.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130232.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4cb438fb37b75468cc58e440021a5cf2": {
+            "format": "jpg",
+            "id": "4cb438fb37b75468cc58e440021a5cf2",
+            "name": "IMG_20200401_130236.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130236.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "05ecbb5afffec44716685bf2854f60c6": {
+            "format": "jpg",
+            "id": "05ecbb5afffec44716685bf2854f60c6",
+            "name": "IMG_20200401_130246.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130246.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7f7af485dc6928176c8ec817ff28ae63": {
+            "format": "jpg",
+            "id": "7f7af485dc6928176c8ec817ff28ae63",
+            "name": "IMG_20200401_130254.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130254.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "242d046b609c7ceb5a4ff884da500fb3": {
+            "format": "jpg",
+            "id": "242d046b609c7ceb5a4ff884da500fb3",
+            "name": "IMG_20200401_130307.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130307.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6a2d2bd361296d9e3037138f9e53ccac": {
+            "format": "jpg",
+            "id": "6a2d2bd361296d9e3037138f9e53ccac",
+            "name": "IMG_20200401_130320.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200401_130320.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e05d94584ac0cde72e797ae1a1f5a89c": {
+            "format": "jpg",
+            "id": "e05d94584ac0cde72e797ae1a1f5a89c",
+            "name": "IMG_20200402_094723.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094723.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "53b98fef13ef1c4664e5db645d466c49": {
+            "format": "jpg",
+            "id": "53b98fef13ef1c4664e5db645d466c49",
+            "name": "IMG_20200402_094729.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094729.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c088004f4e9e987085c14329c3567702": {
+            "format": "jpg",
+            "id": "c088004f4e9e987085c14329c3567702",
+            "name": "IMG_20200402_094736.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094736.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5273483dbcbdb0e907bba408158374ba": {
+            "format": "jpg",
+            "id": "5273483dbcbdb0e907bba408158374ba",
+            "name": "IMG_20200402_094752.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094752.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c5ae056aaf4a8cdcabbe4383d9814b4c": {
+            "format": "jpg",
+            "id": "c5ae056aaf4a8cdcabbe4383d9814b4c",
+            "name": "IMG_20200402_094742.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094742.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e123de4a89dcd64ceb9271ee38be45fa": {
+            "format": "jpg",
+            "id": "e123de4a89dcd64ceb9271ee38be45fa",
+            "name": "IMG_20200402_094804.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094804.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ede3279cdec0a4520f42819c90ef24ed": {
+            "format": "jpg",
+            "id": "ede3279cdec0a4520f42819c90ef24ed",
+            "name": "IMG_20200402_094837.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094837.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "11833700920e6e4cf20a5ca97f36cb00": {
+            "format": "jpg",
+            "id": "11833700920e6e4cf20a5ca97f36cb00",
+            "name": "IMG_20200402_094845.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094845.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a4c661d566e67281337b54f745289468": {
+            "format": "jpg",
+            "id": "a4c661d566e67281337b54f745289468",
+            "name": "IMG_20200402_094849.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094849.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "533e923e1830bef353cb65b297553ae3": {
+            "format": "jpg",
+            "id": "533e923e1830bef353cb65b297553ae3",
+            "name": "IMG_20200402_094856.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094856.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8e83fca1f1817b0606f515f6b4c3a2eb": {
+            "format": "jpg",
+            "id": "8e83fca1f1817b0606f515f6b4c3a2eb",
+            "name": "IMG_20200402_094901.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094901.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5f2b72a21e81d7f536e9cf53f5b00abd": {
+            "format": "jpg",
+            "id": "5f2b72a21e81d7f536e9cf53f5b00abd",
+            "name": "IMG_20200402_094904.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094904.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0901d127f961a677e046ead5b613e95d": {
+            "format": "jpg",
+            "id": "0901d127f961a677e046ead5b613e95d",
+            "name": "IMG_20200402_094912.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094912.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "12567b6a52895175e4f2e02217b101cc": {
+            "format": "jpg",
+            "id": "12567b6a52895175e4f2e02217b101cc",
+            "name": "IMG_20200402_094925.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094925.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "37ec632ed98b55b9122c8904dfb26282": {
+            "format": "jpg",
+            "id": "37ec632ed98b55b9122c8904dfb26282",
+            "name": "IMG_20200402_094928.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094928.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7f9b377b273a52f8de3fe89e44ac3242": {
+            "format": "jpg",
+            "id": "7f9b377b273a52f8de3fe89e44ac3242",
+            "name": "IMG_20200402_094931.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094931.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "42fd94c840b0e6b60b76e87271c295fd": {
+            "format": "jpg",
+            "id": "42fd94c840b0e6b60b76e87271c295fd",
+            "name": "IMG_20200402_094934.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_094934.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f955342148c0b7279ddc53077eaf4299": {
+            "format": "jpg",
+            "id": "f955342148c0b7279ddc53077eaf4299",
+            "name": "IMG_20200402_101610.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_101610.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "37932b0d20e3cd01dbd868a1c94654b4": {
+            "format": "jpg",
+            "id": "37932b0d20e3cd01dbd868a1c94654b4",
+            "name": "IMG_20200402_101614.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_101614.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7d24e981b7aef06c687050306450c343": {
+            "format": "jpg",
+            "id": "7d24e981b7aef06c687050306450c343",
+            "name": "IMG_20200402_101617.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_101617.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0f726f7a26d73332a51271024eac0618": {
+            "format": "jpg",
+            "id": "0f726f7a26d73332a51271024eac0618",
+            "name": "IMG_20200402_101621.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_101621.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "63b10d697fbba191cbaa321e99de2783": {
+            "format": "jpg",
+            "id": "63b10d697fbba191cbaa321e99de2783",
+            "name": "IMG_20200402_101656.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_101656.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0188367bdb6bc7b55466d75ff8e72803": {
+            "format": "jpg",
+            "id": "0188367bdb6bc7b55466d75ff8e72803",
+            "name": "IMG_20200402_101701.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_101701.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4f5fe8874bb5df83f73185d2e7382722": {
+            "format": "jpg",
+            "id": "4f5fe8874bb5df83f73185d2e7382722",
+            "name": "IMG_20200402_101706.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_101706.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "260344ec50b57889ac6875ae848d0287": {
+            "format": "jpg",
+            "id": "260344ec50b57889ac6875ae848d0287",
+            "name": "IMG_20200402_101712.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_101712.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "20c82c0bdaba781f11a132930a30aad0": {
+            "format": "jpg",
+            "id": "20c82c0bdaba781f11a132930a30aad0",
+            "name": "IMG_20200402_101715.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_101715.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6b799731c8dea197b9339ee5e65ef07b": {
+            "format": "jpg",
+            "id": "6b799731c8dea197b9339ee5e65ef07b",
+            "name": "IMG_20200402_103933.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_103933.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5fa373c527f1c1e8c7e27712e5f4a6ee": {
+            "format": "jpg",
+            "id": "5fa373c527f1c1e8c7e27712e5f4a6ee",
+            "name": "IMG_20200402_103935.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_103935.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "31321f27d8fbc7e61fe2bb35c653d78f": {
+            "format": "jpg",
+            "id": "31321f27d8fbc7e61fe2bb35c653d78f",
+            "name": "IMG_20200402_103938.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_103938.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ab50786b1dbb012b2c09e68477d87c5b": {
+            "format": "jpg",
+            "id": "ab50786b1dbb012b2c09e68477d87c5b",
+            "name": "IMG_20200402_103940.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_103940.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "440d7e3f2c14fee65617f480abd85f59": {
+            "format": "jpg",
+            "id": "440d7e3f2c14fee65617f480abd85f59",
+            "name": "IMG_20200402_103950.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_103950.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9f4cb21b33d2bdeb024d638bd5ef2e95": {
+            "format": "jpg",
+            "id": "9f4cb21b33d2bdeb024d638bd5ef2e95",
+            "name": "IMG_20200402_103954.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_103954.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "abee19ea4b41c78127aa7a813353cf9e": {
+            "format": "jpg",
+            "id": "abee19ea4b41c78127aa7a813353cf9e",
+            "name": "IMG_20200402_104001.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_104001.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "47463ec3f7f671d881f5b404cef3dc4b": {
+            "format": "jpg",
+            "id": "47463ec3f7f671d881f5b404cef3dc4b",
+            "name": "IMG_20200402_104010.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_104010.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9238e714cca7a57369d6a1611eccd8ac": {
+            "format": "jpg",
+            "id": "9238e714cca7a57369d6a1611eccd8ac",
+            "name": "IMG_20200402_104013.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_104013.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "83ca9fb8b386e86768721a1db94c8f77": {
+            "format": "jpg",
+            "id": "83ca9fb8b386e86768721a1db94c8f77",
+            "name": "IMG_20200402_104023.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_104023.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b6abc89c9bccc4dfd55071db431ea26b": {
+            "format": "jpg",
+            "id": "b6abc89c9bccc4dfd55071db431ea26b",
+            "name": "IMG_20200402_104026.jpg",
+            "path": "file:E:/Users/Joakim/Documents/Kandidat/Joakims%20Newest%20pictures/IMG_20200402_104026.jpg",
+            "size": {
+                "width": 4608,
+                "height": 3456
+            },
+            "state": 2,
+            "type": 1
+        }
+    }
+}

@@ -1,0 +1,209 @@
+{
+    "name": "Annotations",
+    "securityToken": "Annotations Token",
+    "sourceConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDNmOTllNTdkZWYwNjU5NTY2NjU4ZmNhMDhhNGRiMmU1MmZkNjYyNWU0ODVlNWIyZTYzM2E1YzY5NDhkMWFhOWFhYjJhZjY3NjUyMzU2MDdkMmQyMDgwOTBkNzU4YjZiYTZjMTRhMTNjMjVmM2M5OGZkNzY5ZTE5NjI0YTZjYzBkYTIwNGFmNjNmYjZiOTA3YjY4NTc5NDU4MzI2NTY3ODhhYjk5YzkzNGM1YTBjMmNhNTRmZTU5NjgyYTIwODVlIiwiaXYiOiJiZGU3MzU3ZmFhMmUwM2JiYWZjOWViZDU2MTNlZmNhOGJjODc2ODJiOWMzZDYyY2EifQ=="
+        },
+        "id": "Jr3ZcNpCO"
+    },
+    "targetConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOGRkNDA4ZGZmZDY4OGJjZTczZGI5YjYxMzFiNTg3NGRkY2E5YmYyY2ViNzcxOTU5MjM3MDA5ZDIyZTMwOWEwMTE0N2Y4NDQyYTY0NzEzZjljZDQzYjFmNTdiMGE0Y2I0ZmE1ODc3MTNmMjU1MjM0ZTc1NjhlOTA1YTI1MDMyZTMzOGYzNjMzN2QwNTBkOGI2MzNiYmE4ZTk3OWE1MTgzMDgxZDhmMzIxOTEyNjMwYzVmNjMyM2E3ZjYwNDhiZjI1IiwiaXYiOiI1ZWEzN2EzNDQ4YWJmYTc1ZDRkN2QzMjhiNjQ2ZDg0NjliNmU1MmZlOThlZGJlOWIifQ=="
+        },
+        "id": "Jr3ZcNpCO"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "beam",
+            "color": "#5db300"
+        },
+        {
+            "name": "beam_90",
+            "color": "#e81123"
+        },
+        {
+            "name": "support",
+            "color": "#6917aa"
+        },
+        {
+            "name": "roller_support",
+            "color": "#015cda"
+        },
+        {
+            "name": "ground",
+            "color": "#4894fe"
+        },
+        {
+            "name": "clockwise",
+            "color": "#6b849c"
+        },
+        {
+            "name": "counterclockwise",
+            "color": "#70c400"
+        },
+        {
+            "name": "arrow_up",
+            "color": "#f7929a"
+        },
+        {
+            "name": "arrow_down",
+            "color": "#257ffe"
+        },
+        {
+            "name": "arrow_left",
+            "color": "#ddabe9"
+        },
+        {
+            "name": "arrow_right",
+            "color": "#ff8c00"
+        },
+        {
+            "name": "load_up",
+            "color": "#386300"
+        },
+        {
+            "name": "load_down",
+            "color": "#b40e1b"
+        },
+        {
+            "name": "clockwise_top",
+            "color": "#68217a"
+        },
+        {
+            "name": "clockwise_bottom",
+            "color": "#33cccc"
+        },
+        {
+            "name": "clockwise_left",
+            "color": "#5db300"
+        },
+        {
+            "name": "clockwise_right",
+            "color": "#016afe"
+        },
+        {
+            "name": "counterclockwise_top",
+            "color": "#595959"
+        },
+        {
+            "name": "counterclockwise_bottom",
+            "color": "#808080"
+        },
+        {
+            "name": "counterclockwise_left",
+            "color": "#990066"
+        },
+        {
+            "name": "counterclockwise_right",
+            "color": "#00bcf2"
+        }
+    ],
+    "id": "ymTzdP7ro",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZjM4OWExZmRhZDk0ZWMzYjEwOTdhMzI1YjY3ODhmOWEyN2Q4MzczMjlkY2QxZmI1ZDEwMmRlNjQ0MDUwZjE4MTRmY2IzNTI4ZTA3ZjAwNDQ1YTMyYzBkMDdjYTg1MzJlIiwiaXYiOiJhZDQzOWNjMDU3MTI5OTdiYTZmODA3MmM2NDZiZGM4YWFhMDM2ZDJjNDJmYTYzODMifQ=="
+        }
+    },
+    "version": "2.1.0",
+    "lastVisitedAssetId": "bb99b6efc75d969f1c6d0e269d994025",
+    "assets": {
+        "bb99b6efc75d969f1c6d0e269d994025": {
+            "format": "jpg",
+            "id": "bb99b6efc75d969f1c6d0e269d994025",
+            "name": "20200331_150614.jpg",
+            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_150614.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4202d5b750bff068aec38924cdb85dc2": {
+            "format": "jpg",
+            "id": "4202d5b750bff068aec38924cdb85dc2",
+            "name": "20200331_151915.jpg",
+            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_151915.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 1,
+            "type": 1
+        },
+        "19c9b50d147ee8c537cb28dcbaed4b67": {
+            "format": "jpg",
+            "id": "19c9b50d147ee8c537cb28dcbaed4b67",
+            "name": "20200331_151115.jpg",
+            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_151115.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 1,
+            "type": 1
+        },
+        "5b53005c5d80c36583b31365157033d4": {
+            "format": "jpg",
+            "id": "5b53005c5d80c36583b31365157033d4",
+            "name": "20200331_150635.jpg",
+            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_150635.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4cffdf7501b9efbb8d9fee22119c6a68": {
+            "format": "jpg",
+            "id": "4cffdf7501b9efbb8d9fee22119c6a68",
+            "name": "20200331_150703.jpg",
+            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_150703.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e87efb9b61c96c6781cd00817a90b83b": {
+            "format": "jpg",
+            "id": "e87efb9b61c96c6781cd00817a90b83b",
+            "name": "20200331_150730.jpg",
+            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_150730.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bb9c03e8968bf1392bf204afb4fbc5b2": {
+            "format": "jpg",
+            "id": "bb9c03e8968bf1392bf204afb4fbc5b2",
+            "name": "20200331_151042.jpg",
+            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_151042.jpg",
+            "size": {
+                "width": 4032,
+                "height": 3024
+            },
+            "state": 1,
+            "type": 1
+        }
+    }
+}
