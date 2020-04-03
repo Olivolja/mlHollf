@@ -5,7 +5,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYzdiNjg4YWQzOWU5ZDA1YzQ4NTU1MjdjMzRiZDk5YTViZGMwN2ZhZjllNjNkMDRiMDdlNjNhOTg5YmYxNzYzODJiMjBlMjIyYWM0NDUxZmMxZTUwMGI1ZjU3NmMzZTgzM2E2MTFkYzI4Yzk3YTI0YmY2OTVmMjJjOWMyZDEwMTI2N2QxNWM4ZmViY2RiOWFiNTc0NDNmMDhhOGZiZThkZTVmM2MwZmRlNTQzYzk4NjYxMjNjYTIyY2IzZDk3MzU5IiwiaXYiOiJjYzljODg1MTM5MTNlM2Q5YjA0OTlhMTQ0NGE2ODNmMjY0ZDhmMWRkY2M0YTI5YTkifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMzdjNmI0YzAwNjhkOGU5YzEzMDgxNWMwMWE3MjllNmY2Mzk1ODRjZDExMzdkMzU2ZGZmNmZjZmFmYjc2MmRkMDU2MDUzY2M4MDRjYjg3NDQ4MjczMGM4MzE1YjE2MWJiNjdjYmNjNWY4NjdkYjAyMzc4ZGU4MjFkYzRkN2I3MmQ1MGMzODVmNjczNjAyYzAwODBjNWYyOTMzYmE0ZDE2Y2JkNzVkYThhMjAwZGU0MTU4MWZlMDhiMDRlOTMzNThiIiwiaXYiOiI2NzE2YzI2MjMzOTU4ZTZkNGIyNzQyMDg2NzZkNTU4YWE3ZDU0MGJiM2ZiNmYxNWUifQ=="
         },
         "id": "Jr3ZcNpCO"
     },
@@ -13,7 +13,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNDg4YzA5MWMzODJlM2UzZTQ0OWEwMjU5ZTRmZDVmY2RhNTI5N2IxNjRmMTljODMyN2I2ZDQ4NWMzMjAwYmQwNGU3OWNiYzZlMmM2MGNiM2NmNDYyMDI2OGIyZTBjYTk5ZGNhM2Q0MDFjYmQxMGQ3ODMwYTJkNmEzNjlkNWY5ZDdjYmQ2ZTg0MDIxYjNjZTg5YjliOGFjODJlZGYzZTcyY2YxYmE3MTA1NDIwNWJlNGFmNTcwYmJiMzc3MjFlZDczIiwiaXYiOiJkMDA0N2U4M2NkODRiYzQ1YjkxYjE0NzJjNjM2OWYzZjY1ZDNkMjA0Mzg2ZDNlNGEifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYWYzNmUwNTI0ZDFlNjQ3MjljNTNlYjEyNTg4N2NhNDAyZmM3NDBlYTYxMDMxOWNlYjA0ZDQyNjc0NmY3M2IyMGJhNGE4OWRhZjYwYzcxOTgyZjE4MzFhOGU3OGQ0NDVmOTYyODQ5NzBmOGU3MzhjZGI0ODRjZDVlNTdhOGM4MGI0YTA5Mzg2M2JjMzEyYWY5NzhjZDNjODZmMzU5ZTZlZjA2OGYyM2ZiMjczMTZjNTJjN2U0ZTRiMWMxMzM3ZGRhIiwiaXYiOiI2YTNjZjIyYmFkOTg5NzU5YjQwODdmZTljYzQzMDMxMDY1MmQyZmMwOWU0MzI3YmUifQ=="
         },
         "id": "Jr3ZcNpCO"
     },
@@ -115,7 +115,7 @@
     "exportFormat": {
         "providerType": "vottJson",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNTBhZWU2MDFkZThhNzk0ZGQ0YmQyMWU3YTZlOWRkOWRhZmIxZjM5ZDNjZWIxMWY4MmI2ZTkwYmJiMDQyMWY2Mjg4OWE1OWViZjRhMzhiOWE1OGI2NTA2MmZjNWM3YjAzIiwiaXYiOiIzYWM0MTkzM2ExZmY4MWFiNTMyZGFhMGVhN2QwMDFjYWQ0NDY0YmY4YjM1NjMxYTMifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNmM4YzQzNmViMWRjYTU5NDE1YWQ3MTFkMGQyY2M5NzdmYTBmZmFhMDMxNTRmMmFhZWNkZDg1NWNkZDdmMzg1M2RlNjFlOTMzMmVjZjRlY2RmMTAzNmU3MzkyOWQ2MzljIiwiaXYiOiJhMTM1M2MzNTRjM2Y2YzM3YWI2MzhlNTRiYzJiYjdlMTUyNzI0MzNjYTY4MjdkNDQifQ=="
         }
     },
     "version": "2.1.0",
@@ -1621,18 +1621,6 @@
             "state": 2,
             "type": 1
         },
-        "43e3edccb911026a9218129ba529e434": {
-            "format": "jpg",
-            "id": "43e3edccb911026a9218129ba529e434",
-            "name": "20200331_152423.jpg",
-            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_152423.jpg",
-            "size": {
-                "width": 4032,
-                "height": 3024
-            },
-            "state": 1,
-            "type": 1
-        },
         "24da28cd43315f2c5cb88763fa6764e1": {
             "format": "jpg",
             "id": "24da28cd43315f2c5cb88763fa6764e1",
@@ -2077,30 +2065,6 @@
             "state": 2,
             "type": 1
         },
-        "4449315c4ebb4c2d2bb9699f1ef52014": {
-            "format": "jpg",
-            "id": "4449315c4ebb4c2d2bb9699f1ef52014",
-            "name": "20200331_153007.jpg",
-            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_153007.jpg",
-            "size": {
-                "width": 3024,
-                "height": 4032
-            },
-            "state": 1,
-            "type": 1
-        },
-        "71c5bc74838839f61382b60098e1a923": {
-            "format": "jpg",
-            "id": "71c5bc74838839f61382b60098e1a923",
-            "name": "20200331_153001.jpg",
-            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_153001.jpg",
-            "size": {
-                "width": 3024,
-                "height": 4032
-            },
-            "state": 1,
-            "type": 1
-        },
         "f38458d5bf367a05ac0a578af723e105": {
             "format": "jpg",
             "id": "f38458d5bf367a05ac0a578af723e105",
@@ -2147,18 +2111,6 @@
                 "height": 1777
             },
             "state": 2,
-            "type": 1
-        },
-        "736d5882ecc50d85e9cb29c2de047799": {
-            "format": "jpg",
-            "id": "736d5882ecc50d85e9cb29c2de047799",
-            "name": "20200331_153014.jpg",
-            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_153014.jpg",
-            "size": {
-                "width": 3024,
-                "height": 4032
-            },
-            "state": 1,
             "type": 1
         },
         "31f0b536cc879058c4e2a13d85c8fc90": {
@@ -2675,18 +2627,6 @@
                 "height": 3260
             },
             "state": 2,
-            "type": 1
-        },
-        "eaff2985fc64b2047a6179464bee3dd2": {
-            "format": "jpg",
-            "id": "eaff2985fc64b2047a6179464bee3dd2",
-            "name": "20200331_153022.jpg",
-            "path": "file:C:/Users/tobia/Desktop/Kandidat/mlHollf/Images/Tobias%20Newest%20pictures/20200331_153022.jpg",
-            "size": {
-                "width": 3024,
-                "height": 4032
-            },
-            "state": 1,
             "type": 1
         }
     }
