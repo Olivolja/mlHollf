@@ -197,7 +197,7 @@ if __name__ == "__main__":
             },
         )
 
-        batch_size = 2
+        batch_size = 32
         print(
             "Train on {} samples, val on {} samples, with batch size {}.".format(
                 num_train, num_val, batch_size
