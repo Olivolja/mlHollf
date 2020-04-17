@@ -21,7 +21,7 @@ src_path = os.path.join(get_parent_dir(2), "src")
 sys.path.append(src_path)
 
 import numpy as np
-import keras.backend as K
+import tensorflow.keras.backend as K
 from keras.layers import Input, Lambda
 from keras.models import Model
 from keras.optimizers import Adam
@@ -91,7 +91,7 @@ def create_model(
     )
 
     if load_pretrained:
-        model_body.load_weights(weights_path, by_name=True, skip_mismatch=True)
+        model_body.load_weights(weights_path, by_name=True)
         print("Load weights {}.".format(weights_path))
         if freeze_body in [1, 2]:
             # Freeze darknet53 body or freeze all but 3 output layers.
