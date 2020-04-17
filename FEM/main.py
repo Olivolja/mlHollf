@@ -96,7 +96,7 @@ class Beam:
 
 
 class Truss:
-    def __init__(self,Edof,coordinates,bc=[],bcVal=None,A=25e-4,E=2.1e11,elements,nno):
+    def __init__(self,Edof,coordinates,nno,elements,bc=[],bcVal=None,A=25e-4,E=2.1e11):
         self.Edof = Edof
         self.coordinates = coordinates
         self.bc = bc
