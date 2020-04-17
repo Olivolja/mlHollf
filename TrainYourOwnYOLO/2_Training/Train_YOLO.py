@@ -115,7 +115,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--val_split",
         type=float,
-        default=0.1,
+        default=0.2,
         help="Percentage of training set to be used for validation. Default is 10%.",
     )
     parser.add_argument(
@@ -133,7 +133,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--epochs",
         type=float,
-        default=80,# edited from 51
+        default=81,# edited from 51
         help="Number of epochs for training last layers and number of epochs for fine-tuning layers. Default is 51.",
     )
 
@@ -197,7 +197,7 @@ if __name__ == "__main__":
             },
         )
 
-        batch_size = 32
+        batch_size = 16
         print(
             "Train on {} samples, val on {} samples, with batch size {}.".format(
                 num_train, num_val, batch_size
@@ -245,7 +245,7 @@ if __name__ == "__main__":
         print("Unfreeze all layers.")
 
         batch_size = (
-            4  # note that more GPU memory is required after unfreezing the body
+            1  # note that more GPU memory is required after unfreezing the body
         )
         print(
             "Train on {} samples, val on {} samples, with batch size {}.".format(
