@@ -5,105 +5,134 @@ import matplotlib.pyplot as plt
 
 # Class used for calculating basic properties for a beam.
 class Beam:
-    # Calculating the displacement along the beam using the library CALFEM.
-    def __init__(self,xStart,xEnd,last=np.array([[],[]]),bc=[],bcVal=None,):
+    def __init__(self,xStart,xEnd,load=np.array([[],[]]),
+                 bc=[],bcVal=None,E=2.1e11,
+                 A=45.3e-4,I=2510e-8):
+
         self.xStart = xStart
         self.xEnd = xEnd
-        self.last = last
+        self.load = load
         self.bc = bc
         self.bcVal = bcVal
+        self.E = E
+        self.A = A
+        self.I = I
+        self.nel = 3
+        self.ep = np.array([self.E, self.A, self.I])
+        self.ex = np.array([self.xStart, self.xEnd/self.nel])
+        self.ey = np.array([0., 0.])
 
-
-        nel = 3
+    def get_edof(self):
         Edof = []
-        for i in range(nel):
+        for i in range(self.nel):
             Edof.append([3*i+1,3*i+2,3*i+3,3*i+4,3*i+5,3*i+6])
         Edof = np.asarray(Edof)
-        print(Edof)
+        return Edof
 
-        self.coord = []
-        for i in range(nel+1):
-            self.coord.append(i/nel)
-        print(self.coord)
-        # Stiffnes matrix and load vector based on the total degrees of freedom
+    def get_coordinates(self):
+        coord = []
+        for i in range(self.nel+1):
+            coord.append(i/self.nel)
+        return coord
+
+    def get_stiffnes_matrix(self):
+        Edof = self.get_edof()
         K = np.mat(np.zeros((Edof[-1][-1], Edof[-1][-1])))
         f = np.mat(np.zeros((Edof[-1][-1], 1)))
-        for i in range(last.shape[1]):
-            f[last[0][i]] = last[1][i]
-
-        E = 2.1e11
-        A = 45.3e-4
-        I = 2510e-8
-        ep = np.array([E, A, I])
-        ex = np.array([xStart, xEnd/nel])
-        ey = np.array([0., 0.])
-
-        Ke = cfc.beam2e(ex, ey, ep)
+        for i in range(self.load.shape[1]):
+            f[self.load[0][i]] = self.load[1][i]
+        Ke = cfc.beam2e(self.ex, self.ey, self.ep)
         K = cfc.assem(Edof, K, Ke)
+        return K,f
 
-        # Finding the variables:
-        # a - solution of the system of equations
-        # r - support forces
-        (a, r) = cfc.solveq(K, f, bc, bcVal);
+    def get_solutions(self):
+        K,f = self.get_stiffnes_matrix()
+        (a, r) = cfc.solveq(K, f, self.bc, self.bcVal)
+        return a,r
 
-        self.a = a
-        self.r = r
-
-        # Solution of the equation for each element.
-        Ed = cfc.extractEldisp(Edof, a);
-        Es = np.empty((nel,2,3))
-        Edi = np.empty((nel,2,2))
-        Eci = np.empty((nel, 2, 1))
-        for i in range(nel):
-            es,edi,eci = cfc.beam2s(ex,ey,ep,Ed[i,:])
+    def get_section_forces(self):
+        Edof = self.get_edof()
+        a,r = self.get_solutions()
+        Ed = cfc.extractEldisp(Edof, a)
+        Es = np.empty((self.nel,2,3))
+        Edi = np.empty((self.nel,2,2))
+        Eci = np.empty((self.nel, 2, 1))
+        for i in range(self.nel):
+            es,edi,eci = cfc.beam2s(self.ex,self.ey,self.ep,Ed[i,:])
             Es[i] = es
             Edi[i] = edi
             Eci[i] = eci
-        self.Es = Es
-        self.Edi = Edi
-        self.Eci = Eci
+        return Es
 
-
-
-    # Method used to plot the torque along the beam
-    def TorqueDiagram(self):
+    def get_torque_diagram(self):
+        Es = self.get_section_forces()
+        coord = self.get_coordinates()
         Val = []
-        for i in range(len(self.Es)):
-            Val.append(self.Es[i][0][2])
+        for i in range(len(Es)):
+            Val.append(Es[i][0][2])
+        Val.append(Es[-1][1][2])
+        plt.plot(coord,Val)
 
-        Val.append(self.Es[-1][1][2])
-        print(Val)
-        plt.plot(self.coord,Val)
-        plt.show()
-
-    # Method used to plot the shear forces along the beam
-    def ShearDiagram(self):
+    def get_shear_diagram(self):
+        Es = self.get_section_forces()
+        coord = self.get_coordinates()
         Val = []
-        for i in range(len(self.Es)):
-            Val.append(self.Es[i][0][1])
-        Val.append(self.Es[-1][1][1])
+        for i in range(len(Es)):
+            Val.append(Es[i][0][1])
+        Val.append(Es[-1][1][1])
+        plt.plot(coord,Val)
 
-
-        plt.plot(self.coord,Val)
-        plt.show()
-
-    #Method used to plot the normal force along the beam
-    def NormalForce(self):
+    def get_normal_force_diagram(self):
+        Es = self.get_section_forces()
+        coord = self.get_coordinates()
         Val = []
-        for i in range(len(self.Es)):
-            Val.append(self.Es[i][0][0])
-        Val.append(self.Es[-1][0][0])
-        plt.plot(self.coord,Val)
-        plt.show()
+        for i in range(len(Es)):
+            Val.append(Es[i][0][0])
+        Val.append(Es[-1][0][0])
+        plt.plot(coord,Val)
 
-    # Method used to plot the deformation of the beam
-    def DeformationFigure(self):
+    def get_deformation_figure(self):
         pass
 
 
-class truss:
-    pass
+class Truss:
+    def __init__(self,Edof,coordinates,bc=[],bcVal=None,A=25e-4,E=2.1e11,elements,nno):
+        self.Edof = Edof
+        self.coordinates = coordinates
+        self.bc = bc
+        self.bcVal = bcVal
+        self.A = A
+        self.E = E
+        self.nno = nno
+        self.elements = elements
+        self.nel = len(elements)
 
-balk1 = Beam(0,1,np.array([[7],[-1000]]),np.array([1,2,11]),np.array([0,0,0]))
-balk1.ShearDiagram()
-balk1.TorqueDiagram()
+    def get_edof(self):
+        nodes = []
+        for i in range(1,self.nno+1):
+            nodes.append([2*i-1,2*i])
+        nodes = np.asarray(Edof)
+        Edof = []
+        for e in elements:
+            Edof.append([nodes[e[0]][0],nodes[e[0]][1],nodes[e[1]][0],nodes[e[1]][1]])
+
+    def get_stiffnes_matrix(self):
+        K = np.mat(np.zeros((self.Edof[-1][-1], self.Edof[-1][-1])))
+        f = np.mat(np.zeros((self.Edof[-1][-1], 1)))
+        for i in range(self.load.shape[1]):
+            f[self.load[0][i]] = self.load[1][i]
+        Ke = cfc.bar2e(self.ex, self.ey, self.ep)
+        K = cfc.assem(Edof, K, Ke)
+        return K,f
+
+    def get_solutions(self):
+        K,f = self.get_stiffnes_matrix()
+        (a, r) = cfc.solveq(K, f, self.bc, self.bcVal)
+        return a,r
+
+    def get_normal_forces(self):
+        pass
+
+
+    def get_displacement(self):
+        pass
