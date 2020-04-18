@@ -8,8 +8,9 @@ from PIL import Image
 import time
 root = Tk()
 m_cnv = Canvas(root, width=1000, height=1000)
-m_cnv.pack()
-
+m_cnv.pack(side=LEFT)
+e_cnv = Canvas(root, bg="red")
+e_cnv.pack(side=RIGHT)
 beam_list = []
 node_list = []
 truss_beams = []
@@ -598,7 +599,7 @@ class Truss:
 
 def get_objects():
     try:
-        df = pd.read_csv(r'C:\Users\admin\Documents\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
+        df = pd.read_csv(r'C:\Users\admin\Desktop\Detection_Results_test.csv')
     except:
         df = pd.read_csv(r'C:\Users\tobia\Desktop\Detection_Results_test.csv')
         #df = pd.read_csv(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
@@ -723,12 +724,79 @@ def draw_all_objects():
 
 draw_all_objects()
 
+def create_entries():
+    force_entries = []
+    moment_entries = []
+    load_entries = []
+    objects = beam_list[0].objects
+    # len item in Loads = 4
+    # len item in Forces = 3
+    # len item in Moment = 3
+
+    def calculate():
+        for e in force_entries:
+            magnitude = e[0].get()
+            obj = e[1].cget("text")
+            # set force[i] magnitude to 'magnitude'
+
+        for e in moment_entries:
+            magnitude = e[0].get()
+            obj = e[1].cget("text")
+            # set moment[i] magnitude to 'magnitude'
+
+        for e in load_entries:
+            magnitude = e[0].get()
+            obj = e[1].cget("text")
+            # set load[i] magnitude to 'magnitude'
+        
+        print("Output to the FE-calculation script")
+
+    calc_button = Button(e_cnv, text="Calculate", command=lambda: calculate())
+    calc_button.pack(side=BOTTOM)
+
+    for load in objects["Loads"]:
+        entry_field = Canvas(e_cnv, bg="red")
+        entry_field.pack()
+
+        entry = Entry(entry_field)
+        entry.pack(side=RIGHT)
+
+        label = Label(entry_field, text=load[-1])
+        label.pack(side=LEFT)
+
+        load_entries.append((entry, label))
+
+    for force in objects["Forces"]:
+        entry_field = Canvas(e_cnv, bg="red")
+        entry_field.pack()
+
+        entry = Entry(entry_field)
+        entry.pack(side=RIGHT)
+
+        label = Label(entry_field, text=force[-1])
+        label.pack(side=LEFT)
+
+        force_entries.append((entry, label))
+
+    for moment in objects["Moments"]:
+        entry_field = Canvas(e_cnv, bg="red")
+        entry_field.pack()
+
+        entry = Entry(entry_field)
+        entry.pack(side=RIGHT)
+
+        label = Label(entry_field, text=moment[-1])
+        label.pack(side=LEFT)
+
+        moment_entries.append((entry, label))
+
+
+create_entries()
 m_cnv.update()
 m_cnv.postscript(file="bild.png", colormode='color')
-
-
-im1 = Image.open(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.png')
-im1.save(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.jpg')
+#
+# im1 = Image.open(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.png')
+# im1.save(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.jpg')
 
 
 mainloop()
