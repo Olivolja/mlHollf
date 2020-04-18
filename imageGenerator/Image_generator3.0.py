@@ -64,9 +64,6 @@ def compute_distance(point1, point2):
     x2, y2 = point2
     return m.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
-<<<<<<< Updated upstream
-=======
-
 def create_label(obj):
     if isinstance(obj, Force):
         global force_number
@@ -101,7 +98,6 @@ def create_label(obj):
     return text
         
 
->>>>>>> Stashed changes
 # Defining a beam
 class Beam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
@@ -563,7 +559,7 @@ def find_closest_node(coord):
 
     return shortest_distance_coordinates, closest_node
 
-
+"""
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
@@ -671,18 +667,7 @@ class Truss:
                     if angle == 0:
                         node_2.layer = node.layer
                         layers[node.layer].add(node_2)
-<<<<<<< Updated upstream
-                    elif angle == 45:
-<<<<<<< HEAD
 """
-=======
-                    # elif angle == 45:
-
->>>>>>> Stashed changes
-=======
-
->>>>>>> 647e1cebfafaddda297ead6df9f1958d6714739f
-
 def get_objects():
     try:
         df = pd.read_csv(r'C:\Users\admin\Desktop\Detection_Results_test.csv')
