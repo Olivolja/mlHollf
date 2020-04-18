@@ -97,7 +97,7 @@ def create_label(obj):
     m_cnv.create_text(x, y, font = ('Times', '15'), text=sub_text)
     return text
         
-
+print("Snälla funka")
 # Defining a beam
 class Beam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
