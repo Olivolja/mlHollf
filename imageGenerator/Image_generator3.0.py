@@ -486,7 +486,7 @@ def find_closest_node(coord):
 
     return shortest_distance_coordinates, closest_node
 
-""" 
+
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
@@ -595,7 +595,7 @@ class Truss:
                         node_2.layer = node.layer
                         layers[node.layer].add(node_2)
                     elif angle == 45:
-"""
+
 
 def get_objects():
     try:
@@ -722,6 +722,25 @@ def draw_all_objects():
 #          "CounterclockwiseRight", "CounterclockwiseTop", "CounterclockwiseLeft", "CounterclockwiseBottom", 
 #          "Beam0", "BeamLine45", "BeamLine90", "Beam90", "BeamLine135", "Beam135", "LoadDown", "LoadUp"]
 
+def fe_input(type):
+    if type == "beam":
+        output = {"beam" : []}
+        for beam in beam_list:
+            coordinates = (beam.x_min, beam.y_min, beam.x_max, beam.y_max)
+            output["beam"].append(coordinates)
+            objects = beam.objects
+            for type, obj in objects.items():
+                if len(obj) > 0:
+                    output[type] = []
+                for o in obj:
+                    coordinates = (o.x_min, o.y_min, o.x_max, o.y_max)
+                    output[type].append(coordinates)
+        return output
+    elif type == "truss":
+        print("Skjut mig nu")
+        output = {"truss" : []}
+        return output
+        # En lista över elementen och vilka noder de går mellan
 draw_all_objects()
 
 def create_entries():
