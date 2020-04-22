@@ -29,7 +29,7 @@ surface_points = {"Bottom": [], "Top": [], "Left": [], "Right": []} # To find th
 labels = ["LoadDown", "LoadUp", "Beam0", "Counterclockwise", "CounterclockwiseRight", "ArrowRight", 
           "CounterclockwiseTop", "ArrowDown", "Clockwise", "ClockwiseRight", "ArrowLeft", 
           "CounterclockwiseBottom", "ArrowUp", "ClockwiseLeft", "Support", "ClockwiseTop", 
-          "ClockwiseBottom", "CounterclockwiseLeft", "RollerSupport", "Beam90"]
+          "ClockwiseBottom", "CounterclockwiseLeft", "Surface", "RollerSupport", "Beam90"]
 
 # Method for finding closest point on any beam returning that point and the corresponding beam
 def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
