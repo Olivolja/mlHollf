@@ -559,6 +559,7 @@ def find_closest_node(coord):
 
     return shortest_distance_coordinates, closest_node
 
+
 """
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
@@ -851,8 +852,9 @@ def create_entries():
 
         entry = Entry(entry_field)
         entry.pack(side=RIGHT)
+        entry.insert(0, 1)
 
-        label = Label(entry_field, text=load[-1])
+        label = Label(entry_field, text=load.label)
         label.pack(side=LEFT)
 
         load_entries.append((entry, label))
@@ -863,8 +865,9 @@ def create_entries():
 
         entry = Entry(entry_field)
         entry.pack(side=RIGHT)
+        entry.insert(0, 1)
 
-        label = Label(entry_field, text=force[-1])
+        label = Label(entry_field, text=force.label)
         label.pack(side=LEFT)
 
         force_entries.append((entry, label))
@@ -875,8 +878,9 @@ def create_entries():
 
         entry = Entry(entry_field)
         entry.pack(side=RIGHT)
-
-        label = Label(entry_field, text=moment[-1])
+        entry.insert(0, 1)
+        
+        label = Label(entry_field, text=moment.label)
         label.pack(side=LEFT)
 
         moment_entries.append((entry, label))
