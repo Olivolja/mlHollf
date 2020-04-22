@@ -5,7 +5,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMmJiZjM2ZGE1YzQxNGRmMzNjMzYyZjlmODY5MWFiM2U5YmVlZDg1NzQxNTAzZDhiODQ5MjE1NzY3NjFlMWE5MjE2ZTY4ZjZkZjFhM2FlNmFmMTYwZTBkZjdmYTE2YWIyYzBlMWUxMjI1NTBiNjQyN2UxYzUzZmJkNzIzYWVjM2EyMzFjNGIwNTQyMTYwNDgzOTdjNjE0MTYzMjFhM2EyNzRkNTE1N2JiNDZhMWZjYjk4MzEzNjFjNmIwOGFhNmQyZjgzYWQyYmU0MmU4ZDU3Yzg1ZjRkYWJjNDg0N2MzMGUiLCJpdiI6ImM1NzI3M2M5MzVmYzJmY2I5MzZiMTkwZjM2YjFkZjNjM2JmM2RmNDFhYzRiYjI4OSJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMDcyMjljYTA3MDVkNzdiYzM3OGNhM2QxYTM1M2FiMTNmNTQ3NDFjYWQ1YjMxYWZlZmJmZDFhNGQxYWI4OWMzMDI1NjQ3YjJkMDQxZjMwNjg0ODRkNzcyMzIxMWYyMzlmYWE1N2Y4YjBjMTNiOTA4ZTE1ZDcwMTA4ZTNjZDFhZmQ0MDFiYjQzMWJlZWFlMDM0NGFmOGIwZDUwNTIwOTcxY2E0NTA0MTIzZWQ0N2IxMmU0Nzc3MTRkZDQzMTk5M2JmNTYxZGZkYzYxODQxZWIyZmIzOTM4OTQzNjBkMjkwNDMiLCJpdiI6IjRjZGEyMjcxZDI2Mjg4NGZhNTQ1YmRhNzk0YzE1NTJlMzBhNTY3YTViMDg3ZGQ1MiJ9"
         },
         "id": "JW8j23Scx"
     },
@@ -13,7 +13,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYWUwZGFiNjc0ODk1OWIxMTg5YmMwNTI2N2U3MDA2OTU0MDBmOGE0MzhhYjBhOGQ4ZGRhNDc4MTcxMjU0ZDQ0ZDc5NWU2MWU1OWZlODIyNTczZmIzMGI2MjhiNTRhMjRjMGU0NTIyN2VkODJmNTkwYWY5ZjI1NTRmNjhhYjk0ODZkMWYwZWNiZmM0NmM5NDUyNmNjNjc3NmY2MmE1YjM5M2FkNGRjZWYxMTA5ZDZiNjg1M2Y3MmY0ODk4Y2I3NzZjZWZmZDhhYzRlMTM5YmIzY2ZlYWEwZDNlOWFmODVkMzAiLCJpdiI6IjRlMDJkMTM5NGMyYzY4MmRhZWZlODg1NGIzYjliM2M2OTdlZDYyNjdjOWVlYmU3OCJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMTU3NWU0ZDVhZTRmYmViMDhmZTI2NTNlZDI3ZmIxNmY2YmVhMDFhZWRkZWNiMWE0Mjg3NzE1ZmNhYWViYmY3NWM0ZjE1MjhhNTY5Y2RhMGRkNjY5ZGYwMDE3YzI4Mzc3ZWZjMjdmNDE2ZGI1YTdlZmU4NzY0NWVkZjExODJlNWQ3ZDQ5ZjlmZmY3NmNkNmM1MTg2NWRmNjUzM2FhMTc2NWE1NGVlMTRhODQ0NDU3MzFlMmViODNkNjI4OTY0N2ZmZTM4NTNjYTZlNzI2MGNiMTdlMDhjOThjMmE2ZWY2YTEiLCJpdiI6IjU1ZjBlNDNmNWJhZDFlODg3MGY4MDFlNmFjODFkY2E4OTM2ZmQ3ZGYzMzEzZGM1ZSJ9"
         },
         "id": "JW8j23Scx"
     },
@@ -115,11 +115,11 @@
     "exportFormat": {
         "providerType": "csv",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZmMzMjY5MDM5NGE0NmU5NmY3OGJmMTAyNDA5NDgwYmU4NjMxNTkzOTc1ZTZlYWFhYmNjN2ZjOGU0Mzg5ZjUzMTRhNzcxOTE1Y2RjN2Q2ZWJiMzdlYjRlYzI4MDczMDk3IiwiaXYiOiI2YjFmNmI1ZTY3ZTdjODZiYTYyNWIwNmU1YWM5MWU1ZTQxZGVmZDE5OTcxMTAwMDkifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMDdjN2VkYjkwYTg5NmI2NWI5MjFlZDdiOWNmNGZkOGY0NDlhZGFiY2UwZWRlMDY2YTcwYzMwMTQ1ZDY3YmEwN2IwZTg5OGE1NDgyNDFhZGNhZDdkMmQ5YTYyZGZhMTIxIiwiaXYiOiJjZjk4ZWUwMDU5NzdhZjU3M2Y4NmI5Njc5ZTExZGRhYjJkMDFhNzE0NmVmZmU0Y2MifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "738d87673e49f527c99fb72db111698b",
+    "lastVisitedAssetId": "7f4890b813a7fdf6e90bcdc0b82770d8",
     "assets": {
         "d4f3fbdf46ecbf7d3d2b300db83ec843": {
             "format": "jpg",
@@ -2647,6 +2647,702 @@
             "id": "738d87673e49f527c99fb72db111698b",
             "name": "20200331_155149.jpg",
             "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200331_155149.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1d1df8ed6e8c7880172498db2284dd9d": {
+            "format": "jpg",
+            "id": "1d1df8ed6e8c7880172498db2284dd9d",
+            "name": "20200421_154026.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_154026.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "14e1905f6ce1d12bf6d6de2324e6df80": {
+            "format": "jpg",
+            "id": "14e1905f6ce1d12bf6d6de2324e6df80",
+            "name": "20200421_154034.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_154034.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "70cc024fdc24d3743830aea2f0d94398": {
+            "format": "jpg",
+            "id": "70cc024fdc24d3743830aea2f0d94398",
+            "name": "20200421_154109.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_154109.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a1929d7988d8bd7deea114ae305fe712": {
+            "format": "jpg",
+            "id": "a1929d7988d8bd7deea114ae305fe712",
+            "name": "20200421_154117.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_154117.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4e551c1911dd2e1a6a309b44fbde21e4": {
+            "format": "jpg",
+            "id": "4e551c1911dd2e1a6a309b44fbde21e4",
+            "name": "20200421_154045.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_154045.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "02bde75f4ad4a2762bd457712a359791": {
+            "format": "jpg",
+            "id": "02bde75f4ad4a2762bd457712a359791",
+            "name": "20200421_160926.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160926.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cebd59c8591d5b42c7d42b0ceb01e4ea": {
+            "format": "jpg",
+            "id": "cebd59c8591d5b42c7d42b0ceb01e4ea",
+            "name": "20200421_160934.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160934.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "48cd7ffab6bc74dac6df32e5a4f2fa22": {
+            "format": "jpg",
+            "id": "48cd7ffab6bc74dac6df32e5a4f2fa22",
+            "name": "20200421_160923.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160923.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2619eb0d6d39a8486693f12955283137": {
+            "format": "jpg",
+            "id": "2619eb0d6d39a8486693f12955283137",
+            "name": "20200421_160931.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160931.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "45fb06953ffc8389b8b9ed76fa267ad9": {
+            "format": "jpg",
+            "id": "45fb06953ffc8389b8b9ed76fa267ad9",
+            "name": "20200421_154056.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_154056.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3aedf7393c954fb9df0586add8b207aa": {
+            "format": "jpg",
+            "id": "3aedf7393c954fb9df0586add8b207aa",
+            "name": "20200422_162705.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162705.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d25f065599676f200893e7afcf1b661d": {
+            "format": "jpg",
+            "id": "d25f065599676f200893e7afcf1b661d",
+            "name": "20200421_160639.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160639.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6a993f2e2d608a47ccdc5f072aa57e40": {
+            "format": "jpg",
+            "id": "6a993f2e2d608a47ccdc5f072aa57e40",
+            "name": "20200421_160656.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160656.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "87e7661ea813d0979ccb9652af9dd090": {
+            "format": "jpg",
+            "id": "87e7661ea813d0979ccb9652af9dd090",
+            "name": "20200421_160706.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160706.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "77314d9df2ec4db9984ea38464411340": {
+            "format": "jpg",
+            "id": "77314d9df2ec4db9984ea38464411340",
+            "name": "20200421_160713.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160713.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e2177a04c7649544a98db85f7ddec211": {
+            "format": "jpg",
+            "id": "e2177a04c7649544a98db85f7ddec211",
+            "name": "20200421_160718.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160718.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4d37e84431c1a72e0bef611ffd48b748": {
+            "format": "jpg",
+            "id": "4d37e84431c1a72e0bef611ffd48b748",
+            "name": "20200421_160724.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160724.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "40eb8ff7b5f800b9991f12223a330b68": {
+            "format": "jpg",
+            "id": "40eb8ff7b5f800b9991f12223a330b68",
+            "name": "20200421_160902.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160902.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "72d2572c92208c7f6efad3b32f90340a": {
+            "format": "jpg",
+            "id": "72d2572c92208c7f6efad3b32f90340a",
+            "name": "20200421_160907.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160907.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "807d3b57c6378c913c1428b384b2234f": {
+            "format": "jpg",
+            "id": "807d3b57c6378c913c1428b384b2234f",
+            "name": "20200421_160913.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160913.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f652890b55923bdba1b560ae5023509c": {
+            "format": "jpg",
+            "id": "f652890b55923bdba1b560ae5023509c",
+            "name": "20200421_160918.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200421_160918.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f955b6ca954edb2cfc4b69560ca084e6": {
+            "format": "jpg",
+            "id": "f955b6ca954edb2cfc4b69560ca084e6",
+            "name": "20200422_162620.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162620.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7cd95aebd6ba8ec4d4412b8120f1c7e8": {
+            "format": "jpg",
+            "id": "7cd95aebd6ba8ec4d4412b8120f1c7e8",
+            "name": "20200422_162624.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162624.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b59add788c158b4e71e16ae810d80e09": {
+            "format": "jpg",
+            "id": "b59add788c158b4e71e16ae810d80e09",
+            "name": "20200422_162711.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162711.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "72309c4e47600ff5d57231d7923e3891": {
+            "format": "jpg",
+            "id": "72309c4e47600ff5d57231d7923e3891",
+            "name": "20200422_162715.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162715.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "59fa65498114acc2d8371985db28d76e": {
+            "format": "jpg",
+            "id": "59fa65498114acc2d8371985db28d76e",
+            "name": "20200422_162718.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162718.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0f27bf85760390e0e9e8c23884fab4c3": {
+            "format": "jpg",
+            "id": "0f27bf85760390e0e9e8c23884fab4c3",
+            "name": "20200422_162724.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162724.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "396ff9550e1b6dae8ca07ad7fbe41f34": {
+            "format": "jpg",
+            "id": "396ff9550e1b6dae8ca07ad7fbe41f34",
+            "name": "20200422_162727.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162727.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6f598b82c7927826d6a0e4fc82e3cc0d": {
+            "format": "jpg",
+            "id": "6f598b82c7927826d6a0e4fc82e3cc0d",
+            "name": "20200422_162746.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162746.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6046d3dfe2cbc93a15884ac992d18acf": {
+            "format": "jpg",
+            "id": "6046d3dfe2cbc93a15884ac992d18acf",
+            "name": "20200422_162817.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162817.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b598db6d251d8f82e1c3ee95a22c4945": {
+            "format": "jpg",
+            "id": "b598db6d251d8f82e1c3ee95a22c4945",
+            "name": "20200422_162826.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162826.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f99214d2005e755378979e27bc474f04": {
+            "format": "jpg",
+            "id": "f99214d2005e755378979e27bc474f04",
+            "name": "20200422_162833.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162833.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4520404150cbffc653bc3778d3822717": {
+            "format": "jpg",
+            "id": "4520404150cbffc653bc3778d3822717",
+            "name": "20200422_162843.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162843.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f6bce4c1bbe19e21e3d188a0f82d2ec8": {
+            "format": "jpg",
+            "id": "f6bce4c1bbe19e21e3d188a0f82d2ec8",
+            "name": "20200422_162853.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162853.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fbbfbda55a88449ffa5fe70d3e747059": {
+            "format": "jpg",
+            "id": "fbbfbda55a88449ffa5fe70d3e747059",
+            "name": "20200422_162857.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162857.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8b82896ad04cc0f614e68400f452948f": {
+            "format": "jpg",
+            "id": "8b82896ad04cc0f614e68400f452948f",
+            "name": "20200422_162901.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162901.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "550744ef321d6da5804a03ebafa66062": {
+            "format": "jpg",
+            "id": "550744ef321d6da5804a03ebafa66062",
+            "name": "20200422_162906.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162906.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5da88f9b954eccef1e2c9ebd542f7a38": {
+            "format": "jpg",
+            "id": "5da88f9b954eccef1e2c9ebd542f7a38",
+            "name": "20200422_162912.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162912.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9a1166a39fc74e455132652c0ff71790": {
+            "format": "jpg",
+            "id": "9a1166a39fc74e455132652c0ff71790",
+            "name": "20200422_162917.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162917.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ce3325f822aff577f3da7f118b3c5a5d": {
+            "format": "jpg",
+            "id": "ce3325f822aff577f3da7f118b3c5a5d",
+            "name": "20200422_162931.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162931.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fac83538d886301d040b9a1cc670055f": {
+            "format": "jpg",
+            "id": "fac83538d886301d040b9a1cc670055f",
+            "name": "20200422_162937.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162937.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3f972401f2bc54f472bec8947622edbd": {
+            "format": "jpg",
+            "id": "3f972401f2bc54f472bec8947622edbd",
+            "name": "20200422_162941.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_162941.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1f5cca4920f0c658d1ded9ab7b9c7586": {
+            "format": "jpg",
+            "id": "1f5cca4920f0c658d1ded9ab7b9c7586",
+            "name": "20200422_163049.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163049.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "16cfcdd9c496be5b94ceea5a8c32b683": {
+            "format": "jpg",
+            "id": "16cfcdd9c496be5b94ceea5a8c32b683",
+            "name": "20200422_163052.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163052.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4cac5946c33f561b178013671762e95b": {
+            "format": "jpg",
+            "id": "4cac5946c33f561b178013671762e95b",
+            "name": "20200422_163057.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163057.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a08561de1ae0e191cc6bd83ff1d69f95": {
+            "format": "jpg",
+            "id": "a08561de1ae0e191cc6bd83ff1d69f95",
+            "name": "20200422_163059.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163059.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b87362bcad89593bdd34a80dda3fd201": {
+            "format": "jpg",
+            "id": "b87362bcad89593bdd34a80dda3fd201",
+            "name": "20200422_163106.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163106.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7ccfa548043c6045f89caf0e488857e3": {
+            "format": "jpg",
+            "id": "7ccfa548043c6045f89caf0e488857e3",
+            "name": "20200422_163110.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163110.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "31653078c9761abdc9928239ebaa582e": {
+            "format": "jpg",
+            "id": "31653078c9761abdc9928239ebaa582e",
+            "name": "20200422_163115.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163115.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "32c7697ba9ce1e976c53be495f1f8e27": {
+            "format": "jpg",
+            "id": "32c7697ba9ce1e976c53be495f1f8e27",
+            "name": "20200422_163122.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163122.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cf55f25de564e188073bcdedca09a2ae": {
+            "format": "jpg",
+            "id": "cf55f25de564e188073bcdedca09a2ae",
+            "name": "20200422_163130.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163130.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0ae98a40ff37e94a026384769c6e04a8": {
+            "format": "jpg",
+            "id": "0ae98a40ff37e94a026384769c6e04a8",
+            "name": "20200422_163134.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163134.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3a370daf4fb60cb15e698a27f3409c0d": {
+            "format": "jpg",
+            "id": "3a370daf4fb60cb15e698a27f3409c0d",
+            "name": "20200422_163137.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163137.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "57c7dcf253f5febb3a2b1b921cbffc0d": {
+            "format": "jpg",
+            "id": "57c7dcf253f5febb3a2b1b921cbffc0d",
+            "name": "20200422_163141.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163141.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "254a0c9c40603d5f8a7ac5be0d8fcfd8": {
+            "format": "jpg",
+            "id": "254a0c9c40603d5f8a7ac5be0d8fcfd8",
+            "name": "20200422_163147.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163147.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a54d436bd8a5ea338ca364409af637bd": {
+            "format": "jpg",
+            "id": "a54d436bd8a5ea338ca364409af637bd",
+            "name": "20200422_163150.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163150.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8b5dab0d689158ae49ae195a76a44649": {
+            "format": "jpg",
+            "id": "8b5dab0d689158ae49ae195a76a44649",
+            "name": "20200422_163156.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163156.jpg",
+            "size": {
+                "width": 3024,
+                "height": 3024
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7f4890b813a7fdf6e90bcdc0b82770d8": {
+            "format": "jpg",
+            "id": "7f4890b813a7fdf6e90bcdc0b82770d8",
+            "name": "20200422_163159.jpg",
+            "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/Images/Benjamins%20Newest%20pictures/20200422_163159.jpg",
             "size": {
                 "width": 3024,
                 "height": 3024
