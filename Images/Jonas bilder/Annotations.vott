@@ -5,7 +5,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiODZmZjg0NzRiYWFjY2FjMmM0ZTFjYzZlZGNlYzViNDFhYzQzY2UzZmE2ZWU4MTBhYjhlMThlMzE5MTU2ZjcxZmVjYjMxZmRhNWM1Mzk1OWVhNTAwODc5YzEwY2M0MmJhZDg0YmY1ZmY4MWJlOGI5OTgzZWFiNzU5MzY4MzIwN2IzYWUwN2FmMDNkYzY5NDIyOWY5NmVmMmJhNWE1ZTMwNGExMDExNmVmZWRhNDVjYTkwOTFjZTNjMzQwMGI3MmRjNjA3MDVmOWZlZTExYWNiOGZiN2Y0NDcwYzE3MGI2NzlkMDEwOTliZjYxYmZlYzRmYWNkZjZmYjc4ZWQ4NDliNCIsIml2IjoiNDk2MGJhYWE0ZDU0ODU5MDM5MjZjODRlOTE2ZGVlNTEzZmJhY2Q5NmNiYTcwMDc3In0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYTQ1OWQ1M2YyY2ZjYmRiMDI0ZTlmNmY1OGM3ZDczM2FmOGYyOGEzNWI5NmZkNjBmMGZmYmMzMGQ5NzdhNTc1NjgwZmI2YzMxZmViZjc5OGJhZjFiNjM3Njg1MmU0YjExNGEwYjIzYzhmMjYzMzFiMWY4OGFiY2ViNWQ2MTk0OWQwZWVkNDkzZGEzMmU1YmU4MmU0NTg1YTY4ZTE4OGIzMiIsIml2IjoiOWVkZTEyN2M2ZmU4Y2I1MzliYTdiYWZlMmNkMTk0YmU2OTBhMzIwMDJmMzMxOTVkIn0="
         },
         "id": "80ziSuWyC"
     },
@@ -13,7 +13,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNjAwZjgzODRkNmRhOGIxMWMyMWEzNDUwNTgzYTA2NTE0NWFhMzE5ZTc5YTk4NjNkODk3NWM4NjRkODk5MDMwN2RlMWZhYmE0NDhiMjVhMWJkZDMwZWViNjVlZjQzNmFjNDhmZWYzMTMxNTM5MTE3ZWM3ZDhjZDI0MWIzN2VlYjdkODI2OTU1ZGFlY2ZiZGE5ZGZhODg1NTA3Njc3ODEyMTQ4YjRjMGI4ZjA4NGFkYzZjNzg0YzRiOTIzYTE4MWE5N2MzZDVjNWQyYWRkOGViYTAwOGE4ODJmODViZmI5ZDIwZTJiOTI0N2M2NzZlNzJlMGJkODBmNzU1NGU4ZmU1MCIsIml2IjoiYzU1YzQ3NGY0NzdiZjlhNDMwMDQwNDc1NjViYjg4OTRjNzk1NGQ3YTU5NTJmMGQ4In0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOGUxMDI1Yjk5ZDNmMjc4NDQ5NTcyNWE5N2E1ODc1ZGEyMDEzODk5MjIyMWZiNGI5N2UxZDVlNTFmZWYyNmZmNGE1MmQzNGE2YmYxMGVlODk5ZWVhNjYyZDE1ZWE1OGQ2OGMzZWMwN2E4MzAxODZjNGU0YjIxNTRjYjg1ODNiZWNjNDM2MzE0MzI3NWM5YTNlMTkyMmQ0MTQwNzM3ODJmZiIsIml2IjoiYzg5NzdjZDMzYWYxNDFmZTU2OGMxNGQ2NDExMmI4YTY0NjQ1ZWY1NDJiY2Q1MzQxIn0="
         },
         "id": "80ziSuWyC"
     },
@@ -115,11 +115,11 @@
     "exportFormat": {
         "providerType": "vottJson",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMDJiNDFkMjMyNmYzNGI4MjlhMGM2NTBlY2Y3NTZjZmRjZjg0YTE0MWUxZWNkYzAzOTE2YTZiNDFiNzhjODZjODY5MjQyOTIxNzY3NTY0ODAwMDdlOTk0OGY2OWQxZjQ4IiwiaXYiOiIzN2UzNDg2ZTY3NmY1YzNjNGU3ODJkNzlhNmY4M2E4OGNlZTAxOGI1YzNkYTc3ZWEifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMGJjNTliOTg5M2EzMTlhOTJlMDkxMzg0YjllOWRhNmMxYzhhYWRiOTY5OWY5ODJiN2I5YzBkYmU5MDg4MGVlYjQ1MGI3YTAzNjYyNmY1NzYwODJhMWEwZWVkNTYwOWNiIiwiaXYiOiJhOWRlMmRiMjUzM2JhNmEzNjBhZWRhY2M2MWUzOWY4MTQ0NzhjZmM4YmZhNjk1MzgifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "845249baff11c6a6e17971a12099b90b",
+    "lastVisitedAssetId": "3eceead89ce10de46e2d26a4b72c635e",
     "assets": {
         "33edda9d113558e1e953b692b620ae4e": {
             "format": "jpg",
@@ -640,8 +640,8 @@
         "db4ff275c0a694021a91e3c73340f35a": {
             "format": "jpg",
             "id": "db4ff275c0a694021a91e3c73340f35a",
-            "name": "20200331_154905Jonas.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154905Jonas.jpg",
+            "name": "20200331_154905.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154905.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -676,8 +676,8 @@
         "fbf6e9add9e55eee794480cb6d4adfbf": {
             "format": "jpg",
             "id": "fbf6e9add9e55eee794480cb6d4adfbf",
-            "name": "20200331_154922Jonas.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154922Jonas.jpg",
+            "name": "20200331_154922.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154922.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -724,8 +724,8 @@
         "264eaacb004f661ac2bc7a3f84588e36": {
             "format": "jpg",
             "id": "264eaacb004f661ac2bc7a3f84588e36",
-            "name": "20200331_154943Jonas.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154943Jonas.jpg",
+            "name": "20200331_154943.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154943.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -820,8 +820,8 @@
         "b3809f53e5f2edea69dc831bb0f3317a": {
             "format": "jpg",
             "id": "b3809f53e5f2edea69dc831bb0f3317a",
-            "name": "20200331_155029Jonas.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155029Jonas.jpg",
+            "name": "20200331_155029.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155029.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -844,8 +844,8 @@
         "f66c91e0c823a3230504521fefeb0899": {
             "format": "jpg",
             "id": "f66c91e0c823a3230504521fefeb0899",
-            "name": "20200331_155041Jonas.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155041Jonas.jpg",
+            "name": "20200331_155041.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155041.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -904,8 +904,8 @@
         "81ce2653277f5fc869e7c691981ee822": {
             "format": "jpg",
             "id": "81ce2653277f5fc869e7c691981ee822",
-            "name": "20200331_155121Jonas.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155121Jonas.jpg",
+            "name": "20200331_155121.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155121.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -928,8 +928,8 @@
         "66648d334876f89bb37caefb6d794680": {
             "format": "jpg",
             "id": "66648d334876f89bb37caefb6d794680",
-            "name": "20200331_155132Jonas.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155132Jonas.jpg",
+            "name": "20200331_155132.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155132.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
