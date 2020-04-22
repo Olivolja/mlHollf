@@ -2,20 +2,20 @@
     "name": "Annotations",
     "securityToken": "Annotations Token",
     "sourceConnection": {
-        "name": "Images",
+        "name": "TrainingImages",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMDcyMjljYTA3MDVkNzdiYzM3OGNhM2QxYTM1M2FiMTNmNTQ3NDFjYWQ1YjMxYWZlZmJmZDFhNGQxYWI4OWMzMDI1NjQ3YjJkMDQxZjMwNjg0ODRkNzcyMzIxMWYyMzlmYWE1N2Y4YjBjMTNiOTA4ZTE1ZDcwMTA4ZTNjZDFhZmQ0MDFiYjQzMWJlZWFlMDM0NGFmOGIwZDUwNTIwOTcxY2E0NTA0MTIzZWQ0N2IxMmU0Nzc3MTRkZDQzMTk5M2JmNTYxZGZkYzYxODQxZWIyZmIzOTM4OTQzNjBkMjkwNDMiLCJpdiI6IjRjZGEyMjcxZDI2Mjg4NGZhNTQ1YmRhNzk0YzE1NTJlMzBhNTY3YTViMDg3ZGQ1MiJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYTc0MTk5OGYzN2ViOTQ1ZTEzMGIzOTAyNzA0NTQ4YzQyNGVhNGNlM2U5YTY5YjA5YjdlMmFiYzllYjg2ZGNhMTAyNzUwNDVlNTBmYmM1YjRmM2UwODlkZWRmYjliM2Y1YzgzYWJhYzUzY2QwZjFjNzQxNjI5YWI3NTE5ZWE3YWE4MzdjMGQ2M2FhNTZlNmMyYzk2ZTIyMjUzMzlmNzZkMmVmZTQyMDU4NjUxZmNjZGMxZDkyMGI3NDkwNjg1ZWI4ZTVlNDdlOTFiNjdmZTk4OGRjYmFkMmM1MWNmMzhhOTk3YTdkOTg0Y2ZlZjVlMjdkMzgxNDFhZWEyOTRhMzBiZiIsIml2IjoiYzdlNDA4YzE2NWMyOTQ0MjVmMWUwNTY1MmJkZTBhMjhhZTE2YjUwMThmNDQwNGY1In0="
         },
-        "id": "JW8j23Scx"
+        "id": "0qSnfCAuI"
     },
     "targetConnection": {
-        "name": "Images",
+        "name": "TrainingImages",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMTU3NWU0ZDVhZTRmYmViMDhmZTI2NTNlZDI3ZmIxNmY2YmVhMDFhZWRkZWNiMWE0Mjg3NzE1ZmNhYWViYmY3NWM0ZjE1MjhhNTY5Y2RhMGRkNjY5ZGYwMDE3YzI4Mzc3ZWZjMjdmNDE2ZGI1YTdlZmU4NzY0NWVkZjExODJlNWQ3ZDQ5ZjlmZmY3NmNkNmM1MTg2NWRmNjUzM2FhMTc2NWE1NGVlMTRhODQ0NDU3MzFlMmViODNkNjI4OTY0N2ZmZTM4NTNjYTZlNzI2MGNiMTdlMDhjOThjMmE2ZWY2YTEiLCJpdiI6IjU1ZjBlNDNmNWJhZDFlODg3MGY4MDFlNmFjODFkY2E4OTM2ZmQ3ZGYzMzEzZGM1ZSJ9"
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMjE5YjAzMzhmMzEyMzM0Y2Q3YmU1ZjMwMmRjODk0ODdhOWY4NTU0YWMwMjc0YzU3N2M5Njk1Mzk1NmJhMjMwYjhlYjRhZmRiOTI5YWUyODBkMWYxZDM2MTFmZTBiYWM1YjFjYTFmZGJjMWE3YjY3NjBmN2QyZDk0NjJhNDM1ODc1MmZmYzNiMGRmNWVkYjQ4YTY4ZGY0NDUxYjE0ZDNmM2FiZDhkNDBhZDExNzc1MmM1NTA5MDQ5MjA1ZTgyODVkZDRmMzc4ZGY3ZmMxNjRhMzIwNTM2ZGUxOTBlNDU5NTE0NWQ1YjYyNGQxZjUzOGZkMjhjYzgxN2E4NWU2N2Y4MSIsIml2IjoiYzEzYjE0ZTk0YzRhNzFjOGM3MTdjOTM3Mzc3MGM0NTliN2ExMTNjNTMxMDYxOTM3In0="
         },
-        "id": "JW8j23Scx"
+        "id": "0qSnfCAuI"
     },
     "videoSettings": {
         "frameExtractionRate": 15
@@ -115,11 +115,11 @@
     "exportFormat": {
         "providerType": "csv",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMDdjN2VkYjkwYTg5NmI2NWI5MjFlZDdiOWNmNGZkOGY0NDlhZGFiY2UwZWRlMDY2YTcwYzMwMTQ1ZDY3YmEwN2IwZTg5OGE1NDgyNDFhZGNhZDdkMmQ5YTYyZGZhMTIxIiwiaXYiOiJjZjk4ZWUwMDU5NzdhZjU3M2Y4NmI5Njc5ZTExZGRhYjJkMDFhNzE0NmVmZmU0Y2MifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMzE4ZTc3MTAwN2E2MWJmZjFlOTdhMmY5M2ZhZDU1NjQ0YmIyODY3Y2QzNmEzY2U5MGYyN2ZlZDZmNGFlZGQ0OGE0ZDUwYWY2Zjc0NDFiMmE3MmU4ZTJmOGUzMmJiYjkxIiwiaXYiOiI0MjNhZmNlNmE2NzRmODA2YTI4MTc1NWUyZDAyNDQ5OTU1YzM3MTQ3OWIxOWQxMjEifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "7f4890b813a7fdf6e90bcdc0b82770d8",
+    "lastVisitedAssetId": "c2a31d0bb7f00e0c5d73a19fc68189e3",
     "assets": {
         "d4f3fbdf46ecbf7d3d2b300db83ec843": {
             "format": "jpg",
@@ -3350,7 +3350,7 @@
             "state": 2,
             "type": 1
         },
-		"7559a5bdd4e2fcbf598948fb365f532a": {
+        "7559a5bdd4e2fcbf598948fb365f532a": {
             "format": "jpg",
             "id": "7559a5bdd4e2fcbf598948fb365f532a",
             "name": "IMG_20200331_115031.jpg",
@@ -5269,8 +5269,8 @@
             },
             "state": 2,
             "type": 1
-		},
-		"33edda9d113558e1e953b692b620ae4e": {
+        },
+        "33edda9d113558e1e953b692b620ae4e": {
             "format": "jpg",
             "id": "33edda9d113558e1e953b692b620ae4e",
             "name": "20200331_154303.jpg",
@@ -7382,7 +7382,7 @@
             "state": 2,
             "type": 1
         },
-		"d33a1cd033e82e8107641158f3a413e4": {
+        "d33a1cd033e82e8107641158f3a413e4": {
             "format": "jpg",
             "id": "d33a1cd033e82e8107641158f3a413e4",
             "name": "20200331_154303.jpg",
@@ -7622,7 +7622,7 @@
             "state": 2,
             "type": 1
         },
-		"bb99b6efc75d969f1c6d0e269d994025": {
+        "bb99b6efc75d969f1c6d0e269d994025": {
             "format": "jpg",
             "id": "bb99b6efc75d969f1c6d0e269d994025",
             "name": "20200331_150614.jpg",
@@ -10898,7 +10898,7 @@
             "state": 2,
             "type": 1
         },
-		"80e214d701b8ed60925dd68dc9d98bb8": {
+        "80e214d701b8ed60925dd68dc9d98bb8": {
             "format": "jpg",
             "id": "80e214d701b8ed60925dd68dc9d98bb8",
             "name": "IMG_20200331_113029.jpg",
@@ -11687,7 +11687,7 @@
                 "width": 1600,
                 "height": 1200
             },
-            "state": 1,
+            "state": 2,
             "type": 1
         },
         "93ebf397993cc6f33c8e0a829aca227d": {
@@ -11774,7 +11774,7 @@
             "state": 2,
             "type": 1
         },
-		"5f3d2257359ccb5b4aba64bc8babdfdc": {
+        "5f3d2257359ccb5b4aba64bc8babdfdc": {
             "format": "jpg",
             "id": "5f3d2257359ccb5b4aba64bc8babdfdc",
             "name": "IMG_20200401_130031.jpg",
@@ -13574,5 +13574,5 @@
             "state": 2,
             "type": 1
         }
-	}
+    }
 }
