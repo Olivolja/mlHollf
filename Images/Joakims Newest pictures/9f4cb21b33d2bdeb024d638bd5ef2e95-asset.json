@@ -233,7 +233,8 @@
             "id": "tVspw6fT4",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise_left"
+                "clockwise_left",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 641.7261410788382,
