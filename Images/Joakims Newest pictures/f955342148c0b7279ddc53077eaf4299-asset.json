@@ -171,7 +171,8 @@
             "id": "1G01aEmWh",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise_right"
+                "clockwise_right",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 677.5767634854772,
@@ -202,7 +203,8 @@
             "id": "pFx6ku1HE",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_right"
+                "counterclockwise_right",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 720.597510373444,

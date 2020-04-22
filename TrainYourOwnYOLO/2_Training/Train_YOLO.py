@@ -133,7 +133,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--epochs",
         type=float,
-        default=51,
+        default=80,# edited from 51
         help="Number of epochs for training last layers and number of epochs for fine-tuning layers. Default is 51.",
     )
 
@@ -197,7 +197,7 @@ if __name__ == "__main__":
             },
         )
 
-        batch_size = 2
+        batch_size = 16
         print(
             "Train on {} samples, val on {} samples, with batch size {}.".format(
                 num_train, num_val, batch_size
