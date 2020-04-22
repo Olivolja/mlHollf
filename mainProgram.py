@@ -3,6 +3,8 @@ import tkinter as tk
 from tkinter import filedialog as fd
 #this is to delete previous content from detection result
 import os
+#to run detector.py
+import subprocess 
 
 gui = tk.Tk()
 pictureName = "" 
@@ -11,7 +13,7 @@ pictureName = ""
 def selectFile():
     #Default is only to show jpg files but other options is available to select
     name = fd.askopenfilename(filetypes = (("jpeg files","*.jpg"),("png files", "*.png"),("all files","*.*")))
-    print(name)
+    print(name) #remove me when done
     pictureName = name
     gui.destroy()
 
@@ -34,12 +36,13 @@ PreviousFiles = os.listdir(TestImageDetectionResults)
 for file in PreviousFiles:
     os.remove(os.path.join(TestImageDetectionResults, file))
 
+#venv path
+pythonBin = os.path.join(os.path.join(os.path.join(TrainYourOwnYoloRootFolder, "env"), "bin"), "python")
+#detector.py path
+scriptFile = os.path.join(os.path.join(TrainYourOwnYoloRootFolder, "3_Inference"), "Detector.py")
+#runs detector.py and waits for it to finish
+subprocess.Popen([pythonBin, scriptFile]).wait()
+
 #----------ABOVE WORKS -- MOVE THIS LINE WHEN MORE IS WORKING----------
 
-#Run decection script on our file
-#os.system(os.path.join(TrainYourOwnYoloRootFolder, "3_inference")+"/Detector.py")
-
-#me testing around different atempts
-lol = print(os.listdir(os.path.join(TrainYourOwnYoloRootFolder, "3_Inference")))
-os.system(lol[0])
-print(os.path.join(TrainYourOwnYoloRootFolder, "3_inference")+"/Detector.py")
+#Detection_Results.csv now exists :)

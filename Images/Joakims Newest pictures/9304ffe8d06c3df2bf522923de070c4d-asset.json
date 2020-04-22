@@ -78,7 +78,8 @@
             "id": "KB7RraQEI",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_top"
+                "counterclockwise_top",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 487.5684647302905,

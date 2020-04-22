@@ -78,7 +78,8 @@
             "id": "ffDma-USS",
             "type": "POLYGON",
             "tags": [
-                "clockwise_left"
+                "clockwise_left",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 817.3941908713693,

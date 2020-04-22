@@ -78,7 +78,8 @@
             "id": "v7lByDHRx",
             "type": "POLYGON",
             "tags": [
-                "counterclockwise_left"
+                "counterclockwise_left",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 903.435684647303,

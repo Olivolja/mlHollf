@@ -16,7 +16,8 @@
             "id": "5tVaHm_5P",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_top"
+                "counterclockwise_top",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 430.20746887966806,
@@ -47,7 +48,8 @@
             "id": "_h7gGJv30",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_top"
+                "counterclockwise_top",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 423.0373443983403,
@@ -78,7 +80,8 @@
             "id": "acZ5mFvDG",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_top"
+                "counterclockwise_top",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 394.35684647302907,
@@ -109,7 +112,8 @@
             "id": "BpznY-3O2",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_top"
+                "counterclockwise_top",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 423.0373443983403,
@@ -140,7 +144,8 @@
             "id": "v0cIcbknB",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_right"
+                "counterclockwise_right",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 681.1618257261412,
@@ -171,7 +176,8 @@
             "id": "e9Bv4LWqU",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_right"
+                "counterclockwise_right",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 706.2572614107884,
@@ -202,7 +208,8 @@
             "id": "SNFqk_5jc",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_right"
+                "counterclockwise_right",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 663.2365145228216,
@@ -233,7 +240,8 @@
             "id": "qwLiXl2AD",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_bottom"
+                "counterclockwise_bottom",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 483.9834024896266,
@@ -264,7 +272,8 @@
             "id": "C9jq-Zxht",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_bottom"
+                "counterclockwise_bottom",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 483.9834024896266,
@@ -295,7 +304,8 @@
             "id": "IMf1qHgGl",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_bottom"
+                "counterclockwise_bottom",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 458.88796680497927,
@@ -326,7 +336,8 @@
             "id": "7zQllQxWU",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_bottom"
+                "counterclockwise_bottom",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 380.01659751037346,

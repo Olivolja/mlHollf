@@ -16,7 +16,8 @@
             "id": "Gc6r0Xtxq",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise_left"
+                "clockwise_left",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 831.7344398340249,
@@ -47,7 +48,8 @@
             "id": "eW2LQFb-T",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise_left"
+                "clockwise_left",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 849.6597510373444,
@@ -78,7 +80,8 @@
             "id": "OTUWcsBes",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise_top"
+                "clockwise_top",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 494.73858921161826,
@@ -109,7 +112,8 @@
             "id": "Z0bOuiqen",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise_top"
+                "clockwise_top",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 544.9294605809129,
@@ -140,7 +144,8 @@
             "id": "M6F2ENW1v",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise_top"
+                "clockwise_top",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 415.86721991701245,
@@ -171,7 +176,8 @@
             "id": "NM_NDtsX1",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise_right"
+                "clockwise_right",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 792.298755186722,
