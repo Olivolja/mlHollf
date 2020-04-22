@@ -6,6 +6,7 @@ import pandas as pd
 from scipy.interpolate import interp1d
 from PIL import Image
 import time
+import sys
 root = Tk()
 m_cnv = Canvas(root, width=1000, height=1000)
 m_cnv.pack(side=LEFT)
@@ -25,10 +26,9 @@ img_height = 4000
 surface_points = {"Bottom": [], "Top": [], "Left": [], "Right": []} # To find the closest item for a surface. Each list: 
                                                                     # (the item, (starting coordinate), (ending coordinate)) 
 
-labels = ["PinSupport", "RollerSupport", "BeamLine0", "Surface", "Node", "ArrowUp", "ArrowDown", 
-          "ArrowLeft", "ArrowRight", "ClockwiseRight", "ClockwiseTop", "ClockwiseLeft", "ClockwiseBottom", 
-          "CounterclockwiseRight", "CounterclockwiseTop", "CounterclockwiseLeft", "CounterclockwiseBottom", 
-          "Beam0", "BeamLine45", "BeamLine90", "Beam90", "BeamLine135", "Beam135", "LoadDown", "LoadUp"]
+labels = ["Beam0", "Beam90", "Support", "RollerSupport", "Clockwise", "Counterclockwise", "ArrowUp", 
+          "ArrowDown", "ArrowLeft", "ArrowRight", "LoadUp", "LoadDown", "ClockwiseTop", "ClockwiseBottom", "ClockwiseLeft", "ClockwiseRight", 
+          "CounterclockwiseTop", "CounterclockwiseBottom", "CounterclockwiseLeft", "CounterclockwiseRight"]
 
 # Method for finding closest point on any beam returning that point and the corresponding beam
 def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
@@ -42,8 +42,10 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
                     shortest_distance = distance
                     shortest_distance_coordinates = point
                     closest_beam = beam
-
-    return shortest_distance_coordinates, closest_beam
+    try:
+        return shortest_distance_coordinates, closest_beam
+    except UnboundLocalError:
+        sys.exit("Error: no beam identified")
 
 # Method for finding the closest possible object for a surface to be put on 
 # (eg a beam or any kind of support). Returns the object, its coordinates 
@@ -682,8 +684,9 @@ def get_objects():
     try:
         df = pd.read_csv(r'C:\Users\admin\Desktop\Detection_Results_test.csv')
     except:
-        df = pd.read_csv(r'C:\Users\tobia\Desktop\Detection_Results_test.csv')
-        #df = pd.read_csv(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
+        df = pd.read_csv(r'C:\Users\tobia\Desktop\resultatHebbeBatch16\Detection_Results.csv')
+        # df = pd.read_csv(r'C:\Users\tobia\Desktop\Detection_Results_test.csv')
+        # df = pd.read_csv(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
     df1 = df[["xmin", "ymin", "xmax", "ymax", "label"]]
     df1 = delete_overlapping_objects(df1)
     return (df1)
