@@ -5,29 +5,17 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-<<<<<<< HEAD
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiODM3YjNlYjQxOWFjMTUxMWU0MGQwMDhlMjFhYzhjN2E4OGMzMjcxMjZmMDkwMGQ0MDU5ZGE5Zjc0ZTdjOWRjN2JiYzViOTRkNWIxZGE0YjY5ODcwNjY3ZTAyZGVhMWZmOWM5ODRhOTRhOTk4ZWQ4ZWMwMTBiMWNhNmM4N2UxMzQ3MzJkMmNlZjIzYzdmN2FkNzJiNjQxYTkzZTg4OGI3OTAwNWU5MGU1NDFmMzAyNDIwYzk5NjQ2YzE1YWEwNzJhZjg3YWMxM2M1NDM5MWVhY2JlOTdiMjU5NDQ2MGQ0ZjciLCJpdiI6IjRlODkwMDY4NTk2ZGM3NmM0N2Y4MDI3N2FkZTc0NDcyMzMzYmM1ZWVkMzdiMDBhMiJ9"
-        },
-        "id": "AWXW8cKZU"
-=======
             "encrypted": "eyJjaXBoZXJ0ZXh0IjoiODU3ODM3MDM5NTM0NjVlY2I5YWQ0ZDIzM2ZiNzNkMDU5YzcxNzQ2NmZmOTAyMjhiNTZiZjA1MThjZWIwNzk1YWY1NDk5OTViYjdmZWY0MjIwZjk3Yjk1MDYxMTE1MmEwZTgzZTY2OTdlNzM1ZDkzMmIwMGFmOWU2M2Y2ODFmM2ZiMzdmYTRhNmI5ZTI4Yjk0ZTRjMzdlNDE5NjUyZTA3NGFiNmY0NTZmYTNmOGFlODViN2RhNzZjYzRmZGQyZmVhZTJkZWU5ZWIwMjA4OGVhNmYxZjJiOWJlMmMwNTY0NDQiLCJpdiI6ImI3YTcwYWM4MmM1MTc4YTI1NTY3YmI3ZjUzNzQ2ZGIwYzdkNDgwN2ViMGY2Mjg3NSJ9"
         },
         "id": "hYfZEWaK1"
->>>>>>> c936daa82496cbe210b7465e0b236f50289d4d5c
     },
     "targetConnection": {
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-<<<<<<< HEAD
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMTkxYmQyNDE1Nzg1MzczNWEzMTQ1NTkwNjE5M2FiM2M3MDUyNGVjOWJiYzk0MWI2YzBkZWE3NzdjZWFiYTEzNTAyYjcwNTE0MTI1NWQxYTk3OTYyOWM2YTM5ZWE0MGJiZmI3YTIwNWZlMWM1Y2YyMDU3NTY4ZmYzNWUwZjYwY2M1ZWY5ZjZlN2JhNTY5NWFjYWZlZjRlODlkZjIxMWQ2MzliMmU1MWU4YWIxYTI2N2FjNTFlYWE3ZWEzMTMyMzUxOGVjOGI1OTFmN2E1Mzg5NDhiNDRkNzg0OGViYWEzOGYiLCJpdiI6IjRlMWQ2ZGE1Mzk1ODE5ODVhYTI5ZWJlOWQ1MGNjNzc2YjY3YzEyZTRkNDg5NjBiMyJ9"
-        },
-        "id": "AWXW8cKZU"
-=======
             "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZjg5MzZjNTljNjQzNzBmMjQwYTdmYWFiNTA0ODA0MmM4NTk1Y2Q5ODRjMzg1MjU4MDU1YmYxZGQwOGU0NjdhZjA3ZmVlZDBlZTIxYWQyNjZlY2U3ZWU5ODc0OGQxZGRkNTRlNTcyYTEzZjc0ZGYwMjE1YjQ4YTZlNmY0ZjYwMTY3NWJlODRlNjc4NzIxNTQ4OTVlMTI3YTE5ZTFhOTBlMDVjZDg2ZTRiOWViZjAzYzlkZTQ5MzFhMTZmOTA0ZDU3ZTExZjk4NGFjMmZhM2QxYTJjN2ZiYmQ3YTNjNDczZTkiLCJpdiI6IjZiNjE0MjE3MmI3OTA0MTE1YzYzYTE3NjZkNTJiYmJiYjNkNmM3ZDY2MjIwMzM0MiJ9"
         },
         "id": "hYfZEWaK1"
->>>>>>> c936daa82496cbe210b7465e0b236f50289d4d5c
     },
     "videoSettings": {
         "frameExtractionRate": 15
@@ -118,11 +106,7 @@
             "color": "#5db300"
         }
     ],
-<<<<<<< HEAD
-    "id": "hjREEDVvO",
-=======
     "id": "xKXC3IELd",
->>>>>>> c936daa82496cbe210b7465e0b236f50289d4d5c
     "activeLearningSettings": {
         "autoDetect": false,
         "predictTag": true,
@@ -131,19 +115,6 @@
     "exportFormat": {
         "providerType": "vottJson",
         "providerOptions": {
-<<<<<<< HEAD
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYmI4NTA4OGE4ZTdmNDgxOTEzOWExODMzZGQ2ZmUxMDgwOTdmYjlhOGJlNWY1NGI2ODZkYzYwMDMwMjNmY2UzZjVlMjYwOTI1NzNmYjdhNWU4MDIxM2E4NTNmZjlmNmQ5IiwiaXYiOiJiYjhlMTMyN2IyMTY5MDI3NDJlYjAxNzc2MDk2Y2JkY2EyZWJkOTRkYWYxZjZkOWYifQ=="
-        }
-    },
-    "version": "2.1.0",
-    "lastVisitedAssetId": "455c00902f1aa8a76627f75672d57b98",
-    "assets": {
-        "9ac727d45116fbe74a000432e3aad6d8": {
-            "format": "png",
-            "id": "9ac727d45116fbe74a000432e3aad6d8",
-            "name": "resized006.png",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/resized006.png",
-=======
             "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYjczNWM4NTZlYTZjNzliMTAyYjViMGU3ZTI5ODUzZmZlMTE3ZWQwZjJjNDNjMGM5ZGE1ZmRiMjhhOGMyYzg4ZDIwMjBiOTg1ZjY5ZjE3YjMwYTkzMmZmMTgxMjZhYTg2IiwiaXYiOiJjNjM2MjM5ZDNlNmI1MDNlMmM4YWQ2ZTE2YTZiYTFkNGFjZTAwZTQ2YjA5MjNmMzAifQ=="
         }
     },
@@ -935,7 +906,6 @@
             "id": "28c3315e5af2e9080a38584e55ff317b",
             "name": "IMG_20200331_123223.jpg",
             "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/IMG_20200331_123223.jpg",
->>>>>>> c936daa82496cbe210b7465e0b236f50289d4d5c
             "size": {
                 "width": 1600,
                 "height": 1200
@@ -943,16 +913,6 @@
             "state": 1,
             "type": 1
         },
-<<<<<<< HEAD
-        "2e32519fe2c38f4dc9c918dd54f83ab0": {
-            "format": "jpg",
-            "id": "2e32519fe2c38f4dc9c918dd54f83ab0",
-            "name": "20200331_154303.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154303.jpg",
-            "size": {
-                "width": 4128,
-                "height": 2322
-=======
         "93ebf397993cc6f33c8e0a829aca227d": {
             "format": "jpg",
             "id": "93ebf397993cc6f33c8e0a829aca227d",
@@ -961,21 +921,10 @@
             "size": {
                 "width": 1600,
                 "height": 1200
->>>>>>> c936daa82496cbe210b7465e0b236f50289d4d5c
             },
             "state": 2,
             "type": 1
         },
-<<<<<<< HEAD
-        "7352cc1c4426251678656550eb8ef36c": {
-            "format": "jpg",
-            "id": "7352cc1c4426251678656550eb8ef36c",
-            "name": "20200331_154306.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154306.jpg",
-            "size": {
-                "width": 4128,
-                "height": 2322
-=======
         "fc0b71c41585f0102a0ef922ca38ce5e": {
             "format": "jpg",
             "id": "fc0b71c41585f0102a0ef922ca38ce5e",
@@ -984,21 +933,10 @@
             "size": {
                 "width": 1600,
                 "height": 1200
->>>>>>> c936daa82496cbe210b7465e0b236f50289d4d5c
             },
             "state": 2,
             "type": 1
         },
-<<<<<<< HEAD
-        "f2f852edbba6763ce51986d9e169b769": {
-            "format": "jpg",
-            "id": "f2f852edbba6763ce51986d9e169b769",
-            "name": "20200331_154311.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154311.jpg",
-            "size": {
-                "width": 4128,
-                "height": 2322
-=======
         "c5132e267d67d63627574fffbd22014d": {
             "format": "jpg",
             "id": "c5132e267d67d63627574fffbd22014d",
@@ -1007,21 +945,10 @@
             "size": {
                 "width": 1600,
                 "height": 1200
->>>>>>> c936daa82496cbe210b7465e0b236f50289d4d5c
             },
             "state": 2,
             "type": 1
         },
-<<<<<<< HEAD
-        "455c00902f1aa8a76627f75672d57b98": {
-            "format": "jpg",
-            "id": "455c00902f1aa8a76627f75672d57b98",
-            "name": "20200331_154317.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154317.jpg",
-            "size": {
-                "width": 4128,
-                "height": 2322
-=======
         "6d82e4eea1d9d7a37a72336c34eb62f2": {
             "format": "jpg",
             "id": "6d82e4eea1d9d7a37a72336c34eb62f2",
@@ -1066,7 +993,6 @@
             "size": {
                 "width": 1600,
                 "height": 1200
->>>>>>> c936daa82496cbe210b7465e0b236f50289d4d5c
             },
             "state": 2,
             "type": 1
