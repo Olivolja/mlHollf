@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "2152178b3f587b73a5e1585cb1ac8652",
         "name": "20200331_155121.jpg",
-        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_155121.jpg",
+        "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_155121.jpg",
         "size": {
             "width": 3024,
             "height": 3024
@@ -171,7 +171,7 @@
             "id": "_EAL_9Z50",
             "type": "RECTANGLE",
             "tags": [
-                "roller_support"
+                "ground"
             ],
             "boundingBox": {
                 "height": 130.9090909090909,

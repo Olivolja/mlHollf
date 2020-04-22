@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "da8d00e625a2c48c3c917b7e13888df1",
         "name": "20200331_154847.jpg",
-        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154847.jpg",
+        "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_154847.jpg",
         "size": {
             "width": 3024,
             "height": 3024
@@ -484,7 +484,8 @@
             "id": "dxTMPsiJ0",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_bottom"
+                "counterclockwise_bottom",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 294.54545454545456,
@@ -698,6 +699,68 @@
                 {
                     "x": 2492.1818181818185,
                     "y": 2631.2727272727275
+                }
+            ]
+        },
+        {
+            "id": "aQ26jfv_O",
+            "type": "RECTANGLE",
+            "tags": [
+                "arrow_up"
+            ],
+            "boundingBox": {
+                "height": 543.2727272727273,
+                "width": 170.1818181818182,
+                "left": 695.4545454545455,
+                "top": 307.6363636363637
+            },
+            "points": [
+                {
+                    "x": 695.4545454545455,
+                    "y": 307.6363636363637
+                },
+                {
+                    "x": 865.6363636363637,
+                    "y": 307.6363636363637
+                },
+                {
+                    "x": 865.6363636363637,
+                    "y": 850.909090909091
+                },
+                {
+                    "x": 695.4545454545455,
+                    "y": 850.909090909091
+                }
+            ]
+        },
+        {
+            "id": "MslBxdYnd",
+            "type": "RECTANGLE",
+            "tags": [
+                "arrow_down"
+            ],
+            "boundingBox": {
+                "height": 566.1818181818182,
+                "width": 127.63636363636364,
+                "left": 931.0909090909091,
+                "top": 320.72727272727275
+            },
+            "points": [
+                {
+                    "x": 931.0909090909091,
+                    "y": 320.72727272727275
+                },
+                {
+                    "x": 1058.7272727272727,
+                    "y": 320.72727272727275
+                },
+                {
+                    "x": 1058.7272727272727,
+                    "y": 886.909090909091
+                },
+                {
+                    "x": 931.0909090909091,
+                    "y": 886.909090909091
                 }
             ]
         }

@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "47f0c041f0ac3f67cfe00b10599bb6a6",
         "name": "20200331_144237.jpg",
-        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_144237.jpg",
+        "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_144237.jpg",
         "size": {
             "width": 3024,
             "height": 3024
@@ -109,30 +109,30 @@
             "id": "b2HKFa-Ik",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise"
+                "ground"
             ],
             "boundingBox": {
-                "height": 147.27272727272728,
-                "width": 847.6363636363637,
-                "left": 459.81818181818187,
-                "top": 2107.636363636364
+                "height": 147.2727272727273,
+                "width": 847.6363636363639,
+                "left": 456.5454545454547,
+                "top": 2110.9090909090914
             },
             "points": [
                 {
-                    "x": 459.81818181818187,
-                    "y": 2107.636363636364
+                    "x": 456.5454545454547,
+                    "y": 2110.9090909090914
                 },
                 {
-                    "x": 1307.4545454545455,
-                    "y": 2107.636363636364
+                    "x": 1304.1818181818185,
+                    "y": 2110.9090909090914
                 },
                 {
-                    "x": 1307.4545454545455,
-                    "y": 2254.909090909091
+                    "x": 1304.1818181818185,
+                    "y": 2258.1818181818185
                 },
                 {
-                    "x": 459.81818181818187,
-                    "y": 2254.909090909091
+                    "x": 456.5454545454547,
+                    "y": 2258.1818181818185
                 }
             ]
         },
@@ -140,7 +140,7 @@
             "id": "zI4WmNhuv",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise"
+                "ground"
             ],
             "boundingBox": {
                 "height": 127.63636363636364,
