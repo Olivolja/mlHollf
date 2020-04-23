@@ -31,12 +31,9 @@ def get_classes():
     return labels
 
 
-#labels = ["LoadDown", "LoadUp", "Beam0", "Counterclockwise", "CounterclockwiseRight", "ArrowRight", 
-#          "CounterclockwiseTop", "ArrowDown", "Clockwise", "ClockwiseRight", "ArrowLeft", 
-#          "CounterclockwiseBottom", "ArrowUp", "ClockwiseLeft", "PinSupport", "ClockwiseTop", 
-#          "ClockwiseBottom", "CounterclockwiseLeft", "Surface", "RollerSupport", "Beam90"]
 labels = get_classes()
 print(labels)
+
 
 # Method for finding closest point on any beam returning that point and the corresponding beam
 def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
@@ -55,6 +52,7 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
     except UnboundLocalError:
         sys.exit("Error: no beam identified")
 
+
 # Method for finding the closest possible object for a surface to be put on 
 # (eg a beam or any kind of support). Returns the object, its coordinates 
 # as they were on the input and the coordinates where it will be drawn.
@@ -70,6 +68,7 @@ def find_closest_object(coord, sides=["Bottom", "Top", "Left", "Right"]):
                 closest_item = item
                 closest_side = side
     return closest_item, closest_side, shortest_distance_coordinates 
+
 
 # Compute the distance between two points
 def compute_distance(point1, point2):
@@ -173,6 +172,7 @@ class Beam:
         m_cnv.create_rectangle(self.x_min, self.y_min, self.x_max, self.y_max, fill="")
         beam_list.append(self) 
 
+
 # Defining a force of arbitrary vertical or horizontal direction  
 class Force:
     def __init__(self, x_min, y_min, x_max, y_max, direction):
@@ -223,6 +223,7 @@ class Force:
             m_cnv.create_line(self.x_min, self.y_mid, self.x_max, self.y_mid, arrow="last")
         create_label(self)
         self.beam.objects["Forces"].append(self)
+
 
 # Defining a pin support as a triangle with sidelength 15% of corresponding beams length
 class PinSupport:
@@ -283,6 +284,7 @@ class PinSupport:
     def draw(self):
         m_cnv.create_polygon(self.corner1, self.corner2, self.corner3, fill="", outline="Black")
         self.beam.objects["Pins"].append(self)
+
 
 # Defining a roller support as a pin support with sidelength 9.51% of corresponding beams length
 # plus two extra circles with half that length as diameter
@@ -688,6 +690,7 @@ class Truss:
                         node_2.layer = node.layer
                         layers[node.layer].add(node_2)
 """
+
 def get_objects():
     try:
         df = pd.read_csv(r'C:\Users\admin\Desktop\Detection_Results_test.csv')
