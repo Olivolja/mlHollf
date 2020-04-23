@@ -21,11 +21,20 @@ load_number = 0
 number_of_forces = 0
 number_of_moments = 0
 number_of_loads = 0
-img_width = 4000
-img_height = 4000
 surface_points = {"Bottom": [], "Top": [], "Left": [], "Right": []} # To find the closest item for a surface. Each list: 
                                                                     # (the item, (starting coordinate), (ending coordinate)) 
+def get_classes():
+    labels = []
+    file = open(r'C:\Users\tobia\Desktop\Kandidat\data_classes.txt')
+    for line in file:
+        labels.append(line.rstrip("\n"))
+    return labels
 
+
+labels = get_classes()
+print(labels)
+
+<<<<<<< HEAD
 labels = ["PinSupport", "RollerSupport", "BeamLine0", "Surface", "Node", "ArrowUp", "ArrowDown", 
           "ArrowLeft", "ArrowRight", "ClockwiseRight", "ClockwiseTop", "ClockwiseLeft", "ClockwiseBottom", 
           "CounterclockwiseRight", "CounterclockwiseTop", "CounterclockwiseLeft", "CounterclockwiseBottom", 
@@ -34,6 +43,8 @@ labels = ["LoadDown", "LoadUp", "Beam0", "Counterclockwise", "CounterclockwiseRi
           "CounterclockwiseTop", "ArrowDown", "Clockwise", "ClockwiseRight", "ArrowLeft", 
           "CounterclockwiseBottom", "ArrowUp", "ClockwiseLeft", "Support", "ClockwiseTop", 
           "ClockwiseBottom", "CounterclockwiseLeft", "Surface", "RollerSupport", "Beam90"]
+=======
+>>>>>>> adca8deb3bf77232d111f85583d3f9997c3be6b8
 
 # Method for finding closest point on any beam returning that point and the corresponding beam
 def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
@@ -54,6 +65,7 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
     except UnboundLocalError:
         sys.exit("Error: no beam identified")
 
+
 # Method for finding the closest possible object for a surface to be put on 
 # (eg a beam or any kind of support). Returns the object, its coordinates 
 # as they were on the input and the coordinates where it will be drawn.
@@ -69,6 +81,7 @@ def find_closest_object(coord, sides=["Bottom", "Top", "Left", "Right"]):
                 closest_item = item
                 closest_side = side
     return closest_item, closest_side, shortest_distance_coordinates 
+
 
 # Compute the distance between two points
 def compute_distance(point1, point2):
@@ -176,6 +189,7 @@ class Beam:
         m_cnv.create_rectangle(self.x_min, self.y_min, self.x_max, self.y_max, fill="")
         beam_list.append(self) 
 
+
 # Defining a force of arbitrary vertical or horizontal direction  
 class Force:
     def __init__(self, x_min, y_min, x_max, y_max, direction):
@@ -262,6 +276,7 @@ class Force:
         create_label(self)
         self.beam.objects["Forces"].append(self)
 
+
 # Defining a pin support as a triangle with sidelength 15% of corresponding beams length
 class PinSupport:
     def __init__(self, x_min, y_min, x_max, y_max, size=0.15):
@@ -321,6 +336,7 @@ class PinSupport:
     def draw(self):
         m_cnv.create_polygon(self.corner1, self.corner2, self.corner3, fill="", outline="Black")
         self.beam.objects["Pins"].append(self)
+
 
 # Defining a roller support as a pin support with sidelength 9.51% of corresponding beams length
 # plus two extra circles with half that length as diameter
@@ -734,6 +750,7 @@ class Truss:
                         node_2.layer = node.layer
                         layers[node.layer].add(node_2)
 """
+
 def get_objects():
     try:
         df = pd.read_csv(r'C:\Users\admin\Desktop\Detection_Results_test.csv')
@@ -764,19 +781,19 @@ def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika 
             y_mid1 = (y_max1 + y_min1)/2
             if x_min2 < x_mid1 < x_max2 and y_min2 < y_mid1 < y_max2:
                 if type1 == type2:
-                    objects = objects.drop(index1, axis=0)
-                elif type1 == "BeamLine":
-                    objects = objects.drop(index1, axis=0)
-                elif type1 in ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"] and type2 in ["LoadUp", "LoadDown"]:
-                    objects = objects.drop(index1, axis=0)
-                elif type1 == "Node" and type2 == "RollerSupport":
-                    objects = objects.drop(index1, axis=0)
-                elif type1 in ["CounterclockwiseRight", "CounterclockwiseTop", "CounterclockwiseBottom", "CounterclockwiseLeft", 
-                                "ClockwiseRight", "ClockwiseLeft", "ClockwiseTop", "ClockwiseBottom"] and type2 in ["CounterclockwiseRight", 
-                                "CounterclockwiseTop", "CounterclockwiseBottom", "CounterclockwiseLeft", 
-                                "ClockwiseRight", "ClockwiseLeft", "ClockwiseTop", "ClockwiseBottom"]:
                     if obj1[5] < obj2[5]:
-                        print(objects)
+                        objects = objects.drop(index1, axis=0)
+                #elif type1 == "BeamLine":
+                #    objects = objects.drop(index1, axis=0)
+                elif type1 in ["arrow_up", "arrow_down", "arrow_left", "arrow_right"] and type2 in ["load_up", "load_down"]:
+                    objects = objects.drop(index1, axis=0)
+                elif type1 == "Node" and type2 == "roller_support":
+                    objects = objects.drop(index1, axis=0)
+                elif type1 in ["counterclockwise_right", "counterclockwise_top", "counterclockwise_bottom", "counterclockwise_left", 
+                                "clockwise_right", "clockwise_left", "clockwise_top", "clockwise_bottom"] and type2 in ["counterclockwise_right", 
+                                "counterclockwise_top", "counterclockwise_bottom", "counterclockwise_left", 
+                                "clockwise_right", "clockwise_left", "clockwise_top", "clockwise_bottom"]:
+                    if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
                     #else:
                      #   objects = objects.drop(index2, axis=0)
@@ -794,83 +811,90 @@ def draw_all_objects():
     for index, row in objects.iterrows():
         obj_type = labels[row[4]]
         obj_type = labels[int(row[4])]
-        if obj_type in ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight']: # ändra alla ' till " eller tvärt om?
+        if obj_type in ['arrow_up', 'arrow_down', 'arrow_left', 'arrow_right']: # ändra alla ' till " eller tvärt om?
             global number_of_forces
             number_of_forces += 1
-        elif obj_type in ["ClockwiseRight", "ClockwiseTop", "ClockwiseLeft", "ClockwiseBottom", 
-          "CounterclockwiseRight", "CounterclockwiseTop", "CounterclockwiseLeft", "CounterclockwiseBottom"]:
+        elif obj_type in ["clockwise_right", "clockwise_top", "clockwise_left", "clockwise_bottom", 
+          "counterclockwise_right", "counterclockwise_top", "counterclockwise_left", "counterclockwise_bottom"]:
           global number_of_moments
           number_of_moments += 1
-        elif obj_type in ["LoadUp", "LoadDown"]:
+        elif obj_type in ["load_up", "load_down"]:
             global number_of_loads
             number_of_loads += 1
 
     for index, row in objects.iterrows():
-        m_x = interp1d([0, row[6]], [0, 800])
-        m_y = interp1d([0, row[6]], [800, 0])
+        print(row[7])
+        m_x = interp1d([0, min(row[6], row[7])], [0, 800])
+        m_y = interp1d([0, min(row[6], row[7])], [0, 800])
         obj_type = labels[int(row[4])]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
-        if obj_type in ["Beam0", "BeamLine0"]:
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
+        if obj_type == "beam":
             beam = Beam(x_min, y_min, x_max, y_max, "0")
             beam.draw()
-        elif obj_type in ["Beam90", "BeamLine90"]:
+        elif obj_type == "beam_90":
             beam = Beam(x_min, y_min, x_max, y_max, "90")
             beam.draw()
 
     for index, row in objects.iterrows():
+<<<<<<< HEAD
         obj_type = labels[row[4]]
         m_x = interp1d([0, row[6]], [0, 800])
         m_y = interp1d([0, row[6]], [800, 0])
+=======
+        m_x = interp1d([0, min(row[6], row[7])], [0, 800])
+        m_y = interp1d([0, min(row[6], row[7])], [0, 800])
+>>>>>>> adca8deb3bf77232d111f85583d3f9997c3be6b8
         obj_type = labels[int(row[4])]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
-        if obj_type == "ArrowDown":
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
+        if obj_type == "arrow_down":
             force = Force(x_min, y_min, x_max, y_max, "Down")
             force.draw()
 
-        elif obj_type == "ArrowUp":
+        elif obj_type == "arrow_up":
             force = Force(x_min, y_min, x_max, y_max, "Up")
             force.draw()
 
-        elif obj_type == "ArrowLeft":
+        elif obj_type == "arrow_left":
             force = Force(x_min, y_min, x_max, y_max, "Left")
             force.draw()
 
-        elif obj_type == "ArrowRight":
+        elif obj_type == "arrow_right":
             force = Force(x_min, y_min, x_max, y_max, "Right")
             force.draw()
 
-        elif obj_type == "PinSupport":
+        elif obj_type == "support":
             pin = PinSupport(x_min, y_min, x_max, y_max)
             pin.draw()
 
-        elif obj_type == "RollerSupport":
+        elif obj_type == "roller_support":
             roller = RollerSupport(x_min, y_min, x_max, y_max)
             roller.draw()
 
-        elif obj_type == "LoadUp":
+        elif obj_type == "load_up":
             load = Load(x_min, y_min, x_max, y_max, "Up")
             load.draw()
 
-        elif obj_type == "LoadDown":
+        elif obj_type == "load_down":
             load = Load(x_min, y_min, x_max, y_max, "Down")
             load.draw()
 
-        elif obj_type == "ClockwiseBottom":
+        elif obj_type == "clockwise_bottom":
            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Bottom")
            moment.draw()
         
-        elif obj_type == "ClockwiseTop":
+        elif obj_type == "clockwise_top":
            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Top")
            moment.draw()
 
-        elif obj_type == "ClockwiseLeft":
+        elif obj_type == "clockwise_left":
            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Left")
            moment.draw()
 
-        elif obj_type == "ClockwiseRight":
+        elif obj_type == "clockwise_right":
            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Right")
            moment.draw()
 
+<<<<<<< HEAD
         elif obj_type == "CounterclockwiseBottom":
            moment = Moment(x_min, y_min, x_max, y_max, "Counterwise", "Bottom")
            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Bottom")
@@ -894,10 +918,30 @@ def draw_all_objects():
         obj_type = labels[row[4]]
         m_x = interp1d([0, row[6]], [0, 800])
         m_y = interp1d([0, row[6]], [800, 0])
+=======
+        elif obj_type == "counterclockwise_bottom":
+           moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Bottom")
+           moment.draw()
+
+        elif obj_type == "counterclockwise_top":
+           moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Top")
+           moment.draw()
+
+        elif obj_type == "counterclockwise_left":
+           moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Left")
+           moment.draw()
+
+        elif obj_type == "counterclockwise_right":
+           moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Right")
+           moment.draw()
+    for index, row in objects.iterrows():
+        m_x = interp1d([0, min(row[6], row[7])], [0, 800])
+        m_y = interp1d([0, min(row[6], row[7])], [0, 800]) # Om vanligt koordinatsystem, byt 3 och 1 nedan och 800, 0 t.v.
+>>>>>>> adca8deb3bf77232d111f85583d3f9997c3be6b8
         obj_type = labels[int(row[4])]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
         
-        if obj_type == "Surface":
+        if obj_type == "ground":
             surface = Surface(x_min, y_min, x_max, y_max)
             surface.draw()
 #["PinSupport", "RollerSupport", "BeamLine0", "Surface", "Node", "ArrowUp", "ArrowDown", 
@@ -905,7 +949,11 @@ def draw_all_objects():
 #          "CounterclockwiseRight", "CounterclockwiseTop", "CounterclockwiseLeft", "CounterclockwiseBottom", 
 #          "Beam0", "BeamLine45", "BeamLine90", "Beam90", "BeamLine135", "Beam135", "LoadDown", "LoadUp"]
 
+<<<<<<< HEAD
 def fe_input(type):
+=======
+
+>>>>>>> adca8deb3bf77232d111f85583d3f9997c3be6b8
 def fe_input():
     output = {}
     for beam in beam_list:
@@ -954,7 +1002,7 @@ def fe_input():
         return output
         # En lista över elementen och vilka noder de går mellan
         '''
-draw_all_objects()
+
 
 def create_entries():
     force_entries = []
@@ -1026,6 +1074,8 @@ def create_entries():
 
         moment_entries.append((entry, label))
 
+
+draw_all_objects()
 
 create_entries()
 m_cnv.update()
