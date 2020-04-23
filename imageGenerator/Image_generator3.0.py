@@ -28,7 +28,7 @@ surface_points = {"Bottom": [], "Top": [], "Left": [], "Right": []} # To find th
 
 labels = ["LoadDown", "LoadUp", "Beam0", "Counterclockwise", "CounterclockwiseRight", "ArrowRight", 
           "CounterclockwiseTop", "ArrowDown", "Clockwise", "ClockwiseRight", "ArrowLeft", 
-          "CounterclockwiseBottom", "ArrowUp", "ClockwiseLeft", "Support", "ClockwiseTop", 
+          "CounterclockwiseBottom", "ArrowUp", "ClockwiseLeft", "PinSupport", "ClockwiseTop", 
           "ClockwiseBottom", "CounterclockwiseLeft", "Surface", "RollerSupport", "Beam90"]
 
 # Method for finding closest point on any beam returning that point and the corresponding beam
@@ -706,7 +706,8 @@ def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika 
             y_mid1 = (y_max1 + y_min1)/2
             if x_min2 < x_mid1 < x_max2 and y_min2 < y_mid1 < y_max2:
                 if type1 == type2:
-                    objects = objects.drop(index1, axis=0)
+                    if obj1[5] < obj2[5]:
+                        objects = objects.drop(index1, axis=0)
                 elif type1 == "BeamLine":
                     objects = objects.drop(index1, axis=0)
                 elif type1 in ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"] and type2 in ["LoadUp", "LoadDown"]:
@@ -718,7 +719,6 @@ def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika 
                                 "CounterclockwiseTop", "CounterclockwiseBottom", "CounterclockwiseLeft", 
                                 "ClockwiseRight", "ClockwiseLeft", "ClockwiseTop", "ClockwiseBottom"]:
                     if obj1[5] < obj2[5]:
-                        print(objects)
                         objects = objects.drop(index1, axis=0)
                     #else:
                      #   objects = objects.drop(index2, axis=0)
@@ -745,10 +745,11 @@ def draw_all_objects():
             number_of_loads += 1
 
     for index, row in objects.iterrows():
-        m_x = interp1d([0, row[6]], [0, 800])
-        m_y = interp1d([0, row[6]], [800, 0])
+        print(row[7])
+        m_x = interp1d([0, min(row[6], row[7])], [0, 800])
+        m_y = interp1d([0, min(row[6], row[7])], [0, 800])
         obj_type = labels[int(row[4])]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
         if obj_type in ["Beam0", "BeamLine0"]:
             beam = Beam(x_min, y_min, x_max, y_max, "0")
             beam.draw()
@@ -756,10 +757,10 @@ def draw_all_objects():
             beam = Beam(x_min, y_min, x_max, y_max, "90")
             beam.draw()
     for index, row in objects.iterrows():
-        m_x = interp1d([0, row[6]], [0, 800])
-        m_y = interp1d([0, row[6]], [800, 0])
+        m_x = interp1d([0, min(row[6], row[7])], [0, 800])
+        m_y = interp1d([0, min(row[6], row[7])], [0, 800])
         obj_type = labels[int(row[4])]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
         if obj_type == "ArrowDown":
             force = Force(x_min, y_min, x_max, y_max, "Down")
             force.draw()
@@ -824,10 +825,10 @@ def draw_all_objects():
            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Right")
            moment.draw()
     for index, row in objects.iterrows():
-        m_x = interp1d([0, row[6]], [0, 800])
-        m_y = interp1d([0, row[6]], [800, 0])
+        m_x = interp1d([0, min(row[6], row[7])], [0, 800])
+        m_y = interp1d([0, min(row[6], row[7])], [0, 800]) # Om vanligt koordinatsystem, byt 3 och 1 nedan och 800, 0 t.v.
         obj_type = labels[int(row[4])]
-        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[3])), float(m_x(row[2])), float(m_y(row[1]))
+        x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
         
         if obj_type == "Surface":
             surface = Surface(x_min, y_min, x_max, y_max)
