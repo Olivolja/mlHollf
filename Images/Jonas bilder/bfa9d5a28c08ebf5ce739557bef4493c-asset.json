@@ -80,7 +80,8 @@
             "id": "8pM8LlrCp",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise"
+                "clockwise",
+                "clockwise_left"
             ],
             "boundingBox": {
                 "height": 448.92,

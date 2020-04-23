@@ -826,7 +826,7 @@
             "id": "C7nGlfP2F",
             "type": "RECTANGLE",
             "tags": [
-                "arrow_up"
+                "ground"
             ],
             "boundingBox": {
                 "height": 543.6120401337793,
@@ -857,7 +857,7 @@
             "id": "BKTtWd0sA",
             "type": "RECTANGLE",
             "tags": [
-                "arrow_up"
+                "ground"
             ],
             "boundingBox": {
                 "height": 425.5707107594978,

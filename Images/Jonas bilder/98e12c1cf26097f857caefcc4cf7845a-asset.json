@@ -110,7 +110,8 @@
             "id": "NsKIsiPwC",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise"
+                "counterclockwise",
+                "counterclockwise_bottom"
             ],
             "boundingBox": {
                 "height": 248.50836120401337,

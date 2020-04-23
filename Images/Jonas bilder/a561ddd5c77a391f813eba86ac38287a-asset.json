@@ -140,8 +140,8 @@
             "id": "HJlg5euaU",
             "type": "RECTANGLE",
             "tags": [
-                "clockwise",
-                "counterclockwise_right"
+                "counterclockwise_right",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 456.85747483822144,
