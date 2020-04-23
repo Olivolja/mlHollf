@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "2132a5fcd919362b094ed7032bd95a80",
         "name": "20200331_152727.jpg",
-        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_152727.jpg",
+        "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_152727.jpg",
         "size": {
             "width": 3024,
             "height": 4032
@@ -47,7 +47,7 @@
             "id": "dAb_msr4B",
             "type": "RECTANGLE",
             "tags": [
-                "arrow_left"
+                "arrow_down"
             ],
             "boundingBox": {
                 "height": 595.7447535738031,

@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "7f7af485dc6928176c8ec817ff28ae63",
         "name": "IMG_20200401_130254.jpg",
-        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/IMG_20200401_130254.jpg",
+        "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/IMG_20200401_130254.jpg",
         "size": {
             "width": 4608,
             "height": 3456
@@ -78,7 +78,8 @@
             "id": "v7lByDHRx",
             "type": "POLYGON",
             "tags": [
-                "counterclockwise_left"
+                "counterclockwise_left",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 903.435684647303,

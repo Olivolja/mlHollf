@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "02f17b0b46d94d906312ae7001a214fd",
         "name": "20200331_144317.jpg",
-        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_144317.jpg",
+        "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_144317.jpg",
         "size": {
             "width": 3024,
             "height": 3024
@@ -47,30 +47,30 @@
             "id": "tQ65C6XH8",
             "type": "RECTANGLE",
             "tags": [
-                "roller_support"
+                "ground"
             ],
             "boundingBox": {
-                "height": 1224,
-                "width": 258.54545454545456,
-                "left": 692.1818181818182,
-                "top": 877.0909090909091
+                "height": 1224.0000000000002,
+                "width": 258.5454545454546,
+                "left": 688.909090909091,
+                "top": 880.3636363636366
             },
             "points": [
                 {
-                    "x": 692.1818181818182,
-                    "y": 877.0909090909091
+                    "x": 688.909090909091,
+                    "y": 880.3636363636366
                 },
                 {
-                    "x": 950.7272727272727,
-                    "y": 877.0909090909091
+                    "x": 947.4545454545457,
+                    "y": 880.3636363636366
                 },
                 {
-                    "x": 950.7272727272727,
-                    "y": 2101.090909090909
+                    "x": 947.4545454545457,
+                    "y": 2104.3636363636365
                 },
                 {
-                    "x": 692.1818181818182,
-                    "y": 2101.090909090909
+                    "x": 688.909090909091,
+                    "y": 2104.3636363636365
                 }
             ]
         },
@@ -109,7 +109,7 @@
             "id": "uWCSJalSl",
             "type": "RECTANGLE",
             "tags": [
-                "arrow_down"
+                "arrow_up"
             ],
             "boundingBox": {
                 "height": 919.6363636363637,

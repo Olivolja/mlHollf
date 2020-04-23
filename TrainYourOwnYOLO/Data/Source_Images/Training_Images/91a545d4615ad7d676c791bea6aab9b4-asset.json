@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "91a545d4615ad7d676c791bea6aab9b4",
         "name": "20200331_143956.jpg",
-        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_143956.jpg",
+        "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200331_143956.jpg",
         "size": {
             "width": 3024,
             "height": 3024
@@ -208,7 +208,7 @@
             "type": "RECTANGLE",
             "tags": [
                 "counterclockwise",
-                "clockwise_left"
+                "counterclockwise_left"
             ],
             "boundingBox": {
                 "height": 415.6363636363637,
@@ -232,6 +232,68 @@
                 {
                     "x": 1045.6363636363637,
                     "y": 1590.5454545454547
+                }
+            ]
+        },
+        {
+            "id": "-Xis-ZGLf",
+            "type": "RECTANGLE",
+            "tags": [
+                "arrow_up"
+            ],
+            "boundingBox": {
+                "height": 634.909090909091,
+                "width": 157.0909090909091,
+                "left": 1598.7272727272727,
+                "top": 2143.636363636364
+            },
+            "points": [
+                {
+                    "x": 1598.7272727272727,
+                    "y": 2143.636363636364
+                },
+                {
+                    "x": 1755.818181818182,
+                    "y": 2143.636363636364
+                },
+                {
+                    "x": 1755.818181818182,
+                    "y": 2778.5454545454545
+                },
+                {
+                    "x": 1598.7272727272727,
+                    "y": 2778.5454545454545
+                }
+            ]
+        },
+        {
+            "id": "SJEc-VnaT",
+            "type": "RECTANGLE",
+            "tags": [
+                "arrow_down"
+            ],
+            "boundingBox": {
+                "height": 409.0909090909091,
+                "width": 199.63636363636365,
+                "left": 1500.5454545454547,
+                "top": 0
+            },
+            "points": [
+                {
+                    "x": 1500.5454545454547,
+                    "y": 0
+                },
+                {
+                    "x": 1700.1818181818182,
+                    "y": 0
+                },
+                {
+                    "x": 1700.1818181818182,
+                    "y": 409.0909090909091
+                },
+                {
+                    "x": 1500.5454545454547,
+                    "y": 409.0909090909091
                 }
             ]
         }

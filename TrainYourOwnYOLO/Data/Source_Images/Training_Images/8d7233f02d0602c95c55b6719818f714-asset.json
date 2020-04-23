@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "jpg",
+        "id": "8d7233f02d0602c95c55b6719818f714",
+        "name": "20200422_111338.jpg",
+        "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/20200422_111338.jpg",
+        "size": {
+            "width": 4032,
+            "height": 3024
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "by2xTpW7Y",
+            "type": "RECTANGLE",
+            "tags": [
+                "load_up"
+            ],
+            "boundingBox": {
+                "height": 1413.8613607576578,
+                "width": 3233.5841584158416,
+                "left": 459.08910891089107,
+                "top": 612.1188372621442
+            },
+            "points": [
+                {
+                    "x": 459.08910891089107,
+                    "y": 612.1188372621442
+                },
+                {
+                    "x": 3692.6732673267325,
+                    "y": 612.1188372621442
+                },
+                {
+                    "x": 3692.6732673267325,
+                    "y": 2025.980198019802
+                },
+                {
+                    "x": 459.08910891089107,
+                    "y": 2025.980198019802
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}

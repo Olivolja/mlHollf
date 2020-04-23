@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "260344ec50b57889ac6875ae848d0287",
         "name": "IMG_20200402_101712.jpg",
-        "path": "file:/home/oliv/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/IMG_20200402_101712.jpg",
+        "path": "file:C:/Users/Benjamin/Desktop/gitRepos/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/IMG_20200402_101712.jpg",
         "size": {
             "width": 4608,
             "height": 3456
@@ -357,7 +357,8 @@
             "id": "IaVdJ-hVo",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_right"
+                "counterclockwise_right",
+                "counterclockwise"
             ],
             "boundingBox": {
                 "height": 641.7261410788382,
@@ -388,7 +389,8 @@
             "id": "Lz4FMm1AO",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise_top"
+                "clockwise_top",
+                "clockwise"
             ],
             "boundingBox": {
                 "height": 372.8464730290457,
