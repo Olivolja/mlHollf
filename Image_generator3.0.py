@@ -965,7 +965,10 @@ def create_entries():
     def calculate():
         # fe_input = fe_input()
         for e in force_entries:
-            magnitude = float(e[0].get())
+            try:
+                magnitude = float(e[0].get())
+            except:
+                print("Input must be a number")
             obj = e[1].cget("text")
             for beam in beam_list:
                 for force in beam.objects["Forces"]:
