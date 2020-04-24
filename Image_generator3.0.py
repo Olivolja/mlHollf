@@ -164,8 +164,8 @@ class Beam:
             # Creating twelve points on the top and bottom side of the beam and 
             # one on the middle of the left and right side.
             for i in range(12):
-                self.points["Left"].append((self.x_min, self.y_min + i * point_distance))
-                self.points["Right"].append((self.x_max, self.y_min + i * point_distance))
+                self.points["Left"].append((self.x_min, self.y_max - i * point_distance))
+                self.points["Right"].append((self.x_max, self.y_max - i * point_distance))
             self.points["Bottom"].append((x_mid, self.y_max))
             self.points["Top"].append((x_mid, self.y_min))
             # A suface could only be placed at any of the short ends of the beam.
