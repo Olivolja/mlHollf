@@ -24,16 +24,17 @@ number_of_moments = 0
 number_of_loads = 0
 surface_points = {"Bottom": [], "Top": [], "Left": [], "Right": []} # To find the closest item for a surface. Each list: 
                                                                     # (the item, (starting coordinate), (ending coordinate)) 
+
 def get_classes():
     labels = []
-    file = open(r'C:\Users\tobia\Desktop\Kandidat\data_classes.txt')
+    #file = open(r'C:\Users\tobia\Desktop\Kandidat\data_classes.txt')
+    dataClasses = os.path.join(os.getcwd(),"TrainYourOwnYOLO/Data/Model_Weights/data_classes.txt")
+    file = open(dataClasses)
     for line in file:
         labels.append(line.rstrip("\n"))
     return labels
 
-
 labels = get_classes()
-
 
 # Method for finding closest point on any beam returning that point and the corresponding beam
 def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
@@ -729,7 +730,7 @@ def get_objects():
     except:
         df = pd.read_csv(r'C:\Users\tobia\Desktop\resultatHebbeBatch16\Detection_Results.csv')
         # df = pd.read_csv(r'C:\Users\tobia\Desktop\Detection_Results_test.csv')
-        # df = pd.read_csv(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
+        # df = pd.read_csv(os.path.join(os.getcwd(), "TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv")
     df1 = df[["xmin", "ymin", "xmax", "ymax", "label", "confidence", "x_size", "y_size"]]
     df1 = delete_overlapping_objects(df1)
     return (df1)
@@ -1029,15 +1030,14 @@ def create_entries():
         moment_entries.append((entry, label))
 
 
+
 draw_all_objects()
 
 create_entries()
 m_cnv.update()
-m_cnv.postscript(file="bild.png", colormode='color')
+m_cnv.postscript(file="imageGenerator/bild.png", colormode='color')
 
-
-im1 = Image.open(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.png')
-im1.save(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.jpg')
-
+im1 = Image.open(os.path.join(os.getcwd(),"imageGenerator/bild.png"))
+im1.save(os.path.join(os.getcwd(),"imageGenerator/bild.jpg"))
 
 mainloop()
