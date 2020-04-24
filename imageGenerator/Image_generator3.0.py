@@ -345,12 +345,16 @@ class RollerSupport:
 
 
 class Moment:
-    def __init__(self, x_min, y_min, x_max, y_max, rotation, side, old_object=None): # side samma som side, lite inkonsekvent
+    def __init__(self, x_min, y_min, x_max, y_max, rotation, side=None, old_object=None):
         self.old_object = old_object
         x_mid, y_mid = (x_min + x_max)/2, (y_min + y_max)/2
         self.side = side
         self.rotation = rotation
-        self.closest_point, self.beam = find_closest_point((x_mid, y_mid), [side])
+        if side == None:
+            self.closest_point, self.beam = find_closest_point((x_mid, y_mid))
+            #if self.closest_point in self.beam.points["Bottom"]    
+        else:
+            self.closest_point, self.beam = find_closest_point((x_mid, y_mid), [side])
         self.radius = self.beam.length * 0.075
         self.point_index = self.beam.points[side].index(self.closest_point)
         if side == "Bottom":
