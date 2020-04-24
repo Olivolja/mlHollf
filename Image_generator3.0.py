@@ -24,16 +24,17 @@ number_of_moments = 0
 number_of_loads = 0
 surface_points = {"Bottom": [], "Top": [], "Left": [], "Right": []} # To find the closest item for a surface. Each list: 
                                                                     # (the item, (starting coordinate), (ending coordinate)) 
+
 def get_classes():
     labels = []
-    file = open(r'C:\Users\tobia\Desktop\Kandidat\data_classes.txt')
+    #file = open(r'C:\Users\tobia\Desktop\Kandidat\data_classes.txt')
+    dataClasses = os.path.join(os.getcwd(),"TrainYourOwnYOLO/Data/Model_Weights/data_classes.txt")
+    file = open(dataClasses)
     for line in file:
         labels.append(line.rstrip("\n"))
     return labels
 
-
 labels = get_classes()
-
 
 # Method for finding closest point on any beam returning that point and the corresponding beam
 def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
@@ -51,7 +52,6 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
         return shortest_distance_coordinates, closest_beam
     except UnboundLocalError:
         sys.exit("Error: no beam identified")
-
 
 
 # Method for finding the closest possible object for a surface to be put on 
@@ -124,7 +124,6 @@ def create_label(obj, old_object=None):
     m_cnv.create_text(x, y, font = ('Times', '15'), text=sub_text)
     return text
         
-
 
 # Defining a beam
 class Beam:
@@ -236,7 +235,6 @@ class Force:
         self.beam.objects["Forces"].append(self)
 
 
-
 # Defining a pin support as a triangle with sidelength 15% of corresponding beams length
 class PinSupport:
     def __init__(self, x_min, y_min, x_max, y_max, size=0.15):
@@ -300,7 +298,6 @@ class PinSupport:
     def draw(self):
         m_cnv.create_polygon(self.corner1, self.corner2, self.corner3, fill="", outline="Black")
         self.beam.objects["Pins"].append(self)
-
 
 
 # Defining a roller support as a pin support with sidelength 9.51% of corresponding beams length
@@ -561,7 +558,6 @@ class Surface:
                 self.x_min = self.closest_point[0]
                 self.x_max = self.x_min + self.width
             self.no_lines = int(self.height/8)
-
             if isinstance(self.closest_item, Beam): # sammanfoga längst ner i draw?
                 self.point_index = self.closest_item.points[self.side].index(self.closest_point)
 
@@ -619,7 +615,6 @@ def find_closest_node(coord):
     return shortest_distance_coordinates, closest_node
 
 """
-
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
@@ -679,7 +674,6 @@ class Truss:
         self.beams = truss_beams
 
         # Find the start node
-        start_node = self.nodes[0]
         x_min = m.inf
         for node in self.nodes:
             if node.x_min <= x_min:
@@ -695,7 +689,7 @@ class Truss:
         for beam in self.beams:
             for node in self.nodes:
                 if node in beam.nodes:
-                    node.beams.append(beam)
+                    node.beams.append[beam]
                     i = beam.nodes.index(node)
                     if i == 0:
                         node.connected_nodes.append(beam.nodes[1])
@@ -707,6 +701,7 @@ class Truss:
             for beam in beams:
                 if node_1 and node_2 in beam.nodes:
                     return beam
+                else:
 
 
 
@@ -727,9 +722,7 @@ class Truss:
                     if angle == 0:
                         node_2.layer = node.layer
                         layers[node.layer].add(node_2)
-
 """
-
 
 def get_objects():
     try:
@@ -737,7 +730,7 @@ def get_objects():
     except:
         df = pd.read_csv(r'C:\Users\tobia\Desktop\resultatHebbeBatch16\Detection_Results.csv')
         # df = pd.read_csv(r'C:\Users\tobia\Desktop\Detection_Results_test.csv')
-        # df = pd.read_csv(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\TrainYourOwnYOLO\Data\Source_Images\Test_Image_Detection_Results\Detection_Results.csv')
+        # df = pd.read_csv(os.path.join(os.getcwd(), "TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv")
     df1 = df[["xmin", "ymin", "xmax", "ymax", "label", "confidence", "x_size", "y_size"]]
     df1 = delete_overlapping_objects(df1)
     return (df1)
@@ -1037,15 +1030,14 @@ def create_entries():
         moment_entries.append((entry, label))
 
 
+
 draw_all_objects()
 
 create_entries()
 m_cnv.update()
-m_cnv.postscript(file="bild.png", colormode='color')
+m_cnv.postscript(file="imageGenerator/bild.png", colormode='color')
 
-
-im1 = Image.open(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.png')
-im1.save(r'C:\Users\tobia\Desktop\Kandidat\mlHollf\imageGenerator\bild.jpg')
-
+im1 = Image.open(os.path.join(os.getcwd(),"imageGenerator/bild.png"))
+im1.save(os.path.join(os.getcwd(),"imageGenerator/bild.jpg"))
 
 mainloop()
