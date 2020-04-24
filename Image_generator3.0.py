@@ -48,7 +48,7 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
                     shortest_distance = distance
                     shortest_distance_coordinates = point
                     closest_beam = beam
-    try:
+    try: # Ändra så den gör så även om inga andra objekt identifierats
         return shortest_distance_coordinates, closest_beam
     except UnboundLocalError:
         sys.exit("Error: no beam identified")
@@ -784,8 +784,8 @@ def draw_all_objects():
             number_of_loads += 1
 
     for index, row in objects.iterrows():
-        m_x = interp1d([0, min(row[6], row[7])], [0, 800])
-        m_y = interp1d([0, min(row[6], row[7])], [0, 800])
+        m_x = interp1d([0, max(row[6], row[7])], [0, 800])
+        m_y = interp1d([0, max(row[6], row[7])], [0, 800])
         obj_type = labels[int(row[4])]
         x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
         if obj_type == "beam":
@@ -795,8 +795,8 @@ def draw_all_objects():
             beam = Beam(x_min, y_min, x_max, y_max, "90")
             beam.draw()
     for index, row in objects.iterrows():
-        m_x = interp1d([0, min(row[6], row[7])], [0, 800])
-        m_y = interp1d([0, min(row[6], row[7])], [0, 800])
+        m_x = interp1d([0, max(row[6], row[7])], [0, 800])
+        m_y = interp1d([0, max(row[6], row[7])], [0, 800])
         obj_type = labels[int(row[4])]
         x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
         if obj_type == "arrow_down":
@@ -863,8 +863,8 @@ def draw_all_objects():
            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Right")
            moment.draw()
     for index, row in objects.iterrows():
-        m_x = interp1d([0, min(row[6], row[7])], [0, 800])
-        m_y = interp1d([0, min(row[6], row[7])], [0, 800]) # Om vanligt koordinatsystem, byt 3 och 1 nedan och 800, 0 t.v.
+        m_x = interp1d([0, max(row[6], row[7])], [0, 800])
+        m_y = interp1d([0, max(row[6], row[7])], [0, 800]) # Om vanligt koordinatsystem, byt 3 och 1 nedan och 800, 0 t.v.
         obj_type = labels[int(row[4])]
         x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
         
@@ -880,7 +880,23 @@ def fe_input():
         beam_objects = []
         for obj_type in beam.objects:
             for obj in beam.objects[obj_type]:
-                beam_objects.append((str(obj), obj.point_index, obj.side, obj.magnitude)) #index+1?
+                if beam.orientation == "0":
+                    if side in ["Top", "Bottom"]:
+                        beam_objects.append((str(obj), obj.point_index, obj.magnitude)) 
+                    elif side == "Left":
+                        beam_objects.append((str(obj), 0, obj.magnitude)) 
+                    elif side == "Right":
+                        beam_objects.append((str(obj), 11, obj.magnitude)) 
+                elif beam.orientation == "90":
+                    if side in ["Left", "Right"]:
+                        beam_objects.append((str(obj), obj.point_index, obj.magnitude)) 
+                    elif side == "Top":
+                        beam_objects.append((str(obj), 0, obj.magnitude))
+                    elif side == "Bottom":
+                        beam_objects.append((str(obj), 11, obj.magnitude))  
+
+
+
     output['Beam' + str(index)] = beam_objects
     return output
 
@@ -935,8 +951,6 @@ def set_magnitude(obj, entry):
         delete_object(obj)
         obj = new_obj
     return obj
-
-    #print(obj.magnitude)
 
 
 def create_entries():
