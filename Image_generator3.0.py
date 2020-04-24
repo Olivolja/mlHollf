@@ -881,18 +881,18 @@ def fe_input():
         for obj_type in beam.objects:
             for obj in beam.objects[obj_type]:
                 if beam.orientation == "0":
-                    if side in ["Top", "Bottom"]:
+                    if obj.side in ["Top", "Bottom"]:
                         beam_objects.append((str(obj), obj.point_index, obj.magnitude)) 
-                    elif side == "Left":
+                    elif obj.side == "Left":
                         beam_objects.append((str(obj), 0, obj.magnitude)) 
-                    elif side == "Right":
+                    elif obj.side == "Right":
                         beam_objects.append((str(obj), 11, obj.magnitude)) 
                 elif beam.orientation == "90":
-                    if side in ["Left", "Right"]:
+                    if obj.side in ["Left", "Right"]:
                         beam_objects.append((str(obj), obj.point_index, obj.magnitude)) 
-                    elif side == "Top":
+                    elif obj.side == "Top":
                         beam_objects.append((str(obj), 0, obj.magnitude))
-                    elif side == "Bottom":
+                    elif obj.side == "Bottom":
                         beam_objects.append((str(obj), 11, obj.magnitude))  
 
 
