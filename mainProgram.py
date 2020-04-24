@@ -23,8 +23,8 @@ gui.mainloop()
 
 #Get path of folder of old results
 TrainYourOwnYoloRootFolder = os.path.join(os.getcwd(), "TrainYourOwnYOLO")
-Data =                       os.path.join(TrainYourOwnYoloRootFolder, "Data")
-SourceImages =               os.path.join(Data, "Source_Images")
+SourceImages =               os.path.join(TrainYourOwnYoloRootFolder, "Data/Source_Images")
+#SourceImages =               os.path.join(Data, "Source_Images")
 #TODO This block is a workaround from that i dint not find a wasy for a subprocess to take an argument simultaneusly as running it from the venv
 #---------------------------------------------------------------------
 testImages =  os.path.join(SourceImages, "Test_Images")
@@ -49,12 +49,15 @@ except (FileNotFoundError):
 
 
 #venv path
-pythonBin = os.path.join(os.path.join(os.path.join(TrainYourOwnYoloRootFolder, "env"), "bin"), "python")
+pythonBin = os.path.join(TrainYourOwnYoloRootFolder, "env/bin/python")
 #detector.py path
-scriptFile = os.path.join(os.path.join(TrainYourOwnYoloRootFolder, "3_Inference"), "Detector.py")
+scriptFile = os.path.join(TrainYourOwnYoloRootFolder, "3_Inference/Detector.py")
 #runs detector.py and waits for it to finish
 subprocess.Popen([pythonBin, scriptFile]).wait() #TODO make scriptFile take argument selectedPicture
 #Detection_Results.csv now exists 
+
+
 #----------ABOVE WORKS -- MOVE THIS LINE WHEN MORE IS WORKING----------
+
 
 
