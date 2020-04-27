@@ -5,11 +5,12 @@ import numpy as np
 import random as r
 import pandas as pd
 from scipy.interpolate import interp1d
-from PIL import Image
+from PIL import Image, ImageGrab # pyscreenshot för linux?
 import time
 import sys
 import os
 root = Tk()
+root.attributes('-fullscreen', True)
 m_cnv = Canvas(root, width=1000, height=1000)
 m_cnv.pack(side=LEFT)
 e_cnv = Canvas(root, bg="red")
@@ -103,7 +104,6 @@ def create_label(obj, old_object=None):
         elif isinstance(obj, Beam):
             if number_of_beams > 1:
                 text = 'B' + str(beam_list.index(obj)+1)
-                obj.label = text
             else:
                 obj.label = "Beam length"
                 return
@@ -129,24 +129,31 @@ def create_label(obj, old_object=None):
         y = obj.y_min - 9
         if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
             break
-        
+
+        found_position = False
         for i in range(10):
             x = obj.x_max + 9
-            y = obj.y_max - i*(obj.y_max-obj.y_min) 
+            y = obj.y_max - i*(obj.y_max-obj.y_min)/10 
             if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                found_position = True
                 break
-            x = obj.x_max - i*(obj.x_max-obj.x_min)
+            x = obj.x_max - i*(obj.x_max-obj.x_min)/10
             y = obj.y_min - 9
             if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                found_position = True
                 break
             x = obj.x_min - 9
-            y = obj.y_max - i*(obj.y_max-obj.y_min)
+            y = obj.y_max - i*(obj.y_max-obj.y_min)/10
             if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                found_position = True
                 break
-            x = obj.x_max - i*(obj.x_max-obj.x_min)
+            x = obj.x_max - i*(obj.x_max-obj.x_min)/10
             y = obj.y_max + 9
             if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                found_position = True
                 break
+        if found_position:
+            break
 
         return # Nowhere to put the label, what do?
         
@@ -1074,11 +1081,8 @@ def create_entries():
         print("Output to the FE-calculation script")
         print(fe_input())
 
-    calc_button = Button(e_cnv, text="Calculate", command=lambda: calculate())
-    calc_button.pack(side=BOTTOM)
-
     for load in objects["Loads"]:
-        entry_field = Canvas(e_cnv, bg="red")
+        entry_field = Canvas(e_cnv, bg="white")
         entry_field.pack()
 
         entry = Entry(entry_field)
@@ -1091,7 +1095,7 @@ def create_entries():
         load_entries.append((entry, label))
 
     for force in objects["Forces"]:
-        entry_field = Canvas(e_cnv, bg="red")
+        entry_field = Canvas(e_cnv, bg="white")
         entry_field.pack()
 
         entry = Entry(entry_field)
@@ -1105,7 +1109,7 @@ def create_entries():
         force_entries.append((entry, label))
 
     for moment in objects["Moments"]:
-        entry_field = Canvas(e_cnv, bg="red")
+        entry_field = Canvas(e_cnv, bg="white")
         entry_field.pack()
 
         entry = Entry(entry_field)
@@ -1118,7 +1122,7 @@ def create_entries():
         moment_entries.append((entry, label))
 
     for beam in beam_list: 
-        entry_field = Canvas(e_cnv, bg="red")
+        entry_field = Canvas(e_cnv, bg="white")
         entry_field.pack()
 
         entry = Entry(entry_field)
@@ -1127,6 +1131,8 @@ def create_entries():
         label = Label(entry_field, text=beam.label)
         label.pack(side=LEFT)
         beam_entries.append((entry, label))
+    calc_button = Button(e_cnv, text="Calculate", command=lambda: calculate())
+    calc_button.pack(side=RIGHT)
 
 
 def save_image(): #behöver kanske inte vara metod i metod...
@@ -1135,22 +1141,30 @@ def save_image(): #behöver kanske inte vara metod i metod...
         m_cnv.update()
         m_cnv.postscript(file=os.path.join(path, "bild.eps"), colormode='color')
 
-        im1 = Image.open(os.path.join(os.getcwd(),os.path.join(path, "bild.eps")))
-        im1.save(os.path.join(path, "bild.png"), "png", quality=999)
+        im = ImageGrab.grab(bbox=(0,0,1200,1000))
+        im.save(os.path.join(path, "bild.png"))
+
     save_button = Button(e_cnv, text="Save image", command=lambda: save())
-    save_button.pack(side=BOTTOM)
+    save_button.pack(side=RIGHT)
 
 
-def rescale_image():
-    for beam in beam_list:
-        for obj_type in ["Forces"]:
-            number_of_beams = 0
+def exit_canvas():
+    def quit():
+        root.destroy()
+    quit_button = Button(e_cnv, text = 'Quit', command=quit)
+    quit_button.pack(side=RIGHT)
+    
+
+#def rescale_image():
+#    for beam in beam_list:
+#        for obj_type in ["Forces"]:
+
 
 
 draw_all_objects()
 
 create_entries()
 save_image()
-
+exit_canvas()
 
 mainloop()
