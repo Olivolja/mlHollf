@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import filedialog as fd
 import math as m
 import numpy as np
 import random as r
@@ -113,7 +114,7 @@ def create_label(obj, old_object=None):
 
     while True:
         x = obj.x_max + 9
-        y = obj.y_max + 9 # körs innan all skit ritas ut så funkar ej, kör labels på slutet av draw_all_objects?
+        y = obj.y_max + 9 
         if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
             break
         x = obj.x_max + 9
@@ -128,6 +129,25 @@ def create_label(obj, old_object=None):
         y = obj.y_min - 9
         if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
             break
+        
+        for i in range(10):
+            x = obj.x_max + 9
+            y = obj.y_max - i*(obj.y_max-obj.y_min) 
+            if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                break
+            x = obj.x_max - i*(obj.x_max-obj.x_min)
+            y = obj.y_min - 9
+            if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                break
+            x = obj.x_min - 9
+            y = obj.y_max - i*(obj.y_max-obj.y_min)
+            if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                break
+            x = obj.x_max - i*(obj.x_max-obj.x_min)
+            y = obj.y_max + 9
+            if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                break
+
         return # Nowhere to put the label, what do?
         
 
@@ -1109,15 +1129,28 @@ def create_entries():
         beam_entries.append((entry, label))
 
 
+def save_image(): #behöver kanske inte vara metod i metod...
+    def save():
+        path = fd.askdirectory()
+        m_cnv.update()
+        m_cnv.postscript(file=os.path.join(path, "bild.eps"), colormode='color')
+
+        im1 = Image.open(os.path.join(os.getcwd(),os.path.join(path, "bild.eps")))
+        im1.save(os.path.join(path, "bild.png"), "png", quality=999)
+    save_button = Button(e_cnv, text="Save image", command=lambda: save())
+    save_button.pack(side=BOTTOM)
+
+
+def rescale_image():
+    for beam in beam_list:
+        for obj_type in ["Forces"]:
+            number_of_beams = 0
 
 
 draw_all_objects()
 
 create_entries()
-m_cnv.update()
-m_cnv.postscript(file="imageGenerator/bild.png", colormode='color')
+save_image()
 
-im1 = Image.open(os.path.join(os.getcwd(),"imageGenerator/bild.png"))
-im1.save(os.path.join(os.getcwd(),"imageGenerator/bild.jpg"))
 
 mainloop()
