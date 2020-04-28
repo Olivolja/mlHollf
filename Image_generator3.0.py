@@ -13,7 +13,7 @@ root = Tk()
 root.attributes('-fullscreen', True)
 m_cnv = Canvas(root, width=1000, height=1000)
 m_cnv.pack(side=LEFT)
-e_cnv = Canvas(root, bg="red")
+e_cnv = Canvas(root)
 e_cnv.pack(side=RIGHT)
 beam_list = []
 node_list = []
@@ -941,10 +941,7 @@ def fe_input():
                         beam_objects.append((str(obj), 0, obj.magnitude))
                     elif obj.side == "Bottom":
                         beam_objects.append((str(obj), 11, obj.magnitude))  
-
-
-
-    output['Beam' + str(index)] = (beam.length, beam.orientation, beam_objects)
+        output['Beam' + str(index)] = (beam.length, beam.orientation, beam_objects)
     return output
 
 
@@ -1082,7 +1079,7 @@ def create_entries():
         print(fe_input())
 
     for load in objects["Loads"]:
-        entry_field = Canvas(e_cnv, bg="white")
+        entry_field = Canvas(e_cnv)
         entry_field.pack()
 
         entry = Entry(entry_field)
@@ -1095,7 +1092,7 @@ def create_entries():
         load_entries.append((entry, label))
 
     for force in objects["Forces"]:
-        entry_field = Canvas(e_cnv, bg="white")
+        entry_field = Canvas(e_cnv)
         entry_field.pack()
 
         entry = Entry(entry_field)
@@ -1109,7 +1106,7 @@ def create_entries():
         force_entries.append((entry, label))
 
     for moment in objects["Moments"]:
-        entry_field = Canvas(e_cnv, bg="white")
+        entry_field = Canvas(e_cnv)
         entry_field.pack()
 
         entry = Entry(entry_field)
@@ -1122,7 +1119,7 @@ def create_entries():
         moment_entries.append((entry, label))
 
     for beam in beam_list: 
-        entry_field = Canvas(e_cnv, bg="white")
+        entry_field = Canvas(e_cnv)
         entry_field.pack()
 
         entry = Entry(entry_field)
@@ -1138,8 +1135,8 @@ def create_entries():
 def save_image(): #behöver kanske inte vara metod i metod...
     def save():
         path = fd.askdirectory()
-        m_cnv.update()
-        m_cnv.postscript(file=os.path.join(path, "bild.eps"), colormode='color')
+        #m_cnv.update()
+        #m_cnv.postscript(file=os.path.join(path, "bild.eps"), colormode='color')
 
         im = ImageGrab.grab(bbox=(0,0,1200,1000))
         im.save(os.path.join(path, "bild.png"))
