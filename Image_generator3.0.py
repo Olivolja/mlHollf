@@ -1180,3 +1180,4 @@ im1 = Image.open(os.path.join(os.getcwd(),"imageGenerator/bild.png"))
 # im1.save(os.path.join(os.getcwd(),"imageGenerator/bild.jpg"))
 
 mainloop()
+# hehe
