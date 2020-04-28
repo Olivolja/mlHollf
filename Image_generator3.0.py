@@ -534,8 +534,8 @@ class Load:
             self.y_max = self.closest_point[1]
             self.y_min = self.y_max - self.height
             self.side = 'Top'
-        self.no_arrows = int(self.length/50)
-        self.sep = self.length / self.no_arrows
+        self.no_arrows = self.beam.points[self.side].index(self.rightmost_point) - self.beam.points[self.side].index(self.leftmost_point) + 1
+        self.sep = self.length / (self.no_arrows - 1)
         self.point_index = (self.beam.points[self.side].index(self.leftmost_point), self.beam.points[self.side].index(self.rightmost_point))
 
     def __str__(self):
@@ -546,11 +546,11 @@ class Load:
         py1 = self.leftmost_point[1]
         py2 = py1 - self.height
         if self.direction == "Down":
-            for i in range(self.no_arrows + 1):
+            for i in range(self.no_arrows):
                 px = self.leftmost_point[0] + i * self.sep
                 self.shapes.append(m_cnv.create_line(px, py1, px, py2, arrow="first")) # Kan krympa med first/last som variabel
         elif self.direction == "Up":
-            for i in range(self.no_arrows + 1):
+            for i in range(self.no_arrows):
                 px = self.leftmost_point[0] + i * self.sep
                 self.shapes.append(m_cnv.create_line(px, py1, px, py2, arrow="last"))
 
