@@ -1,16 +1,18 @@
 from tkinter import *
+from tkinter import filedialog as fd
 import math as m
 import numpy as np
 import random as r
 import pandas as pd
 from scipy.interpolate import interp1d
-from PIL import Image
+from PIL import Image, ImageGrab # pyscreenshot för linux?
 import time
 import sys
 import os
 
 root = Tk()
 # The main canvas houses the image
+root.attributes('-fullscreen', True)
 m_cnv = Canvas(root, width=1000, height=1000)
 m_cnv.pack(side=LEFT)
 # The entry canvas houses the entries to change magnitudes
@@ -24,10 +26,12 @@ truss_beams = []
 force_number = 0
 moment_number = 0
 load_number = 0
+
 number_of_forces = 0
 number_of_moments = 0
 number_of_loads = 0
-# Points on beams, supports, roller-supports where a surface could be placed.
+number_of_beams = 0
+
 surface_points = {"Bottom": [], "Top": [], "Left": [], "Right": []} # To find the closest item for a surface. Each list: 
                                                                     # (the item, (starting coordinate), (ending coordinate)) 
 """
@@ -50,6 +54,7 @@ def get_classes():
     file = open(data_classes)
     for line in file:
         labels.append(line.rstrip("\n"))
+    print(labels)
     return labels
 
 
@@ -79,24 +84,19 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
                     shortest_distance = distance
                     shortest_distance_coordinates = point
                     closest_beam = beam
-    try:  # Ändra så den gör så även om inga andra objekt identifierats
-        return shortest_distance_coordinates, closest_beam
-    except UnboundLocalError:
-        sys.exit("Error: no beam identified")
+    return shortest_distance_coordinates, closest_beam
 
 
 # Method for finding the closest possible object for a surface to be put on 
 # (eg a beam or any kind of support). Returns the object, its coordinates 
 # as they were on the input and the coordinates where it will be drawn.
-"""
-Function:
-Finds the closest object to the detected surface
--------------------------
-Input:
-coord = 
-sides = 
-"""
 def find_closest_object(coord, sides=["Bottom", "Top", "Left", "Right"]):
+    """
+
+    :param coord:
+    :param sides:
+    :return:
+    """
     shortest_distance = m.inf
     shortest_distance_coordinates = (m.inf, m.inf)
     print("got to line 102")
@@ -142,27 +142,67 @@ def create_label(obj, old_object=None):
                 text = 'W'
             else:
                 text = 'W' + str(load_number)
+        elif isinstance(obj, Beam):
+            if number_of_beams > 1:
+                text = 'B' + str(beam_list.index(obj)+1)
+            else:
+                obj.label = "Beam length"
+                return
+
     else:
         text = old_object.label
-
-
-    if obj.closest_point in obj.beam.points["Bottom"]:
-        x = obj.x_max + 10
-        y = obj.y_max + 10
-    elif obj.closest_point in obj.beam.points["Top"]:
-        x = obj.x_max + 10
-        y = obj.y_min - 10
-    elif obj.closest_point in obj.beam.points["Left"]:
-        x = obj.x_min - 10
-        y = obj.y_min - 10
-    elif obj.closest_point in obj.beam.points["Right"]:
-        x = obj.x_max + 10
-        y = obj.y_min - 10
     obj.label = text
+
+    while True:
+        x = obj.x_max + 9
+        y = obj.y_max + 9 
+        if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+            break
+        x = obj.x_max + 9
+        y = obj.y_min - 9
+        if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+            break
+        x = obj.x_min - 9
+        y = obj.y_max + 9
+        if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+            break
+        x = obj.x_min - 9
+        y = obj.y_min - 9
+        if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+            break
+
+        found_position = False
+        for i in range(10):
+            x = obj.x_max + 9
+            y = obj.y_max - i*(obj.y_max-obj.y_min)/10 
+            if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                found_position = True
+                break
+            x = obj.x_max - i*(obj.x_max-obj.x_min)/10
+            y = obj.y_min - 9
+            if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                found_position = True
+                break
+            x = obj.x_min - 9
+            y = obj.y_max - i*(obj.y_max-obj.y_min)/10
+            if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                found_position = True
+                break
+            x = obj.x_max - i*(obj.x_max-obj.x_min)/10
+            y = obj.y_max + 9
+            if not m_cnv.find_overlapping(x-8, y-8, x+8, y+8): # no items there
+                found_position = True
+                break
+        if found_position:
+            break
+
+        return # Nowhere to put the label, what do?
+        
+
     SUB = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
     sub_text = text.translate(SUB)
     
-    m_cnv.create_text(x, y, font = ('Times', '15'), text=sub_text)
+    m_cnv.create_text(x, y, font = ('Times', '-15'), text=sub_text)
     return text
         
 
@@ -205,8 +245,8 @@ class Beam:
             # Creating twelve points on the top and bottom side of the beam and 
             # one on the middle of the left and right side.
             for i in range(12):
-                self.points["Left"].append((self.x_min, self.y_min + i * point_distance))
-                self.points["Right"].append((self.x_max, self.y_min + i * point_distance))
+                self.points["Left"].append((self.x_min, self.y_max - i * point_distance))
+                self.points["Right"].append((self.x_max, self.y_max - i * point_distance))
             self.points["Bottom"].append((x_mid, self.y_max))
             self.points["Top"].append((x_mid, self.y_min))
             # A suface could only be placed at any of the short ends of the beam.
@@ -272,7 +312,6 @@ class Force:
             self.shapes.append(m_cnv.create_line(self.x_min, self.y_mid, self.x_max, self.y_mid, arrow="first"))
         elif self.direction == "Right":
             self.shapes.append(m_cnv.create_line(self.x_min, self.y_mid, self.x_max, self.y_mid, arrow="last"))
-        create_label(self, self.old_object)
         self.beam.objects["Forces"].append(self)
 
 
@@ -513,7 +552,6 @@ class Moment:
             if self.rotation == "Counterclockwise":
                 p2y = p1y - (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
                 self.shapes.append(m_cnv.create_line(p1x, p1y, self.x_min, p2y, arrow="last", width=2, arrowshape="12 14 4"))
-        create_label(self, self.old_object)
         self.beam.objects["Moments"].append(self)
 
 
@@ -538,9 +576,8 @@ class Load:
             self.y_max = self.closest_point[1]
             self.y_min = self.y_max - self.height
             self.side = 'Top'
-        self.no_arrows = int(self.length/50)
-        print("length", self.length, "\n", "number of arrows", self.no_arrows)
-        self.sep = self.length / self.no_arrows
+        self.no_arrows = self.beam.points[self.side].index(self.rightmost_point) - self.beam.points[self.side].index(self.leftmost_point) + 1
+        self.sep = self.length / (self.no_arrows - 1)
         self.point_index = (self.beam.points[self.side].index(self.leftmost_point), self.beam.points[self.side].index(self.rightmost_point))
 
     def __str__(self):
@@ -551,18 +588,17 @@ class Load:
         py1 = self.leftmost_point[1]
         py2 = py1 - self.height
         if self.direction == "Down":
-            for i in range(self.no_arrows + 1):
+            for i in range(self.no_arrows):
                 px = self.leftmost_point[0] + i * self.sep
                 self.shapes.append(m_cnv.create_line(px, py1, px, py2, arrow="first")) # Kan krympa med first/last som variabel
         elif self.direction == "Up":
-            for i in range(self.no_arrows + 1):
+            for i in range(self.no_arrows):
                 px = self.leftmost_point[0] + i * self.sep
                 self.shapes.append(m_cnv.create_line(px, py1, px, py2, arrow="last"))
 
         self.shapes.append(m_cnv.create_line(self.leftmost_point[0], self.leftmost_point[1], 
                                             self.rightmost_point[0], self.rightmost_point[1]))
         self.shapes.append(m_cnv.create_line(self.leftmost_point[0], py2, self.rightmost_point[0], py2))
-        create_label(self, self.old_object)
         self.beam.objects["Loads"].append(self)
 
 
@@ -580,7 +616,7 @@ class Surface:
         self.y_max = y_max
         height = y_max - y_min
         width = x_max - x_min
-        if width > height:
+        if width > height: # Unnecessary or even bad?
             self.closest_item, self.side, self.closest_point = find_closest_object((self.x_mid, self.y_mid), ["Bottom", "Top"])
             self.x_mid = self.closest_point[0]
             self.width = self.closest_item.surface_width
@@ -791,6 +827,7 @@ def get_objects():
         # df = pd.read_csv(os.path.join(os.getcwd(), "TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv")
     df1 = df[["xmin", "ymin", "xmax", "ymax", "label", "confidence", "x_size", "y_size"]]
     df1 = delete_overlapping_objects(df1)
+    print(df1)
     return (df1)
 
 
@@ -849,6 +886,9 @@ def draw_all_objects():
         elif obj_type in ["load_up", "load_down"]:
             global number_of_loads
             number_of_loads += 1
+        elif obj_type in ["beam", "beam_90"]:
+            global number_of_beams
+            number_of_beams += 1
 
     for index, row in objects.iterrows():
         m_x = interp1d([0, max(row[6], row[7])], [0, 800])
@@ -858,11 +898,13 @@ def draw_all_objects():
         if obj_type == "beam":
             beam = Beam(x_min, y_min, x_max, y_max, "0")
             beam.draw()
-            print("got to 838")
         elif obj_type == "beam_90":
             beam = Beam(x_min, y_min, x_max, y_max, "90")
             beam.draw()
-            print("got to 842")
+
+    if not beam_list:       # Checking if any beam was identified. If not, the program can't run.
+        sys.exit("Error: No beam identified")
+
     for index, row in objects.iterrows():
         m_x = interp1d([0, max(row[6], row[7])], [0, 800])
         m_y = interp1d([0, max(row[6], row[7])], [0, 800])
@@ -942,6 +984,11 @@ def draw_all_objects():
         if obj_type == "ground":
             surface = Surface(x_min, y_min, x_max, y_max)
             surface.draw()
+    for beam in beam_list:
+        create_label(beam)
+        for obj_type in ["Forces", "Moments", "Loads"]:
+            for obj in beam.objects[obj_type]:
+                create_label(obj, obj.old_object)
 
 
 
@@ -968,8 +1015,8 @@ def fe_input():
                     elif obj.side == "Top":
                         beam_objects.append((str(obj), 0, obj.magnitude))
                     elif obj.side == "Bottom":
-                        beam_objects.append((str(obj), 11, obj.magnitude))
-        output['Beam' + str(index)] = beam_objects
+                        beam_objects.append((str(obj), 11, obj.magnitude))  
+        output['Beam' + str(index)] = (beam.length, beam.orientation, beam_objects)
     return output
 
 
@@ -1031,10 +1078,16 @@ def set_magnitude(obj, entry):
                 new_obj = Load(obj.x_min, obj.y_min, obj.x_max, obj.y_max, 'Up', obj)
                 new_obj.magnitude = entry*(-1)
         new_obj.draw()
+        new_obj.create_label(new_obj, obj)
         delete_object(obj)
         obj = new_obj
     return obj
 
+def set_length(beam, entry):
+    if entry <= 0:
+        print("Beam length must be positive")
+    else:
+        beam.length = entry
 
 def create_entries():
     """
@@ -1044,6 +1097,7 @@ def create_entries():
     force_entries = []
     moment_entries = []
     load_entries = []
+    beam_entries = []
     objects = beam_list[0].objects
     # len item in Loads = 4
     # len item in Forces = 3
@@ -1076,7 +1130,11 @@ def create_entries():
             return output
 
         for e in force_entries:
-            magnitude = float(e[0].get())
+            try:
+                magnitude = float(e[0].get())
+            except:
+                print("Input must be a number")
+                magnitude = 1.0
             scale_factor = convert_unit(str(e[2].get()))
             scaled_magnitude = magnitude * scale_factor
             obj = e[1].cget("text")
@@ -1089,9 +1147,14 @@ def create_entries():
             e[0].insert(0, str(abs(magnitude)))
 
         for e in moment_entries:
-            magnitude = float(e[0].get())
+            try:
+                magnitude = float(e[0].get())
+            except:
+                print("Input must be a number")
+                magnitude = 1.0
             scale_factor = convert_unit(str(e[2].get()))
             scaled_magnitude = magnitude * scale_factor
+
             obj = e[1].cget("text")
             for beam in beam_list:
                 for moment in beam.objects["Moments"]:
@@ -1102,9 +1165,14 @@ def create_entries():
             e[0].insert(0, str(abs(magnitude)))
 
         for e in load_entries:
-            magnitude = float(e[0].get())
+            try:
+                magnitude = float(e[0].get())
+            except:
+                print("Input must be a number")
+                magnitude = 1.0
             scale_factor = convert_unit(str(e[2].get()))
             scaled_magnitude = magnitude * scale_factor
+
             obj = e[1].cget("text")
             for beam in beam_list:
                 for load in beam.objects["Loads"]:
@@ -1113,12 +1181,22 @@ def create_entries():
             set_magnitude(ob, scaled_magnitude)
             e[0].delete(0, END)
             e[0].insert(0, str(abs(magnitude)))
+        for e in beam_entries:
+            try:
+                length = float(e[0].get())
+            except:
+                print("Input must be a number")
+                length = 1.0
+            obj = e[1].cget("text")
+            for beam in beam_list:
+                if beam.label == obj:
+                    ob = beam
+            set_length(ob, length)
+            e[0].delete(0, END)
+            e[0].insert(0, str(length))
 
         print("Output to the FE-calculation script")
         print(fe_input())
-
-    calc_button = Button(e_cnv, text="Calculate", command=lambda: calculate())
-    calc_button.pack(side=BOTTOM)
 
     for load in objects["Loads"]:
         entry_field = Canvas(e_cnv)
@@ -1168,16 +1246,53 @@ def create_entries():
 
         moment_entries.append((entry, label, unit))
 
+    for beam in beam_list: 
+        entry_field = Canvas(e_cnv)
+        entry_field.pack()
+
+        entry = Entry(entry_field)
+        entry.pack(side=RIGHT)
+        entry.insert(0, "1.0")
+
+        label = Label(entry_field, text=beam.label)
+        label.pack(side=LEFT)
+
+        beam_entries.append((entry, label))
+
+    calc_button = Button(e_cnv, text="Calculate", command=lambda: calculate())
+    calc_button.pack(side=RIGHT)
+
+
+def save_image(): #behöver kanske inte vara metod i metod...
+    def save():
+        path = fd.askdirectory()
+        #m_cnv.update()
+        #m_cnv.postscript(file=os.path.join(path, "bild.eps"), colormode='color')
+
+        im = ImageGrab.grab(bbox=(0,0,1200,1000))
+        im.save(os.path.join(path, "bild.png"))
+
+    save_button = Button(e_cnv, text="Save image", command=lambda: save())
+    save_button.pack(side=RIGHT)
+
+
+def exit_canvas():
+    def quit():
+        root.destroy()
+    quit_button = Button(e_cnv, text = 'Quit', command=quit)
+    quit_button.pack(side=RIGHT)
+    
+
+#def rescale_image():
+#    for beam in beam_list:
+#        for obj_type in ["Forces"]:
+
 
 
 draw_all_objects()
 
 create_entries()
-# m_cnv.update()
-m_cnv.postscript(file="imageGenerator/bild.png", colormode='color')
-
-im1 = Image.open(os.path.join(os.getcwd(),"imageGenerator/bild.png"))
-# im1.save(os.path.join(os.getcwd(),"imageGenerator/bild.jpg"))
+save_image()
+exit_canvas()
 
 mainloop()
-# hehe
