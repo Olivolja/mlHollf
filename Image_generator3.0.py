@@ -54,7 +54,6 @@ def get_classes():
     file = open(data_classes)
     for line in file:
         labels.append(line.rstrip("\n"))
-    print(labels)
     return labels
 
 
@@ -99,9 +98,7 @@ def find_closest_object(coord, sides=["Bottom", "Top", "Left", "Right"]):
     """
     shortest_distance = m.inf
     shortest_distance_coordinates = (m.inf, m.inf)
-    print("got to line 102")
     for side in sides:
-        print("sides")
         for item, point, corrected_point in surface_points[side]:
             distance = compute_distance(coord, point)
             if distance < shortest_distance:
@@ -566,7 +563,6 @@ class Load:
         self.x_min = self.leftmost_point[0]
         self.x_max = self.rightmost_point[0]
         self.length = self.x_max - self.x_min
-        print("x_max", self.x_max, "\n", "x_min", self.x_min)
         self.height = self.beam.length/6
         if self.closest_point in self.beam.points["Bottom"]:
             self.y_min = self.closest_point[1]
@@ -827,7 +823,6 @@ def get_objects():
         # df = pd.read_csv(os.path.join(os.getcwd(), "TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv")
     df1 = df[["xmin", "ymin", "xmax", "ymax", "label", "confidence", "x_size", "y_size"]]
     df1 = delete_overlapping_objects(df1)
-    print(df1)
     return (df1)
 
 
@@ -935,12 +930,10 @@ def draw_all_objects():
             roller.draw()
 
         elif obj_type == "load_up":
-            print("load_up")
             load = Load(x_min, y_min, x_max, y_max, "Up")
             load.draw()
 
         elif obj_type == "load_down":
-            print("load_up")
             load = Load(x_min, y_min, x_max, y_max, "Down")
             load.draw()
 
@@ -1016,7 +1009,7 @@ def fe_input():
                         beam_objects.append((str(obj), 0, obj.magnitude))
                     elif obj.side == "Bottom":
                         beam_objects.append((str(obj), 11, obj.magnitude))  
-        output['Beam' + str(index)] = (beam.length, beam.orientation, beam_objects)
+        output['Beam' + str(index)] = (beam.fe_length, beam.orientation, beam_objects)
     return output
 
 
@@ -1078,7 +1071,7 @@ def set_magnitude(obj, entry):
                 new_obj = Load(obj.x_min, obj.y_min, obj.x_max, obj.y_max, 'Up', obj)
                 new_obj.magnitude = entry*(-1)
         new_obj.draw()
-        new_obj.create_label(new_obj, obj)
+        new_obj.label = obj.label
         delete_object(obj)
         obj = new_obj
     return obj
@@ -1087,7 +1080,7 @@ def set_length(beam, entry):
     if entry <= 0:
         print("Beam length must be positive")
     else:
-        beam.length = entry
+        beam.fe_length = entry
 
 def create_entries():
     """
