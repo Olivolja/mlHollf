@@ -5,7 +5,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMGU5NTk4ZTkyM2MwODc3MDk1MmU5NzgzNGQzMzY4MTBjMzJjZmI0YjMzYTY2ZDM1NzBmM2Q0ZDkxMWI1ZDdjZTQwNzllNGNiZTYxNmUxNWU3ZDllMzRhZmMwNzRlZjUxZDU1NmExZTk4OWQ3ZWYxZWNiZDBjN2FmZWY2OTNjNDNhNTM0NDlhNDI1YzMxYjgxYmYyOTU5MTMyNjBkMDc2NiIsIml2IjoiYmVmZDNmM2QzNTU2NmY0YzZlMWQxYWI5YTRkOGYyN2M5MDQxNzBkZmJkODgzYjA2In0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNWY5NDk0MDhlZGQ2ZDRmZjg4MmU2MWIzMTY5ZjExYjk2Yjg4ODIwYWVkMjYxYjIyNWEyMzA1MjY2MGExN2NhNmFiZjhjNTAwNzY0ZTkwMmNkNGU0OWJlNmU3YTU1YzhhYmJhODJlMTc0Zjg5OGVlYmY3MjQ1MzRkOWFlZThiMzU0M2U5MGYyMjhhMTUyMmUzM2MxZmU0OWY2MTllYzAzYSIsIml2IjoiYzU3MjE3MzU5YTZlMWU3YTYyNGE5ZTAxNDUwNzFhZTA5YjRmNGM0YWQ0ZmJmM2I5In0="
         },
         "id": "1oxEIJJQm"
     },
@@ -13,7 +13,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZGQzYzY2OGJhYjFjNzJlMWExNzE3OWIzMTI0OWJiZTc5Yjk0ZjAwZDc2MWI5MjI1NTY2NDY1NjBmN2U3MDlmN2E1MGIxMWI3YjRkMjk2ODJiZjlhZjA4MGYwNGRkZjYzNjhkYmM5OWM1ZGQ4MjY5OGRiOTJiNWEyODdkMGY3MTllNWEyYWIzZGVjYWRkZTgwYThhYzY2YzdkODA1ZDIzMSIsIml2IjoiYWNlNGJhNjNiN2EwNmUyN2EzYjQ0ZTcwYTU3MGIyMjQ5MjE4NThjMGQzZmU4NmZiIn0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYjNiNjM2MThlMmE1NTk1NDcxNTAyZWRiZTVhZDNlNmNhZjQ1MjgyMDJjMDg3NjZmM2ZiNWMxM2Y3N2ZjOTI1MWQ1Y2UwYzZiOGVmN2IwZGVhMGUyZjZkZmY5MTQ0OWY1MDA0NDQyOTg2ZDM2ZmVjNTUxZmJmZDdjNTQxNmZkNmUxNDJiN2E5Nzg1OTA1YTA3YTkxNjljOGNhNmUyYzI2MyIsIml2IjoiNjhlMDAzMzBiN2VmMTBmMzU1ZTM2NWY5YWZlNjlkZDc2NmJhYTM2ZmI2Zjk1MjdkIn0="
         },
         "id": "1oxEIJJQm"
     },
@@ -113,9 +113,9 @@
         "modelPathType": "coco"
     },
     "exportFormat": {
-        "providerType": "vottJson",
+        "providerType": "csv",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNzcwZDRmZWQwM2NlYTljZmY0ZjViNTRhNDE1ZWMwYjU0YThkYWQ5NzEwODQ0NWVlOTk5NTY5NGUyN2UwOTFjMjhjYTI2NDUwNzI3ODZkYjVmNmM2NGJmNDBiYmFmY2U1IiwiaXYiOiI5MjFmMmMxN2NlYmE2OWUzNTVkNzJlYjc5ZTFmNzIwNDUwZmNkMzNhOTU2YWRjMzIifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNWE3ZmY2Njc2Mjg3NGNlOTk5ZWY0NmM5NzkwY2Y0MzVmNjIxYjdmOTU1MWJlNDk2YjZiZWQ5NTBmZDNlNjQ1NjczMzdkN2U3M2JjZWU2YzFlOTQ3YWIxMTg5OWE3MjA3IiwiaXYiOiJiM2VmYzdlYTQxZTkxMzI5OTIyZjhhMDliYmQ0MDIwNTlhNGVkOTRhYTVhM2Q1MmQifQ=="
         }
     },
     "version": "2.1.0",
