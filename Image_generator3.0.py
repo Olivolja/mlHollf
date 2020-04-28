@@ -51,7 +51,7 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
                     shortest_distance = distance
                     shortest_distance_coordinates = point
                     closest_beam = beam
-        return shortest_distance_coordinates, closest_beam
+    return shortest_distance_coordinates, closest_beam
 
 
 # Method for finding the closest possible object for a surface to be put on 
@@ -1124,6 +1124,7 @@ def create_entries():
 
         entry = Entry(entry_field)
         entry.pack(side=RIGHT)
+
         entry.insert(0, "1.0")
         label = Label(entry_field, text=beam.label)
         label.pack(side=LEFT)
