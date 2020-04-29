@@ -140,7 +140,7 @@
             "id": "rLT7CbveK",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise"
+                "roller_support"
             ],
             "boundingBox": {
                 "height": 274.572593357252,
@@ -762,7 +762,7 @@
             "id": "t23R0b6Us",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise"
+                "roller_support"
             ],
             "boundingBox": {
                 "height": 273.0194397993311,

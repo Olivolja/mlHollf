@@ -79,7 +79,7 @@
             "type": "RECTANGLE",
             "tags": [
                 "clockwise",
-                "counterclockwise_left"
+                "clockwise_left"
             ],
             "boundingBox": {
                 "height": 347.9117293852229,
