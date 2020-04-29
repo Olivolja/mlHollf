@@ -1,13 +1,9 @@
-clockwise
-arrow_right
-arrow_left
+arrow_torque
+arrow_horizontal
 beam_90
 ground
 beam
-load_up
-load_down
+load
 roller_support
-counterclockwise
 support
-arrow_down
-arrow_up
+arrow_vertical
