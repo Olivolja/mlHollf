@@ -726,8 +726,7 @@ class Truss:
 
 def get_objects():
     df = pd.read_csv(os.path.join(os.getcwd(), "TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv")
-    #df1 = df[["xmin", "ymin", "xmax", "ymax", "label", "confidence", "x_size", "y_size"]]
-    df1 = df["xmin"]
+    df1 = df[["xmin", "ymin", "xmax", "ymax", "label", "confidence", "x_size", "y_size"]]
 
     df1 = delete_overlapping_objects(df1)
     return (df1)
