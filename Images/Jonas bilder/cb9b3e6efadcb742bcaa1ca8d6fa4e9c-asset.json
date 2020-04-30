@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "cb9b3e6efadcb742bcaa1ca8d6fa4e9c",
         "name": "20200331_155224.jpg",
-        "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155224.jpg",
+        "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155224.jpg",
         "size": {
             "width": 4128,
             "height": 2322
@@ -447,6 +447,37 @@
                 {
                     "x": 454.77966101694915,
                     "y": 1720.4836650325303
+                }
+            ]
+        },
+        {
+            "id": "j0Io8X1c-",
+            "type": "RECTANGLE",
+            "tags": [
+                "arrow_up"
+            ],
+            "boundingBox": {
+                "height": 289.86049780109585,
+                "width": 134.09176091094193,
+                "left": 703.9818934799929,
+                "top": 2025.3216086266025
+            },
+            "points": [
+                {
+                    "x": 703.9818934799929,
+                    "y": 2025.3216086266025
+                },
+                {
+                    "x": 838.0736543909348,
+                    "y": 2025.3216086266025
+                },
+                {
+                    "x": 838.0736543909348,
+                    "y": 2315.1821064276983
+                },
+                {
+                    "x": 703.9818934799929,
+                    "y": 2315.1821064276983
                 }
             ]
         }

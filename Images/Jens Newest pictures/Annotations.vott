@@ -5,7 +5,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYmY3Yjc4MTYwNmZjMWFiODdjNjA1NzkwYjRlMzNlYTM0YjlmYjMxNWQ1ZmQ2MWU3YzgzZmUwZGJkYzQ2NDgwZGE4MDNjNDY4MzZkN2UzZWZhNzQwZTBkNWMyYWU0MjhiYmIzYjY4MWFlZTQ2MjdhZDcyYmE1NTQwOGZkOWVlNmZmOWM4ZmU4OWE3MDY4NzNiYzM0ZTA2YWEyNWUwMmNlNCIsIml2IjoiNWM3YWU5NjM2ZWZmNGVkNTJiNzFiNTgxOTg4ODhhNWY5NGI0MTk4YjU3YzBlNzhkIn0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNWY5NDk0MDhlZGQ2ZDRmZjg4MmU2MWIzMTY5ZjExYjk2Yjg4ODIwYWVkMjYxYjIyNWEyMzA1MjY2MGExN2NhNmFiZjhjNTAwNzY0ZTkwMmNkNGU0OWJlNmU3YTU1YzhhYmJhODJlMTc0Zjg5OGVlYmY3MjQ1MzRkOWFlZThiMzU0M2U5MGYyMjhhMTUyMmUzM2MxZmU0OWY2MTllYzAzYSIsIml2IjoiYzU3MjE3MzU5YTZlMWU3YTYyNGE5ZTAxNDUwNzFhZTA5YjRmNGM0YWQ0ZmJmM2I5In0="
         },
         "id": "1oxEIJJQm"
     },
@@ -13,7 +13,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYzc3M2Y0MTUyNjFlZDc2YjIzMGZkYTgyODc3NjMwNDYyODc1OWFiNWU1Mzk0YmJmMzc4ZWNjMmVlNTY2NDhiMTJmNmM2ZTczYjc2NWY2ZmY3ZmFlNGYyNGU1NmVhOTI4YWRkZjk0MmEzMGY5OGFjOTVhOTc4ZjJjMDVhMDQ3OGZkN2Q1NGUyMWEyMDgwZDU1ZDIwN2E2ZGExZTMzMTE0MyIsIml2IjoiNmRlM2JmZmQ5MWFlZDE1ZjMxMGI0NmRhYjAxY2VkNTAyYjUyN2NkMGM0MTA0ZWQwIn0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYjNiNjM2MThlMmE1NTk1NDcxNTAyZWRiZTVhZDNlNmNhZjQ1MjgyMDJjMDg3NjZmM2ZiNWMxM2Y3N2ZjOTI1MWQ1Y2UwYzZiOGVmN2IwZGVhMGUyZjZkZmY5MTQ0OWY1MDA0NDQyOTg2ZDM2ZmVjNTUxZmJmZDdjNTQxNmZkNmUxNDJiN2E5Nzg1OTA1YTA3YTkxNjljOGNhNmUyYzI2MyIsIml2IjoiNjhlMDAzMzBiN2VmMTBmMzU1ZTM2NWY5YWZlNjlkZDc2NmJhYTM2ZmI2Zjk1MjdkIn0="
         },
         "id": "1oxEIJJQm"
     },
@@ -113,13 +113,13 @@
         "modelPathType": "coco"
     },
     "exportFormat": {
-        "providerType": "vottJson",
+        "providerType": "csv",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiY2VmY2ZhYTdiM2Y2MzRkMzMxMDVkNWUxY2JhZmNlMzAzNTg0M2E5ODFkZjQwMDM5Mjk1NjliMzFiZjVkYzY1YjY2NjAwMDA0NmQ1MWMzNmYwYzVmMjAzZGUxMDQ0YzZkIiwiaXYiOiJjZTEyNjZjZTJjZDY3YjYyYzVjYTQ3YjY0YjA0NjhmZjMxNTAyN2M1NDdlY2ViOTkifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNWE3ZmY2Njc2Mjg3NGNlOTk5ZWY0NmM5NzkwY2Y0MzVmNjIxYjdmOTU1MWJlNDk2YjZiZWQ5NTBmZDNlNjQ1NjczMzdkN2U3M2JjZWU2YzFlOTQ3YWIxMTg5OWE3MjA3IiwiaXYiOiJiM2VmYzdlYTQxZTkxMzI5OTIyZjhhMDliYmQ0MDIwNTlhNGVkOTRhYTVhM2Q1MmQifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "058c24d6368b352fc615fea7af280e60",
+    "lastVisitedAssetId": "55864a3a87c1c3188b4a808524d4d7c5",
     "assets": {
         "7559a5bdd4e2fcbf598948fb365f532a": {
             "format": "jpg",

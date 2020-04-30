@@ -5,7 +5,6 @@
 #--From .gitignore of TrainYourOwnYOLO----
 
 # Keras model files
-*.h5
 *.weights
 
 # tf event files

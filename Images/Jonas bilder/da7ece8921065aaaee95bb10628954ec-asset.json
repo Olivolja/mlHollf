@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "da7ece8921065aaaee95bb10628954ec",
         "name": "20200331_155144.jpg",
-        "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155144.jpg",
+        "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155144.jpg",
         "size": {
             "width": 4128,
             "height": 2322
@@ -140,7 +140,7 @@
             "id": "rLT7CbveK",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise"
+                "roller_support"
             ],
             "boundingBox": {
                 "height": 274.572593357252,
@@ -762,7 +762,7 @@
             "id": "t23R0b6Us",
             "type": "RECTANGLE",
             "tags": [
-                "counterclockwise"
+                "roller_support"
             ],
             "boundingBox": {
                 "height": 273.0194397993311,

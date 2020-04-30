@@ -5,7 +5,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYTQ1OWQ1M2YyY2ZjYmRiMDI0ZTlmNmY1OGM3ZDczM2FmOGYyOGEzNWI5NmZkNjBmMGZmYmMzMGQ5NzdhNTc1NjgwZmI2YzMxZmViZjc5OGJhZjFiNjM3Njg1MmU0YjExNGEwYjIzYzhmMjYzMzFiMWY4OGFiY2ViNWQ2MTk0OWQwZWVkNDkzZGEzMmU1YmU4MmU0NTg1YTY4ZTE4OGIzMiIsIml2IjoiOWVkZTEyN2M2ZmU4Y2I1MzliYTdiYWZlMmNkMTk0YmU2OTBhMzIwMDJmMzMxOTVkIn0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYmE0YjZkY2YxMzc4MTE2ZDliYTEzZmU4YTIyMTVkMzUzNDc4ZDczYmQ1NzZjZGVhOGUzNTY4YTJkMjExZjRjNGQ4NTQzYjk0NWY5NDFlMjYxZjk4ODRhMjRjNTExYTFkYWY0NjkwNTczOWI3ZDczYjNlZmMxOGRkYzI2OTc1MmUxMTBkYjA0YWU5NTNjODhhNzkxZmYwM2MzZGZmYjQ0NCIsIml2IjoiY2JlNDEzNjBjZmY0MTY5YjJhZGUzNDg5YmEwMWZmNjg5ZDgyNDk4OWNkOTNlNjkwIn0="
         },
         "id": "80ziSuWyC"
     },
@@ -13,7 +13,7 @@
         "name": "Images",
         "providerType": "localFileSystemProxy",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOGUxMDI1Yjk5ZDNmMjc4NDQ5NTcyNWE5N2E1ODc1ZGEyMDEzODk5MjIyMWZiNGI5N2UxZDVlNTFmZWYyNmZmNGE1MmQzNGE2YmYxMGVlODk5ZWVhNjYyZDE1ZWE1OGQ2OGMzZWMwN2E4MzAxODZjNGU0YjIxNTRjYjg1ODNiZWNjNDM2MzE0MzI3NWM5YTNlMTkyMmQ0MTQwNzM3ODJmZiIsIml2IjoiYzg5NzdjZDMzYWYxNDFmZTU2OGMxNGQ2NDExMmI4YTY0NjQ1ZWY1NDJiY2Q1MzQxIn0="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZjM0YjliYWFkZDBmNmRhZDdjZTFjNzQwMjE3MmIxZjM0MDg1YTExMDkwNjVjZjBmZjRiNDQ4ZjI1ODJkZDBhNjljM2I4YzU4ZTVjYTIyOWFhNzZhYmIxNmJkYmI1NTI3MTNjYTQ3MzllMDkzY2RlNmFiN2Y5MmE5ZDc0Njk1MzVkODljZmI0OWQwY2VmZjc0ZDg1ZTQzZTJhY2QzZWJiYyIsIml2IjoiNjMxMDM3YzRhMTM3ODdkYWFhZjU2NzRmOWQ1ODE3M2E1ZWU4NTBkNGFmYmQ4ZGQ5In0="
         },
         "id": "80ziSuWyC"
     },
@@ -115,17 +115,17 @@
     "exportFormat": {
         "providerType": "vottJson",
         "providerOptions": {
-            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMGJjNTliOTg5M2EzMTlhOTJlMDkxMzg0YjllOWRhNmMxYzhhYWRiOTY5OWY5ODJiN2I5YzBkYmU5MDg4MGVlYjQ1MGI3YTAzNjYyNmY1NzYwODJhMWEwZWVkNTYwOWNiIiwiaXYiOiJhOWRlMmRiMjUzM2JhNmEzNjBhZWRhY2M2MWUzOWY4MTQ0NzhjZmM4YmZhNjk1MzgifQ=="
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiN2NiYjIzMjlkZWI5OGE5OTRkMzY3NjQyOGRjZWYxZGVhNmM1ZTk1ZTA5NzAxNzZiMjNlODQ5MDMzODBmMmJiZTgzY2RjYmM0YzJjYjJmM2Y2NGEzNTE2ZTcwZTViZDA3IiwiaXYiOiJkNTAyNDk1MzVhMDUyODk4OWNlMmNjYzVkNGUwNTViZmFmYWIxMWMzNWQxN2ZkMjcifQ=="
         }
     },
     "version": "2.1.0",
-    "lastVisitedAssetId": "3eceead89ce10de46e2d26a4b72c635e",
+    "lastVisitedAssetId": "3373265cb0e4506a45baade72350baad",
     "assets": {
         "33edda9d113558e1e953b692b620ae4e": {
             "format": "jpg",
             "id": "33edda9d113558e1e953b692b620ae4e",
             "name": "20200331_154303.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154303.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154303.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -137,7 +137,7 @@
             "format": "jpg",
             "id": "eca51192249cf9c3a9645f04bec14098",
             "name": "20200331_154306.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154306.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154306.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -149,7 +149,7 @@
             "format": "jpg",
             "id": "df9523a0ec1fa5050607db9eb5ac76c4",
             "name": "20200331_154311.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154311.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154311.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -161,7 +161,7 @@
             "format": "jpg",
             "id": "86b5df090795a87bf70d674ef08a07e2",
             "name": "20200331_154317.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154317.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154317.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -173,7 +173,7 @@
             "format": "jpg",
             "id": "234132ae0a27089cdbbd6890caccae27",
             "name": "20200331_154323.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154323.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154323.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -185,7 +185,7 @@
             "format": "jpg",
             "id": "c1af4c0d948af9096360f32dbc8f655f",
             "name": "20200331_154331.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154331.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154331.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -197,7 +197,7 @@
             "format": "jpg",
             "id": "fdacc4435b1c43bc4091d847c911c7de",
             "name": "20200331_154338.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154338.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154338.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -209,7 +209,7 @@
             "format": "jpg",
             "id": "a3a2d9a389c2f04f473d137351b9f861",
             "name": "20200331_154346.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154346.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154346.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -221,7 +221,7 @@
             "format": "jpg",
             "id": "9a33bb51d19af9298b1e3d5d26605d85",
             "name": "20200331_154400.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154400.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154400.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -233,7 +233,7 @@
             "format": "jpg",
             "id": "4cb830f183b80b7650cf7b74129f45e7",
             "name": "20200331_154409.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154409.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154409.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -245,7 +245,7 @@
             "format": "jpg",
             "id": "8ba8149dcc2897b55241bb17997b26a0",
             "name": "20200331_154424.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154424.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154424.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -257,7 +257,7 @@
             "format": "jpg",
             "id": "361d6d8312c8cb9aaa9f11510e62507a",
             "name": "20200331_154436.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154436.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154436.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -269,7 +269,7 @@
             "format": "jpg",
             "id": "c2e44d08c0d2059e9c63a0231773fff4",
             "name": "20200331_154449.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154449.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154449.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -281,7 +281,7 @@
             "format": "jpg",
             "id": "dd8d1c79363ec75ae8a8a2c56667e091",
             "name": "20200331_154456.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154456.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154456.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -293,7 +293,7 @@
             "format": "jpg",
             "id": "9b35a06f78ab766eb8354bdfb3595593",
             "name": "20200331_154512.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154512.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154512.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -305,7 +305,7 @@
             "format": "jpg",
             "id": "de680fc762feb43709080ea082e2d5e0",
             "name": "20200331_154516.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154516.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154516.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -317,7 +317,7 @@
             "format": "jpg",
             "id": "376f790ceca587fb48d5c79937da4147",
             "name": "20200331_154524.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154524.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154524.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -329,7 +329,7 @@
             "format": "jpg",
             "id": "e9d3124227217127557c6ea67a237a88",
             "name": "20200331_154534.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154534.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154534.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -341,7 +341,7 @@
             "format": "jpg",
             "id": "bc8532bdcc2e5f19ba81738310a4873a",
             "name": "20200331_154541.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154541.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154541.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -353,7 +353,7 @@
             "format": "jpg",
             "id": "c75597237de067ce2f0b2d5c2d5358e1",
             "name": "20200331_154549.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154549.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154549.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -365,7 +365,7 @@
             "format": "jpg",
             "id": "e2bee092c444cf8eccbed7357067f3af",
             "name": "20200331_154554.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154554.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154554.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -377,7 +377,7 @@
             "format": "jpg",
             "id": "c285ca152e87ff23b5df541d734421c9",
             "name": "20200331_154604.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154604.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154604.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -389,7 +389,7 @@
             "format": "jpg",
             "id": "d6c2a405b212077e59e00101a0b11771",
             "name": "20200331_154632.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154632.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154632.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -401,7 +401,7 @@
             "format": "jpg",
             "id": "070d73e6d2285c9a669c129c42d117a7",
             "name": "20200331_154637.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154637.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154637.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -413,7 +413,7 @@
             "format": "jpg",
             "id": "671be5d7f935516d44cc8fb835a73bc0",
             "name": "20200331_154644.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154644.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154644.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -425,7 +425,7 @@
             "format": "jpg",
             "id": "d6f87da719e944a85a9f28597af4ad50",
             "name": "20200331_154658.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154658.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154658.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -437,7 +437,7 @@
             "format": "jpg",
             "id": "b5d1f459ce72b01829d169256b3e65d2",
             "name": "20200331_154712.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154712.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154712.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -449,7 +449,7 @@
             "format": "jpg",
             "id": "fe54087ef6d704081ac761da11f2fb80",
             "name": "20200331_154716.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154716.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154716.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -461,7 +461,7 @@
             "format": "jpg",
             "id": "8b0fa2e22b20cd62fc90e1864737cb2c",
             "name": "20200331_154720.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154720.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154720.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -473,7 +473,7 @@
             "format": "jpg",
             "id": "1c315d0ebdfc11fe412444d57862cfc3",
             "name": "20200331_154724.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154724.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154724.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -485,7 +485,7 @@
             "format": "jpg",
             "id": "229f86e4827dea7c292c9454478e274d",
             "name": "20200331_154730.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154730.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154730.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -497,7 +497,7 @@
             "format": "jpg",
             "id": "7d18c8d5a0c3fce9480f40a7d1e95f1c",
             "name": "20200331_154737.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154737.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154737.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -509,7 +509,7 @@
             "format": "jpg",
             "id": "f862fa6b141e2ccc7f9043c7d0304d24",
             "name": "20200331_154743.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154743.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154743.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -521,7 +521,7 @@
             "format": "jpg",
             "id": "c482ebc1b2fe55649420e70b46b9dd42",
             "name": "20200331_154748.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154748.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154748.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -533,7 +533,7 @@
             "format": "jpg",
             "id": "6c12593cd1a516697bb5c84507462cfd",
             "name": "20200331_154802.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154802.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154802.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -545,7 +545,7 @@
             "format": "jpg",
             "id": "a603a2685e98180fbe4fbc08da95a3cb",
             "name": "20200331_154811.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154811.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154811.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -557,7 +557,7 @@
             "format": "jpg",
             "id": "59dae77aa69631fab8891a2c4bea3d8a",
             "name": "20200331_154816.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154816.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154816.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -569,7 +569,7 @@
             "format": "jpg",
             "id": "95b3fba6ed06e737798614fe551e080b",
             "name": "20200331_154821.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154821.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154821.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -581,7 +581,7 @@
             "format": "jpg",
             "id": "d0ec11b6c4a808fa0b925bf2c84b9ee0",
             "name": "20200331_154831.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154831.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154831.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -593,7 +593,7 @@
             "format": "jpg",
             "id": "9acdc65297777a409e84bfabbd75d7d5",
             "name": "20200331_154838.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154838.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154838.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -605,7 +605,7 @@
             "format": "jpg",
             "id": "8d98b96dd09b3c85c14afbeedffe25ea",
             "name": "20200331_154844.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154844.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154844.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -617,7 +617,7 @@
             "format": "jpg",
             "id": "51c4c1fe46c6fd48ad18568b714da545",
             "name": "20200331_154858.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154858.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154858.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -629,7 +629,7 @@
             "format": "jpg",
             "id": "c2553fb8586ef0280719a4bef72d894c",
             "name": "20200331_154902.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154902.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154902.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -640,8 +640,8 @@
         "db4ff275c0a694021a91e3c73340f35a": {
             "format": "jpg",
             "id": "db4ff275c0a694021a91e3c73340f35a",
-            "name": "20200331_154905.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154905.jpg",
+            "name": "20200331_154905Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154905Jonas.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -653,7 +653,7 @@
             "format": "jpg",
             "id": "122154fd02cd1b9c160315001389e490",
             "name": "20200331_154910.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154910.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154910.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -665,7 +665,7 @@
             "format": "jpg",
             "id": "ce1c0e3763a75ce2b3e45399f1ef1c56",
             "name": "20200331_154916.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154916.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154916.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -676,8 +676,8 @@
         "fbf6e9add9e55eee794480cb6d4adfbf": {
             "format": "jpg",
             "id": "fbf6e9add9e55eee794480cb6d4adfbf",
-            "name": "20200331_154922.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154922.jpg",
+            "name": "20200331_154922Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154922Jonas.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -689,7 +689,7 @@
             "format": "jpg",
             "id": "b14db35db47343ee9c016d2969b1ccb9",
             "name": "20200331_154926.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154926.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154926.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -701,7 +701,7 @@
             "format": "jpg",
             "id": "9cd4cbc679d3a95e1ac6f9d2eed53470",
             "name": "20200331_154933.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154933.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154933.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -713,7 +713,7 @@
             "format": "jpg",
             "id": "55a3225415d8a9e353a0ba9f899d20df",
             "name": "20200331_154938.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154938.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154938.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -724,8 +724,8 @@
         "264eaacb004f661ac2bc7a3f84588e36": {
             "format": "jpg",
             "id": "264eaacb004f661ac2bc7a3f84588e36",
-            "name": "20200331_154943.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154943.jpg",
+            "name": "20200331_154943Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154943Jonas.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -737,7 +737,7 @@
             "format": "jpg",
             "id": "a2f96438761f9cdc9dde96ffa0829309",
             "name": "20200331_154949.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154949.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154949.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -749,7 +749,7 @@
             "format": "jpg",
             "id": "bfa9d5a28c08ebf5ce739557bef4493c",
             "name": "20200331_154954.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154954.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154954.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -761,7 +761,7 @@
             "format": "jpg",
             "id": "5cd994c2e5efb4339b7330fba67cc6a7",
             "name": "20200331_154959.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_154959.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154959.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -773,7 +773,7 @@
             "format": "jpg",
             "id": "58b366b562821cbf91229c021b9423cb",
             "name": "20200331_155004.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155004.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155004.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -785,7 +785,7 @@
             "format": "jpg",
             "id": "7188ac17e2755436f1c04c62ac987b8d",
             "name": "20200331_155012.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155012.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155012.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -797,7 +797,7 @@
             "format": "jpg",
             "id": "6512a2f2746914981e90ba13b42a471f",
             "name": "20200331_155021.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155021.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155021.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -809,7 +809,7 @@
             "format": "jpg",
             "id": "b19a66efd0eb4817fe62161b5873fe53",
             "name": "20200331_155026.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155026.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155026.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -820,8 +820,8 @@
         "b3809f53e5f2edea69dc831bb0f3317a": {
             "format": "jpg",
             "id": "b3809f53e5f2edea69dc831bb0f3317a",
-            "name": "20200331_155029.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155029.jpg",
+            "name": "20200331_155029Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155029Jonas.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -833,7 +833,7 @@
             "format": "jpg",
             "id": "12e9e890e097bdbeabb222212c3353ae",
             "name": "20200331_155036.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155036.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155036.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -845,7 +845,7 @@
             "format": "jpg",
             "id": "f66c91e0c823a3230504521fefeb0899",
             "name": "20200331_155041.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155041.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155041.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -857,7 +857,7 @@
             "format": "jpg",
             "id": "22893a2139a019727bcf513d7f306461",
             "name": "20200331_155046.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155046.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155046.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -869,7 +869,7 @@
             "format": "jpg",
             "id": "6745ce21bb748f45852279e5b59ea841",
             "name": "20200331_155059.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155059.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155059.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -881,7 +881,7 @@
             "format": "jpg",
             "id": "15475bd5de796713ea5ae2c0535b7e3c",
             "name": "20200331_155108.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155108.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155108.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -893,7 +893,7 @@
             "format": "jpg",
             "id": "af8ace1bbe4819edb6d347e9b85c6e53",
             "name": "20200331_155115.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155115.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155115.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -904,8 +904,8 @@
         "81ce2653277f5fc869e7c691981ee822": {
             "format": "jpg",
             "id": "81ce2653277f5fc869e7c691981ee822",
-            "name": "20200331_155121.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155121.jpg",
+            "name": "20200331_155121Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155121Jonas.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -917,7 +917,7 @@
             "format": "jpg",
             "id": "1b96e7e12f7ac28963783f6f6a1ac380",
             "name": "20200331_155127.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155127.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155127.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -929,7 +929,7 @@
             "format": "jpg",
             "id": "66648d334876f89bb37caefb6d794680",
             "name": "20200331_155132.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155132.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155132.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -941,7 +941,7 @@
             "format": "jpg",
             "id": "126dadd1f2af9c715a44d71a526a5273",
             "name": "20200331_155138.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155138.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155138.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -953,7 +953,7 @@
             "format": "jpg",
             "id": "da7ece8921065aaaee95bb10628954ec",
             "name": "20200331_155144.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155144.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155144.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -965,7 +965,7 @@
             "format": "jpg",
             "id": "607e2bffb15ea915e34413d3402b15f7",
             "name": "20200331_155152.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155152.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155152.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -977,7 +977,7 @@
             "format": "jpg",
             "id": "ac384ad8b6bd4e89a095331c136362b5",
             "name": "20200331_155155.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155155.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155155.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -989,7 +989,7 @@
             "format": "jpg",
             "id": "6041a2d1843d3d09e9ef0d3d29edfd5e",
             "name": "20200331_155159.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155159.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155159.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1001,7 +1001,7 @@
             "format": "jpg",
             "id": "cd84667e3b1f5d09fceb7d00329e2df0",
             "name": "20200331_155204.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155204.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155204.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1013,7 +1013,7 @@
             "format": "jpg",
             "id": "98e12c1cf26097f857caefcc4cf7845a",
             "name": "20200331_155208.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155208.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155208.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1025,7 +1025,7 @@
             "format": "jpg",
             "id": "62201b23bab0a1f8425edafcb01d3c26",
             "name": "20200331_155212.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155212.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155212.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1037,7 +1037,7 @@
             "format": "jpg",
             "id": "05a3c653c184278ad347af924fcc47d6",
             "name": "20200331_155216.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155216.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155216.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1049,7 +1049,7 @@
             "format": "jpg",
             "id": "cb9b3e6efadcb742bcaa1ca8d6fa4e9c",
             "name": "20200331_155224.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155224.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155224.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1061,7 +1061,7 @@
             "format": "jpg",
             "id": "93d0b5554bcfa7ccb874cdd49c689818",
             "name": "20200331_155239.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155239.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155239.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1073,7 +1073,7 @@
             "format": "jpg",
             "id": "719ad0b6fe39dee555196469e49fa9ee",
             "name": "20200331_155250.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155250.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155250.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1085,7 +1085,7 @@
             "format": "jpg",
             "id": "70097cc2d3ba05f061c39c7dcbe34543",
             "name": "20200331_155256.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155256.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155256.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1097,7 +1097,7 @@
             "format": "jpg",
             "id": "a4011d067e2b7efbd97a0b802ca81a4a",
             "name": "20200331_155315.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155315.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155315.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1109,7 +1109,7 @@
             "format": "jpg",
             "id": "224acdfcbf675d793b25a48af30f0422",
             "name": "20200331_155319.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155319.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155319.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1121,7 +1121,7 @@
             "format": "jpg",
             "id": "c570159dca081d59e326409031f4077e",
             "name": "20200331_155324.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155324.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155324.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1133,7 +1133,7 @@
             "format": "jpg",
             "id": "c8d7d810d1ef24ad44dd5c3491966b6c",
             "name": "20200331_155706.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155706.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155706.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1145,7 +1145,7 @@
             "format": "jpg",
             "id": "d8f03c27aa9c0f2630d06a8efdbe292f",
             "name": "20200331_155758.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155758.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155758.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1157,7 +1157,7 @@
             "format": "jpg",
             "id": "be522e02a990456dd29f8c4b7b58f145",
             "name": "20200331_155807.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155807.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155807.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1169,7 +1169,7 @@
             "format": "jpg",
             "id": "24d9dadfe09d1443d497c95e137e3461",
             "name": "20200331_155814.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155814.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155814.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1181,7 +1181,7 @@
             "format": "jpg",
             "id": "5d948730e8e5b73acff0aafe98489cac",
             "name": "20200331_155820.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155820.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155820.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1193,7 +1193,7 @@
             "format": "jpg",
             "id": "b11d322c71556c55480cf29239ad092e",
             "name": "20200331_155824.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155824.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155824.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1205,7 +1205,7 @@
             "format": "jpg",
             "id": "72f57a0658ade8755844357a6b44eed7",
             "name": "20200331_155829.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155829.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155829.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1217,7 +1217,7 @@
             "format": "jpg",
             "id": "9f461895b633d6b5dce4fcb4911ee8fd",
             "name": "20200331_155835.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155835.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155835.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1229,7 +1229,7 @@
             "format": "jpg",
             "id": "8fe1bea506616b15decbfda38cf3746b",
             "name": "20200331_155845.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155845.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155845.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1241,7 +1241,7 @@
             "format": "jpg",
             "id": "2c21113d263e177525e8c26abef92a7a",
             "name": "20200331_155953.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155953.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155953.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1253,7 +1253,7 @@
             "format": "jpg",
             "id": "0378d55615baa1038527a7b9a104074a",
             "name": "20200331_155959.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_155959.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155959.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1265,7 +1265,7 @@
             "format": "jpg",
             "id": "e9133d5002c64411cf98e4826b67e00d",
             "name": "20200331_160007.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160007.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160007.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1277,7 +1277,7 @@
             "format": "jpg",
             "id": "717ff5238f5c015244ab38925238b5fe",
             "name": "20200331_160022.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160022.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160022.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1289,7 +1289,7 @@
             "format": "jpg",
             "id": "be1d3cc570de73618c928344d657a284",
             "name": "20200331_160041.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160041.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160041.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1301,7 +1301,7 @@
             "format": "jpg",
             "id": "eb54c9a6d206e8c9fdf15162f198794a",
             "name": "20200331_160047.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160047.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160047.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1313,7 +1313,7 @@
             "format": "jpg",
             "id": "fffef3f703c5f632ae8dd5bd26aa5a2a",
             "name": "20200331_160054.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160054.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160054.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1325,7 +1325,7 @@
             "format": "jpg",
             "id": "403f4a83feaed9468510b58bf590acfe",
             "name": "20200331_160101.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160101.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160101.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1337,7 +1337,7 @@
             "format": "jpg",
             "id": "a821ed99d98e47d7df75c2d2cdf610ca",
             "name": "20200331_160107.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160107.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160107.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1349,7 +1349,7 @@
             "format": "jpg",
             "id": "3686ba75a6fb44d2b75f936a15828066",
             "name": "20200331_160117.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160117.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160117.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1361,7 +1361,7 @@
             "format": "jpg",
             "id": "e3f8c6ffcd20d89ccdac30139c2666fa",
             "name": "20200331_160208.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160208.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160208.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1373,7 +1373,7 @@
             "format": "jpg",
             "id": "396e4fa4afe96643816c3539ae7f613f",
             "name": "20200331_160213.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160213.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160213.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1385,7 +1385,7 @@
             "format": "jpg",
             "id": "73335f31045d94a6095dc20df2cc3eb4",
             "name": "20200331_160222.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160222.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160222.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1397,7 +1397,7 @@
             "format": "jpg",
             "id": "45b414204a7c47205a544720fc7b3153",
             "name": "20200331_160255.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160255.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160255.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1409,7 +1409,7 @@
             "format": "jpg",
             "id": "7850e1f453c4f97be21397cad9fd6edb",
             "name": "20200331_160259.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160259.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160259.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1421,7 +1421,7 @@
             "format": "jpg",
             "id": "4d2fe3ecd4298c30043c68bd23411ec9",
             "name": "20200331_160308.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160308.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160308.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1433,7 +1433,7 @@
             "format": "jpg",
             "id": "9ce087971207c8ce7880456866b84d59",
             "name": "20200331_160315.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160315.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160315.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1445,7 +1445,7 @@
             "format": "jpg",
             "id": "02f32f02bbf7dc5f753a598352c325ec",
             "name": "20200331_160323.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160323.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160323.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1457,7 +1457,7 @@
             "format": "jpg",
             "id": "997058f4def2c4733db8408d0184736a",
             "name": "20200331_160332.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160332.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160332.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1469,7 +1469,7 @@
             "format": "jpg",
             "id": "37af55fb03f81275b6563073edc2674a",
             "name": "20200331_160338.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160338.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160338.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1481,7 +1481,7 @@
             "format": "jpg",
             "id": "a561ddd5c77a391f813eba86ac38287a",
             "name": "20200331_160402.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160402.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160402.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1493,7 +1493,7 @@
             "format": "jpg",
             "id": "63610a931bc005eb274db0730b357a98",
             "name": "20200331_160406.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160406.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160406.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1505,7 +1505,7 @@
             "format": "jpg",
             "id": "e75a5f2ed7e92bf1486500c1e75a9548",
             "name": "20200331_160414.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160414.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160414.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1517,7 +1517,7 @@
             "format": "jpg",
             "id": "ed9f88a1ab20b5d49b6b38f465571149",
             "name": "20200331_160418.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160418.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160418.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1529,7 +1529,7 @@
             "format": "jpg",
             "id": "3465dfc66eed1909cac3096161f77354",
             "name": "20200331_160422.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160422.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160422.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1541,7 +1541,7 @@
             "format": "jpg",
             "id": "af0c8d2dd0cf688594c7940e5867c0ec",
             "name": "20200331_160428.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160428.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160428.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1553,7 +1553,7 @@
             "format": "jpg",
             "id": "4e2cf1559f9150ac65c41c0b5545f46d",
             "name": "20200331_160438.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160438.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160438.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1565,7 +1565,7 @@
             "format": "jpg",
             "id": "b35818095340c1d133c089003cfb3b1c",
             "name": "20200331_160445.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160445.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160445.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1577,7 +1577,7 @@
             "format": "jpg",
             "id": "29f3058543b1f53d470508154c4fa865",
             "name": "20200331_160451.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160451.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160451.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1589,7 +1589,7 @@
             "format": "jpg",
             "id": "3fef7ba4ba4461e6a7b17331dbe4f0b1",
             "name": "20200331_160518.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160518.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160518.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1601,7 +1601,7 @@
             "format": "jpg",
             "id": "f938c49ab193f2f1a23d7ee1253eef91",
             "name": "20200331_160529.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160529.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160529.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1613,7 +1613,7 @@
             "format": "jpg",
             "id": "79e2b27029d4fb039832c50765f5ebc5",
             "name": "20200331_160533.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160533.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160533.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1625,7 +1625,7 @@
             "format": "jpg",
             "id": "153f8ecca8310482b7ed7b080d8e1b17",
             "name": "20200331_160541.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160541.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160541.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1637,7 +1637,7 @@
             "format": "jpg",
             "id": "3605e7523a2cff05c206b2e98fc9cf10",
             "name": "20200331_160548.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160548.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160548.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1649,7 +1649,7 @@
             "format": "jpg",
             "id": "92c9a63907505a6a881d9f890822c90c",
             "name": "20200331_160557.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160557.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160557.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1661,7 +1661,7 @@
             "format": "jpg",
             "id": "305a323d0ef2c3478c4deb609e9abd30",
             "name": "20200331_160603.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160603.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160603.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1673,7 +1673,7 @@
             "format": "jpg",
             "id": "fe4bd78fb9dec78da7f50954fa1c9055",
             "name": "20200331_160614.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160614.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160614.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1685,7 +1685,7 @@
             "format": "jpg",
             "id": "8b7ca2f3a14b61beba01e6ccc872a40d",
             "name": "20200331_160620.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160620.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160620.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1697,7 +1697,7 @@
             "format": "jpg",
             "id": "f45e683e798bd9fc712d544fb63522fc",
             "name": "20200331_160626.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160626.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160626.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1709,7 +1709,7 @@
             "format": "jpg",
             "id": "1d9519e3d12d416fc0c3a0efaef2e3ef",
             "name": "20200331_160632.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160632.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160632.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1721,7 +1721,7 @@
             "format": "jpg",
             "id": "75ddcfca2b861f4ea65248f0815df8ee",
             "name": "20200331_160640.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160640.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160640.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1733,7 +1733,7 @@
             "format": "jpg",
             "id": "c12eefb5a4e267186ecb1c351833f8cc",
             "name": "20200331_160653.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160653.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160653.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1745,7 +1745,7 @@
             "format": "jpg",
             "id": "7114c860d82feacc5f95b4fb182f64ee",
             "name": "20200331_160659.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160659.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160659.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1757,7 +1757,7 @@
             "format": "jpg",
             "id": "d218feae411c10fd2a174fad9f8cf36a",
             "name": "20200331_160710.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160710.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160710.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1769,7 +1769,7 @@
             "format": "jpg",
             "id": "8588c021a5430d087430602d053abd29",
             "name": "20200331_160715.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160715.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160715.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1781,7 +1781,7 @@
             "format": "jpg",
             "id": "eec09a52f5b2671226b7cbfbe6a8497e",
             "name": "20200331_160727.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160727.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160727.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1793,7 +1793,7 @@
             "format": "jpg",
             "id": "e99d409eb724072a14119caf0b0a8f27",
             "name": "20200331_160745.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160745.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160745.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1805,7 +1805,7 @@
             "format": "jpg",
             "id": "77a6ad1edd26eb8fb7421d29c6596f43",
             "name": "20200331_160756.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160756.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160756.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1817,7 +1817,7 @@
             "format": "jpg",
             "id": "9e79677dc756cc45609737d6b831f437",
             "name": "20200331_160835.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160835.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160835.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1829,7 +1829,7 @@
             "format": "jpg",
             "id": "9f664887fbbb175eb8914055630d6069",
             "name": "20200331_160844.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160844.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160844.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1841,7 +1841,7 @@
             "format": "jpg",
             "id": "bf0e8198cdfc831978bef82a117d992d",
             "name": "20200331_160813.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160813.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160813.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1853,7 +1853,7 @@
             "format": "jpg",
             "id": "fbe1f4b0debd54584b9e1f55d7889a97",
             "name": "20200331_160807.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160807.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160807.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1865,7 +1865,7 @@
             "format": "jpg",
             "id": "2b76d119e435e0fcb41ace10b3155866",
             "name": "20200331_160858.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160858.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160858.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1877,7 +1877,7 @@
             "format": "jpg",
             "id": "f1b0ff6833f4f24b341d749ffdba506e",
             "name": "20200331_160903.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160903.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160903.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1889,7 +1889,7 @@
             "format": "jpg",
             "id": "637f2be763015aead732ac73af5b36eb",
             "name": "20200331_160912.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160912.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160912.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1901,7 +1901,7 @@
             "format": "jpg",
             "id": "2c20467366ed1838ca48b5e232903591",
             "name": "20200331_160918.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160918.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160918.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1913,7 +1913,7 @@
             "format": "jpg",
             "id": "b2cd8bd442e4b217e1cf180d13ca446f",
             "name": "20200331_160926.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160926.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160926.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1925,7 +1925,7 @@
             "format": "jpg",
             "id": "f0b5ada4ff5f5b3e5b3f8770bb1cc37c",
             "name": "20200331_160935.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160935.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160935.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1937,7 +1937,7 @@
             "format": "jpg",
             "id": "f45ed7eb90b4ffc29e7a52223786f338",
             "name": "20200331_160940.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160940.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160940.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1949,7 +1949,7 @@
             "format": "jpg",
             "id": "03bce8623f06430e55716f81e407577c",
             "name": "20200331_160949.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160949.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160949.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1961,7 +1961,7 @@
             "format": "jpg",
             "id": "66f02bbfe6f535ca0bc1ebeefcd47dcd",
             "name": "20200331_160954.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160954.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160954.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1973,7 +1973,7 @@
             "format": "jpg",
             "id": "5b2550d7f19756f95d56d7f56dd4283a",
             "name": "20200331_160958.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160958.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160958.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1985,7 +1985,7 @@
             "format": "jpg",
             "id": "b3ed2617a571a3bbf578c77141df8bfd",
             "name": "20200331_161024.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161024.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161024.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -1997,7 +1997,7 @@
             "format": "jpg",
             "id": "0a536d6ba0fc32f0c366fcc80aeeeae6",
             "name": "20200331_161034.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161034.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161034.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2009,7 +2009,7 @@
             "format": "jpg",
             "id": "7fdadb604a38f1099f9ad558da06fca0",
             "name": "20200331_161053.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161053.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161053.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2021,7 +2021,7 @@
             "format": "jpg",
             "id": "681e1ead5bd5fc4e295aca1bfe79afa1",
             "name": "20200331_161108.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161108.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161108.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2033,7 +2033,7 @@
             "format": "jpg",
             "id": "53c9328f852b1c0a362a15581894040f",
             "name": "20200331_161120.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161120.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161120.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2045,7 +2045,7 @@
             "format": "jpg",
             "id": "4225354667df86c4cc498c0ec5af343c",
             "name": "20200331_161125.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161125.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161125.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2057,7 +2057,7 @@
             "format": "jpg",
             "id": "81a59a32d1c09b1afdcdad0b3ec7db41",
             "name": "20200331_161137.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161137.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161137.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2069,7 +2069,7 @@
             "format": "jpg",
             "id": "85d5ed893ca799bf200607c8bce85a43",
             "name": "20200331_161147.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161147.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161147.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2081,7 +2081,7 @@
             "format": "jpg",
             "id": "6b41b56d65ae7919dde5f48614fbd6a9",
             "name": "20200331_161151.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161151.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161151.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2093,7 +2093,7 @@
             "format": "jpg",
             "id": "93f25d212f4878c17325fbe9c1f4f214",
             "name": "20200331_161201.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161201.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161201.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2105,7 +2105,7 @@
             "format": "jpg",
             "id": "2ee632be7f3c5db6019a12bc4891a202",
             "name": "20200331_161206.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161206.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161206.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2117,7 +2117,7 @@
             "format": "jpg",
             "id": "0340d92d5f8123073394543a4bb4a3e5",
             "name": "20200331_161210.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161210.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161210.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2129,7 +2129,7 @@
             "format": "jpg",
             "id": "f7531dfbbbee08f84d479acb6b9af7a9",
             "name": "20200331_161226.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161226.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161226.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2141,7 +2141,7 @@
             "format": "jpg",
             "id": "e7f6b5d09c030fddd7e9e42aa8863f67",
             "name": "20200331_161231.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161231.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161231.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2153,7 +2153,7 @@
             "format": "jpg",
             "id": "3eceead89ce10de46e2d26a4b72c635e",
             "name": "20200331_161237.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161237.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161237.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2165,7 +2165,7 @@
             "format": "jpg",
             "id": "e99dd5f1a2ef0b24d3cd2af402c43d5a",
             "name": "20200331_161245.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161245.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161245.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2177,7 +2177,7 @@
             "format": "jpg",
             "id": "c8755935b7a782c1387033f04ec7a596",
             "name": "20200331_161252.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161252.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161252.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2189,7 +2189,7 @@
             "format": "jpg",
             "id": "8a9d4a5673f89e86d6c5c5b2cff49a9b",
             "name": "20200331_161257.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161257.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161257.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2201,7 +2201,7 @@
             "format": "jpg",
             "id": "3d9bb2cd51a992d5bff4257e730fc46d",
             "name": "20200331_161305.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161305.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161305.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2213,7 +2213,7 @@
             "format": "jpg",
             "id": "ee72cb8c0f378b6be7b8596caec04b00",
             "name": "20200331_161321.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161321.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161321.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
@@ -2225,10 +2225,2350 @@
             "format": "jpg",
             "id": "845249baff11c6a6e17971a12099b90b",
             "name": "20200331_161328.jpg",
-            "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_161328.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161328.jpg",
             "size": {
                 "width": 4128,
                 "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d33a1cd033e82e8107641158f3a413e4": {
+            "format": "jpg",
+            "id": "d33a1cd033e82e8107641158f3a413e4",
+            "name": "20200331_154303.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154303.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ea4b002c0a41c2e2f0a6fb93725af862": {
+            "format": "jpg",
+            "id": "ea4b002c0a41c2e2f0a6fb93725af862",
+            "name": "20200331_154306.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154306.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "16ef33d1860e4a6bc1fc841919da9fbf": {
+            "format": "jpg",
+            "id": "16ef33d1860e4a6bc1fc841919da9fbf",
+            "name": "20200331_154311.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154311.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3f3d41b390db3ff405dbdd6f3e27e4c7": {
+            "format": "jpg",
+            "id": "3f3d41b390db3ff405dbdd6f3e27e4c7",
+            "name": "20200331_154317.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154317.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c2cb35aee558d0665fa2dd5d9d152ebe": {
+            "format": "jpg",
+            "id": "c2cb35aee558d0665fa2dd5d9d152ebe",
+            "name": "20200331_154323.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154323.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "02dc778bb927c0fbd0fa3eaea8d060c5": {
+            "format": "jpg",
+            "id": "02dc778bb927c0fbd0fa3eaea8d060c5",
+            "name": "20200331_154331.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154331.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c0fa3a753e408b98e8d2534aee1033b4": {
+            "format": "jpg",
+            "id": "c0fa3a753e408b98e8d2534aee1033b4",
+            "name": "20200331_154338.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154338.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7939576921767c14502b952337a85820": {
+            "format": "jpg",
+            "id": "7939576921767c14502b952337a85820",
+            "name": "20200331_154346.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154346.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5a36a3f3cca7d0e055e3f53930939e07": {
+            "format": "jpg",
+            "id": "5a36a3f3cca7d0e055e3f53930939e07",
+            "name": "20200331_154400.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154400.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "020260c06edbbce8fab7a5270b577736": {
+            "format": "jpg",
+            "id": "020260c06edbbce8fab7a5270b577736",
+            "name": "20200331_154409.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154409.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4fa87be13360d6b67a7b2e55b25025aa": {
+            "format": "jpg",
+            "id": "4fa87be13360d6b67a7b2e55b25025aa",
+            "name": "20200331_154424.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154424.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ac0c44300e2185619503e1251a3e1aa3": {
+            "format": "jpg",
+            "id": "ac0c44300e2185619503e1251a3e1aa3",
+            "name": "20200331_154436.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154436.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9df16c0be3ddb626de0f94f8d1652d23": {
+            "format": "jpg",
+            "id": "9df16c0be3ddb626de0f94f8d1652d23",
+            "name": "20200331_154449.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154449.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e1c7570bcca3a3ba78a9717b15731c02": {
+            "format": "jpg",
+            "id": "e1c7570bcca3a3ba78a9717b15731c02",
+            "name": "20200331_154456.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154456.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "16170604f9cba9258e979901b2e08305": {
+            "format": "jpg",
+            "id": "16170604f9cba9258e979901b2e08305",
+            "name": "20200331_154512.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154512.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "07eef0563747a74af0c646dee5040581": {
+            "format": "jpg",
+            "id": "07eef0563747a74af0c646dee5040581",
+            "name": "20200331_154516.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154516.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "20bb590a9045fdc26d81b208aa289bff": {
+            "format": "jpg",
+            "id": "20bb590a9045fdc26d81b208aa289bff",
+            "name": "20200331_154524.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154524.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "91ca11f83353299dc26fec85ee3c31ea": {
+            "format": "jpg",
+            "id": "91ca11f83353299dc26fec85ee3c31ea",
+            "name": "20200331_154534.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154534.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0d4e798c172b0a98c91c5a4a65cd23b4": {
+            "format": "jpg",
+            "id": "0d4e798c172b0a98c91c5a4a65cd23b4",
+            "name": "20200331_154541.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154541.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "acd95044f735011b83560c8db2cc10fd": {
+            "format": "jpg",
+            "id": "acd95044f735011b83560c8db2cc10fd",
+            "name": "20200331_154549.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154549.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ef091b339620e60933a5a9a02d0b6c40": {
+            "format": "jpg",
+            "id": "ef091b339620e60933a5a9a02d0b6c40",
+            "name": "20200331_154554.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154554.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a6ff38560b0eacade792ad8c2a024ec8": {
+            "format": "jpg",
+            "id": "a6ff38560b0eacade792ad8c2a024ec8",
+            "name": "20200331_154604.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154604.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6533ea9567f7ec4f95ce375bba28540a": {
+            "format": "jpg",
+            "id": "6533ea9567f7ec4f95ce375bba28540a",
+            "name": "20200331_154632.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154632.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ce1894fa19efd5fda94dfaaf8a0f0b3a": {
+            "format": "jpg",
+            "id": "ce1894fa19efd5fda94dfaaf8a0f0b3a",
+            "name": "20200331_154637.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154637.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5d857145e0296e8893e94d7f677ac3ed": {
+            "format": "jpg",
+            "id": "5d857145e0296e8893e94d7f677ac3ed",
+            "name": "20200331_154644.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154644.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d76109bf1ed7b080b823de8895cd0c12": {
+            "format": "jpg",
+            "id": "d76109bf1ed7b080b823de8895cd0c12",
+            "name": "20200331_154658.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154658.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "745a8bff1da00830f20677bc50d8390d": {
+            "format": "jpg",
+            "id": "745a8bff1da00830f20677bc50d8390d",
+            "name": "20200331_154712.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154712.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fa6b12d1bf3e6d2403d483167df720ff": {
+            "format": "jpg",
+            "id": "fa6b12d1bf3e6d2403d483167df720ff",
+            "name": "20200331_154716.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154716.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b12197375435018095058a219bf2276c": {
+            "format": "jpg",
+            "id": "b12197375435018095058a219bf2276c",
+            "name": "20200331_154720.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154720.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6ea00329721652f60b4a76bae2f2032d": {
+            "format": "jpg",
+            "id": "6ea00329721652f60b4a76bae2f2032d",
+            "name": "20200331_154724.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154724.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "73e2591674cdb18154745511166434ff": {
+            "format": "jpg",
+            "id": "73e2591674cdb18154745511166434ff",
+            "name": "20200331_154730.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154730.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c086c7dff551e6fd31f731cdd00b1330": {
+            "format": "jpg",
+            "id": "c086c7dff551e6fd31f731cdd00b1330",
+            "name": "20200331_154737.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154737.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "df9ac3719e7d94d15d0d84bd8a01b6e9": {
+            "format": "jpg",
+            "id": "df9ac3719e7d94d15d0d84bd8a01b6e9",
+            "name": "20200331_154743.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154743.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "293e64d84c06d91335d140468f27f044": {
+            "format": "jpg",
+            "id": "293e64d84c06d91335d140468f27f044",
+            "name": "20200331_154748.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154748.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f203901dc8905fc740a90822a1f34c3b": {
+            "format": "jpg",
+            "id": "f203901dc8905fc740a90822a1f34c3b",
+            "name": "20200331_154802.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154802.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cd59037cc2311b0cf11e472e8ce217b9": {
+            "format": "jpg",
+            "id": "cd59037cc2311b0cf11e472e8ce217b9",
+            "name": "20200331_154811.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154811.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2000a3749c5c1e8a7de2ee5d84bd5413": {
+            "format": "jpg",
+            "id": "2000a3749c5c1e8a7de2ee5d84bd5413",
+            "name": "20200331_154816.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154816.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "afed7ed4a33a49583afc5f2c3bef4d0a": {
+            "format": "jpg",
+            "id": "afed7ed4a33a49583afc5f2c3bef4d0a",
+            "name": "20200331_154821.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154821.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "342f00fb6f190f7ef49659a9a239d961": {
+            "format": "jpg",
+            "id": "342f00fb6f190f7ef49659a9a239d961",
+            "name": "20200331_154831.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154831.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "dbbefd5e916482893a7492a7cfb441af": {
+            "format": "jpg",
+            "id": "dbbefd5e916482893a7492a7cfb441af",
+            "name": "20200331_154838.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154838.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9dd7f75e42b30f16f8414cb945db1c40": {
+            "format": "jpg",
+            "id": "9dd7f75e42b30f16f8414cb945db1c40",
+            "name": "20200331_154844.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154844.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9e1e1eba03ab3fe96c6440b4d87792be": {
+            "format": "jpg",
+            "id": "9e1e1eba03ab3fe96c6440b4d87792be",
+            "name": "20200331_154858.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154858.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "17d10026c218bbac5a6cfb94d595c8b9": {
+            "format": "jpg",
+            "id": "17d10026c218bbac5a6cfb94d595c8b9",
+            "name": "20200331_154902.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154902.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1d1ba1af06d91475a80b43d1f7aa00ae": {
+            "format": "jpg",
+            "id": "1d1ba1af06d91475a80b43d1f7aa00ae",
+            "name": "20200331_154905Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154905Jonas.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b2375649668afa0c1b41e75706abb553": {
+            "format": "jpg",
+            "id": "b2375649668afa0c1b41e75706abb553",
+            "name": "20200331_154910.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154910.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "28b6ecb74f6927ff8e2dc4de628e59dd": {
+            "format": "jpg",
+            "id": "28b6ecb74f6927ff8e2dc4de628e59dd",
+            "name": "20200331_154916.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154916.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3235d0a7c8232898a4ae14506aabb0e8": {
+            "format": "jpg",
+            "id": "3235d0a7c8232898a4ae14506aabb0e8",
+            "name": "20200331_154922Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154922Jonas.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f05173cb9e597cf9a5e61564898491c4": {
+            "format": "jpg",
+            "id": "f05173cb9e597cf9a5e61564898491c4",
+            "name": "20200331_154926.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154926.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9496b93fed10a2e46d1db4aadbaef0e8": {
+            "format": "jpg",
+            "id": "9496b93fed10a2e46d1db4aadbaef0e8",
+            "name": "20200331_154933.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154933.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "530ec2f106644716c9d10e5187245e0a": {
+            "format": "jpg",
+            "id": "530ec2f106644716c9d10e5187245e0a",
+            "name": "20200331_154938.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154938.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c1920d97121c1723dd220bdbee375df3": {
+            "format": "jpg",
+            "id": "c1920d97121c1723dd220bdbee375df3",
+            "name": "20200331_154943Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154943Jonas.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a6e910791608047ad58ad3204329b72c": {
+            "format": "jpg",
+            "id": "a6e910791608047ad58ad3204329b72c",
+            "name": "20200331_154949.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154949.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0b3d4886e1c3cb526eb0be22e12e6667": {
+            "format": "jpg",
+            "id": "0b3d4886e1c3cb526eb0be22e12e6667",
+            "name": "20200331_154954.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154954.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f122460af6b3f50e13486ad82d852bb4": {
+            "format": "jpg",
+            "id": "f122460af6b3f50e13486ad82d852bb4",
+            "name": "20200331_154959.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_154959.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5877f91378f7dbeeb146331047cc438d": {
+            "format": "jpg",
+            "id": "5877f91378f7dbeeb146331047cc438d",
+            "name": "20200331_155004.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155004.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4d07ea64676858ac0b43c56519e90e5b": {
+            "format": "jpg",
+            "id": "4d07ea64676858ac0b43c56519e90e5b",
+            "name": "20200331_155012.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155012.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b569581cc80d85384c59d2729ceca259": {
+            "format": "jpg",
+            "id": "b569581cc80d85384c59d2729ceca259",
+            "name": "20200331_155021.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155021.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4b7e4bd4d561600e9ac10422b43c5bdd": {
+            "format": "jpg",
+            "id": "4b7e4bd4d561600e9ac10422b43c5bdd",
+            "name": "20200331_155026.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155026.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "defe17cc62079020195d9bcde8cf4b36": {
+            "format": "jpg",
+            "id": "defe17cc62079020195d9bcde8cf4b36",
+            "name": "20200331_155029Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155029Jonas.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f48476606793b0d655fe9b07a3bc19ca": {
+            "format": "jpg",
+            "id": "f48476606793b0d655fe9b07a3bc19ca",
+            "name": "20200331_155036.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155036.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b3a34840ec13649364ebb6c62623b524": {
+            "format": "jpg",
+            "id": "b3a34840ec13649364ebb6c62623b524",
+            "name": "20200331_155041Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155041Jonas.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a428be18aa4bbca43ee116d5d25315aa": {
+            "format": "jpg",
+            "id": "a428be18aa4bbca43ee116d5d25315aa",
+            "name": "20200331_155046.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155046.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9e6c0c231a70adab29039d76ab129aae": {
+            "format": "jpg",
+            "id": "9e6c0c231a70adab29039d76ab129aae",
+            "name": "20200331_155059.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155059.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1cff33d271c4cdc783a241176a2ba153": {
+            "format": "jpg",
+            "id": "1cff33d271c4cdc783a241176a2ba153",
+            "name": "20200331_155108.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155108.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bec5a1eec88df83d959fdaf4147d550e": {
+            "format": "jpg",
+            "id": "bec5a1eec88df83d959fdaf4147d550e",
+            "name": "20200331_155115.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155115.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0a3014625a628bb66f9cb3f125fafbce": {
+            "format": "jpg",
+            "id": "0a3014625a628bb66f9cb3f125fafbce",
+            "name": "20200331_155121Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155121Jonas.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f58c01dd098d5c8e4584862ba4882efe": {
+            "format": "jpg",
+            "id": "f58c01dd098d5c8e4584862ba4882efe",
+            "name": "20200331_155127.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155127.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bb70bcf2537084fef58926e44847c791": {
+            "format": "jpg",
+            "id": "bb70bcf2537084fef58926e44847c791",
+            "name": "20200331_155132Jonas.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155132Jonas.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bf38079e32135319951d5a91f2314f32": {
+            "format": "jpg",
+            "id": "bf38079e32135319951d5a91f2314f32",
+            "name": "20200331_155138.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155138.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b5503ad908257dcad02f33e3c274c814": {
+            "format": "jpg",
+            "id": "b5503ad908257dcad02f33e3c274c814",
+            "name": "20200331_155144.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155144.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2e3290aa43abd68743dbf2688f93f5e3": {
+            "format": "jpg",
+            "id": "2e3290aa43abd68743dbf2688f93f5e3",
+            "name": "20200331_155152.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155152.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "39d641f95bcfe5c0f86ccb4f859b169a": {
+            "format": "jpg",
+            "id": "39d641f95bcfe5c0f86ccb4f859b169a",
+            "name": "20200331_155155.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155155.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fc5880947531be74af03ecb45f8f96f4": {
+            "format": "jpg",
+            "id": "fc5880947531be74af03ecb45f8f96f4",
+            "name": "20200331_155159.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155159.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "79f20f7a95c9348daad0d49e1d673c76": {
+            "format": "jpg",
+            "id": "79f20f7a95c9348daad0d49e1d673c76",
+            "name": "20200331_155204.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155204.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c5f99832b0e477a78182833b3c15c50e": {
+            "format": "jpg",
+            "id": "c5f99832b0e477a78182833b3c15c50e",
+            "name": "20200331_155208.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155208.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9f00e870035d08c5fc4bf5b28928e970": {
+            "format": "jpg",
+            "id": "9f00e870035d08c5fc4bf5b28928e970",
+            "name": "20200331_155212.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155212.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2bceb234befd08e6e11da9c0fc61cc68": {
+            "format": "jpg",
+            "id": "2bceb234befd08e6e11da9c0fc61cc68",
+            "name": "20200331_155216.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155216.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "35b5698d5d9121e909242d85644b8326": {
+            "format": "jpg",
+            "id": "35b5698d5d9121e909242d85644b8326",
+            "name": "20200331_155224.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155224.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "78ca663b315d48b84b72b6ad5188940b": {
+            "format": "jpg",
+            "id": "78ca663b315d48b84b72b6ad5188940b",
+            "name": "20200331_155239.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155239.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b69a5249955f37a06f88d45a0bc200dc": {
+            "format": "jpg",
+            "id": "b69a5249955f37a06f88d45a0bc200dc",
+            "name": "20200331_155250.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155250.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6eb4d597ebe36074233ee0aae69ca92f": {
+            "format": "jpg",
+            "id": "6eb4d597ebe36074233ee0aae69ca92f",
+            "name": "20200331_155256.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155256.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "39d4b556378e37d1b8ade82237620a97": {
+            "format": "jpg",
+            "id": "39d4b556378e37d1b8ade82237620a97",
+            "name": "20200331_155315.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155315.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ea9817ab392ba65b6ec9d2d8d23538b4": {
+            "format": "jpg",
+            "id": "ea9817ab392ba65b6ec9d2d8d23538b4",
+            "name": "20200331_155319.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155319.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "828e8a9af2a2ed8ec8d19cf28337dd6e": {
+            "format": "jpg",
+            "id": "828e8a9af2a2ed8ec8d19cf28337dd6e",
+            "name": "20200331_155324.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155324.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5581d3f9514fadab11d284a1f4fe1b8b": {
+            "format": "jpg",
+            "id": "5581d3f9514fadab11d284a1f4fe1b8b",
+            "name": "20200331_155706.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155706.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f81c9009a38ccb53bd841a5025345f3c": {
+            "format": "jpg",
+            "id": "f81c9009a38ccb53bd841a5025345f3c",
+            "name": "20200331_155758.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155758.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8547c55a26595dd4d64ee9571ee21a4c": {
+            "format": "jpg",
+            "id": "8547c55a26595dd4d64ee9571ee21a4c",
+            "name": "20200331_155807.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155807.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "24bd5faa2d8221bf782e6af7e782d923": {
+            "format": "jpg",
+            "id": "24bd5faa2d8221bf782e6af7e782d923",
+            "name": "20200331_155814.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155814.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4c46fdebc14e5081ee2ec7d84032d730": {
+            "format": "jpg",
+            "id": "4c46fdebc14e5081ee2ec7d84032d730",
+            "name": "20200331_155820.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155820.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d3e57aecb36337c53244c6c47a64fa2a": {
+            "format": "jpg",
+            "id": "d3e57aecb36337c53244c6c47a64fa2a",
+            "name": "20200331_155824.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155824.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "015f3a7b7d370cf6a236ecaa2df20e70": {
+            "format": "jpg",
+            "id": "015f3a7b7d370cf6a236ecaa2df20e70",
+            "name": "20200331_155829.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155829.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "39d8190759f363c0170f7429f1a9ca89": {
+            "format": "jpg",
+            "id": "39d8190759f363c0170f7429f1a9ca89",
+            "name": "20200331_155835.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155835.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1137137b50757548cdb4388a438ef21a": {
+            "format": "jpg",
+            "id": "1137137b50757548cdb4388a438ef21a",
+            "name": "20200331_155845.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155845.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2ccc50bbc943ab23989ba0d3753d5428": {
+            "format": "jpg",
+            "id": "2ccc50bbc943ab23989ba0d3753d5428",
+            "name": "20200331_155953.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155953.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e2f127e66ec2690fa8afbf8bf734bab5": {
+            "format": "jpg",
+            "id": "e2f127e66ec2690fa8afbf8bf734bab5",
+            "name": "20200331_155959.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_155959.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7d55d6ec08a7e44c5a7d500f7fca3a8b": {
+            "format": "jpg",
+            "id": "7d55d6ec08a7e44c5a7d500f7fca3a8b",
+            "name": "20200331_160007.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160007.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "23a966d98315b0623ca326efc56f8763": {
+            "format": "jpg",
+            "id": "23a966d98315b0623ca326efc56f8763",
+            "name": "20200331_160022.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160022.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "94e082e06685e92dfd44316aef5fbb9a": {
+            "format": "jpg",
+            "id": "94e082e06685e92dfd44316aef5fbb9a",
+            "name": "20200331_160041.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160041.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2cd217244fdeb46e729bddfe19edf3d4": {
+            "format": "jpg",
+            "id": "2cd217244fdeb46e729bddfe19edf3d4",
+            "name": "20200331_160047.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160047.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "53ab0722d4e43c02ab70cc1e34e53d5c": {
+            "format": "jpg",
+            "id": "53ab0722d4e43c02ab70cc1e34e53d5c",
+            "name": "20200331_160054.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160054.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f925751f883478c8da3fc27cc98b5503": {
+            "format": "jpg",
+            "id": "f925751f883478c8da3fc27cc98b5503",
+            "name": "20200331_160101.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160101.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9d9036e8722fb331515ad51ee7d41478": {
+            "format": "jpg",
+            "id": "9d9036e8722fb331515ad51ee7d41478",
+            "name": "20200331_160107.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160107.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "950abb045be7b1c342c6dd77f7953e79": {
+            "format": "jpg",
+            "id": "950abb045be7b1c342c6dd77f7953e79",
+            "name": "20200331_160117.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160117.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "854318008d4ff47bb9a589c7d9599065": {
+            "format": "jpg",
+            "id": "854318008d4ff47bb9a589c7d9599065",
+            "name": "20200331_160208.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160208.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2193a5f1110debf823436f5a5969bfb1": {
+            "format": "jpg",
+            "id": "2193a5f1110debf823436f5a5969bfb1",
+            "name": "20200331_160213.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160213.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "04f4d07389adabf5dc415a68ab4b88d5": {
+            "format": "jpg",
+            "id": "04f4d07389adabf5dc415a68ab4b88d5",
+            "name": "20200331_160222.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160222.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5e3d9bfdb6ed0054162aad61bb4e3fbf": {
+            "format": "jpg",
+            "id": "5e3d9bfdb6ed0054162aad61bb4e3fbf",
+            "name": "20200331_160255.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160255.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "058f175b3b4ba42b6c004544d55b8998": {
+            "format": "jpg",
+            "id": "058f175b3b4ba42b6c004544d55b8998",
+            "name": "20200331_160259.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160259.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "504003fcdd4bfeae70b6397345fbd25a": {
+            "format": "jpg",
+            "id": "504003fcdd4bfeae70b6397345fbd25a",
+            "name": "20200331_160308.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160308.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e9f1905c7f30a0f83994bd2bab93f7d9": {
+            "format": "jpg",
+            "id": "e9f1905c7f30a0f83994bd2bab93f7d9",
+            "name": "20200331_160315.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160315.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "140505cc104a699e406c727edaed92ec": {
+            "format": "jpg",
+            "id": "140505cc104a699e406c727edaed92ec",
+            "name": "20200331_160323.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160323.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "916dc27d30065d73c822278bd27f602f": {
+            "format": "jpg",
+            "id": "916dc27d30065d73c822278bd27f602f",
+            "name": "20200331_160332.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160332.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5b14ee9c6c3645d1f5c94222e43cf880": {
+            "format": "jpg",
+            "id": "5b14ee9c6c3645d1f5c94222e43cf880",
+            "name": "20200331_160338.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160338.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6121ce8730fab54e5a1ad421fbc3fb2d": {
+            "format": "jpg",
+            "id": "6121ce8730fab54e5a1ad421fbc3fb2d",
+            "name": "20200331_160402.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160402.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8911eddcdb9ce48f3b4dd6a33fcd925c": {
+            "format": "jpg",
+            "id": "8911eddcdb9ce48f3b4dd6a33fcd925c",
+            "name": "20200331_160406.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160406.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "415ec517c64d458580d8d692ec6fd01d": {
+            "format": "jpg",
+            "id": "415ec517c64d458580d8d692ec6fd01d",
+            "name": "20200331_160414.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160414.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ec411236b79a748d09d03f8715edde21": {
+            "format": "jpg",
+            "id": "ec411236b79a748d09d03f8715edde21",
+            "name": "20200331_160418.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160418.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "10b2685a650cc2bc661c7dc8d5bad6ae": {
+            "format": "jpg",
+            "id": "10b2685a650cc2bc661c7dc8d5bad6ae",
+            "name": "20200331_160422.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160422.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ce5ba29f3f170c8a69d789811aa48f24": {
+            "format": "jpg",
+            "id": "ce5ba29f3f170c8a69d789811aa48f24",
+            "name": "20200331_160428.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160428.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1ec7afe54417eb0aac0ba965d304ab97": {
+            "format": "jpg",
+            "id": "1ec7afe54417eb0aac0ba965d304ab97",
+            "name": "20200331_160438.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160438.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bab4c29470b37a86273fe0dbbb383b76": {
+            "format": "jpg",
+            "id": "bab4c29470b37a86273fe0dbbb383b76",
+            "name": "20200331_160445.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160445.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3cb0733e81723cbfd9690682c856fb16": {
+            "format": "jpg",
+            "id": "3cb0733e81723cbfd9690682c856fb16",
+            "name": "20200331_160451.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160451.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0863eb41f177903df291998cd4e86d27": {
+            "format": "jpg",
+            "id": "0863eb41f177903df291998cd4e86d27",
+            "name": "20200331_160518.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160518.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "feeeba4447cc94d9198880796ee61f97": {
+            "format": "jpg",
+            "id": "feeeba4447cc94d9198880796ee61f97",
+            "name": "20200331_160529.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160529.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "59444c8395679ea2e52101afd7c98c95": {
+            "format": "jpg",
+            "id": "59444c8395679ea2e52101afd7c98c95",
+            "name": "20200331_160533.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160533.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "34928b4d5625ce293800921c536f39b9": {
+            "format": "jpg",
+            "id": "34928b4d5625ce293800921c536f39b9",
+            "name": "20200331_160541.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160541.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "817f2fd90bbb4158ddd2ce9b36cf1e25": {
+            "format": "jpg",
+            "id": "817f2fd90bbb4158ddd2ce9b36cf1e25",
+            "name": "20200331_160548.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160548.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "85fe40a9270fae2ec9347a24f1f3229e": {
+            "format": "jpg",
+            "id": "85fe40a9270fae2ec9347a24f1f3229e",
+            "name": "20200331_160557.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160557.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e0d6dbc63906c261de80b4d6a9e17d45": {
+            "format": "jpg",
+            "id": "e0d6dbc63906c261de80b4d6a9e17d45",
+            "name": "20200331_160603.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160603.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1c3f7a17e477fefbd227b8df5b447c60": {
+            "format": "jpg",
+            "id": "1c3f7a17e477fefbd227b8df5b447c60",
+            "name": "20200331_160614.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160614.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4a86660e5ab5e0a6bc5fc6303a1b6260": {
+            "format": "jpg",
+            "id": "4a86660e5ab5e0a6bc5fc6303a1b6260",
+            "name": "20200331_160620.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160620.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d2cc24154a2e0ff2772215ecc994deec": {
+            "format": "jpg",
+            "id": "d2cc24154a2e0ff2772215ecc994deec",
+            "name": "20200331_160626.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160626.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0b34fc751e8e20baf3ad75a0562c9d0d": {
+            "format": "jpg",
+            "id": "0b34fc751e8e20baf3ad75a0562c9d0d",
+            "name": "20200331_160632.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160632.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a3cc72c164b5f95b6a29e068df495434": {
+            "format": "jpg",
+            "id": "a3cc72c164b5f95b6a29e068df495434",
+            "name": "20200331_160640.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160640.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a2a3a4b9ff9513bc04a62108fd20b50a": {
+            "format": "jpg",
+            "id": "a2a3a4b9ff9513bc04a62108fd20b50a",
+            "name": "20200331_160653.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160653.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "860459916def7c61ec9cb4ae94837f2b": {
+            "format": "jpg",
+            "id": "860459916def7c61ec9cb4ae94837f2b",
+            "name": "20200331_160659.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160659.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fa8cc043ad0efa3df339601652a6b2e3": {
+            "format": "jpg",
+            "id": "fa8cc043ad0efa3df339601652a6b2e3",
+            "name": "20200331_160710.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160710.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "daebd3e43ab5c6343b88608d51f95298": {
+            "format": "jpg",
+            "id": "daebd3e43ab5c6343b88608d51f95298",
+            "name": "20200331_160715.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160715.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cdec84c7c914e8b3b37bb27fad56608a": {
+            "format": "jpg",
+            "id": "cdec84c7c914e8b3b37bb27fad56608a",
+            "name": "20200331_160727.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160727.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "689708031a76e6bbc8d45d649327cc35": {
+            "format": "jpg",
+            "id": "689708031a76e6bbc8d45d649327cc35",
+            "name": "20200331_160745.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160745.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d4b9de74b770932e067375de11049921": {
+            "format": "jpg",
+            "id": "d4b9de74b770932e067375de11049921",
+            "name": "20200331_160756.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160756.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b867661c075227b8b30c164848ae56c1": {
+            "format": "jpg",
+            "id": "b867661c075227b8b30c164848ae56c1",
+            "name": "20200331_160807.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160807.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ec1b599f52967831f92cb8f075437773": {
+            "format": "jpg",
+            "id": "ec1b599f52967831f92cb8f075437773",
+            "name": "20200331_160813.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160813.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9f6ff21942960629622af872d8c034cb": {
+            "format": "jpg",
+            "id": "9f6ff21942960629622af872d8c034cb",
+            "name": "20200331_160835.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160835.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "cf9319327aff944e586b11fc35bf26c5": {
+            "format": "jpg",
+            "id": "cf9319327aff944e586b11fc35bf26c5",
+            "name": "20200331_160844.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160844.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0427a6a4e3776e264dce59ea011dea23": {
+            "format": "jpg",
+            "id": "0427a6a4e3776e264dce59ea011dea23",
+            "name": "20200331_160858.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160858.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bd7a0bc9c882e44571e9778d2ca03917": {
+            "format": "jpg",
+            "id": "bd7a0bc9c882e44571e9778d2ca03917",
+            "name": "20200331_160903.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160903.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f89cb407cd6b198db8e2ac33f0da73d6": {
+            "format": "jpg",
+            "id": "f89cb407cd6b198db8e2ac33f0da73d6",
+            "name": "20200331_160912.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160912.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7fe6bf09d0d485a6eaf6f6abf15cffe9": {
+            "format": "jpg",
+            "id": "7fe6bf09d0d485a6eaf6f6abf15cffe9",
+            "name": "20200331_160918.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160918.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2bb9b74797fb2146aeb918b40d447bc1": {
+            "format": "jpg",
+            "id": "2bb9b74797fb2146aeb918b40d447bc1",
+            "name": "20200331_160926.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160926.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a17d008e5b4a4434150645793cea68e6": {
+            "format": "jpg",
+            "id": "a17d008e5b4a4434150645793cea68e6",
+            "name": "20200331_160935.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160935.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ab165efafa113bf03a0c2fca139ae1f7": {
+            "format": "jpg",
+            "id": "ab165efafa113bf03a0c2fca139ae1f7",
+            "name": "20200331_160940.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160940.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f447476bc61f31cee0fb41ce47f4bbfa": {
+            "format": "jpg",
+            "id": "f447476bc61f31cee0fb41ce47f4bbfa",
+            "name": "20200331_160949.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160949.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "36d2c25969857e427955f70262f613eb": {
+            "format": "jpg",
+            "id": "36d2c25969857e427955f70262f613eb",
+            "name": "20200331_160954.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160954.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "de6e12f9b11a82b7415d2dd459415617": {
+            "format": "jpg",
+            "id": "de6e12f9b11a82b7415d2dd459415617",
+            "name": "20200331_160958.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160958.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f96f7f4c565c261a75adeff935c9951a": {
+            "format": "jpg",
+            "id": "f96f7f4c565c261a75adeff935c9951a",
+            "name": "20200331_161024.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161024.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f39aec2b8c83ae4116fdbb824e5161b3": {
+            "format": "jpg",
+            "id": "f39aec2b8c83ae4116fdbb824e5161b3",
+            "name": "20200331_161034.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161034.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e8c4cbb471cc1cfbba707d650a14fe9e": {
+            "format": "jpg",
+            "id": "e8c4cbb471cc1cfbba707d650a14fe9e",
+            "name": "20200331_161053.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161053.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8ea74fce28123a907ed257c3bf794a9a": {
+            "format": "jpg",
+            "id": "8ea74fce28123a907ed257c3bf794a9a",
+            "name": "20200331_161108.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161108.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "712d7af5da798916c58d917ff2d60bda": {
+            "format": "jpg",
+            "id": "712d7af5da798916c58d917ff2d60bda",
+            "name": "20200331_161120.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161120.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "35febf8a2d37c4c7094f028b9fde7812": {
+            "format": "jpg",
+            "id": "35febf8a2d37c4c7094f028b9fde7812",
+            "name": "20200331_161125.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161125.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7bf235d84bd671d0362d448523ded221": {
+            "format": "jpg",
+            "id": "7bf235d84bd671d0362d448523ded221",
+            "name": "20200331_161137.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161137.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "62f50d63cc0388c835796c397225b072": {
+            "format": "jpg",
+            "id": "62f50d63cc0388c835796c397225b072",
+            "name": "20200331_161147.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161147.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6708fe306db200333e54685627f65244": {
+            "format": "jpg",
+            "id": "6708fe306db200333e54685627f65244",
+            "name": "20200331_161151.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161151.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6a3620ae647a036471d7d19ab6fe68ec": {
+            "format": "jpg",
+            "id": "6a3620ae647a036471d7d19ab6fe68ec",
+            "name": "20200331_161201.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161201.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9430bd005d335cba72d901355b175782": {
+            "format": "jpg",
+            "id": "9430bd005d335cba72d901355b175782",
+            "name": "20200331_161206.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161206.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7d49009394300b6c2cb589b14a84d157": {
+            "format": "jpg",
+            "id": "7d49009394300b6c2cb589b14a84d157",
+            "name": "20200331_161210.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161210.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "87a65c32125e90faf07dcf9ce2a52c48": {
+            "format": "jpg",
+            "id": "87a65c32125e90faf07dcf9ce2a52c48",
+            "name": "20200331_161226.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161226.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a4d64cccb0f047d69107750447adbc17": {
+            "format": "jpg",
+            "id": "a4d64cccb0f047d69107750447adbc17",
+            "name": "20200331_161231.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161231.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8d3a067a22922b1e3022331b2b707981": {
+            "format": "jpg",
+            "id": "8d3a067a22922b1e3022331b2b707981",
+            "name": "20200331_161237.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161237.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f4757015f7eaa61044ad10ddb8b37c94": {
+            "format": "jpg",
+            "id": "f4757015f7eaa61044ad10ddb8b37c94",
+            "name": "20200331_161245.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161245.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b79b0381b961397699db344873a088d0": {
+            "format": "jpg",
+            "id": "b79b0381b961397699db344873a088d0",
+            "name": "20200331_161252.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161252.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "71f1093bbf7b95a7eb2b53892b9b5843": {
+            "format": "jpg",
+            "id": "71f1093bbf7b95a7eb2b53892b9b5843",
+            "name": "20200331_161257.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161257.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d71dd30c76ce9745786c08262c64e0fb": {
+            "format": "jpg",
+            "id": "d71dd30c76ce9745786c08262c64e0fb",
+            "name": "20200331_161305.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161305.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "383bcf2d1ed3742c3c8ceef1a81647c0": {
+            "format": "jpg",
+            "id": "383bcf2d1ed3742c3c8ceef1a81647c0",
+            "name": "20200331_161321.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161321.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "34b3a649f01ec47803e19021b9997b16": {
+            "format": "jpg",
+            "id": "34b3a649f01ec47803e19021b9997b16",
+            "name": "20200331_161328.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_161328.jpg",
+            "size": {
+                "width": 4128,
+                "height": 2322
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ea667a28f13b0c9426219325bc75d7ad": {
+            "format": "jpg",
+            "id": "ea667a28f13b0c9426219325bc75d7ad",
+            "name": "20200422_094151.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_094151.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "be76f38f5753ed4e5a7411c8c0342d7b": {
+            "format": "jpg",
+            "id": "be76f38f5753ed4e5a7411c8c0342d7b",
+            "name": "20200422_094200.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_094200.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "46ff2548e2dadbe4e0f3c0f60e015cbe": {
+            "format": "jpg",
+            "id": "46ff2548e2dadbe4e0f3c0f60e015cbe",
+            "name": "20200422_110639.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_110639.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b71a51dba8f31836ac40d2085470d1c7": {
+            "format": "jpg",
+            "id": "b71a51dba8f31836ac40d2085470d1c7",
+            "name": "20200422_110651.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_110651.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3902e98c86e5a583cf4b1004397b2cbc": {
+            "format": "jpg",
+            "id": "3902e98c86e5a583cf4b1004397b2cbc",
+            "name": "20200422_110659.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_110659.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2391c67f7f3303e03dc836f084329377": {
+            "format": "jpg",
+            "id": "2391c67f7f3303e03dc836f084329377",
+            "name": "20200422_110712.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_110712.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c977100bbad659403895afd4cec5ccfc": {
+            "format": "jpg",
+            "id": "c977100bbad659403895afd4cec5ccfc",
+            "name": "20200422_110725.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_110725.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "51d82670fc0d52214b699d850a147bb3": {
+            "format": "jpg",
+            "id": "51d82670fc0d52214b699d850a147bb3",
+            "name": "20200422_110748.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_110748.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5f9fdcd5fb876acc180d09606e1b1e05": {
+            "format": "jpg",
+            "id": "5f9fdcd5fb876acc180d09606e1b1e05",
+            "name": "20200422_110756.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_110756.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d99ed76259b1301bd8d3b87569a5f248": {
+            "format": "jpg",
+            "id": "d99ed76259b1301bd8d3b87569a5f248",
+            "name": "20200422_110807.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_110807.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3adcbc814c0327fab4b48519a9da2c4f": {
+            "format": "jpg",
+            "id": "3adcbc814c0327fab4b48519a9da2c4f",
+            "name": "20200422_120134.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_120134.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bb1ad13aa6f158c75f2d2715e43f4b89": {
+            "format": "jpg",
+            "id": "bb1ad13aa6f158c75f2d2715e43f4b89",
+            "name": "20200422_120158.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_120158.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f4f613cc80a6436dfad50009bf31a59e": {
+            "format": "jpg",
+            "id": "f4f613cc80a6436dfad50009bf31a59e",
+            "name": "20200422_120213.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_120213.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "58bd0a505f1b615f21cab3726732c156": {
+            "format": "jpg",
+            "id": "58bd0a505f1b615f21cab3726732c156",
+            "name": "20200422_120224.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_120224.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c654d15198c9eca5fa2df63a9315955f": {
+            "format": "jpg",
+            "id": "c654d15198c9eca5fa2df63a9315955f",
+            "name": "20200422_132019.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_132019.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "05b56316718dde3ead9fb2ddab4c8791": {
+            "format": "jpg",
+            "id": "05b56316718dde3ead9fb2ddab4c8791",
+            "name": "20200422_132036.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_132036.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a9eebf48fe6d2dee73db7ff98bc19241": {
+            "format": "jpg",
+            "id": "a9eebf48fe6d2dee73db7ff98bc19241",
+            "name": "20200422_132045.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_132045.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d5314718f0bfdce5b3008ed2e6906399": {
+            "format": "jpg",
+            "id": "d5314718f0bfdce5b3008ed2e6906399",
+            "name": "20200422_132110.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_132110.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3373265cb0e4506a45baade72350baad": {
+            "format": "jpg",
+            "id": "3373265cb0e4506a45baade72350baad",
+            "name": "20200422_132119.jpg",
+            "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200422_132119.jpg",
+            "size": {
+                "width": 2560,
+                "height": 1536
             },
             "state": 2,
             "type": 1

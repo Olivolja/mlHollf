@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "bf0e8198cdfc831978bef82a117d992d",
         "name": "20200331_160813.jpg",
-        "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160813.jpg",
+        "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160813.jpg",
         "size": {
             "width": 4128,
             "height": 2322
@@ -171,7 +171,7 @@
             "id": "Z7CXIrhKA",
             "type": "RECTANGLE",
             "tags": [
-                "ground"
+                "beam_90"
             ],
             "boundingBox": {
                 "height": 1172.313557565074,
@@ -195,6 +195,37 @@
                 {
                     "x": 3330.3863749796283,
                     "y": 2254.7911842151475
+                }
+            ]
+        },
+        {
+            "id": "L-jBGcTBF",
+            "type": "RECTANGLE",
+            "tags": [
+                "arrow_right"
+            ],
+            "boundingBox": {
+                "height": 183.8899804441721,
+                "width": 639.2747875354107,
+                "left": 1390.0330039394476,
+                "top": 1401.965903928616
+            },
+            "points": [
+                {
+                    "x": 1390.0330039394476,
+                    "y": 1401.965903928616
+                },
+                {
+                    "x": 2029.3077914748583,
+                    "y": 1401.965903928616
+                },
+                {
+                    "x": 2029.3077914748583,
+                    "y": 1585.855884372788
+                },
+                {
+                    "x": 1390.0330039394476,
+                    "y": 1585.855884372788
                 }
             ]
         }

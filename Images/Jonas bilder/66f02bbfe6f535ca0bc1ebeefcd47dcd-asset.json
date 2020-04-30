@@ -3,7 +3,7 @@
         "format": "jpg",
         "id": "66f02bbfe6f535ca0bc1ebeefcd47dcd",
         "name": "20200331_160954.jpg",
-        "path": "file:C:/Users/admin/Documents/mlHollf/TrainYourOwnYOLO/Data/Source_Images/Training_Images/Jonas%20bilder/20200331_160954.jpg",
+        "path": "file:C:/Users/admin/Documents/mlHollf/Images/Jonas%20bilder/20200331_160954.jpg",
         "size": {
             "width": 4128,
             "height": 2322
@@ -47,7 +47,7 @@
             "id": "N176XfoY7",
             "type": "RECTANGLE",
             "tags": [
-                "roller_support"
+                "load_up"
             ],
             "boundingBox": {
                 "height": 560.2969837587008,
