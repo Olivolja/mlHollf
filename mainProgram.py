@@ -3,6 +3,7 @@ from tkinter import filedialog as fd #file selector
 import os #this is to delete previous content from folders
 import shutil #copying files
 import subprocess #to run detector.py
+import platform #need this to check if system is running windows/linux/macos
 #TODO add requirment file that will install when run?
 
 selectedPicture = ""
@@ -48,10 +49,22 @@ except (FileNotFoundError):
 
 
 
-#venv path
-pythonBin = os.path.join(TrainYourOwnYoloRootFolder, "env/bin/python")
-#detector.py path
-scriptFile = os.path.join(TrainYourOwnYoloRootFolder, "3_Inference/Detector.py")
+#check os and get path to venv
+
+if(platform.system() == "Linux"):
+    #venv path
+    pythonBin = os.path.join(TrainYourOwnYoloRootFolder, "env/bin/python")
+    #detector.py path
+    scriptFile = os.path.join(TrainYourOwnYoloRootFolder, "3_Inference/Detector.py")
+elif (platform.system() == "Windows"):
+    raise Exception("we dont support Windows as of this moment. Please get another OS or trying another software")
+    #do windows stuff
+elif (platform.system() == "Darwin"):
+    raise Exception("we dont support MacOS as of this moment. Please get another OS or trying another software")
+else:
+    raise Exception("we could not find what OS you are running")
+
+
 #runs detector.py and waits for it to finish
 subprocess.Popen([pythonBin, scriptFile]).wait() #TODO make scriptFile take argument selectedPicture
 #Detection_Results.csv now exists 
@@ -59,5 +72,5 @@ subprocess.Popen([pythonBin, scriptFile]).wait() #TODO make scriptFile take argu
 
 #----------ABOVE WORKS -- MOVE THIS LINE WHEN MORE IS WORKING----------
 
-import Im_gen_test
+#import Im_gen_test
 
