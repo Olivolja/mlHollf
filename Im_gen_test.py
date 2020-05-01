@@ -725,19 +725,9 @@ class Truss:
 """
 
 def get_objects():
-    df = pd.read_csv(os.path.join(os.getcwd(), "TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv")
-    df1 = df[["xmin", "ymin", "xmax", "ymax", "label", "confidence", "x_size", "y_size"]]
-
-    df1 = delete_overlapping_objects(df1)
-    return (df1)
-
-
-def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika håll -> välj den som har rätt typ av balkpunkt närmast, grej för att ändra position om krock efter ändringar
-    for index1, obj1 in objects.iterrows():
         for index2, obj2 in objects.iterrows():
             if index1 == index2:
                 continue
-            type1 = labels[int(obj1[4])]
             type2 = labels[int(obj2[4])]
             x_min1, y_min1, x_max1, y_max1 = obj1[0], obj1[1], obj1[2], obj1[3],
             x_min2, y_min2, x_max2, y_max2 = obj2[0], obj2[1], obj2[2], obj2[3],
