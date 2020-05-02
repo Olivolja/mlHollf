@@ -230,7 +230,7 @@ class Beam:
             # A suface could only be placed at any of the short ends of the beam.
             surface_points["Left"].append((self, (self.x_min, y_mid), (self.x_min, y_mid)))   # If the surface is connected to a beam the
             surface_points["Right"].append((self, (self.x_max, y_mid), (self.x_max, y_mid)))  # middle point were they connect won´t be changed
-            self.surface_height = self.height*15
+            self.surface_height = self.height*10
 
         elif orientation == "90":
             self.length = y_max - y_min
@@ -266,7 +266,7 @@ class Force:
         self.old_object = old_object
         x_mid = (x_max + x_min)/2
         y_mid = (y_max + y_min)/2
-        if direction == "Up" or direction == "Down": # direction i raden under
+        if direction in ["Up", "Down"]: # direction i raden under
             (closest_x, closest_y), self.beam = find_closest_point((x_mid, y_mid), ["Bottom", "Top"])
             self.closest_point = (closest_x, closest_y)
             self.x_mid = self.x_max = self.x_min = closest_x
@@ -280,7 +280,7 @@ class Force:
                 self.y_max = self.y_min + self.beam.length * 0.2
                 self.point_index = self.beam.points['Bottom'].index(self.closest_point)
                 self.side = 'Bottom'
-        elif direction == "Left" or direction == "Right":
+        elif direction in ["Left", "Right", "Vertical"] :
             (closest_x, closest_y), self.beam = find_closest_point((x_min, y_mid), ["Left", "Right"])
             self.closest_point = (closest_x, closest_y)
             self.y_mid = self.y_max = self.y_min = closest_y
@@ -289,11 +289,15 @@ class Force:
                 self.x_min = self.x_max - self.beam.length * 0.2
                 self.point_index = self.beam.points['Right'].index(self.closest_point)
                 self.side = 'Right'
+                if direction == "Vertical":
+                    self.direction = "Left"
             else:
                 self.x_min = closest_x
                 self.x_max = self.x_min + self.beam.length * 0.2
                 self.point_index = self.beam.points['Left'].index(self.closest_point)
                 self.side = 'Left'
+                if direction == "Vertical":
+                    self.direction = "Right"
 
     def __str__(self):
         return "Force"
@@ -424,25 +428,33 @@ class RollerSupport:
 
 
 class Moment:
-    def __init__(self, x_min, y_min, x_max, y_max, rotation, side=None, old_object=None):
+    def __init__(self, x_min, y_min, x_max, y_max, rotation=None, side=None, old_object=None):
         self.old_object = old_object
         x_mid, y_mid = (x_min + x_max)/2, (y_min + y_max)/2
         self.side = side
         self.rotation = rotation
-        if side == None:
+        if side == None or rotation == None:
             self.closest_point, self.beam = find_closest_point((x_mid, y_mid))
             if self.closest_point in self.beam.points["Bottom"]:
                 self.side = "Bottom"
+                if rotation == None:
+                    self.rotation = "Clockwise"
             if self.closest_point in self.beam.points["Top"]:
                 self.side = "Top"
+                if rotation == None:
+                    self.rotation = "Counterclockwise"
             if self.closest_point in self.beam.points["Left"]:
                 self.side = "Left"
+                if rotation == None:
+                    self.rotation = "Clockwise"
             if self.closest_point in self.beam.points["Right"]:
-                self.side = "Right"    
+                self.side = "Right"
+                if rotation == None:
+                    self.rotation = "Counterclockwise" 
         else:
             self.closest_point, self.beam = find_closest_point((x_mid, y_mid), [side])
         self.radius = self.beam.length * 0.075
-        self.point_index = self.beam.points[side].index(self.closest_point)
+        self.point_index = self.beam.points[self.side].index(self.closest_point)
         if self.side == "Bottom":
             self.x_mid = self.closest_point[0]
             self.x_min = self.x_mid - self.radius
@@ -467,6 +479,7 @@ class Moment:
             self.y_mid = self.closest_point[1]
             self.y_min = self.y_mid - self.radius
             self.y_max = self.y_mid + self.radius
+        print(self.x_min, self.y_min, self.x_max, self.y_max)
 
     def __str__(self):
         return "Moment"
@@ -501,7 +514,7 @@ class Moment:
                 p2x = p1x + (self.radius * m.sin(m.radians(15)) * m.tan(m.radians(15)))
                 self.shapes.append(m_cnv.create_line(p1x, p1y, p2x, p2y, arrow="last", width=2, arrowshape="12 14 4"))
             for t in range(1, 1509):
-                theta = -15 - t / 10
+                theta = 15 + t / 10
                 p2x = self.x_mid + self.radius * m.cos(m.radians(theta))
                 p2y = self.y_max - self.radius * m.sin(m.radians(theta))
                 self.shapes.append(m_cnv.create_line(p1x, p1y, p2x, p2y, width=2))
@@ -610,32 +623,29 @@ class Surface:
         self.y_mid = (y_min + y_max)/2
         self.x_max = x_max
         self.y_max = y_max
-        height = y_max - y_min
-        width = x_max - x_min
-        if width > height: # Unnecessary or even bad?
-            self.closest_item, self.side, self.closest_point = find_closest_object((self.x_mid, self.y_mid), ["Bottom", "Top"])
+        self.closest_item, self.side, self.closest_point = find_closest_object((self.x_mid, self.y_mid))
+        if self.side in ["Bottom", "Top"]:
             self.x_mid = self.closest_point[0]
             self.width = self.closest_item.surface_width
-            self.height = 10
+            self.height = 6
             if self.side == "Bottom":
                 self.y_min = self.closest_point[1]
                 self.y_max = self.y_min + self.height
             elif self.side == "Top":
                 self.y_max = self.closest_point[1]
-                self.y_min = self.y_min - self.height
-            self.no_lines = int(self.width/8) 
-        elif width < height:
-            self.closest_item, self.side, self.closest_point = find_closest_object((self.x_mid, self.y_mid), ["Left", "Right"])
+                self.y_min = self.y_max - self.height
+            self.no_lines = int(self.width/5) 
+        elif self.side in ["Left", "Right"]:
             self.y_mid = self.closest_point[1]
             self.height = self.closest_item.surface_height 
-            self.width = 10
+            self.width = 6
             if self.side == "Left":
                 self.x_max = self.closest_point[0]
                 self.x_min = self.x_max - self.width
             elif self.side == "Right":
                 self.x_min = self.closest_point[0]
                 self.x_max = self.x_min + self.width
-            self.no_lines = int(self.height/8)
+            self.no_lines = int(self.height/5)
             if isinstance(self.closest_item, Beam): # sammanfoga längst ner i draw?
                 self.point_index = self.closest_item.points[self.side].index(self.closest_point)
 
@@ -846,24 +856,47 @@ def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika 
                 if type1 == type2:
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
+                        break
                 #elif type1 == "BeamLine":
                 #    objects = objects.drop(index1, axis=0)
                 elif type1 in ["arrow_up", "arrow_down", "arrow_left", "arrow_right"] and type2 in ["load_up", "load_down"]:
                     objects = objects.drop(index1, axis=0)
-                elif type1 == "Node" and type2 == "roller_support":
-                    objects = objects.drop(index1, axis=0)
-                elif type1 in ["counterclockwise_right", "counterclockwise_top", "counterclockwise_bottom", "counterclockwise_left", 
-                                "clockwise_right", "clockwise_left", "clockwise_top", "clockwise_bottom"] and type2 in ["counterclockwise_right", 
-                                "counterclockwise_top", "counterclockwise_bottom", "counterclockwise_left", 
-                                "clockwise_right", "clockwise_left", "clockwise_top", "clockwise_bottom"]:
+                    break
+                elif type1 in ["arrow_up", "arrow_down"] and type2 in ["arrow_up", "arrow_down"]:
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
+                        break
+                elif type1 in ["arrow_left", "arrow_right"] and type2 in ["arrow_left", "arrow_right"]:
+                    if obj1[5] < obj2[5]:
+                        objects = objects.drop(index1, axis=0)
+                        break
+                elif type1 == "Node" and type2 == "roller_support":
+                    objects = objects.drop(index1, axis=0)
+                elif type1 in ["support", "roller_support"] and type2 in ["support", "roller_support"]:
+                    if obj1[5] < obj2[5]:
+                        objects = objects.drop(index1, axis=0)
+                        break
+                elif type1 in ["counterclockwise_right", "counterclockwise_top", "counterclockwise_bottom", "counterclockwise_left", 
+                                "clockwise_right", "clockwise_left", "clockwise_top", "clockwise_bottom", "clockwise", "counterclockwise", 
+                                "arrow_torque"] and type2 in ["counterclockwise_right", "counterclockwise_top", "counterclockwise_bottom", 
+                                "counterclockwise_left", "clockwise_right", "clockwise_left", "clockwise_top", "clockwise_bottom", 
+                                "clockwise", "counterclockwise", "arrow_torque"]:
+                    if obj1[5] < obj2[5]:
+                        objects = objects.drop(index1, axis=0)
+                        break
                     #else:
                      #   objects = objects.drop(index2, axis=0)
+                elif type1 == "beam_90" and type2 in ["load_up", "load_down"]:
+                    objects = objects.drop(index1, axis=0)
+                    break
+                elif type1 in ["load_up", "load_down"] and type2 in ["load_up", "load_down"]:
+                    if obj1[5] < obj2[5]:
+                        objects = objects.drop(index1, axis=0)
+                        break
     return objects
 
 
-def draw_all_objects():
+def draw_all_objects(): #lägg in vanliga clockwise/counterwise
     """
     Draws all the detected objects by detector.py
     :return:
@@ -921,6 +954,10 @@ def draw_all_objects():
             force = Force(x_min, y_min, x_max, y_max, "Right")
             force.draw()
 
+        elif obj_type == "arrow_vertical":
+            force = Force(x_min, y_min, x_max, y_max, "Vertical")
+            force.draw()
+
         elif obj_type == "support":
             pin = PinSupport(x_min, y_min, x_max, y_max)
             pin.draw()
@@ -936,6 +973,18 @@ def draw_all_objects():
         elif obj_type == "load_down":
             load = Load(x_min, y_min, x_max, y_max, "Down")
             load.draw()
+
+        elif obj_type == "arrow_torque":
+            moment = Moment(x_min, y_min, x_max, y_max)
+            moment.draw()
+
+        elif obj_type == "clockwise":
+            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise")
+            moment.draw()
+
+        elif obj_type == "counterclockwise":
+            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise")
+            moment.draw()
 
         elif obj_type == "clockwise_bottom":
             moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Bottom")
@@ -1076,11 +1125,13 @@ def set_magnitude(obj, entry):
         obj = new_obj
     return obj
 
+
 def set_length(beam, entry):
     if entry <= 0:
         print("Beam length must be positive")
     else:
         beam.fe_length = entry
+
 
 def create_entries():
     """
@@ -1257,7 +1308,7 @@ def create_entries():
     calc_button.pack(side=RIGHT)
 
 
-def save_image(): #behöver kanske inte vara metod i metod...
+def save_image(): #behöver kanske inte vara metod i metod... Se till så inte gammal bild skrivs över?
     def save():
         path = fd.askdirectory()
         #m_cnv.update()
