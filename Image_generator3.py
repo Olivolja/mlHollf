@@ -8,6 +8,7 @@ from PIL import Image
 import time
 import sys
 import os
+
 root = Tk()
 m_cnv = Canvas(root, width=1000, height=1000)
 m_cnv.pack(side=LEFT)
@@ -725,12 +726,8 @@ class Truss:
 """
 
 def get_objects():
-    try:
-        df = pd.read_csv(r'C:\Users\admin\Desktop\Detection_Results_test.csv')
-    except:
-        df = pd.read_csv(r'C:\Users\tobia\Desktop\resultatHebbeBatch16\Detection_Results.csv')
-        # df = pd.read_csv(r'C:\Users\tobia\Desktop\Detection_Results_test.csv')
-        # df = pd.read_csv(os.path.join(os.getcwd(), "TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv")
+    df = pd.read_csv(os.path.join(os.getcwd(), "TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv")
+    
     df1 = df[["xmin", "ymin", "xmax", "ymax", "label", "confidence", "x_size", "y_size"]]
     df1 = delete_overlapping_objects(df1)
     return (df1)
