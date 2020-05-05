@@ -54,17 +54,17 @@ except (FileNotFoundError):
 if(platform.system() == "Linux"):
     #venv path
     pythonBin = os.path.join(TrainYourOwnYoloRootFolder, "env/bin/python")
-    #detector.py path
-    scriptFile = os.path.join(TrainYourOwnYoloRootFolder, "3_Inference/Detector.py")
 elif (platform.system() == "Windows"):
-    raise Exception("we dont support Windows as of this moment. Please get another OS or trying another software")
-    #do windows stuff
+    #raise Exception("we dont support Windows as of this moment. Please get another OS or trying another software")
+    pythonBin = os.path.join(TrainYourOwnYoloRootFolder, "env/Scrips/python")
 elif (platform.system() == "Darwin"):
     raise Exception("we dont support MacOS as of this moment. Please get another OS or trying another software")
 else:
     raise Exception("we could not find what OS you are running")
 
 
+#detector.py path
+scriptFile = os.path.join(TrainYourOwnYoloRootFolder, "3_Inference/Detector.py")
 #runs detector.py and waits for it to finish
 subprocess.Popen([pythonBin, scriptFile]).wait() #TODO make scriptFile take argument selectedPicture
 #Detection_Results.csv now exists 
