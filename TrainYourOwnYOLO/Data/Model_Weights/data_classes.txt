@@ -19,3 +19,5 @@ counterclockwise_left
 ground
 roller_support
 beam_90
+arrow_vertical
+arrow_torque

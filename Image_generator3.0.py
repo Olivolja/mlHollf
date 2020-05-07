@@ -219,10 +219,10 @@ class Beam:
             self.y_min = y_mid - self.height/2
             self.x_max = x_max
             self.x_min = x_min
-            point_distance = self.length/11
+            point_distance = self.length/12
             # Creating twelve points on the top and bottom side of the beam and 
             # one on the middle of the left and right side.
-            for i in range(12):
+            for i in range(13):
                 self.points["Bottom"].append((self.x_min + i * point_distance, self.y_max))
                 self.points["Top"].append((self.x_min + i * point_distance, self.y_min))
             self.points["Left"].append((self.x_min, y_mid))
@@ -249,7 +249,7 @@ class Beam:
             # A suface could only be placed at any of the short ends of the beam.
             surface_points["Bottom"].append((self, (x_mid, self.y_max), (x_mid, self.y_max))) # If the surface is connected to a beam the
             surface_points["Top"].append((self, (x_mid, self.y_min), (x_mid, self.y_min)))    # middle point were they connect won´t be changed
-            self.surface_width = self.height*15
+            self.surface_width = self.height*10
 
     def __str__(self):
         return "Beam"
