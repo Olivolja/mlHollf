@@ -280,7 +280,7 @@ class Force:
                 self.y_max = self.y_min + self.beam.length * 0.2
                 self.point_index = self.beam.points['Bottom'].index(self.closest_point)
                 self.side = 'Bottom'
-        elif direction in ["Left", "Right", "Vertical"] :
+        elif direction in ["Left", "Right", "Horizontal"] :
             (closest_x, closest_y), self.beam = find_closest_point((x_min, y_mid), ["Left", "Right"])
             self.closest_point = (closest_x, closest_y)
             self.y_mid = self.y_max = self.y_min = closest_y
@@ -289,14 +289,14 @@ class Force:
                 self.x_min = self.x_max - self.beam.length * 0.2
                 self.point_index = self.beam.points['Right'].index(self.closest_point)
                 self.side = 'Right'
-                if direction == "Vertical":
+                if direction == "Horizontal":
                     self.direction = "Left"
             else:
                 self.x_min = closest_x
                 self.x_max = self.x_min + self.beam.length * 0.2
                 self.point_index = self.beam.points['Left'].index(self.closest_point)
                 self.side = 'Left'
-                if direction == "Vertical":
+                if direction == "Horizontal":
                     self.direction = "Right"
 
     def __str__(self):
@@ -446,11 +446,11 @@ class Moment:
             if self.closest_point in self.beam.points["Left"]:
                 self.side = "Left"
                 if rotation == None:
-                    self.rotation = "Clockwise"
+                    self.rotation = "Counterclockwise"
             if self.closest_point in self.beam.points["Right"]:
                 self.side = "Right"
                 if rotation == None:
-                    self.rotation = "Counterclockwise" 
+                    self.rotation = "Clockwise" 
         else:
             self.closest_point, self.beam = find_closest_point((x_mid, y_mid), [side])
         self.radius = self.beam.length * 0.075
@@ -954,8 +954,8 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
             force = Force(x_min, y_min, x_max, y_max, "Right")
             force.draw()
 
-        elif obj_type == "arrow_vertical":
-            force = Force(x_min, y_min, x_max, y_max, "Vertical")
+        elif obj_type == "arrow_horizontal":
+            force = Force(x_min, y_min, x_max, y_max, "Horizontal")
             force.draw()
 
         elif obj_type == "support":
