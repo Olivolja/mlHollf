@@ -18,6 +18,9 @@ m_cnv.pack(side=LEFT)
 # The entry canvas houses the entries to change magnitudes
 e_cnv = Canvas(root)
 e_cnv.pack(side=RIGHT)
+# A frame that houses the attributes for loads, moments and forces
+object_frame = Frame(e_cnv, bd=2, padx=2, pady=2, relief=RAISED)
+object_frame.grid(row=0, column=0, sticky=E)
 
 beam_list = []
 node_list = []
@@ -48,31 +51,33 @@ List of the different labels detected by detector.py
 
 
 def get_classes():
+    """
+    :return: labels, a list of classes detected by detector.py
+    """
     labels = []
-    # file = open(r'C:\Users\tobia\Desktop\Kandidat\data_classes.txt')
-    data_classes = os.path.join(os.getcwd(),"TrainYourOwnYOLO/Data/Model_Weights/data_classes.txt")
-    file = open(data_classes)
+    try:
+        # file = open(r'C:\Users\tobia\Desktop\Kandidat\data_classes.txt')
+        data_classes = os.path.join(os.getcwd(),"TrainYourOwnYOLO/Data/Model_Weights/data_classes.txt")
+        file = open(data_classes)
+    except:
+        file = open(r'C:\Users\admin\Desktop\data_classes.txt')
+        
     for line in file:
         labels.append(line.rstrip("\n"))
     return labels
 
 
 labels = get_classes()
-"""
-Function:
-Return the closest point on the closest beam to the coordinates passed to the function
--------------------------
-Input:
-coord   = the coordinates for the closest point to the beam on the object
-sides   = Specifies which side to find the closest point in   
--------------------------
-Output:
-shortest_distance_coordinates   = the coordinates (x, y) for the closest point 
-closest_beam                    = the beam closest to the input coordinates
-"""
 
 
 def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
+    """
+
+    :param coord: a tuple containing x and y coordinates for the object.
+    :param sides: specifies which side of the beam you want to find the closest point in
+    :return shortest_distance_coordinates: the coordinates of the closest point on the beam as a x-y tuple
+    :return closest_beam: the closest beam to coord (only relevant if you have two or more beams in a image)
+    """
     shortest_distance = m.inf
     shortest_distance_coordinates = (m.inf, m.inf)
     for beam in beam_list:
@@ -86,15 +91,15 @@ def find_closest_point(coord, sides=["Bottom", "Top", "Left", "Right"]):
     return shortest_distance_coordinates, closest_beam
 
 
-# Method for finding the closest possible object for a surface to be put on 
-# (eg a beam or any kind of support). Returns the object, its coordinates 
-# as they were on the input and the coordinates where it will be drawn.
+# TODO kolla om det här är rätt kommenterat
 def find_closest_object(coord, sides=["Bottom", "Top", "Left", "Right"]):
     """
-
-    :param coord:
-    :param sides:
-    :return:
+    Method for finding the closest possbile object for a surface to be put on (a beam or a support of some kind).
+    :param coord: a tuple of the x and y coordinates of the middlepoint of the surface.
+    :param sides: specifies which sides of an object that should be searched.
+    :return closest item: the item on which to put a surface.
+    :return closest side: the side of the item on which to put the surface on.
+    :return shortest_distance_coordinates: the coordinates the surface should be drawn on.
     """
     shortest_distance = m.inf
     shortest_distance_coordinates = (m.inf, m.inf)
@@ -109,22 +114,33 @@ def find_closest_object(coord, sides=["Bottom", "Top", "Left", "Right"]):
     return closest_item, closest_side, shortest_distance_coordinates 
 
 
-# Compute the distance between two points
 def compute_distance(point1, point2):
+    """
+    Computes the distance between two points
+    :param point1: a x-y tuple representing a point
+    :param point2: a x-y tuple representing a point
+    :return: the minimum distance between them (Pythagorean theorem)
+    """
     x1, y1 = point1
     x2, y2 = point2
     return m.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
 
 def create_label(obj, old_object=None):
+    """
+    Used to write out the labels of the different forces, moments and loads.
+    :param obj: TODO
+    :param old_object: TODO
+    :return: TODO
+    """
     if old_object == None:
         if isinstance(obj, Force):
             global force_number
             force_number += 1
             if number_of_forces == 1:
-                text = 'F'
+                text = 'P'
             else: 
-                text = 'F' + str(force_number)
+                text = 'P' + str(force_number)
         elif isinstance(obj, Moment):
             global moment_number
             moment_number += 1
@@ -136,9 +152,9 @@ def create_label(obj, old_object=None):
             global load_number
             load_number += 1
             if number_of_loads == 1:
-                text = 'W'
+                text = 'Q'
             else:
-                text = 'W' + str(load_number)
+                text = 'Q' + str(load_number)
         elif isinstance(obj, Beam):
             if number_of_beams > 1:
                 text = 'B' + str(beam_list.index(obj)+1)
@@ -148,6 +164,8 @@ def create_label(obj, old_object=None):
 
     else:
         text = old_object.label
+    SUB = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
+    text = text.translate(SUB)
     obj.label = text
 
     while True:
@@ -194,21 +212,22 @@ def create_label(obj, old_object=None):
             break
 
         return # Nowhere to put the label, what do?
-        
 
-    SUB = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
-    sub_text = text.translate(SUB)
     
-    m_cnv.create_text(x, y, font = ('Times', '-15'), text=sub_text)
+    m_cnv.create_text(x, y, font = ('Times', '-15'), text=text)
     return text
         
 
-# Defining a beam
 class Beam:
+    """
+    Defining the beam object
+    """
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         y_mid = (y_max + y_min)/2
         x_mid = (x_max + x_min)/2
         self.height = 4
+        self.inertia = 1  # TODO good standard value
+        self.elasticity_modulus = 1  # TODO good standard value
         self.orientation = orientation
         self.points = {"Bottom": [], "Top": [], "Left": [], "Right": []}
         self.objects = {"Forces": [], "Loads": [], "Pins": [], "Rollers": [],
@@ -394,6 +413,7 @@ class RollerSupport:
         surface_points[self.ps.side].pop() # Removing the surface point that was added when the pin support was created
         self.surface_width = 1.2 * self.ps.beam.length * pin_size
         self.surface_height = self.surface_width
+        self.point_index = ps.point_index
         if self.ps.side == "Bottom":
             self.circle_box1 = (ps.x_min, ps.y_max + ps.beam.length * pin_size/2, ps.x_mid, ps.y_max)
             self.circle_box2 = (ps.x_mid, ps.y_max + ps.beam.length * pin_size/2, ps.x_max, ps.y_max)
@@ -428,31 +448,28 @@ class RollerSupport:
 
 
 class Moment:
-    def __init__(self, x_min, y_min, x_max, y_max, rotation=None, side=None, old_object=None):
+    def __init__(self, x_min, y_min, x_max, y_max, rotation=None, side=["Top", "Bottom", "Left", "Right"], old_object=None):
         self.old_object = old_object
         x_mid, y_mid = (x_min + x_max)/2, (y_min + y_max)/2
         self.side = side
         self.rotation = rotation
-        if side == None or rotation == None:
-            self.closest_point, self.beam = find_closest_point((x_mid, y_mid))
-            if self.closest_point in self.beam.points["Bottom"]:
-                self.side = "Bottom"
-                if rotation == None:
-                    self.rotation = "Clockwise"
-            if self.closest_point in self.beam.points["Top"]:
-                self.side = "Top"
-                if rotation == None:
-                    self.rotation = "Counterclockwise"
-            if self.closest_point in self.beam.points["Left"]:
-                self.side = "Left"
-                if rotation == None:
-                    self.rotation = "Counterclockwise"
-            if self.closest_point in self.beam.points["Right"]:
-                self.side = "Right"
-                if rotation == None:
-                    self.rotation = "Clockwise" 
-        else:
-            self.closest_point, self.beam = find_closest_point((x_mid, y_mid), [side])
+        self.closest_point, self.beam = find_closest_point((x_mid, y_mid), side)
+        if self.closest_point in self.beam.points["Bottom"]:
+            self.side = "Bottom"
+            if rotation == None:
+                self.rotation = "Clockwise"
+        if self.closest_point in self.beam.points["Top"]:
+            self.side = "Top"
+            if rotation == None:
+                self.rotation = "Counterclockwise"
+        if self.closest_point in self.beam.points["Left"]:
+            self.side = "Left"
+            if rotation == None:
+                self.rotation = "Counterclockwise"
+        if self.closest_point in self.beam.points["Right"]:
+            self.side = "Right"
+            if rotation == None:
+                self.rotation = "Clockwise" 
         self.radius = self.beam.length * 0.075
         self.point_index = self.beam.points[self.side].index(self.closest_point)
         if self.side == "Bottom":
@@ -479,7 +496,6 @@ class Moment:
             self.y_mid = self.closest_point[1]
             self.y_min = self.y_mid - self.radius
             self.y_max = self.y_mid + self.radius
-        print(self.x_min, self.y_min, self.x_max, self.y_max)
 
     def __str__(self):
         return "Moment"
@@ -594,8 +610,12 @@ class Load:
 
     def draw(self):
         self.shapes = []
-        py1 = self.leftmost_point[1]
-        py2 = py1 - self.height
+        if self.side == "Top":
+            py1 = self.leftmost_point[1]
+            py2 = py1 - self.height
+        elif self.side == "Bottom":
+            py1 = self.leftmost_point[1]
+            py2 = py1 + self.height
         if self.direction == "Down":
             for i in range(self.no_arrows):
                 px = self.leftmost_point[0] + i * self.sep
@@ -603,7 +623,7 @@ class Load:
         elif self.direction == "Up":
             for i in range(self.no_arrows):
                 px = self.leftmost_point[0] + i * self.sep
-                self.shapes.append(m_cnv.create_line(px, py1, px, py2, arrow="last"))
+                self.shapes.append(m_cnv.create_line(px, py2, px, py1, arrow="last"))
 
         self.shapes.append(m_cnv.create_line(self.leftmost_point[0], self.leftmost_point[1], 
                                             self.rightmost_point[0], self.rightmost_point[1]))
@@ -613,7 +633,7 @@ class Load:
 
 class Surface:
     """
-
+    Representation of a surface
     """
     def __init__(self, x_min, y_min, x_max, y_max):
         self.magnitude = None
@@ -646,7 +666,7 @@ class Surface:
                 self.x_min = self.closest_point[0]
                 self.x_max = self.x_min + self.width
             self.no_lines = int(self.height/5)
-            if isinstance(self.closest_item, Beam): # sammanfoga längst ner i draw?
+            if isinstance(self.closest_item, Beam):
                 self.point_index = self.closest_item.points[self.side].index(self.closest_point)
 
     def __str__(self):
@@ -693,12 +713,58 @@ class Surface:
             self.closest_item.objects["Surfaces"].append(self) 
 
 
+"""
+The classes Rectangle, Box, Circle, Pipe, H-shape, T-shape are used for calculating the moment of inertia for the 
+respective cross section. In all cases the x-axis points to the right (while looking straight at the cross section) 
+and the y-axis points upwards.
+"""
+class Rectangle:
+    def __init__(self, width, height):
+        self.inertia_x = width * (height**3)/12
+        self.inertia_y = height * (width**3)/12
+
+
+class Box:
+    def __init__(self, length):
+        self.length = length
+        self.inertia = (length**4)/12
+
+
+class Circle:
+    def __init__(self, diameter):
+        self.inertia = m.pi*(diameter**4)/64
+
+
+class Pipe:
+    def __init__(self, diameter, thickness):
+        d_i = diameter - 2*thickness
+        self.inertia = m.pi*(diameter**4 - d_i**4)/64
+
+
+class Hshape:  # Symmetrical
+    def __init__(self, width, height, i_height, thickness):
+        self.inertia_x = (thickness*i_height**3)/12 + (height**3 - i_height**3)*width/12
+        self.inertia_y = (i_height * thickness**3)/12 + (width**3)*(height - i_height)/12
+
+
+class Tshape:
+    def __init__(self, width, height, thickness_1, thickness_2):
+        area = width * thickness_1 + height * thickness_2
+        y_c = ((height + thickness_1/2)*thickness_1*width + width*(height**2)/2)/area
+        x_c = width/2
+        self.inertia_y = height*(thickness_2**3)/12 + thickness_1*(width**3)/12
+        self.inertia_x = thickness_2*height*(y_c - height/2)**2 + thickness_2*(height**3)/12 + \
+                         thickness_1*width*(height + thickness_1/2 - y_c)**2 + width*(thickness_1**3)/12
+
+
+# Code for trusses
+"""
 def find_closest_node(coord):
-    """
+    ""
     Finds the closest node to the input coordinates
     :param coord: coordinates for the endpoint of a truss_beam
     :return: the closest node to the endpoint
-    """
+    ""
     shortest_distance = m.inf
     shortest_distance_coordinates = (m.inf, m.inf)
     for node in node_list:
@@ -710,7 +776,7 @@ def find_closest_node(coord):
 
     return shortest_distance_coordinates, closest_node
 
-"""
+
 class TrussBeam:
     def __init__(self, x_min, y_min, x_max, y_max, orientation):
         self.x_min, self.y_min, self.x_max, self.y_max, self.orientation = x_min, y_min, x_max, y_max, orientation
@@ -823,7 +889,7 @@ class Truss:
 def get_objects():
     """
     Reads in the detected objects from Detection_Results.csv
-    :return:
+    :return objects: a pandas dataframe representation of the .csv file from Detector.py
     """
     try:
         df = pd.read_csv(r'C:\Users\admin\Desktop\Detection_Results.csv')
@@ -838,9 +904,9 @@ def get_objects():
 
 def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika håll -> välj den som har rätt typ av balkpunkt närmast, grej för att ändra position om krock efter ändringar
     """
-    Deletes overlapping objects based on some cool stuff
-    :param objects:
-    :return:
+    Function for deleting overlapping objects, if Detector.py detects two items whose bounding boxes overlap "too much" one of the objects is deleted
+    :param objects: Pandas dataframe representation of the .csv file from Detector.py
+    :return: Removes overlapping objects
     """
     for index1, obj1 in objects.iterrows():
         for index2, obj2 in objects.iterrows():
@@ -853,29 +919,37 @@ def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika 
             x_mid1 = (x_max1 + x_min1)/2
             y_mid1 = (y_max1 + y_min1)/2
             if x_min2 < x_mid1 < x_max2 and y_min2 < y_mid1 < y_max2:
+                # If two objects of the same type are detected and overlap in bothe x and y direction, the one with the highest probability is kept
                 if type1 == type2:
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
                         break
-                #elif type1 == "BeamLine":
+                # Code below is for the beams in a truss
+                # elif type1 == "BeamLine":
                 #    objects = objects.drop(index1, axis=0)
+                # If a force is detected inside the boundaries of a load, the force is removed.
                 elif type1 in ["arrow_up", "arrow_down", "arrow_left", "arrow_right"] and type2 in ["load_up", "load_down"]:
                     objects = objects.drop(index1, axis=0)
                     break
+                # If a arrow down and a arrow up overlaps the one with the highest confidence is kept
                 elif type1 in ["arrow_up", "arrow_down"] and type2 in ["arrow_up", "arrow_down"]:
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
                         break
+                # If a arrow left and a arrow right overlaps the one with the highest confidence is kept
                 elif type1 in ["arrow_left", "arrow_right"] and type2 in ["arrow_left", "arrow_right"]:
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
                         break
-                elif type1 == "Node" and type2 == "roller_support":
-                    objects = objects.drop(index1, axis=0)
+                # Code for removing nodes if they are overlapping with a roller support (if a wheel is detected as a node)
+                # elif type1 == "Node" and type2 == "roller_support":
+                    # objects = objects.drop(index1, axis=0)
+                # If a support or roller support overlaps the one with the highest confidence is kept
                 elif type1 in ["support", "roller_support"] and type2 in ["support", "roller_support"]:
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
                         break
+                # If moments overlap the one with the highest confidence is kept
                 elif type1 in ["counterclockwise_right", "counterclockwise_top", "counterclockwise_bottom", "counterclockwise_left", 
                                 "clockwise_right", "clockwise_left", "clockwise_top", "clockwise_bottom", "clockwise", "counterclockwise", 
                                 "arrow_torque"] and type2 in ["counterclockwise_right", "counterclockwise_top", "counterclockwise_bottom", 
@@ -884,11 +958,11 @@ def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika 
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
                         break
-                    #else:
-                     #   objects = objects.drop(index2, axis=0)
+                # If a beam is detected in in a load, the beam is removed
                 elif type1 == "beam_90" and type2 in ["load_up", "load_down"]:
                     objects = objects.drop(index1, axis=0)
                     break
+                # If a load up and load down overlap the one with the highest confidence is kept
                 elif type1 in ["load_up", "load_down"] and type2 in ["load_up", "load_down"]:
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
@@ -903,6 +977,7 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
     """
     objects = get_objects()
     for index, row in objects.iterrows():
+        # Row 4 in objects is the numerical version of the label
         obj_type = labels[int(row[4])]
         if obj_type in ['arrow_up', 'arrow_down', 'arrow_left', 'arrow_right']: # ändra alla ' till " eller tvärt om?
             global number_of_forces
@@ -917,7 +992,10 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
         elif obj_type in ["beam", "beam_90"]:
             global number_of_beams
             number_of_beams += 1
-
+    """
+    Loop for scaling the beams to fit in a imgage of size 800x800 and drawing them. The beams are handled in their own loop since 
+    the other objects draw() functions require that at least one beam exists.
+    """
     for index, row in objects.iterrows():
         m_x = interp1d([0, max(row[6], row[7])], [0, 800])
         m_y = interp1d([0, max(row[6], row[7])], [0, 800])
@@ -929,10 +1007,10 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
         elif obj_type == "beam_90":
             beam = Beam(x_min, y_min, x_max, y_max, "90")
             beam.draw()
-
-    if not beam_list:       # Checking if any beam was identified. If not, the program can't run.
+    # Checking if any beam was identified. If not, the program can't run.
+    if not beam_list:
         sys.exit("Error: No beam identified")
-
+    # Loop for scaling all objects fit in a 800x800 image and drawing them
     for index, row in objects.iterrows():
         m_x = interp1d([0, max(row[6], row[7])], [0, 800])
         m_y = interp1d([0, max(row[6], row[7])], [0, 800])
@@ -974,6 +1052,14 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
             load = Load(x_min, y_min, x_max, y_max, "Down")
             load.draw()
 
+        elif obj_type == "torque_top_bottom":
+            moment = Moment(x_min, y_min, x_max, y_max, side=["Top", "Bottom"])
+            moment.draw()
+
+        elif obj_type == "torque_left_right":
+            moment = Moment(x_min, y_min, x_max, y_max, side=["Left", "Right"])
+            moment.draw()
+
         elif obj_type == "arrow_torque":
             moment = Moment(x_min, y_min, x_max, y_max)
             moment.draw()
@@ -987,36 +1073,40 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
             moment.draw()
 
         elif obj_type == "clockwise_bottom":
-            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Bottom")
+            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", ["Bottom"])
             moment.draw()
         
         elif obj_type == "clockwise_top":
-            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Top")
+            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", ["Top"])
             moment.draw()
 
         elif obj_type == "clockwise_left":
-            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Left")
+            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", ["Left"])
             moment.draw()
 
         elif obj_type == "clockwise_right":
-            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", "Right")
+            moment = Moment(x_min, y_min, x_max, y_max, "Clockwise", ["Right"])
             moment.draw()
 
         elif obj_type == "counterclockwise_bottom":
-            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Bottom")
+            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", ["Bottom"])
             moment.draw()
 
         elif obj_type == "counterclockwise_top":
-            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Top")
+            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", ["Top"])
             moment.draw()
 
         elif obj_type == "counterclockwise_left":
-            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Left")
+            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", ["Left"])
             moment.draw()
 
         elif obj_type == "counterclockwise_right":
-            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", "Right")
+            moment = Moment(x_min, y_min, x_max, y_max, "Counterclockwise", ["Right"])
             moment.draw()
+    """
+    Loop for scaling grounds/surfaces to fit in a 800x800 image and drawing them,
+    also labels the beams, forces, moments and loads.
+    """
     for index, row in objects.iterrows():
         m_x = interp1d([0, max(row[6], row[7])], [0, 800])
         m_y = interp1d([0, max(row[6], row[7])], [0, 800]) # Om vanligt koordinatsystem, byt 3 och 1 nedan och 800, 0 t.v.
@@ -1033,10 +1123,10 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
                 create_label(obj, obj.old_object)
 
 
-
 def fe_input():
     """
-    :return:
+    Function for converting the mathematical model to a Python dictionary and delivering it to the calculation script
+    :return output: The dictionary containing the necessary information for the calculations
     """
     output = {}
     for beam in beam_list:
@@ -1058,14 +1148,15 @@ def fe_input():
                         beam_objects.append((str(obj), 0, obj.magnitude))
                     elif obj.side == "Bottom":
                         beam_objects.append((str(obj), 11, obj.magnitude))  
-        output['Beam' + str(index)] = (beam.fe_length, beam.orientation, beam_objects)
+        output['Beam' + str(index)] = (beam.fe_length, beam.orientation, beam.inertia*beam.elasticity_modulus, beam_objects)
+    print(output)
     return output
 
 
 def delete_object(obj):
     """
     Deletes an object
-    :param obj:
+    :param obj: The object to be deleted
     :return:
     """
     obj.beam.objects[str(obj) + "s"].remove(obj)
@@ -1075,10 +1166,12 @@ def delete_object(obj):
 
 def set_magnitude(obj, entry):
     """
-    Unclear
-    :param obj:
-    :param entry:
-    :return:
+    Function for changing direction and magnitude of an object. If a negative value is given, a new object with the
+    opposite direction is drawn.
+    :param obj: A object to change the magnitude of, obj must be an instance of Moment, Force or Load
+    :param entry: The value to change the magnitude to, if entry.
+    :return obj: A new object of the same type as the parameter obj but with the new magnitude. If the direction is
+                 changed, obj is redrawn with the new direction
     """
     if entry >= 0:
         if isinstance(obj, Moment):
@@ -1126,26 +1219,29 @@ def set_magnitude(obj, entry):
     return obj
 
 
-def set_length(beam, entry):
-    if entry <= 0:
+def set_length(beam, length):
+    """
+    Helper function for changing the .length of beam
+    :param beam: the beam to change the length of
+    :param length: the new length
+    :return: changes the fe_length to length
+    """
+    if length <= 0:
         print("Beam length must be positive")
     else:
-        beam.fe_length = entry
+        beam.fe_length = length
 
 
 def create_entries():
     """
-    Adds entries for changing the magnitude and direction of moment, loads and forces.
-    :return: entries, labels, and listboxes for units.
+    Adds entries for changing the magnitude and direction of moments, loads, forces, cross-sections and elasticity modulos
+    :return: entries, labels, and spinboxes for units.
     """
     force_entries = []
     moment_entries = []
     load_entries = []
     beam_entries = []
     objects = beam_list[0].objects
-    # len item in Loads = 4
-    # len item in Forces = 3
-    # len item in Moment = 3
 
     def calculate():
         # fe_input = fe_input()
@@ -1159,13 +1255,15 @@ def create_entries():
         """
         def convert_unit(unit):
             """
-            Converts the prefixes (kN, MNm, N/m) to powers of ten (1000, 1000000, 1).
+            Converts the prefixes (km, kN, MNm and N/m) to powers of ten (1000, 1000000, 1).
             :param unit: A prefix followed by the unit corresponding to loads, moments and forces (N, Nm, N/m)
             :return:
             """
             split = unit.split("N")[0]
             output = 1
-            if split == "k":
+            if split == "km":
+                output = 1000
+            elif split == "k":
                 output = 1000
             elif split == "M":
                 output = 1000000
@@ -1181,12 +1279,12 @@ def create_entries():
                 magnitude = 1.0
             scale_factor = convert_unit(str(e[2].get()))
             scaled_magnitude = magnitude * scale_factor
-            obj = e[1].cget("text")
+            force_label = e[1].cget("text")
             for beam in beam_list:
                 for force in beam.objects["Forces"]:
-                    if force.label == obj:
-                        ob = force
-            set_magnitude(ob, scaled_magnitude)
+                    if force.label == force_label:
+                        scaled_force = force
+            set_magnitude(scaled_force, scaled_magnitude)
             e[0].delete(0, END)
             e[0].insert(0, str(abs(magnitude)))
 
@@ -1199,12 +1297,12 @@ def create_entries():
             scale_factor = convert_unit(str(e[2].get()))
             scaled_magnitude = magnitude * scale_factor
 
-            obj = e[1].cget("text")
+            moment_label = e[1].cget("text")
             for beam in beam_list:
                 for moment in beam.objects["Moments"]:
-                    if moment.label == obj:
-                        ob = moment
-            set_magnitude(ob, scaled_magnitude)
+                    if moment.label == moment_label:
+                        scaled_moment = moment
+            set_magnitude(scaled_moment, scaled_magnitude)
             e[0].delete(0, END)
             e[0].insert(0, str(abs(magnitude)))
 
@@ -1217,127 +1315,452 @@ def create_entries():
             scale_factor = convert_unit(str(e[2].get()))
             scaled_magnitude = magnitude * scale_factor
 
-            obj = e[1].cget("text")
+            load_label = e[1].cget("text")
             for beam in beam_list:
                 for load in beam.objects["Loads"]:
-                    if load.label == obj:
-                        ob = load
-            set_magnitude(ob, scaled_magnitude)
+                    if load.label == load_label:
+                        scaled_load = load
+            set_magnitude(scaled_load, scaled_magnitude)
             e[0].delete(0, END)
             e[0].insert(0, str(abs(magnitude)))
+
         for e in beam_entries:
             try:
                 length = float(e[0].get())
             except:
                 print("Input must be a number")
                 length = 1.0
-            obj = e[1].cget("text")
+            scale_factor = convert_unit(str(e[2].get()))
+            scaled_length = length * scale_factor
+
+            beam_label = e[1].cget("text").split("\n")
+            beam_label = beam_label[0] + " " + beam_label[1]
             for beam in beam_list:
-                if beam.label == obj:
-                    ob = beam
-            set_length(ob, length)
+                if beam.label == beam_label:
+                    scaled_beam = beam
+            set_length(scaled_beam, scaled_length)
             e[0].delete(0, END)
             e[0].insert(0, str(length))
 
-        print("Output to the FE-calculation script")
-        print(fe_input())
+        fe_input()
 
+    # Frame to hold the entries for loads
+    load_frame = Frame(object_frame, bd=2, padx=2, pady=2, relief=RAISED)
+    load_frame.grid(row=0)
+    # loop for creating the entries for all the loads
     for load in objects["Loads"]:
-        entry_field = Canvas(e_cnv)
-        entry_field.pack()
+        row = objects["Loads"].index(load)
 
-        unit = Spinbox(entry_field, values=("N/m", "kN/m", "MN/m", "GN/m"))
-        unit.pack(side=RIGHT)
+        label = Label(load_frame, text=load.label, width=5)
+        label.grid(row=row, column=0)
 
-        label = Label(entry_field, text=load.label)
-        label.pack(side=LEFT)
-
-        entry = Entry(entry_field)
-        entry.pack(side=LEFT)
+        entry = Entry(load_frame, width=10)
+        entry.grid(row=row, column=1)
         entry.insert(0, "1.0")
+
+        unit = Spinbox(load_frame, values=("N/m", "kN/m", "MN/m", "GN/m"), width=5)
+        unit.grid(row=row, column=2)
 
         load_entries.append((entry, label, unit))
-
+    # Frame to hold the entries for forces
+    force_frame = Frame(object_frame, bd=2, padx=2, pady=2, relief=RAISED)
+    force_frame.grid(row=1)
+    # loop for creating the entries for all the forces
     for force in objects["Forces"]:
-        entry_field = Canvas(e_cnv)
-        entry_field.pack()
+        row = objects["Forces"].index(force)
 
-        unit = Spinbox(entry_field, values=("N", "kN", "MN", "GN"))
-        unit.pack(side=RIGHT)
+        label = Label(force_frame, text=force.label, width=5)
+        label.grid(row=row, column=0)
 
-        label = Label(entry_field, text=force.label)
-        label.pack(side=LEFT)
-
-        entry = Entry(entry_field)
-        entry.pack(side=LEFT)
+        entry = Entry(force_frame, width=10)
+        entry.grid(row=row, column=1)
         entry.insert(0, "1.0")
+
+        unit = Spinbox(force_frame, values=("N", "kN", "MN", "GN"), width=5)
+        unit.grid(row=row, column=2)
 
         force_entries.append((entry, label, unit))
-
+    # Frame to hold the entries for moments
+    moment_frame = Frame(object_frame, bd=2, padx=2, pady=2, relief=RAISED)
+    moment_frame.grid(row=2)
+    # loop for creating the entries for all the moments
     for moment in objects["Moments"]:
-        entry_field = Canvas(e_cnv)
-        entry_field.pack()
+        row = objects["Moments"].index(moment)
 
-        label = Label(entry_field, text=moment.label)
-        label.pack(side=LEFT)
+        label = Label(moment_frame, text=moment.label, width=5)
+        label.grid(row=row, column=0)
 
-        unit = Spinbox(entry_field, values=("Nm", "kNm", "MNm", "GNm"))
-        unit.pack(side=RIGHT)
-
-        entry = Entry(entry_field)
-        entry.pack(side=LEFT)
+        entry = Entry(moment_frame, width=10)
+        entry.grid(row=row, column=1)
         entry.insert(0, "1.0")
+
+        unit = Spinbox(moment_frame, values=("Nm", "kNm", "MNm", "GNm"), width=5)
+        unit.grid(row=row, column=2)
 
         moment_entries.append((entry, label, unit))
 
-    for beam in beam_list: 
-        entry_field = Canvas(e_cnv)
-        entry_field.pack()
+    # Frame to hold the entries for beams
+    beam_frame = Frame(object_frame, bd=2, padx=2, pady=2, relief=RAISED)
+    beam_frame.grid(row=3)
+    # loop for creating the entries for all the beams, currently only one beam per image is implemented 100%
+    for beam in beam_list:
+        row = beam_list.index(beam)
+        label_list = beam.label.split(" ")
+        print(label_list)
+        text = label_list[0] + "\n" + label_list[1]
+        label = Label(beam_frame, text=text, width=5)
+        label.grid(row=row, column=0)
 
-        entry = Entry(entry_field)
-        entry.pack(side=RIGHT)
-
+        entry = Entry(beam_frame, width=10)
+        entry.grid(row=row, column=1)
         entry.insert(0, "1.0")
 
-        label = Label(entry_field, text=beam.label)
-        label.pack(side=LEFT)
+        unit = Spinbox(beam_frame, values=("m", "km"), width=5)
+        unit.grid(row=row, column=2)
 
-        beam_entries.append((entry, label))
+        beam_entries.append((entry, label, unit))
 
-    calc_button = Button(e_cnv, text="Calculate", command=lambda: calculate())
-    calc_button.pack(side=RIGHT)
+    # Create a new frame to hold the options for the cross section
+    cross_section_frame = Frame(object_frame, bd=2, padx=2, pady=2, relief=RAISED)
+    cross_section_frame.grid(row=4)
+    # Cross section label
+    cross_section_label = Label(cross_section_frame, text="Cross section")
+    cross_section_label.grid(row=0, column=0)
+    # The spinbox for selecting different types of cross section, selecting value lets you simply enter a value for I
+    cross_section = Spinbox(cross_section_frame,
+                            values=("Rectangle", "Box", "Circle", "Pipe", "H-shape", "T-shape", "Value"), width=10)
+    cross_section.grid(row=0, column=1)
 
+    cross_section_button = Button(cross_section_frame, text="Customize",
+                                  command=lambda: change_parameters())
+    cross_section_button.grid(row=0, column=2)
 
-def save_image(): #behöver kanske inte vara metod i metod... Se till så inte gammal bild skrivs över?
-    def save():
+    def change_parameters():
+        """
+        Function used to choose what moment of inertia and elasticity modulos to be used for the FE-calculations
+        :return inertia, elasticity_modullos:
+        """
+        # Removes the change parameters field from the menu if there already is one.
+        if len(e_cnv.grid_slaves()) > 2:
+            field_to_delete = e_cnv.grid_slaves()[0]
+            field_to_delete.grid_remove()
+        # The frame that holds all the different fields
+        change_parameters_frame = Frame(e_cnv, bd=2, padx=2, pady=2, relief=RAISED)
+        change_parameters_frame.grid(row=3, column=0)
+        # Gets the text in the cross-section spinbox
+        cross_section_type = cross_section.get()
+        # Used to keep track of indexing for the different fields in the menu
+        parameters = ()
+        if cross_section_type == "Rectangle":
+            height, width = 1, 1  # in dm
+            parameters = ("Rectangle", width, height)
+            # 1409-1424 creates the menu fields for a rectangular cross section
+            height_label = Label(change_parameters_frame, text="Height")
+            width_label = Label(change_parameters_frame, text="Width")
+            height_label.grid(row=1, column=0)
+            width_label.grid(row=0, column=0)
+
+            height_entry = Entry(change_parameters_frame)
+            width_entry = Entry(change_parameters_frame)
+            height_entry.grid(row=1, column=1)
+            width_entry.grid(row=0, column=1)
+            height_entry.insert(END, height)
+            width_entry.insert(END, width)
+
+            height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            width_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            height_unit.grid(row=1, column=2)
+            width_unit.grid(row=0, column=2)
+        elif cross_section_type == "Box":
+            side = 1
+            parameters = ("Box", side)
+            # 1429-1437 creates the menu fields for a quadratic cross section
+            side_label = Label(change_parameters_frame, text="Side")
+            side_label.grid(row=0, column=0)
+
+            side_entry = Entry(change_parameters_frame)
+            side_entry.grid(row=0, column=1)
+            side_entry.insert(END, side)
+
+            side_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            side_unit.grid(row=0, column=2)
+        elif cross_section_type == "Circle":
+            diameter = 1
+            parameters = ("Circle", diameter)
+
+            diameter_label = Label(change_parameters_frame, text="Diameter")
+            diameter_label.grid(row=0, column=0)
+
+            diameter_entry = Entry(change_parameters_frame)
+            diameter_entry.grid(row=0, column=1)
+            diameter_entry.insert(END, diameter)
+
+            diameter_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            diameter_unit.grid(row=0, column=2)
+        elif cross_section_type == "Pipe":
+            diameter = 1
+            thickness = 1
+            parameters = ("Pipe", diameter, thickness)
+
+            diameter_label = Label(change_parameters_frame, text="Diameter")
+            diameter_label.grid(row=0, column=0)
+
+            diameter_entry = Entry(change_parameters_frame)
+            diameter_entry.grid(row=0, column=1)
+            diameter_entry.insert(END, diameter)
+
+            diameter_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            diameter_unit.grid(row=0, column=2)
+
+            thickness_label = Label(change_parameters_frame, text="Thickness")
+            thickness_label.grid(row=1, column=0)
+
+            thickness_entry = Entry(change_parameters_frame)
+            thickness_entry.grid(row=1, column=1)
+            thickness_entry.insert(END, thickness)
+
+            thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            thickness_unit.grid(row=1, column=2)
+        elif cross_section_type == "H-shape":
+            # Need to inform them what i_height is
+            # Parameters are width, height, i_height and thickness
+            width, height, i_height, thickness = 1, 1, 1, 1
+            parameters = ("H-shape", width, height, i_height, thickness)
+
+            width_label = Label(change_parameters_frame, text="Width")
+            width_label.grid(row=0, column=0)
+
+            width_entry = Entry(change_parameters_frame)
+            width_entry.grid(row=0, column=1)
+            width_entry.insert(END, width)
+
+            width_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            width_unit.grid(row=0, column=2)
+
+            height_label = Label(change_parameters_frame, text="Height")
+            height_label.grid(row=1, column=0)
+
+            height_entry = Entry(change_parameters_frame)
+            height_entry.grid(row=1, column=1)
+            height_entry.insert(END, height)
+
+            height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            height_unit.grid(row=1, column=2)
+
+            i_height_label = Label(change_parameters_frame, text="Middle height")
+            i_height_label.grid(row=2, column=0)
+
+            i_height_entry = Entry(change_parameters_frame)
+            i_height_entry.grid(row=2, column=1)
+            i_height_entry.insert(END, i_height)
+
+            i_height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            i_height_unit.grid(row=2, column=2)
+
+            thickness_label = Label(change_parameters_frame, text="Thickness")
+            thickness_label.grid(row=3, column=0)
+
+            thickness_entry = Entry(change_parameters_frame)
+            thickness_entry.grid(row=3, column=1)
+            thickness_entry.insert(END, thickness)
+
+            thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            thickness_unit.grid(row=3, column=2)
+        elif cross_section_type == "T-shape":
+            width, height, top_thickness, vertical_thickness = 1, 1, 1, 1
+            parameters = ("T-shape", width, height, top_thickness, vertical_thickness)
+
+            width_label = Label(change_parameters_frame, text="Width")
+            width_label.grid(row=0, column=0)
+
+            width_entry = Entry(change_parameters_frame)
+            width_entry.grid(row=0, column=1)
+            width_entry.insert(END, width)
+
+            width_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            width_unit.grid(row=0, column=2)
+
+            height_label = Label(change_parameters_frame, text="Height")
+            height_label.grid(row=1, column=0)
+
+            height_entry = Entry(change_parameters_frame)
+            height_entry.grid(row=1, column=1)
+            height_entry.insert(END, height)
+
+            height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            height_unit.grid(row=1, column=2)
+
+            top_thickness_label = Label(change_parameters_frame, text="Top thickness")
+            top_thickness_label.grid(row=2, column=0)
+
+            top_thickness_entry = Entry(change_parameters_frame)
+            top_thickness_entry.grid(row=2, column=1)
+            top_thickness_entry.insert(END, top_thickness)
+
+            top_thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            top_thickness_unit.grid(row=2, column=2)
+
+            vertical_thickness_label = Label(change_parameters_frame, text="Foot thickness")
+            vertical_thickness_label.grid(row=3, column=0)
+
+            vertical_thickness_entry = Entry(change_parameters_frame)
+            vertical_thickness_entry.grid(row=3, column=1)
+            vertical_thickness_entry.insert(END, vertical_thickness)
+
+            vertical_thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            vertical_thickness_unit.grid(row=3, column=2)
+        elif cross_section_type == "Value":
+            value = 1
+            parameters = ("Value", value, "")
+            explanation_label = Label(change_parameters_frame, text="If your desired cross section isn't implemented yet,\nyou can enter a value for I in the field below")
+            explanation_label.grid(row=0, column=0, columnspan=3)
+
+            value_label = Label(change_parameters_frame, text="Value of I")
+            value_label.grid(row=1, column=0)
+
+            value_entry = Entry(change_parameters_frame)
+            value_entry.grid(row=1, column=1)
+            value_entry.insert(END, value)
+
+            value_unit = Label(change_parameters_frame, text="kgm^2")
+            value_unit.grid(row=1, column=2)
+
+        def change_parameters_command(parameters):
+            """
+            The function that changes the inertia and elasticity of the depicted beam
+            :param parameters: A tuple where p[0] = the type of cross section, the rest of the info isn't used TODO: Better workaround
+            :return: Changes beam.inertia and beam.elasticity_modulos to user's desired values
+            """
+            def scale(unit):
+                """
+                Helper function for converting prefixes to numerical values
+                :param unit: a prefix (mm, cm, dm, m)
+                :return factor: the numerical representation of unit (0.001, 0.01, 0.1, 1)
+                """
+                factor = 1
+                unit_split = unit.split("m")
+                unit = unit_split[0]
+                if unit == "" and len(unit_split) == 3:
+                    factor = 0.001
+                elif unit == "c":
+                    factor = 0.01
+                elif unit == "d":
+                    factor = 0.1
+                return factor
+
+            if parameters[0] == "Rectangle":
+                width = float(width_entry.get()) * scale(width_unit.get())
+                height = float(height_entry.get()) * scale(height_unit.get())
+                rectangle = Rectangle(width, height)
+                inertia = rectangle.inertia_y
+            elif parameters[0] == "Box":
+                side = float(side_entry.get()) * scale(side_unit.get())
+                box = Box(side)
+                inertia = box.inertia
+            elif parameters[0] == "Circle":
+                diameter = float(diameter_entry.get()) * scale(diameter_unit.get())
+                circle = Circle(diameter)
+                inertia = circle.inertia
+            elif parameters[0] == "Pipe":
+                diameter = float(diameter_entry.get()) * scale(diameter_unit.get())
+                thickness = float(thickness_entry.get()) * scale(thickness_unit.get())
+                pipe = Pipe(diameter, thickness)
+                inertia = pipe.inertia
+            elif parameters[0] == "H-shape":
+                width = float(width_entry.get()) * scale(width_unit.get())
+                height = float(height_entry.get()) * scale(height_unit.get())
+                i_height = float(i_height_entry.get()) * scale(i_height_unit.get())
+                thickness = float(thickness_entry.get()) * scale(thickness_unit.get())
+                h_shape = Hshape(width, height, i_height, thickness)
+                inertia = h_shape.inertia_x
+            elif parameters[0] == "T-shape":
+                width = float(width_entry.get()) * scale(width_unit.get())
+                height = float(height_entry.get()) * scale(height_unit.get())
+                top_thickness = float(top_thickness_entry.get()) * scale(top_thickness_unit.get())
+                foot_thickness = float(vertical_thickness_entry.get()) * scale(vertical_thickness_unit.get())
+                t_shape = Tshape(width, height, top_thickness, foot_thickness) # TODO check if correct
+                inertia = t_shape.inertia_x
+            elif parameters[0] == "Value":
+                inertia = float(value_entry.get())
+
+            beam_list[0].inertia = inertia
+            beam_list[0].elasticity_modulus = get_elasticity()
+            change_parameters_frame.grid_remove()
+
+        def get_elasticity():
+            """
+            Helper function for getting and scaling the elasticity modulos
+            :return scaled_E: The value of E in SI-units
+            """
+            scale_factor = 1
+            unit = elasticity_unit.get().split("P")[0]
+            if unit == "k":
+                scale_factor = 10**3
+            elif unit == "M":
+                scale_factor = 10**6
+            elif unit == "G":
+                scale_factor = 10**9
+            unscaled_E = elasticity_entry.get()
+            scaled_E = unscaled_E * scale_factor
+
+            return scaled_E
+        # Button that changes .inertia and .elasticity_modulos
+        change_button = Button(change_parameters_frame, text="Done", command=lambda: change_parameters_command(parameters))
+        change_button.grid(row=len(parameters), column=2, sticky=E)
+        # Elasticity modulos
+        elasticity_label = Label(change_parameters_frame, text="Elasticity\nmodulos")
+        elasticity_label.grid(row=len(parameters) - 1, column=0)
+
+        elasticity_entry = Entry(change_parameters_frame)
+        elasticity_entry.grid(row=len(parameters) - 1, column=1)
+        elasticity_entry.insert(END, 1)
+
+        elasticity_unit = Spinbox(change_parameters_frame, values=("Pa", "kPa", "MPa", "GPa"))
+        elasticity_unit.grid(row=len(parameters) - 1, column=2)
+    # Frame to hold save, calculate and quit-buttons
+    menu_frame = Frame(e_cnv, bd=2, padx=2, pady=2, relief=RAISED)
+    menu_frame.grid(row=4, rowspan=2)
+
+    utility_frame = Frame(menu_frame, bd=2, padx=2, pady=2)
+    utility_frame.grid(row=1)
+
+    calculate_frame = Frame(menu_frame, bd=2, padx=2, pady=2)
+    calculate_frame.grid(row=0)
+
+    diagram_button_1 = Button(calculate_frame, text="Diagram_1", command=lambda: calculate())
+    diagram_button_1.grid(row=0, column=0)
+
+    diagram_button_1 = Button(calculate_frame, text="Diagram_2", command=lambda: calculate())
+    diagram_button_1.grid(row=0, column=1)
+
+    diagram_button_1 = Button(calculate_frame, text="Diagram_3", command=lambda: calculate())
+    diagram_button_1.grid(row=0, column=2)
+
+    def save_image():  # behöver kanske inte vara metod i metod... Se till så inte gammal bild skrivs över?
+        """
+        Helper function for saving the image
+        :return: A .png of the drawn image
+        """
         path = fd.askdirectory()
-        #m_cnv.update()
-        #m_cnv.postscript(file=os.path.join(path, "bild.eps"), colormode='color')
-
-        im = ImageGrab.grab(bbox=(0,0,1200,1000))
+        im = ImageGrab.grab(bbox=(0, 0, 1200, 1000))
         im.save(os.path.join(path, "bild.png"))
 
-    save_button = Button(e_cnv, text="Save image", command=lambda: save())
-    save_button.pack(side=RIGHT)
+    save_button = Button(utility_frame, text="Save image", command=lambda: save_image())
+    save_button.grid(row=0, column=0)
 
-
-def exit_canvas():
     def quit():
+        """
+        Helper function for closing the window
+        :return: Destroys root
+        """
         root.destroy()
-    quit_button = Button(e_cnv, text = 'Quit', command=quit)
-    quit_button.pack(side=RIGHT)
-    
 
-#def rescale_image():
-#    for beam in beam_list:
-#        for obj_type in ["Forces"]:
+    quit_button = Button(utility_frame, text='Quit', command=lambda: quit())
+    quit_button.grid(row=0, column=1)
 
-
-
+# Draw the image
 draw_all_objects()
-
+# Create the menu
 create_entries()
-save_image()
-exit_canvas()
-
+# Used to loop tkinter
 mainloop()

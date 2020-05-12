@@ -1,5 +1,6 @@
-arrow_torque
+torque_top_bottom
 arrow_horizontal
+torque_left_right
 beam_90
 ground
 beam
