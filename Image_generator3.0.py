@@ -61,7 +61,7 @@ def get_classes():
         file = open(data_classes)
     except:
         file = open(r'C:\Users\admin\Desktop\data_classes.txt')
-        
+    
     for line in file:
         labels.append(line.rstrip("\n"))
     return labels
@@ -257,10 +257,10 @@ class Beam:
             self.x_min = x_mid - self.height/2
             self.y_min = y_min
             self.y_max = y_max
-            point_distance = self.length/11
+            point_distance = self.length/12
             # Creating twelve points on the top and bottom side of the beam and 
             # one on the middle of the left and right side.
-            for i in range(12):
+            for i in range(13):
                 self.points["Left"].append((self.x_min, self.y_max - i * point_distance))
                 self.points["Right"].append((self.x_max, self.y_max - i * point_distance))
             self.points["Bottom"].append((x_mid, self.y_max))
@@ -283,6 +283,7 @@ class Force:
     def __init__(self, x_min, y_min, x_max, y_max, direction, old_object=None):
         self.direction = direction
         self.old_object = old_object
+        self.shapes = []
         x_mid = (x_max + x_min)/2
         y_mid = (y_max + y_min)/2
         if direction in ["Up", "Down"]: # direction i raden under
@@ -304,15 +305,15 @@ class Force:
             self.closest_point = (closest_x, closest_y)
             self.y_mid = self.y_max = self.y_min = closest_y
             if self.closest_point in self.beam.points["Right"]:
-                self.x_max = closest_x
-                self.x_min = self.x_max - self.beam.length * 0.2
+                self.x_min = closest_x
+                self.x_max = self.x_min + self.beam.length * 0.2
                 self.point_index = self.beam.points['Right'].index(self.closest_point)
                 self.side = 'Right'
                 if direction == "Horizontal":
                     self.direction = "Left"
             else:
-                self.x_min = closest_x
-                self.x_max = self.x_min + self.beam.length * 0.2
+                self.x_max = closest_x
+                self.x_min = self.x_max - self.beam.length * 0.2
                 self.point_index = self.beam.points['Left'].index(self.closest_point)
                 self.side = 'Left'
                 if direction == "Horizontal":
@@ -323,7 +324,6 @@ class Force:
 
     # Drawing the arrow and appending it to the list of objects acting on the corresponding beam
     def draw(self):
-        self.shapes = []
         if self.direction == "Up":
             self.shapes.append(m_cnv.create_line(self.x_mid, self.y_min, self.x_mid, self.y_max, arrow="first"))
         elif self.direction == "Down":
@@ -419,7 +419,6 @@ class RollerSupport:
             self.circle_box2 = (ps.x_mid, ps.y_max + ps.beam.length * pin_size/2, ps.x_max, ps.y_max)
             self.side = "Bottom"
             surface_points["Bottom"].append((self, (x_mid, y_max), (ps.x_mid, ps.y_max + ps.beam.length * pin_size/2)))
-
         elif self.ps.side == "Top":
             self.circle_box1 = (ps.x_min, ps.y_min - ps.beam.length * pin_size/2, ps.x_mid, ps.y_min)
             self.circle_box2 = (ps.x_mid, ps.y_min - ps.beam.length * pin_size/2, ps.x_max, ps.y_min)
@@ -441,7 +440,7 @@ class RollerSupport:
 
     def draw(self):
         self.ps.draw()
-        self.ps.beam.objects["Pins"].pop() # Elegant way of removing the extra pin support added to the objects dictionary
+        self.ps.beam.objects["Pins"].pop()  # Removes the pin support
         m_cnv.create_oval(self.circle_box1)
         m_cnv.create_oval(self.circle_box2)
         self.ps.beam.objects["Rollers"].append(self)
@@ -450,9 +449,11 @@ class RollerSupport:
 class Moment:
     def __init__(self, x_min, y_min, x_max, y_max, rotation=None, side=["Top", "Bottom", "Left", "Right"], old_object=None):
         self.old_object = old_object
+        self.shapes = []
         x_mid, y_mid = (x_min + x_max)/2, (y_min + y_max)/2
         self.side = side
         self.rotation = rotation
+        print(side)
         self.closest_point, self.beam = find_closest_point((x_mid, y_mid), side)
         if self.closest_point in self.beam.points["Bottom"]:
             self.side = "Bottom"
@@ -496,12 +497,15 @@ class Moment:
             self.y_mid = self.closest_point[1]
             self.y_min = self.y_mid - self.radius
             self.y_max = self.y_mid + self.radius
+            print(self.rotation)
 
     def __str__(self):
         return "Moment"
 
     def draw(self):
-        self.shapes = []
+        """
+        :return: Draws a moment arrow
+        """
         if self.side == "Bottom":
             p1x = self.x_mid + self.radius * m.cos(m.radians(-15))
             p1y = self.y_min - self.radius * m.sin(m.radians(-15))
@@ -584,6 +588,7 @@ class Moment:
 class Load:
     def __init__(self, x_min, y_min, x_max, y_max, direction, old_object=None):
         self.old_object = old_object
+        self.shapes = []
         y_mid = (y_min + y_max)/2
         self.direction = direction
         self.leftmost_point, self.beam = find_closest_point((x_min, y_mid), ["Bottom", "Top"])
@@ -609,7 +614,9 @@ class Load:
         return "Load"
 
     def draw(self):
-        self.shapes = []
+        """
+        :return: Draws the Load
+        """
         if self.side == "Top":
             py1 = self.leftmost_point[1]
             py2 = py1 - self.height
@@ -714,7 +721,7 @@ class Surface:
 
 
 """
-The classes Rectangle, Box, Circle, Pipe, H-shape, T-shape are used for calculating the moment of inertia for the 
+The classes Rectangle, Box, Circle, Pipe, H-shape and T-shape are used for calculating the moment of inertia for the 
 respective cross section. In all cases the x-axis points to the right (while looking straight at the cross section) 
 and the y-axis points upwards.
 """
@@ -979,11 +986,13 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
     for index, row in objects.iterrows():
         # Row 4 in objects is the numerical version of the label
         obj_type = labels[int(row[4])]
-        if obj_type in ['arrow_up', 'arrow_down', 'arrow_left', 'arrow_right']: # ändra alla ' till " eller tvärt om?
+        if obj_type in ['arrow_up', 'arrow_down', 'arrow_left', 'arrow_right', 'arrow_horizontal']: # ändra alla ' till " eller tvärt om?
             global number_of_forces
             number_of_forces += 1
         elif obj_type in ["clockwise_right", "clockwise_top", "clockwise_left", "clockwise_bottom", 
-                          "counterclockwise_right", "counterclockwise_top", "counterclockwise_left", "counterclockwise_bottom"]:
+                          "counterclockwise_right", "counterclockwise_top", "counterclockwise_left",
+                          "counterclockwise_bottom", "clockwise", "counterclockwise", "arrow_torque",
+                          "torque_left_right", "torque_top_bottom"]:
             global number_of_moments
             number_of_moments += 1
         elif obj_type in ["load_up", "load_down"]:
@@ -1140,14 +1149,14 @@ def fe_input():
                     elif obj.side == "Left":
                         beam_objects.append((str(obj), 0, obj.magnitude)) 
                     elif obj.side == "Right":
-                        beam_objects.append((str(obj), 11, obj.magnitude)) 
+                        beam_objects.append((str(obj), 12, obj.magnitude)) 
                 elif beam.orientation == "90":
                     if obj.side in ["Left", "Right"]:
                         beam_objects.append((str(obj), obj.point_index, obj.magnitude)) 
                     elif obj.side == "Top":
                         beam_objects.append((str(obj), 0, obj.magnitude))
                     elif obj.side == "Bottom":
-                        beam_objects.append((str(obj), 11, obj.magnitude))  
+                        beam_objects.append((str(obj), 12, obj.magnitude))
         output['Beam' + str(index)] = (beam.fe_length, beam.orientation, beam.inertia*beam.elasticity_modulus, beam_objects)
     print(output)
     return output
@@ -1200,10 +1209,10 @@ def set_magnitude(obj, entry):
                 new_obj.magnitude = entry*(-1)
         elif isinstance(obj, Moment):
             if obj.rotation == 'Clockwise':
-                new_obj = Moment(obj.x_min, obj.y_min, obj.x_max, obj.y_max, 'Counterclockwise', obj.side, obj)
+                new_obj = Moment(obj.x_min, obj.y_min, obj.x_max, obj.y_max, 'Counterclockwise', [obj.side], obj)
                 new_obj.magnitude = entry*(-1)
             elif obj.rotation == 'Counterclockwise':
-                new_obj = Moment(obj.x_min, obj.y_min, obj.x_max, obj.y_max, 'Clockwise', obj.side, obj)
+                new_obj = Moment(obj.x_min, obj.y_min, obj.x_max, obj.y_max, 'Clockwise', [obj.side], obj)
                 new_obj.magnitude = entry
         elif isinstance(obj, Load):
             if obj.direction == 'Up':
@@ -1243,7 +1252,7 @@ def create_entries():
     beam_entries = []
     objects = beam_list[0].objects
 
-    def calculate():
+    def update_image():
         # fe_input = fe_input()
         """
         Converts the image to a format usable in the FE-calculation script.
@@ -1336,13 +1345,16 @@ def create_entries():
             beam_label = e[1].cget("text").split("\n")
             beam_label = beam_label[0] + " " + beam_label[1]
             for beam in beam_list:
+                print(beam.label)
                 if beam.label == beam_label:
                     scaled_beam = beam
             set_length(scaled_beam, scaled_length)
             e[0].delete(0, END)
             e[0].insert(0, str(length))
 
-        fe_input()
+    def calculate():
+        update_image()
+        fee_input = fe_input()
 
     # Frame to hold the entries for loads
     load_frame = Frame(object_frame, bd=2, padx=2, pady=2, relief=RAISED)
@@ -1451,6 +1463,8 @@ def create_entries():
         cross_section_type = cross_section.get()
         # Used to keep track of indexing for the different fields in the menu
         parameters = ()
+        # Entry and Spinbox width
+        widget_width = 5
         if cross_section_type == "Rectangle":
             height, width = 1, 1  # in dm
             parameters = ("Rectangle", width, height)
@@ -1460,15 +1474,15 @@ def create_entries():
             height_label.grid(row=1, column=0)
             width_label.grid(row=0, column=0)
 
-            height_entry = Entry(change_parameters_frame)
-            width_entry = Entry(change_parameters_frame)
+            height_entry = Entry(change_parameters_frame, width=2*widget_width)
+            width_entry = Entry(change_parameters_frame, width=2*widget_width)
             height_entry.grid(row=1, column=1)
             width_entry.grid(row=0, column=1)
             height_entry.insert(END, height)
             width_entry.insert(END, width)
 
-            height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
-            width_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
+            width_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             height_unit.grid(row=1, column=2)
             width_unit.grid(row=0, column=2)
         elif cross_section_type == "Box":
@@ -1478,11 +1492,11 @@ def create_entries():
             side_label = Label(change_parameters_frame, text="Side")
             side_label.grid(row=0, column=0)
 
-            side_entry = Entry(change_parameters_frame)
+            side_entry = Entry(change_parameters_frame, width=2*widget_width)
             side_entry.grid(row=0, column=1)
             side_entry.insert(END, side)
 
-            side_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            side_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             side_unit.grid(row=0, column=2)
         elif cross_section_type == "Circle":
             diameter = 1
@@ -1491,11 +1505,11 @@ def create_entries():
             diameter_label = Label(change_parameters_frame, text="Diameter")
             diameter_label.grid(row=0, column=0)
 
-            diameter_entry = Entry(change_parameters_frame)
+            diameter_entry = Entry(change_parameters_frame, width=2*widget_width)
             diameter_entry.grid(row=0, column=1)
             diameter_entry.insert(END, diameter)
 
-            diameter_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            diameter_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             diameter_unit.grid(row=0, column=2)
         elif cross_section_type == "Pipe":
             diameter = 1
@@ -1505,21 +1519,21 @@ def create_entries():
             diameter_label = Label(change_parameters_frame, text="Diameter")
             diameter_label.grid(row=0, column=0)
 
-            diameter_entry = Entry(change_parameters_frame)
+            diameter_entry = Entry(change_parameters_frame, width=2*widget_width)
             diameter_entry.grid(row=0, column=1)
             diameter_entry.insert(END, diameter)
 
-            diameter_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            diameter_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             diameter_unit.grid(row=0, column=2)
 
             thickness_label = Label(change_parameters_frame, text="Thickness")
             thickness_label.grid(row=1, column=0)
 
-            thickness_entry = Entry(change_parameters_frame)
+            thickness_entry = Entry(change_parameters_frame, width=2*widget_width)
             thickness_entry.grid(row=1, column=1)
             thickness_entry.insert(END, thickness)
 
-            thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             thickness_unit.grid(row=1, column=2)
         elif cross_section_type == "H-shape":
             # Need to inform them what i_height is
@@ -1530,41 +1544,41 @@ def create_entries():
             width_label = Label(change_parameters_frame, text="Width")
             width_label.grid(row=0, column=0)
 
-            width_entry = Entry(change_parameters_frame)
+            width_entry = Entry(change_parameters_frame, width=2*widget_width)
             width_entry.grid(row=0, column=1)
             width_entry.insert(END, width)
 
-            width_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            width_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             width_unit.grid(row=0, column=2)
 
             height_label = Label(change_parameters_frame, text="Height")
             height_label.grid(row=1, column=0)
 
-            height_entry = Entry(change_parameters_frame)
+            height_entry = Entry(change_parameters_frame, width=2*widget_width)
             height_entry.grid(row=1, column=1)
             height_entry.insert(END, height)
 
-            height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             height_unit.grid(row=1, column=2)
 
             i_height_label = Label(change_parameters_frame, text="Middle height")
             i_height_label.grid(row=2, column=0)
 
-            i_height_entry = Entry(change_parameters_frame)
+            i_height_entry = Entry(change_parameters_frame, width=2*widget_width)
             i_height_entry.grid(row=2, column=1)
             i_height_entry.insert(END, i_height)
 
-            i_height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            i_height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             i_height_unit.grid(row=2, column=2)
 
             thickness_label = Label(change_parameters_frame, text="Thickness")
             thickness_label.grid(row=3, column=0)
 
-            thickness_entry = Entry(change_parameters_frame)
+            thickness_entry = Entry(change_parameters_frame, width=2*widget_width)
             thickness_entry.grid(row=3, column=1)
             thickness_entry.insert(END, thickness)
 
-            thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             thickness_unit.grid(row=3, column=2)
         elif cross_section_type == "T-shape":
             width, height, top_thickness, vertical_thickness = 1, 1, 1, 1
@@ -1573,41 +1587,41 @@ def create_entries():
             width_label = Label(change_parameters_frame, text="Width")
             width_label.grid(row=0, column=0)
 
-            width_entry = Entry(change_parameters_frame)
+            width_entry = Entry(change_parameters_frame, width=2*widget_width)
             width_entry.grid(row=0, column=1)
             width_entry.insert(END, width)
 
-            width_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            width_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             width_unit.grid(row=0, column=2)
 
             height_label = Label(change_parameters_frame, text="Height")
             height_label.grid(row=1, column=0)
 
-            height_entry = Entry(change_parameters_frame)
+            height_entry = Entry(change_parameters_frame, width=2*widget_width)
             height_entry.grid(row=1, column=1)
             height_entry.insert(END, height)
 
-            height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            height_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             height_unit.grid(row=1, column=2)
 
             top_thickness_label = Label(change_parameters_frame, text="Top thickness")
             top_thickness_label.grid(row=2, column=0)
 
-            top_thickness_entry = Entry(change_parameters_frame)
+            top_thickness_entry = Entry(change_parameters_frame, width=2*widget_width)
             top_thickness_entry.grid(row=2, column=1)
             top_thickness_entry.insert(END, top_thickness)
 
-            top_thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            top_thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             top_thickness_unit.grid(row=2, column=2)
 
             vertical_thickness_label = Label(change_parameters_frame, text="Foot thickness")
             vertical_thickness_label.grid(row=3, column=0)
 
-            vertical_thickness_entry = Entry(change_parameters_frame)
+            vertical_thickness_entry = Entry(change_parameters_frame, width=2*widget_width)
             vertical_thickness_entry.grid(row=3, column=1)
             vertical_thickness_entry.insert(END, vertical_thickness)
 
-            vertical_thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"))
+            vertical_thickness_unit = Spinbox(change_parameters_frame, values=("mm", "cm", "dm", "m"), width=widget_width)
             vertical_thickness_unit.grid(row=3, column=2)
         elif cross_section_type == "Value":
             value = 1
@@ -1618,11 +1632,11 @@ def create_entries():
             value_label = Label(change_parameters_frame, text="Value of I")
             value_label.grid(row=1, column=0)
 
-            value_entry = Entry(change_parameters_frame)
+            value_entry = Entry(change_parameters_frame, width=2*widget_width)
             value_entry.grid(row=1, column=1)
             value_entry.insert(END, value)
 
-            value_unit = Label(change_parameters_frame, text="kgm^2")
+            value_unit = Label(change_parameters_frame, text="kgm^2", width=widget_width)
             value_unit.grid(row=1, column=2)
 
         def change_parameters_command(parameters):
@@ -1700,7 +1714,7 @@ def create_entries():
                 scale_factor = 10**6
             elif unit == "G":
                 scale_factor = 10**9
-            unscaled_E = elasticity_entry.get()
+            unscaled_E = float(elasticity_entry.get())
             scaled_E = unscaled_E * scale_factor
 
             return scaled_E
@@ -1711,11 +1725,11 @@ def create_entries():
         elasticity_label = Label(change_parameters_frame, text="Elasticity\nmodulos")
         elasticity_label.grid(row=len(parameters) - 1, column=0)
 
-        elasticity_entry = Entry(change_parameters_frame)
+        elasticity_entry = Entry(change_parameters_frame, width=2*widget_width)
         elasticity_entry.grid(row=len(parameters) - 1, column=1)
         elasticity_entry.insert(END, 1)
 
-        elasticity_unit = Spinbox(change_parameters_frame, values=("Pa", "kPa", "MPa", "GPa"))
+        elasticity_unit = Spinbox(change_parameters_frame, values=("Pa", "kPa", "MPa", "GPa"), width=widget_width)
         elasticity_unit.grid(row=len(parameters) - 1, column=2)
     # Frame to hold save, calculate and quit-buttons
     menu_frame = Frame(e_cnv, bd=2, padx=2, pady=2, relief=RAISED)
@@ -1727,13 +1741,13 @@ def create_entries():
     calculate_frame = Frame(menu_frame, bd=2, padx=2, pady=2)
     calculate_frame.grid(row=0)
 
-    diagram_button_1 = Button(calculate_frame, text="Diagram_1", command=lambda: calculate())
+    diagram_button_1 = Button(calculate_frame, text="Normal force\ndiagram", command=lambda: calculate())
     diagram_button_1.grid(row=0, column=0)
 
-    diagram_button_1 = Button(calculate_frame, text="Diagram_2", command=lambda: calculate())
+    diagram_button_1 = Button(calculate_frame, text="Shear force\ndiagram", command=lambda: calculate())
     diagram_button_1.grid(row=0, column=1)
 
-    diagram_button_1 = Button(calculate_frame, text="Diagram_3", command=lambda: calculate())
+    diagram_button_1 = Button(calculate_frame, text="Bending moment\ndiagram", command=lambda: calculate())
     diagram_button_1.grid(row=0, column=2)
 
     def save_image():  # behöver kanske inte vara metod i metod... Se till så inte gammal bild skrivs över?
@@ -1757,6 +1771,9 @@ def create_entries():
 
     quit_button = Button(utility_frame, text='Quit', command=lambda: quit())
     quit_button.grid(row=0, column=1)
+
+    update_button = Button(utility_frame, text="Update image", command=lambda: update_image())
+    update_button.grid(row=0, column=2)
 
 # Draw the image
 draw_all_objects()
