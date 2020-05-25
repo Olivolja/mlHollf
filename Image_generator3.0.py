@@ -9,18 +9,19 @@ from PIL import Image, ImageGrab # pyscreenshot för linux?
 import time
 import sys
 import os
+# import FEM
 
 root = Tk()
 # The main canvas houses the image
-root.attributes('-fullscreen', True)
-m_cnv = Canvas(root, width=1000, height=1000)
+root.attributes('-fullscreen', True)  # Tror det är ett annat för python här
+m_cnv = Canvas(root, width=800, height=800)
 m_cnv.pack(side=LEFT)
 # The entry canvas houses the entries to change magnitudes
 e_cnv = Canvas(root)
 e_cnv.pack(side=RIGHT)
 # A frame that houses the attributes for loads, moments and forces
 object_frame = Frame(e_cnv, bd=2, padx=2, pady=2, relief=RAISED)
-object_frame.grid(row=0, column=0, sticky=E)
+object_frame.grid(row=0, column=0)
 
 beam_list = []
 node_list = []
@@ -227,7 +228,7 @@ class Beam:
         x_mid = (x_max + x_min)/2
         self.height = 4
         self.inertia = 1  # TODO good standard value
-        self.elasticity_modulus = 1  # TODO good standard value
+        self.youngs_modulus = 1  # TODO good standard value
         self.orientation = orientation
         self.points = {"Bottom": [], "Top": [], "Left": [], "Right": []}
         self.objects = {"Forces": [], "Loads": [], "Pins": [], "Rollers": [],
@@ -1157,7 +1158,7 @@ def fe_input():
                         beam_objects.append((str(obj), 0, obj.magnitude))
                     elif obj.side == "Bottom":
                         beam_objects.append((str(obj), 12, obj.magnitude))
-        output['Beam' + str(index)] = (beam.fe_length, beam.orientation, beam.inertia*beam.elasticity_modulus, beam_objects)
+        output['Beam' + str(index)] = (beam.fe_length, beam.orientation, beam.inertia*beam.youngs_modulus, beam_objects)
     print(output)
     return output
 
@@ -1243,7 +1244,7 @@ def set_length(beam, length):
 
 def create_entries():
     """
-    Adds entries for changing the magnitude and direction of moments, loads, forces, cross-sections and elasticity modulos
+    Adds entries for changing the magnitude and direction of moments, loads, forces, cross-sections and Young's modulus
     :return: entries, labels, and spinboxes for units.
     """
     force_entries = []
@@ -1449,8 +1450,8 @@ def create_entries():
 
     def change_parameters():
         """
-        Function used to choose what moment of inertia and elasticity modulos to be used for the FE-calculations
-        :return inertia, elasticity_modullos:
+        Function used to choose what moment of inertia and Young's modulus to be used for the FE-calculations
+        :return inertia, youngs_modulus:
         """
         # Removes the change parameters field from the menu if there already is one.
         if len(e_cnv.grid_slaves()) > 2:
@@ -1641,9 +1642,9 @@ def create_entries():
 
         def change_parameters_command(parameters):
             """
-            The function that changes the inertia and elasticity of the depicted beam
+            The function that changes the inertia and Young's modulus of the depicted beam
             :param parameters: A tuple where p[0] = the type of cross section, the rest of the info isn't used TODO: Better workaround
-            :return: Changes beam.inertia and beam.elasticity_modulos to user's desired values
+            :return: Changes beam.inertia and beam.youngs_modulus to user's desired values
             """
             def scale(unit):
                 """
@@ -1698,12 +1699,12 @@ def create_entries():
                 inertia = float(value_entry.get())
 
             beam_list[0].inertia = inertia
-            beam_list[0].elasticity_modulus = get_elasticity()
+            beam_list[0].youngs_modulus = get_elasticity()
             change_parameters_frame.grid_remove()
 
         def get_elasticity():
             """
-            Helper function for getting and scaling the elasticity modulos
+            Helper function for getting and scaling the Young's modulus
             :return scaled_E: The value of E in SI-units
             """
             scale_factor = 1
@@ -1718,11 +1719,11 @@ def create_entries():
             scaled_E = unscaled_E * scale_factor
 
             return scaled_E
-        # Button that changes .inertia and .elasticity_modulos
+        # Button that changes .inertia and .youngs_modulus
         change_button = Button(change_parameters_frame, text="Done", command=lambda: change_parameters_command(parameters))
         change_button.grid(row=len(parameters), column=2, sticky=E)
         # Elasticity modulos
-        elasticity_label = Label(change_parameters_frame, text="Elasticity\nmodulos")
+        elasticity_label = Label(change_parameters_frame, text="Young's\nmodulus")
         elasticity_label.grid(row=len(parameters) - 1, column=0)
 
         elasticity_entry = Entry(change_parameters_frame, width=2*widget_width)
@@ -1744,11 +1745,15 @@ def create_entries():
     diagram_button_1 = Button(calculate_frame, text="Normal force\ndiagram", command=lambda: calculate())
     diagram_button_1.grid(row=0, column=0)
 
-    diagram_button_1 = Button(calculate_frame, text="Shear force\ndiagram", command=lambda: calculate())
-    diagram_button_1.grid(row=0, column=1)
+    diagram_button_2 = Button(calculate_frame, text="Shear force\ndiagram", command=lambda: calculate())
+    diagram_button_2.grid(row=0, column=1)
 
-    diagram_button_1 = Button(calculate_frame, text="Bending moment\ndiagram", command=lambda: calculate())
-    diagram_button_1.grid(row=0, column=2)
+    diagram_button_3 = Button(calculate_frame, text="Bending moment\ndiagram", command=lambda: calculate())
+    diagram_button_3.grid(row=0, column=2)
+
+    deflection_button = Button(calculate_frame, text="Deflection", command=lambda: calculate(), height=2)
+    deflection_button.grid(row=0, column=3)
+    print(diagram_button_3.cget("height"))
 
     def save_image():  # behöver kanske inte vara metod i metod... Se till så inte gammal bild skrivs över?
         """
