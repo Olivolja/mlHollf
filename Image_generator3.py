@@ -10,7 +10,7 @@ import time
 import sys
 import os
 import platform
-# import FEM
+import FEM
 #imports depending on OS
 if(platform.system() == "Linux"):
     import pyscreenshot as ImageGrab
@@ -945,16 +945,16 @@ def delete_overlapping_objects(objects): # Sannolikheter, Momentpilar åt olika 
                 # elif type1 == "BeamLine":
                 #    objects = objects.drop(index1, axis=0)
                 # If a force is detected inside the boundaries of a load, the force is removed.
-                elif type1 in ["arrow_up", "arrow_down", "arrow_left", "arrow_right"] and type2 in ["load_up", "load_down"]:
+                elif type1 in ["force_up", "force_down", "force_left", "force_right"] and type2 in ["load_up", "load_down"]:
                     objects = objects.drop(index1, axis=0)
                     break
                 # If a arrow down and a arrow up overlaps the one with the highest confidence is kept
-                elif type1 in ["arrow_up", "arrow_down"] and type2 in ["arrow_up", "arrow_down"]:
+                elif type1 in ["force_up", "force_down"] and type2 in ["force_up", "force_down"]:
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
                         break
                 # If a arrow left and a arrow right overlaps the one with the highest confidence is kept
-                elif type1 in ["arrow_left", "arrow_right"] and type2 in ["arrow_left", "arrow_right"]:
+                elif type1 in ["force_left", "force_right"] and type2 in ["force_left", "force_right"]:
                     if obj1[5] < obj2[5]:
                         objects = objects.drop(index1, axis=0)
                         break
@@ -996,7 +996,7 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
     for index, row in objects.iterrows():
         # Row 4 in objects is the numerical version of the label
         obj_type = labels[int(row[4])]
-        if obj_type in ['arrow_up', 'arrow_down', 'arrow_left', 'arrow_right', 'arrow_horizontal']: # ändra alla ' till " eller tvärt om?
+        if obj_type in ['force_up', 'force_down', 'force_left', 'force_right', 'arrow_horizontal']: # ändra alla ' till " eller tvärt om?
             global number_of_forces
             number_of_forces += 1
         elif obj_type in ["clockwise_right", "clockwise_top", "clockwise_left", "clockwise_bottom", 
@@ -1035,19 +1035,19 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
         m_y = interp1d([0, max(row[6], row[7])], [0, 800])
         obj_type = labels[int(row[4])]
         x_min, y_min, x_max, y_max = float(m_x(row[0])), float(m_y(row[1])), float(m_x(row[2])), float(m_y(row[3]))
-        if obj_type == "arrow_down":
+        if obj_type == "force_down":
             force = Force(x_min, y_min, x_max, y_max, "Down")
             force.draw()
 
-        elif obj_type == "arrow_up":
+        elif obj_type == "force_up":
             force = Force(x_min, y_min, x_max, y_max, "Up")
             force.draw()
 
-        elif obj_type == "arrow_left":
+        elif obj_type == "force_left":
             force = Force(x_min, y_min, x_max, y_max, "Left")
             force.draw()
 
-        elif obj_type == "arrow_right":
+        elif obj_type == "force_right":
             force = Force(x_min, y_min, x_max, y_max, "Right")
             force.draw()
 
@@ -1362,9 +1362,21 @@ def create_entries():
             e[0].delete(0, END)
             e[0].insert(0, str(length))
 
-    def calculate():
+    def shear_force_diagram():
         update_image()
-        fee_input = fe_input()
+        FEM.FEM_main(fe_input(), 0)
+    
+    def normal_force_diagram():
+        update_image()
+        FEM.FEM_main(fe_input(), 1)
+
+    def moment_diagram():
+        update_image()
+        FEM.FEM_main(fe_input(), 2)
+    
+    def deflection():
+        update_image()
+        FEM.FEM_main(fe_input(), 3)
 
     # Frame to hold the entries for loads
     load_frame = Frame(object_frame, bd=2, padx=2, pady=2, relief=RAISED)
@@ -1751,16 +1763,16 @@ def create_entries():
     calculate_frame = Frame(menu_frame, bd=2, padx=2, pady=2)
     calculate_frame.grid(row=0)
 
-    diagram_button_1 = Button(calculate_frame, text="Normal force\ndiagram", command=lambda: calculate())
+    diagram_button_1 = Button(calculate_frame, text="Normal force\ndiagram", command=lambda: normal_force_diagram())
     diagram_button_1.grid(row=0, column=0)
 
-    diagram_button_2 = Button(calculate_frame, text="Shear force\ndiagram", command=lambda: calculate())
+    diagram_button_2 = Button(calculate_frame, text="Shear force\ndiagram", command=lambda: shear_force_diagram())
     diagram_button_2.grid(row=0, column=1)
 
-    diagram_button_3 = Button(calculate_frame, text="Bending moment\ndiagram", command=lambda: calculate())
+    diagram_button_3 = Button(calculate_frame, text="Bending moment\ndiagram", command=lambda: moment_diagram())
     diagram_button_3.grid(row=0, column=2)
 
-    deflection_button = Button(calculate_frame, text="Deflection", command=lambda: calculate(), height=2)
+    deflection_button = Button(calculate_frame, text="Deflection", command=lambda: deflection(), height=2)
     deflection_button.grid(row=0, column=3)
     print(diagram_button_3.cget("height"))
 

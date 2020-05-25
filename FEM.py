@@ -1,3 +1,4 @@
+#if __name__ == "__main__":
 import numpy as np
 import core as cfc
 import matplotlib.pyplot as plt
@@ -5,7 +6,7 @@ import matplotlib.pyplot as plt
 # Class used for calculating basic properties for a beam.
 class Beam:
     def __init__(self,forces=[],supports=[],loads=[],
-                 E=2.1e11,A=45.3e-4,I=2510e-8):
+                    E=2.1e11,A=45.3e-4,I=2510e-8):
         #self.forces = [[3*f[1]+2 for f in forces],[f[2] for f in forces]]
         self.LOADSPLITTER = 5
         self.NORMALSPLITTER = 1
@@ -15,7 +16,7 @@ class Beam:
         self.bc = self.get_boundary_conditions(supports)
         self.ep = np.array([E, A, I])
         self.ey = np.array([0., 0.])
-        self.ex = np.array([0., 1.])
+        self.ex = np.array([0., 1/11])
         self.beam_parts,self.load_coords = self.split_beam(forces,supports,loads)
         self.nel = 11 + sum([l[1][1]-l[1][0] for l in loads])*(self.LOADSPLITTER-1) # Turning all the loaded elements into 8 elements
         self.nparts = len(self.beam_parts)
@@ -30,8 +31,8 @@ class Beam:
         support_coords = [s[1] for s in supports]
         load = [l[1] for l in loads]
         load_coords = [[start for start, stop in load],
-                       [stop for start, stop in load],
-                       [l[2] for l in loads]]
+                        [stop for start, stop in load],
+                        [l[2] for l in loads]]
         split_coords = force_coords
         split_coords.extend(support_coords)
         split_coords.extend([0,11])
@@ -122,13 +123,13 @@ class Beam:
             if i in self.load_index:
                 for c in range(p[0],p[1]):
                     for j in range(self.LOADSPLITTER):
-                        coord.extend([c+j/self.LOADSPLITTER])
+                        coord.extend([self.L*(c+j/self.LOADSPLITTER)/11])
 
             else:
                 for c in range(p[0],p[1]):
-                    coord.append(c)
+                    coord.append(self.L*c/11)
 
-        coord.append(11)
+        coord.append(self.L*11/11)
         return coord
 
     def get_section_forces(self,p,i,eq=None):
@@ -224,7 +225,7 @@ class Beam:
         plt.plot(coord,Val)
         plt.show()
 
-    def get_deformation_figure(self):
+    def get_deflection(self):
         pass
 
 '''
@@ -287,8 +288,8 @@ input3 = {'Beam0': [('Force', 7, -0.1), ('Load', (3,5), -0.1), ('Load', (9,11), 
 
 inputJim = {'Beam0': [('Force', 11, 1.0), ('Load', (1, 3), -0.1), ('PinSupport', 0), ('RollerSupport', 8)]}
 
-balkar = list(input3.keys())
-balk3 = input3[balkar[0]]
+balkar = list(input1.keys())
+balk3 = input1[balkar[0]]
 
 def get_forces(balk):
     return sorted([b for b in balk if b[0] in ['Force','Moment']],key=lambda tup: tup[1])
@@ -307,15 +308,32 @@ forc = [('Force',11,1.0)]
 supp = [('PinSupport', 0),('RollerSupport',7)]
 loads = [('Load̈́',(0,3),-0.01)]
 balken = Beam(get_forces(balk3),get_supports(balk3),get_loads(balk3))
+#balken.get_shear_diagram()
 
-coo = np.asarray(balken.get_coordinates()).reshape(28,1)
-edof = np.asarray(balken.get_edof())
-dof=[]
-for i in range(28):
-    dof.append([3*i+1,3*i+2,3*i+3])
-dof = np.asarray(dof)
-ex = cfc.coordxtr(edof,coo,dof)
-for i in ex:
-    plt.plot(i,[0,0],'k.')
-    plt.plot(i,[0,0],'k')
-plt.show()
+
+# coo = np.asarray(balken.get_coordinates()).reshape(28,1)
+# edof = np.asarray(balken.get_edof())
+# dof=[]
+# for i in range(28):
+#     dof.append([3*i+1,3*i+2,3*i+3])
+# dof = np.asarray(dof)
+# ex = cfc.coordxtr(edof,coo,dof)
+# for i in ex:
+#     plt.plot(i,[0,0],'k.')
+#     plt.plot(i,[0,0],'k')
+# #plt.show()
+
+def FEM_main(balk_input,i):
+    balkar = list(balk_input.keys())
+    balk = balk_input[balkar[0]]
+    balken = Beam(get_forces(balk),get_supports(balk),get_loads(balk))
+    if i == 0:
+        balken.get_shear_diagram()
+    if i == 1:
+        balken.get_normal_force_diagram()
+    if i == 2:
+        balken.get_torque_diagram()
+    if i == 3:
+        balken.get_deflection()
+
+#FEM_main(input1,2)
