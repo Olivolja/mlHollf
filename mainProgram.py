@@ -72,5 +72,5 @@ subprocess.Popen([pythonBin, scriptFile]).wait() #TODO make scriptFile take argu
 
 #----------ABOVE WORKS -- MOVE THIS LINE WHEN MORE IS WORKING----------
 
-#import Im_gen_test
+import Image_generator3
 
