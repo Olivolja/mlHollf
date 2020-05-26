@@ -1071,11 +1071,11 @@ def draw_all_objects(): #lägg in vanliga clockwise/counterwise
             load = Load(x_min, y_min, x_max, y_max, "Down")
             load.draw()
 
-        elif obj_type == "torque_top_bottom":
+        elif obj_type == "moment_top_bottom":
             moment = Moment(x_min, y_min, x_max, y_max, side=["Top", "Bottom"])
             moment.draw()
 
-        elif obj_type == "torque_left_right":
+        elif obj_type == "moment_left_right":
             moment = Moment(x_min, y_min, x_max, y_max, side=["Left", "Right"])
             moment.draw()
 
